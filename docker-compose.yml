@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    # depends_on:
+    #   - db  # Add this if using a database service
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - web
+
+# Add your database service configuration here if needed
+# db:
+#   image: postgres:latest
+#   environment:
+#     POSTGRES_DB: mydb
+#     POSTGRES_USER: myuser
+#     POSTGRES_PASSWORD: mypass
