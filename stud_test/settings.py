@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
-os.environ['http_proxy'] = 'http://192.168.8.2:3128'
-os.environ['https_proxy'] = 'http://192.168.8.2:3128'
+# os.environ['http_proxy'] = 'http://192.168.8.2:3128'
+# os.environ['https_proxy'] = 'http://192.168.8.2:3128'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,7 +29,7 @@ with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
 
 
 # Application definition

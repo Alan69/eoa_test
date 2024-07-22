@@ -1,28 +1,37 @@
 version: '3'
 
 services:
-  web:
+  app:
     build: .
-    ports:
-      - "8000:8000"
+    command: gunicorn --bind 0.0.0.0:8000 stud_test.wsgi:application
     volumes:
-      - .:/code
+      - .:/app
+    expose:
+      - 8000
+    # env_file:
+    #   - .env
     # depends_on:
-    #   - db  # Add this if using a database service
+    #   - db
 
   nginx:
     image: nginx:latest
     ports:
       - "80:80"
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./static:/app/static
+      - ./media:/app/media
     depends_on:
-      - web
+      - app
 
-# Add your database service configuration here if needed
-# db:
-#   image: postgres:latest
-#   environment:
-#     POSTGRES_DB: mydb
-#     POSTGRES_USER: myuser
-#     POSTGRES_PASSWORD: mypass
+  # db:
+  #   image: postgres:13
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   environment:
+  #     POSTGRES_DB: your_db_name
+  #     POSTGRES_USER: your_db_user
+  #     POSTGRES_PASSWORD: your_db_password
+
+# volumes:
+#   postgres_data:

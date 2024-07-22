@@ -2,21 +2,33 @@
 FROM python:3.9-slim
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+# ENV PYTHONDONTWRITEBYTECODE 1
+# ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
-WORKDIR /code
+WORKDIR /app
+
+# Copy the requirements file into the container
+COPY requirements.txt /app/
 
 # Install dependencies
-COPY requirements.txt /code/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m venv /opt/venv \
+    && . /opt/venv/bin/activate \
+    && pip install --upgrade pip \
+    && pip install -r requirements.txt
 
-# Copy the Django project code into the container
-COPY . /code/
+# Copy the current directory contents into the container at /app
+COPY . /app/
 
-# Expose the port that Django runs on
+# Ensure the virtual environment is activated when running Django commands
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Run Django migrations and collect static files
+# RUN python manage.py migrate --noinput \
+#     && python manage.py collectstatic --noinput
+
+# Expose the port the app runs on
 EXPOSE 8000
 
-# Run migrations and start Django server
-CMD python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+# Command to run the Django app using gunicorn
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "stud_test.wsgi:application"]
