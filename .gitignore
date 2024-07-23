@@ -22,4 +22,5 @@ __pycache__/
 *.pot
 *.pyc
 elearning-html-template/
+/venv
 /elearning-html-template

@@ -1,32 +1,41 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <div class="container mt-5">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-6 offset-lg-3">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="mb-0">{{ product.title }}</h4>
-                </div>
                 <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">Время: 240 мин</p>
+                    <p class="card-text">{{ product.sum }} ₸</p>
+                    <h6 class="card-subtitle mb-2 text-muted">Обязательные предметы:</h6>
+                    <ul>
+                        <li>Математическая грамотность</li>
+                        <li>Грамотность чтения</li>
+                        <li>История Казахстана</li>
+                    </ul>
                     <form method="get" action="{% url 'test_detail' %}">
                         {% csrf_token %}
                         <div class="form-group">
-                            <label for="tests">Выберите тесты (2-5)</label>
+                            <label for="language">Выберите предмет</label>
                             <select id="tests" name="pk_list" class="form-control" multiple>
                                 {% for test in product.test_set.all %}
                                 <option value="{{ test.id }}">{{ test.title }}</option>
                                 {% endfor %}
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Показать тесты</button>
+                        <button type="submit" class="btn btn-primary mt-3">Начать</button>
                     </form>
+                    <p class="mt-3 text-danger">При нажатии на кнопку Начать с вашего счета снимется {{ product.sum }} ₸</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script>
+
+<!-- <script>
     document.querySelector('form').addEventListener('submit', function(event) {
         let selectedOptions = document.getElementById('tests').selectedOptions;
         if (selectedOptions.length < 2 || selectedOptions.length > 5) {
@@ -34,6 +43,6 @@
             event.preventDefault();
         }
     });
-</script>
+</script> -->
 
 {% endblock %}

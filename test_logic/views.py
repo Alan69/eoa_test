@@ -26,8 +26,8 @@ def product_detail(request, pk):
 def test_detail(request):
     test_ids = request.GET.getlist('pk_list')
     
-    if len(test_ids) < 2 or len(test_ids) > 5:
-        return render(request, 'error.html', {'message': 'Выберите от 2 до 5 тестов.'})
+    # if len(test_ids) < 2 or len(test_ids) > 5:
+    #     return render(request, 'error.html', {'message': 'Выберите от 2 до 5 тестов.'})
 
     tests = Test.objects.filter(pk__in=test_ids)
     questions = Question.objects.filter(test__in=test_ids)
