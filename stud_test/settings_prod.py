@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 
-os.environ['http_proxy'] = 'http://192.168.8.2:3128'
-os.environ['https_proxy'] = 'http://192.168.8.2:3128'
+# os.environ['http_proxy'] = 'http://192.168.8.2:3128'
+# os.environ['https_proxy'] = 'http://192.168.8.2:3128'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,9 +27,10 @@ with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['http://185.22.65.38', '185.22.65.38', 'synaqtest.kz']
+ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
+# ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -49,6 +50,8 @@ INSTALLED_APPS = [
     'payments',
 ]
 
+SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -64,19 +67,21 @@ AUTH_USER_MODEL = 'accounts.User'
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
+SESSION_COOKIE_SECURE = True  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = False  # Use True if using HTTPS
+TEST_COOKIE_SECURE = True  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
+CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
+
+CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 
@@ -144,13 +149,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
-# STATIC_ROOT = "/root/to/next/static/"
-STATICFILES_DIRS=[
-    BASE_DIR/'static',
-]
+STATIC_URL = '/static/'
+# STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
+STATIC_ROOT = BASE_DIR / 'static'
+# STATICFILES_DIRS=[
+#     BASE_DIR/'static',
+# ]
 
-MEDIA_ROOT = BASE_DIR/ 'media' # media directory in the root directory
+MEDIA_ROOT = BASE_DIR / 'media' # media directory in the root directory
 MEDIA_URL = '/media/'
 
 # Default primary key field type
