@@ -2,11 +2,11 @@ version: '3'
 
 services:
   app:
-    build: /home/ubuntu/web/stud_test
+    build: /home/ubuntu/web/eoa_test
     command: gunicorn --bind 0.0.0.0:8000 stud_test.wsgi:application
     volumes:
-      - /home/ubuntu/web/stud_test:/app
-      - static_volume:/home/app/stud_test/static
+      - /home/ubuntu/web/eoa_test:/app
+      - static_volume:/home/app/eoa_test/static
       - media_volume:/app/media
     expose:
       - 8000
@@ -16,8 +16,8 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /home/ubuntu/web/stud_test/nginx.conf:/etc/nginx/conf.d/default.conf
-      - static_volume:/home/app/stud_test/static
+      - /home/ubuntu/web/eoa_test/nginx.conf:/etc/nginx/conf.d/default.conf
+      - static_volume:/home/app/eoa_test/static
       - media_volume:/app/media
     depends_on:
       - app
