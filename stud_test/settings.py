@@ -81,6 +81,8 @@ CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
+CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
+
 ROOT_URLCONF = 'stud_test.urls'
 
 TEMPLATES = [
