@@ -2,48 +2,38 @@
 
 {% block content %}
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-4 order-lg-1"> <!-- Sidebar column -->
-            <div class="card shadow mb-3">
-                <div class="card-body" id="sidebar">
-                    <!-- Question number buttons will be displayed here -->
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header bg-primary text-white">
-                    <h4 class="card-title">Таймер</h4>
-                </div>
-                <div class="card-body text-center">
-                    <div id="timer">
-                        <span id="minutes">45</span>:<span id="seconds">00</span>
-                    </div>
-                </div>
+    <div class="row mb-3 justify-content-center">
+        <div class="col text-center">
+            <button id="previous-test" class="btn btn-secondary mr-2">Предыдущий предмет</button>
+            <button id="next-test" class="btn btn-primary">Следующий предмет</button>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col text-center">
+            <h2>Бөлім: {{ test.title }}</h2>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col text-center">
+            <div id="question-buttons" class="btn-group">
+                <!-- Question number buttons will be dynamically added here -->
             </div>
         </div>
-        <div class="col-lg-8 order-lg-2"> <!-- Main content column -->
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <div class="card shadow mb-3">
-                <div class="card-header bg-primary text-white">
-                    <h2 class="mb-0">{{ test.title }}</h2>
-                </div>
                 <div class="card-body">
                     <div id="question-container">
                         <!-- The current question will be displayed here -->
                     </div>
-                    <div class="text-center mt-3">
-                        <button id="previous-question" class="btn btn-secondary mr-3" style="color: white;">Предыдущий вопрос</button>
-                        <button id="next-question" class="btn btn-primary">Следующий вопрос</button>
-                        <button id="submit-test" class="btn btn-success" style="display: none;">Завершить тест</button>
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-lg-4 text-end">
-            <button id="previous-test" class="btn btn-secondary mr-3" style="color: white;">Предыдущий тест</button>
-        </div>
-        <div class="col-lg-4 text-start">
-            <button id="next-test" class="btn btn-primary">Следующий тест</button>
+            <div class="text-center mt-3">
+                <button id="previous-question" class="btn btn-secondary mr-2" style="display: none;">Предыдущий вопрос</button>
+                <button id="next-question" class="btn btn-primary mr-2">Следующий вопрос</button>
+                <button id="finish-test" class="btn btn-danger" style="display: none;">Завершить тест</button>
+            </div>
         </div>
     </div>
 </div>
@@ -65,7 +55,7 @@
             .then(data => {
                 questions = data.questions;
                 renderQuestion();
-                renderSidebar();
+                renderQuestionButtons();
             });
         }
 
@@ -120,9 +110,9 @@
             updateNavigationButtons();
         }
 
-        function renderSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.innerHTML = '';
+        function renderQuestionButtons() {
+            const questionButtons = document.getElementById('question-buttons');
+            questionButtons.innerHTML = '';
 
             questions.forEach((question, index) => {
                 const button = document.createElement('button');
@@ -132,47 +122,38 @@
                 button.addEventListener('click', function() {
                     currentQuestionIndex = index;
                     renderQuestion();
-                    renderSidebar();
+                    highlightCurrentButton();
                 });
 
-                sidebar.appendChild(button);
+                questionButtons.appendChild(button);
             });
 
-            // Highlight the selected button in the sidebar
-            const currentButton = sidebar.querySelector(`button:nth-child(${currentQuestionIndex + 1})`);
-            if (currentButton) {
-                currentButton.classList.add('btn-success');
-            }
+            highlightCurrentButton();
+        }
+
+        function highlightCurrentButton() {
+            const questionButtons = document.getElementById('question-buttons');
+            const buttons = questionButtons.getElementsByClassName('btn');
+
+            Array.from(buttons).forEach((button, index) => {
+                if (index === currentQuestionIndex) {
+                    button.classList.remove('btn-secondary');
+                    button.classList.add('btn-primary');
+                } else {
+                    button.classList.remove('btn-primary');
+                    button.classList.add('btn-secondary');
+                }
+            });
         }
 
         function updateNavigationButtons() {
             const prevButton = document.getElementById('previous-question');
             const nextButton = document.getElementById('next-question');
-            const prevTestButton = document.getElementById('previous-test');
-            const nextTestButton = document.getElementById('next-test');
-            const submitButton = document.getElementById('submit-test');
+            const finishButton = document.getElementById('finish-test');
 
-            prevButton.style.display = currentQuestionIndex > 0 ? 'block' : 'none';
-            nextButton.style.display = currentQuestionIndex < questions.length - 1 ? 'block' : 'none';
-            submitButton.style.display = currentQuestionIndex === questions.length - 1 ? 'block' : 'none';
-
-            // Handle previous test and next test buttons
-            prevTestButton.style.display = 'block'; // Show previous test button
-            nextTestButton.style.display = 'block'; // Show next test button
-
-            // Add functionality to previous test button
-            prevTestButton.addEventListener('click', function() {
-                // Implement logic to navigate to previous test
-                window.location.href = "{% url 'take_test' 1 %}";
-                submitButton.style.display = 'none'; // Hide submit button when navigating to previous test
-            });
-
-            // Add functionality to next test button
-            nextTestButton.addEventListener('click', function() {
-                // Implement logic to navigate to next test
-                window.location.href = "{% url 'take_test' 2 %}";
-                submitButton.style.display = 'block'; // Show submit button when navigating to next test
-            });
+            prevButton.style.display = currentQuestionIndex > 0 ? 'inline-block' : 'none';
+            nextButton.style.display = currentQuestionIndex < questions.length - 1 ? 'inline-block' : 'none';
+            finishButton.style.display = currentQuestionIndex === questions.length - 1 ? 'inline-block' : 'none';
         }
 
         function saveResponse() {
@@ -199,7 +180,7 @@
                 if (data && data.status === 'saved') {
                     currentQuestionIndex++;
                     renderQuestion();
-                    renderSidebar();
+                    highlightCurrentButton();
                 }
             });
         }
@@ -208,52 +189,32 @@
             saveResponse().then(() => {
                 currentQuestionIndex--;
                 renderQuestion();
-                renderSidebar();
+                highlightCurrentButton();
+            });
+        }
+
+        function finishTest() {
+            saveResponse().then(data => {
+                if (data && data.status === 'saved') {
+                    window.location.href = "{% url 'test_result' test.pk %}";
+                }
             });
         }
 
         document.getElementById('next-question').addEventListener('click', nextQuestion);
         document.getElementById('previous-question').addEventListener('click', previousQuestion);
+        document.getElementById('finish-test').addEventListener('click', finishTest);
 
-        document.getElementById('submit-test').addEventListener('click', function() {
-            saveResponse().then(() => {
-                const formData = new FormData();
-                formData.append('submit', true);
-
-                fetch("{% url 'take_test' test.pk %}", {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'X-CSRFToken': '{{ csrf_token }}'
-                    }
-                })
-                .then(() => window.location.href = "{% url 'test_result' test.pk %}");
-            });
+        document.getElementById('previous-test').addEventListener('click', function() {
+            window.location.href = "{% url 'take_test' previous_test_id %}";
         });
 
-        // Timer
-        let timerDuration = 45 * 60; // 45 minutes
-        let minutesElement = document.getElementById('minutes');
-        let secondsElement = document.getElementById('seconds');
-
-        function startTimer(duration) {
-            let timer = duration, minutes, seconds;
-            setInterval(function () {
-                minutes = parseInt(timer / 60, 10);
-                seconds = parseInt(timer % 60, 10);
-
-                minutesElement.textContent = minutes < 10 ? "0" + minutes : minutes;
-                secondsElement.textContent = seconds < 10 ? "0" + seconds : seconds;
-
-                if (--timer < 0) {
-                    // Handle timer end here if needed
-                }
-            }, 1000);
-        }
-
-        startTimer(timerDuration);
+        document.getElementById('next-test').addEventListener('click', function() {
+            window.location.href = "{% url 'take_test' next_test_id %}";
+        });
 
         loadQuestions();
     });
 </script>
+
 {% endblock %}

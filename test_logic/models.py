@@ -34,6 +34,21 @@ class Question(models.Model):
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
     text = models.TextField()
     img = models.ImageField(upload_to='questions', null=True, blank=True)
+    task_type = models.IntegerField(null=True, blank=True)
+    level = models.IntegerField(null=True, blank=True)
+    status = models.IntegerField(null=True, blank=True)
+    category = models.CharField(max_length=200, null=True, blank=True)
+    subcategory = models.CharField(max_length=200, null=True, blank=True)
+    theme = models.CharField(max_length=200, null=True, blank=True)
+    subtheme = models.CharField(max_length=200, null=True, blank=True)
+    target = models.TextField(null=True, blank=True)
+    source = models.TextField(null=True, blank=True)
+    detail_id = models.IntegerField(null=True, blank=True)
+    lng_id = models.IntegerField(null=True, blank=True)
+    lng_title = models.CharField(max_length=200, null=True, blank=True)
+    subject_id = models.IntegerField(null=True, blank=True)
+    subject_title = models.CharField(max_length=200, null=True, blank=True)
+    class_number = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.text

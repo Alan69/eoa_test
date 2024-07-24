@@ -26,8 +26,8 @@ def product_detail(request, pk):
 def test_detail(request):
     test_ids = request.GET.getlist('pk_list')
     
-    # if len(test_ids) < 2 or len(test_ids) > 5:
-    #     return render(request, 'error.html', {'message': 'Выберите от 2 до 5 тестов.'})
+    if len(test_ids) < 2 or len(test_ids) > 5:
+        return render(request, 'error.html', {'message': 'Выберите от 2 до 5 тестов.'})
 
     tests = Test.objects.filter(pk__in=test_ids)
     questions = Question.objects.filter(test__in=test_ids)
@@ -79,6 +79,9 @@ def take_test(request, pk):
         
         return JsonResponse({'status': 'saved'})
     
+    previous_test_id = pk - 1
+    next_test_id = pk + 1
+    
     # Handle AJAX request to fetch questions
     if request.method == 'GET' and request.headers.get('x-requested-with') == 'XMLHttpRequest':
         questions_data = []
@@ -88,7 +91,8 @@ def take_test(request, pk):
         return JsonResponse({'questions': questions_data})
     
     # Render the test-taking page
-    return render(request, 'test_logic/take_test.html', {'test': test, 'questions': questions})
+    return render(request, 'test_logic/take_test.html', {'test': test, 'questions': questions, 'previous_test_id': previous_test_id,
+        'next_test_id': next_test_id,})
 
 
 @login_required

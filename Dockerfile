@@ -2,8 +2,8 @@
 FROM python:3.9-slim
 
 # Set environment variables
-# ENV PYTHONDONTWRITEBYTECODE 1
-# ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
 WORKDIR /app
@@ -24,8 +24,8 @@ COPY . /app/
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Run Django migrations and collect static files
-# RUN python manage.py migrate --noinput \
-#     && python manage.py collectstatic --noinput
+RUN python manage.py migrate --noinput \
+    && python manage.py collectstatic --noinput
 
 # Expose the port the app runs on
 EXPOSE 8000
