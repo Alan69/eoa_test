@@ -6,8 +6,8 @@ services:
     command: gunicorn --bind 0.0.0.0:8000 stud_test.wsgi:application
     volumes:
       - /home/ubuntu/web/eoa_test:/app
-      - static_volume:/home/app/eoa_test/static
-      - media_volume:/app/media
+      - static_volume:/home/ubuntu/web/eoa_test/static
+      - media_volume:/home/ubuntu/web/eoa_test/media
     expose:
       - 8000
 
@@ -17,7 +17,7 @@ services:
       - "80:80"
     volumes:
       - /home/ubuntu/web/eoa_test/nginx.conf:/etc/nginx/conf.d/default.conf
-      - static_volume:/home/app/eoa_test/static
+      - static_volume:/home/ubuntu/web/eoa_test/static
       - media_volume:/app/media
     depends_on:
       - app
