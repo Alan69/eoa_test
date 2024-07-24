@@ -27,10 +27,10 @@ with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
-ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
+# ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -148,13 +148,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
-# STATIC_ROOT = BASE_DIR /'static/'
+# STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
+STATIC_ROOT = BASE_DIR / 'static'
 # STATICFILES_DIRS=[
 #     BASE_DIR/'static',
 # ]
 
-MEDIA_ROOT = BASE_DIR/ 'media' # media directory in the root directory
+MEDIA_ROOT = BASE_DIR / 'media' # media directory in the root directory
 MEDIA_URL = '/media/'
 
 # Default primary key field type
