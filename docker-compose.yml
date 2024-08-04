@@ -1,29 +1,14 @@
 version: '3'
 
 services:
-  app:
-    build: /home/ubuntu/web/eoa_test
-    command: gunicorn --bind 0.0.0.0:8000 stud_test.wsgi:application
+  django:
+    build: .
+    command: gunicorn stud_test.wsgi:application --bind 0.0.0.0:8000
     volumes:
-      - /home/ubuntu/web/eoa_test:/app
-      - static_volume:/app/static
-      - media_volume:/app/media
-    expose:
-      - 8000
-
-  nginx:
-    image: nginx:latest
+      - .:/app
     ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /home/ubuntu/web/eoa_test/nginx.conf:/etc/nginx/conf.d/default.conf
-      - static_volume:/app/static
-      - media_volume:/app/media
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-    depends_on:
-      - app
+      - "8000:8000"
+    environment:
+      - DEBUG=True  # Set to False in production
+      - DJANGO_SETTINGS_MODULE=stud_test.settings
 
-volumes:
-  static_volume:
-  media_volume:
