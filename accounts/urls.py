@@ -1,13 +1,12 @@
-from django.urls import path
-from .views import change_password, change_user_details, registerPage, transfer_balance, loginPage, logoutPage, generate_referral_link, register_with_referral
+# urls.py
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import RegionViewSet, UserViewSet
+
+router = DefaultRouter()
+router.register(r'regions', RegionViewSet)
+router.register(r'users', UserViewSet)
 
 urlpatterns = [
-    path('', loginPage, name='loginPage'),
-    path('register/', registerPage, name='registerPage'),
-    path('logout/', logoutPage, name='logoutPage'),
-    path('change_password/', change_password, name='change_password'),
-    path('change_user_details/', change_user_details, name='change_user_details'),
-    path('transfer-balance/', transfer_balance, name='transfer_balance'),
-    path('generate-referral/', generate_referral_link, name='generate_referral_link'),
-    path('register-referral/', register_with_referral, name='register_with_referral'),
+    path('api/', include(router.urls)),
 ]

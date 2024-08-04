@@ -24,3 +24,6 @@ __pycache__/
 elearning-html-template/
 /venv
 /elearning-html-template
+/frontend/node_modules
+/static/seo-agency-website-template
+/frontend

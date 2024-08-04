@@ -1,11 +1,15 @@
-from django.urls import path
-from .views import test_detail, take_test, test_result, product_detail
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ProductViewSet, TestViewSet, QuestionViewSet, OptionViewSet, ResultViewSet, BookSuggestionViewSet
+
+router = DefaultRouter()
+router.register(r'products', ProductViewSet)
+router.register(r'tests', TestViewSet)
+router.register(r'questions', QuestionViewSet)
+router.register(r'options', OptionViewSet)
+router.register(r'results', ResultViewSet)
+router.register(r'booksuggestions', BookSuggestionViewSet)
 
 urlpatterns = [
-    path('products/<int:pk>/', product_detail, name='product_detail'),
-    
-    path('test-detail/', test_detail, name='test_detail'),
-    path('take/<int:pk>/', take_test, name='take_test'),
-    path('take/<int:pk>/<int:question_index>/', take_test, name='take_test'),
-    path('result/<int:pk>/', test_result, name='test_result'),
+    path('api/', include(router.urls)),
 ]
