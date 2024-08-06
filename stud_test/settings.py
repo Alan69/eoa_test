@@ -67,12 +67,14 @@ MIDDLEWARE = [
 ]
 
 # set false in prod
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",
+#     "http://127.0.0.1:5173",
+# ]
+
+
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -163,7 +165,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
-STATIC_ROOT = BASE_DIR / 'static'
+# STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS=[
     BASE_DIR/'static',
 ]

@@ -14,36 +14,40 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     # permission_classes = [IsAuthenticated]
 
-    @action(detail=True, methods=['post'], permission_classes=[IsAuthenticated])
+    @action(detail=True, methods=['post'])
     def purchase(self, request, pk=None):
         product = self.get_object()
         user = request.user
 
-        if user.balance >= product.sum:
-            user.balance -= product.sum
-            user.save()
-            return Response({'status': 'Product purchased successfully'}, status=status.HTTP_200_OK)
-        else:
-            return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
+        # if user.balance >= product.sum:
+        #     user.balance -= product.sum
+        #     user.save()
+        return Response({'status': 'Product purchased successfully'}, status=status.HTTP_200_OK)
+        # else:
+            # return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
 
 class TestViewSet(viewsets.ModelViewSet):
     queryset = Test.objects.all()
     serializer_class = TestSerializer
-    # permission_classes = [IsAuthenticated]
 
-    @action(detail=True, methods=['get'], permission_classes=[IsAuthenticated])
+    @action(detail=True, methods=['get'])
     def questions(self, request, pk=None):
         test = self.get_object()
         questions = Question.objects.filter(test=test)
-        serializer = QuestionSerializer(questions, many=True)
-        return Response(serializer.data)
+        data = []
+        for question in questions:
+            options = Option.objects.filter(question=question)
+            question_data = QuestionSerializer(question).data
+            question_data['options'] = OptionSerializer(options, many=True).data
+            data.append(question_data)
+        return Response(data)
 
 class QuestionViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
     # permission_classes = [IsAuthenticated]
 
-    @action(detail=True, methods=['get'], permission_classes=[IsAuthenticated])
+    @action(detail=True, methods=['get'])
     def options(self, request, pk=None):
         question = self.get_object()
         options = Option.objects.filter(question=question)
