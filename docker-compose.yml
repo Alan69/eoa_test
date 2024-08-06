@@ -17,14 +17,14 @@ services:
 
   react:
     build:
-      context: /home/ubuntu/web/eoa_test/frontend
-    command: npm start
+      context: /home/ubuntu/web/eoa_test/react-app
+      dockerfile: Dockerfile
     volumes:
-      - /home/ubuntu/web/eoa_test/frontend:/app
+      - /home/ubuntu/web/eoa_test/react-app:/app
     ports:
       - "3000:3000"
-    depends_on:
-      - app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
 
   nginx:
     image: nginx:latest
