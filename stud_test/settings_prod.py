@@ -27,7 +27,7 @@ with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
 # ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'drf_yasg',
+    'corsheaders',
     'accounts',
     'test_logic',
     'dashboard',
@@ -60,7 +63,18 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
+
+# set false in prod
+CORS_ALLOW_ALL_ORIGINS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",
+#     "http://127.0.0.1:5173",
+# ]
+
+
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -152,9 +166,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
 STATIC_ROOT = BASE_DIR / 'static'
-# STATICFILES_DIRS=[
-#     BASE_DIR/'static',
-# ]
+STATICFILES_DIRS=[
+    BASE_DIR/'static',
+]
 
 MEDIA_ROOT = BASE_DIR / 'media' # media directory in the root directory
 MEDIA_URL = '/media/'

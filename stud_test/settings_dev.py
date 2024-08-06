@@ -9,26 +9,32 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
 import os
 from pathlib import Path
 
+# os.environ['http_proxy'] = 'http://192.168.8.2:3128'
+# os.environ['https_proxy'] = 'http://192.168.8.2:3128'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-GMAIL_CREDENTIALS_PATH = BASE_DIR / 'credentials.json'
+GMAIL_CREDENTIALS_PATH = os.path.join(BASE_DIR, 'credentials.json')
 GMAIL_SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open(BASE_DIR / 'stud_test' / 'secret_key.txt') as f:
+with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # Change to False in production
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'synaqtest.kz', '185.22.65.38']
+# ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
+ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
+
 
 # Application definition
+
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
@@ -37,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'drf_yasg',
+    'corsheaders',
     'accounts',
     'test_logic',
     'dashboard',
@@ -54,28 +63,39 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
+
+# set false in prod
+CORS_ALLOW_ALL_ORIGINS = True
+
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",
+#     "http://127.0.0.1:5173",
+# ]
+
+
 
 AUTH_USER_MODEL = 'accounts.User'
 
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = False  # Set to True if using HTTPS
+SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = False  # Set to True if using HTTPS
+TEST_COOKIE_SECURE = False  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = False  # Set to True if using HTTPS
+CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost', 'http://127.0.0.1', 'https://synaqtest.kz', 'https://www.synaqtest.kz']
+# CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 
@@ -97,7 +117,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'stud_test.wsgi.application'
 
+
 # Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -105,7 +128,10 @@ DATABASES = {
     }
 }
 
+
 # Password validation
+# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -121,7 +147,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 # Internationalization
+# https://docs.djangoproject.com/en/4.1/topics/i18n/
+
 LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'Asia/Almaty'
@@ -130,12 +159,21 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.1/howto/static-files/
+
+STATIC_URL = '/static/'
+# STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
+# STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS=[
+    BASE_DIR/'static',
+]
+
+MEDIA_ROOT = BASE_DIR / 'media' # media directory in the root directory
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
