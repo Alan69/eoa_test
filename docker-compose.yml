@@ -1,14 +1,45 @@
 version: '3'
 
 services:
-  django:
-    build: .
-    command: gunicorn stud_test.wsgi:application --bind 0.0.0.0:8000
+  app:
+    build:
+      context: /home/ubuntu/web/eoa_test
+      dockerfile: Dockerfile
+    command: gunicorn --bind 0.0.0.0:8000 stud_test.wsgi:application
     volumes:
-      - .:/app
-    ports:
-      - "8000:8000"
+      - /home/ubuntu/web/eoa_test:/app
+      - static_volume:/app/static
+      - media_volume:/app/media
+    expose:
+      - 8000
     environment:
-      - DEBUG=True  # Set to False in production
-      - DJANGO_SETTINGS_MODULE=stud_test.settings
+      - DEBUG=False  # Set to True if you are still developing
 
+  react:
+    build:
+      context: /home/ubuntu/web/eoa_test/frontend
+    command: npm start
+    volumes:
+      - /home/ubuntu/web/eoa_test/frontend:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - app
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /home/ubuntu/web/eoa_test/nginx.conf:/etc/nginx/conf.d/default.conf
+      - static_volume:/app/static
+      - media_volume:/app/media
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - app
+      - react
+
+volumes:
+  static_volume:
+  media_volume:
