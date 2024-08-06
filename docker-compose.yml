@@ -2,9 +2,7 @@ version: '3'
 
 services:
   app:
-    build:
-      context: /home/ubuntu/web/eoa_test
-      dockerfile: Dockerfile
+    build: /home/ubuntu/web/eoa_test
     command: gunicorn --bind 0.0.0.0:8000 stud_test.wsgi:application
     volumes:
       - /home/ubuntu/web/eoa_test:/app
@@ -12,17 +10,15 @@ services:
       - media_volume:/app/media
     expose:
       - 8000
-    environment:
-      - DEBUG=False  # Set to True if you are still developing
 
   react:
     build:
-      context: /home/ubuntu/web/eoa_test/react-app
+      context: /home/ubuntu/web/eoa_test/frontend
       dockerfile: Dockerfile
     volumes:
-      - /home/ubuntu/web/eoa_test/react-app:/app
-    ports:
-      - "5173:5173"
+      - /home/ubuntu/web/eoa_test/frontend:/app
+    expose:
+      - 80
     environment:
       - CHOKIDAR_USEPOLLING=true
 
@@ -32,7 +28,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /home/ubuntu/web/eoa_test/nginx.conf:/etc/nginx/conf.d/default.conf
+      - /home/ubuntu/web/eoa_test/nginx.conf:/etc/nginx/nginx.conf
       - static_volume:/app/static
       - media_volume:/app/media
       - /etc/letsencrypt:/etc/letsencrypt:ro
