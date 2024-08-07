@@ -49,19 +49,12 @@ class QuestionViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
 
-    @action(detail=False, methods=['get'])
-    def list(self, request):
-        test_id = request.query_params.get('test_id')
-        question_index = int(request.query_params.get('question_index', 0))
-        questions = Question.objects.filter(test__id=test_id)
-        if question_index >= len(questions):
-            return Response({"error": "No more questions"}, status=404)
-        question = questions[question_index]
+    @action(detail=True, methods=['get'], url_path='options')
+    def get_options(self, request, pk=None):
+        question = self.get_object()
         options = Option.objects.filter(question=question)
-        question_data = QuestionSerializer(question).data
-        question_data['options'] = OptionSerializer(options, many=True).data
-        question_data['totalQuestions'] = len(questions)
-        return Response(question_data)
+        serializer = OptionSerializer(options, many=True)
+        return Response(serializer.data)
 
 class MultiTestQuestionView(APIView):
     def get(self, request, *args, **kwargs):
