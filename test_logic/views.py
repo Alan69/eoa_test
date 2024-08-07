@@ -48,14 +48,30 @@ class TestViewSet(viewsets.ModelViewSet):
 class QuestionViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
-    # permission_classes = [IsAuthenticated]
 
     @action(detail=True, methods=['get'])
     def options(self, request, pk=None):
         question = self.get_object()
         options = Option.objects.filter(question=question)
         serializer = OptionSerializer(options, many=True)
-        return Response(serializer.data)
+        data = {
+            "id": question.id,
+            "text": question.text,
+            "options": serializer.data
+        }
+        return Response(data)
+
+    @action(detail=False, methods=['get'])
+    def next_question(self, request):
+        # Implement logic to fetch the next question based on the test ID and previous answers.
+        # This is a placeholder example.
+        test_id = request.query_params.get('test_id')
+        # Fetch the next question logic here
+        question = Question.objects.filter(test__id=test_id).first()
+        if question:
+            serializer = QuestionSerializer(question)
+            return Response(serializer.data)
+        return Response({"error": "No more questions"}, status=404)
 
 class MultiTestQuestionView(APIView):
     def get(self, request, *args, **kwargs):
