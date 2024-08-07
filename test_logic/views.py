@@ -1,6 +1,7 @@
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from .models import Product, Test, Question, Option, Result, BookSuggestion
 from .serializers import (
@@ -53,6 +54,16 @@ class QuestionViewSet(viewsets.ModelViewSet):
         options = Option.objects.filter(question=question)
         serializer = OptionSerializer(options, many=True)
         return Response(serializer.data)
+
+class MultiTestQuestionView(APIView):
+    def get(self, request, *args, **kwargs):
+        test_ids = request.GET.getlist('test_id')
+        if not test_ids:
+            return Response({"detail": "No test IDs provided"}, status=status.HTTP_400_BAD_REQUEST)
+
+        questions = Question.objects.filter(test_id__in=test_ids).distinct()
+        serializer = QuestionSerializer(questions, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 class OptionViewSet(viewsets.ModelViewSet):
     queryset = Option.objects.all()
