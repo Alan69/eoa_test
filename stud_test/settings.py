@@ -29,8 +29,8 @@ with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
-# ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
+ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -81,21 +81,21 @@ AUTH_USER_MODEL = 'accounts.User'
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = True  # Use True if using HTTPS
+SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = True  # Use True if using HTTPS
+TEST_COOKIE_SECURE = False  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
+CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
-CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
+# CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 

@@ -27,3 +27,5 @@ elearning-html-template/
 /frontend/node_modules
 /static/seo-agency-website-template
 /frontend
+/dev
+/prod
