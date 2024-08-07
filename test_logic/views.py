@@ -49,29 +49,19 @@ class QuestionViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
 
-    @action(detail=True, methods=['get'])
-    def options(self, request, pk=None):
-        question = self.get_object()
-        options = Option.objects.filter(question=question)
-        serializer = OptionSerializer(options, many=True)
-        data = {
-            "id": question.id,
-            "text": question.text,
-            "options": serializer.data
-        }
-        return Response(data)
-
     @action(detail=False, methods=['get'])
-    def next_question(self, request):
-        # Implement logic to fetch the next question based on the test ID and previous answers.
-        # This is a placeholder example.
+    def list(self, request):
         test_id = request.query_params.get('test_id')
-        # Fetch the next question logic here
-        question = Question.objects.filter(test__id=test_id).first()
-        if question:
-            serializer = QuestionSerializer(question)
-            return Response(serializer.data)
-        return Response({"error": "No more questions"}, status=404)
+        question_index = int(request.query_params.get('question_index', 0))
+        questions = Question.objects.filter(test__id=test_id)
+        if question_index >= len(questions):
+            return Response({"error": "No more questions"}, status=404)
+        question = questions[question_index]
+        options = Option.objects.filter(question=question)
+        question_data = QuestionSerializer(question).data
+        question_data['options'] = OptionSerializer(options, many=True).data
+        question_data['totalQuestions'] = len(questions)
+        return Response(question_data)
 
 class MultiTestQuestionView(APIView):
     def get(self, request, *args, **kwargs):
