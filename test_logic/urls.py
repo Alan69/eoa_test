@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import ProductViewSet, TestViewSet, QuestionViewSet, OptionViewSet, ResultViewSet, BookSuggestionViewSet, MultiTestQuestionView
+from .views import ProductViewSet, TestViewSet, get_test_questions, QuestionViewSet, OptionViewSet, ResultViewSet, BookSuggestionViewSet, MultiTestQuestionView
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet)
@@ -12,5 +12,5 @@ router.register(r'booksuggestions', BookSuggestionViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
-    path('api/tests/questions/', MultiTestQuestionView.as_view(), name='multi-test-questions'),
+    path('api/tests/questions/', get_test_questions, name='get_test_questions'),
 ]

@@ -9,6 +9,8 @@ from .serializers import (
     OptionSerializer, ResultSerializer, BookSuggestionSerializer
 )
 from django.shortcuts import get_object_or_404
+from django.http import JsonResponse
+from rest_framework.decorators import api_view
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -64,6 +66,23 @@ class MultiTestQuestionView(APIView):
         questions = Question.objects.filter(test_id__in=test_ids).distinct()
         serializer = QuestionSerializer(questions, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+@api_view(['GET'])
+def get_test_questions(request):
+    test_ids = request.GET.getlist('test_id[]')
+    if not test_ids:
+        return JsonResponse({'error': 'No test IDs provided'}, status=400)
+
+    questions = Question.objects.filter(test__id__in=test_ids).order_by('?')
+    questions_data = [
+        {
+            'id': question.id,
+            'text': question.text,
+            'options': [{'id': option.id, 'text': option.text} for option in question.option_set.all()]
+        }
+        for question in questions
+    ]
+    return JsonResponse(questions_data, safe=False)
 
 class OptionViewSet(viewsets.ModelViewSet):
     queryset = Option.objects.all()
