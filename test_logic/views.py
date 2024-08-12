@@ -15,19 +15,19 @@ from rest_framework.decorators import api_view
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    # permission_classes = [IsAuthenticated]
-
+    permission_classes = [IsAuthenticated]
+    
     @action(detail=True, methods=['post'])
     def purchase(self, request, pk=None):
         product = self.get_object()
         user = request.user
 
-        # if user.balance >= product.sum:
-        #     user.balance -= product.sum
-        #     user.save()
-        return Response({'status': 'Product purchased successfully'}, status=status.HTTP_200_OK)
-        # else:
-            # return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
+        if user.balance >= product.sum:
+            user.balance -= product.sum
+            user.save()
+            return Response({'status': 'Product purchased successfully'}, status=status.HTTP_200_OK)
+        else:
+            return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
 
 class TestViewSet(viewsets.ModelViewSet):
     queryset = Test.objects.all()
@@ -55,16 +55,6 @@ class QuestionViewSet(viewsets.ModelViewSet):
         options = Option.objects.filter(question=question)
         serializer = OptionSerializer(options, many=True)
         return Response(serializer.data)
-
-class MultiTestQuestionView(APIView):
-    def get(self, request, *args, **kwargs):
-        test_ids = request.GET.getlist('test_id')
-        if not test_ids:
-            return Response({"detail": "No test IDs provided"}, status=status.HTTP_400_BAD_REQUEST)
-
-        questions = Question.objects.filter(test_id__in=test_ids).distinct()
-        serializer = QuestionSerializer(questions, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
 
 @api_view(['GET'])
 def get_test_questions(request):

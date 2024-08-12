@@ -1,59 +1,48 @@
-# views.py
-from rest_framework import viewsets, permissions
-from .models import Region, User
-from .serializers import RegionSerializer, UserSerializer
-from rest_framework import filters
-from rest_framework import generics, status
+from rest_framework import generics, permissions, status
 from rest_framework.response import Response
-from django.contrib.auth import authenticate
-from .serializers import RegisterSerializer, LoginSerializer, UserSerializer
-from django.contrib.auth import get_user_model
-# from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.views import APIView
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenObtainPairView
 
-class RegionViewSet(viewsets.ModelViewSet):
-    queryset = Region.objects.all()
-    serializer_class = RegionSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+from .models import User
+from .serializers import RegisterSerializer, UserSerializer
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['is_student', 'region']
-    search_fields = ['first_name', 'last_name', 'email']
-    ordering_fields = ['username', 'balance']
-
-    def perform_create(self, serializer):
-        # Custom logic if needed before saving a new user
-        serializer.save()
-
-    def perform_update(self, serializer):
-        # Custom logic if needed before updating a user
-        serializer.save()
-
-class CurrentUserView(APIView):
-    # permission_classes = [permissions.IsAuthenticated]
-
-    def get(self, request, *args, **kwargs):
-        serializer = UserSerializer(request.user)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+# Customizing TokenObtainPairSerializer
+class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
+    @classmethod
+    def get_token(cls, user):
+        token = super().get_token(user)
+        # Add custom claims
+        token['email'] = user.email
+        token['first_name'] = user.first_name
+        token['last_name'] = user.last_name
+        return token
 
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
+    permission_classes = (permissions.AllowAny,)
     serializer_class = RegisterSerializer
 
-class LoginView(generics.GenericAPIView):
-    serializer_class = LoginSerializer
+class CustomTokenObtainPairView(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
 
-    def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        user = serializer.validated_data
-        # refresh = RefreshToken.for_user(user)
-        return Response({
-            # 'refresh': str(refresh),
-            # 'access': str(refresh.access_token),
-            'user': UserSerializer(user).data
-        })
+class UserDetailView(generics.RetrieveAPIView):
+    serializer_class = UserSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_object(self):
+        return self.request.user
+
+class LogoutView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        try:
+            refresh_token = request.data["refresh"]
+            token = RefreshToken(refresh_token)
+            token.blacklist()
+
+            return Response(status=status.HTTP_205_RESET_CONTENT)
+        except Exception as e:
+            return Response(status=status.HTTP_400_BAD_REQUEST)

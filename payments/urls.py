@@ -1,11 +1,9 @@
-from django.urls import  path
-from .views import *
+from django.urls import path
+from .views import AuthenticateGmailView, OAuth2CallbackView, FetchEmailsView, AddBalanceView
 
 urlpatterns = [
-    path('post_order/', post_order, name ="post_order"),
-    path('check_order/', check_order, name="check_order"),
-    path('fetch-emails/', fetch_emails, name='fetch_emails'),
-    path('oauth2callback/', oauth2callback, name='oauth2callback'),
-    path('add_balance/', add_balance, name='add_balance'),
-    path('kaspi-info/', kaspi_info_view, name='kaspi_info'),
+    path('authenticate-gmail/', AuthenticateGmailView.as_view(), name='authenticate_gmail'),
+    path('oauth2callback/', OAuth2CallbackView.as_view(), name='oauth2callback'),
+    path('fetch-emails/', FetchEmailsView.as_view(), name='fetch_emails'),
+    path('add-balance/', AddBalanceView.as_view(), name='add_balance'),
 ]
