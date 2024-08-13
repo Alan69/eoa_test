@@ -15,7 +15,7 @@ from rest_framework.decorators import api_view
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     
     @action(detail=True, methods=['post'])
     def purchase(self, request, pk=None):
