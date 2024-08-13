@@ -29,8 +29,8 @@ with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
-# ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
+ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -74,6 +74,7 @@ SIMPLE_JWT = {
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -81,17 +82,21 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 # set false in prod
 CORS_ALLOW_ALL_ORIGINS = True
+SECURE_CROSS_ORIGIN_OPENER_POLICY=None
+SESSION_COOKIE_SECURE=False
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5173",
-#     "http://127.0.0.1:5173",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
 
+
+CORS_ALLOW_CREDENTIALS = True
 
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -99,21 +104,21 @@ AUTH_USER_MODEL = 'accounts.User'
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = True  # Use True if using HTTPS
+SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = True  # Use True if using HTTPS
+TEST_COOKIE_SECURE = False  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
+CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
-CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
+# CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 
@@ -183,7 +188,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
-STATIC_ROOT = BASE_DIR / 'static'
+# STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS=[
     BASE_DIR/'static',
 ]
