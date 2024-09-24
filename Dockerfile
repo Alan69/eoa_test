@@ -12,7 +12,7 @@ WORKDIR /app
 COPY requirements.txt /app/
 
 # Install dependencies
-RUN python -m venv /opt/venv \
+RUN python3 -m venv /opt/venv \
     && . /opt/venv/bin/activate \
     && pip install --upgrade pip \
     && pip install -r requirements.txt
@@ -23,9 +23,10 @@ COPY . /app/
 # Ensure the virtual environment is activated when running Django commands
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Run Django migrations and collect static files
-# RUN python manage.py migrate --noinput \
-#     && python manage.py collectstatic --noinput
+# Run Django makemigrations, migrations, and collect static files
+RUN python manage.py makemigrations --noinput \
+    && python manage.py migrate --noinput \
+    && python manage.py collectstatic --noinput
 
 # Expose the port the app runs on
 EXPOSE 8000
