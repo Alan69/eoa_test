@@ -15,7 +15,7 @@ class QuestionInline(admin.TabularInline):
     extra = 1
 
 class TestAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'number_of_questions', 'time', 'required_score_to_pass', 'date_created', 'created_by')
+    list_display = ('id', 'title', 'number_of_questions', 'time', 'required_score_to_pass', 'date_created')
     search_fields = ('title', 'created_by__username')
     list_filter = ('date_created',)
     inlines = [QuestionInline]
