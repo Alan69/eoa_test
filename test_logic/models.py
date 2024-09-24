@@ -24,7 +24,7 @@ class Test(models.Model):
     required_score_to_pass = models.IntegerField(help_text="%", verbose_name="Проходной балл ", default=50, null=True, blank=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Продукт")
     date_created = models.DateField(auto_now_add=True)
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    # created_by = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
