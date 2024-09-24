@@ -29,3 +29,5 @@ elearning-html-template/
 /frontend
 /dev
 /prod
+.DS_Store
+/staticfiles

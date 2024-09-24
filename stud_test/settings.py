@@ -11,23 +11,21 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+from datetime import timedelta
+import environ
 
-# os.environ['http_proxy'] = 'http://192.168.8.2:3128'
-# os.environ['https_proxy'] = 'http://192.168.8.2:3128'
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env()
+environ.Env.read_env(env_file=os.path.join(BASE_DIR, '.env'))
 
 GMAIL_CREDENTIALS_PATH = os.path.join(BASE_DIR, 'credentials.json')
 GMAIL_SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-with open(os.path.join(BASE_DIR, 'stud_test/secret_key.txt')) as f:
-    SECRET_KEY = f.read().strip()
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
 # ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
 ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', '127.0.0.1', 'localhost']
@@ -43,16 +41,61 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'rest_framework',
     'rest_framework_simplejwt',
+    # 'rest_framework.authtoken',
     'drf_yasg',
     'corsheaders',
+
     'accounts',
     'test_logic',
     'dashboard',
     'test_request',
     'payments',
+    'api',
 ]
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=90),
+    "ROTATE_REFRESH_TOKENS": True,
+    "BLACKLIST_AFTER_ROTATION": False,
+    "UPDATE_LAST_LOGIN": False,
+
+    "ALGORITHM": "HS256",
+    "VERIFYING_KEY": "",
+    "AUDIENCE": None,
+    "ISSUER": None,
+    "JSON_ENCODER": None,
+    "JWK_URL": None,
+    "LEEWAY": 0,
+
+    "AUTH_HEADER_TYPES": ("Bearer",),
+    "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
+    "USER_ID_FIELD": "id",
+    "USER_ID_CLAIM": "user_id",
+    "USER_AUTHENTICATION_RULE": "rest_framework_simplejwt.authentication.default_user_authentication_rule",
+
+    "AUTH_TOKEN_CLASSES": ("rest_framework_simplejwt.tokens.AccessToken",),
+    "TOKEN_TYPE_CLAIM": "token_type",
+    "TOKEN_USER_CLASS": "rest_framework_simplejwt.models.TokenUser",
+
+    "JTI_CLAIM": "jti",
+
+    "SLIDING_TOKEN_REFRESH_EXP_CLAIM": "refresh_exp",
+    "SLIDING_TOKEN_LIFETIME": timedelta(minutes=5),
+    "SLIDING_TOKEN_REFRESH_LIFETIME": timedelta(days=1),
+
+    # "TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainPairSerializer",
+    "TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSerializer",
+    "TOKEN_VERIFY_SERIALIZER": "rest_framework_simplejwt.serializers.TokenVerifySerializer",
+    "TOKEN_BLACKLIST_SERIALIZER": "rest_framework_simplejwt.serializers.TokenBlacklistSerializer",
+    "SLIDING_TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainSlidingSerializer",
+    "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
+
+    "TOKEN_OBTAIN_SERIALIZER": "accounts.serializers.MyTokenObtainPairSerializer",
+}
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -60,15 +103,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
-}
-
-from datetime import timedelta
-
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'ROTATE_REFRESH_TOKENS': True,
-    'BLACKLIST_AFTER_ROTATION': True,
 }
 
 SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
@@ -90,10 +124,10 @@ CORS_ALLOW_ALL_ORIGINS = True
 SECURE_CROSS_ORIGIN_OPENER_POLICY=None
 SESSION_COOKIE_SECURE=False
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:5173",
+#     "http://127.0.0.1:5173",
+# ]
 
 
 CORS_ALLOW_CREDENTIALS = True
@@ -104,21 +138,21 @@ AUTH_USER_MODEL = 'accounts.User'
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
+SESSION_COOKIE_SECURE = True  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = False  # Use True if using HTTPS
+TEST_COOKIE_SECURE = True  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
+CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
-# CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
+CSRF_TRUSTED_ORIGINS = ['https://synaqtest.kz', 'https://www.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 
@@ -144,13 +178,31 @@ WSGI_APPLICATION = 'stud_test.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
     }
 }
 
+
+# STORAGES = {
+#     "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+#     "staticfiles": {
+#         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+#     },
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -187,11 +239,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = '/home/ubuntu/web/eoa_test/static'
-# STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS=[
     BASE_DIR/'static',
 ]
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_ROOT = BASE_DIR / 'media' # media directory in the root directory
 MEDIA_URL = '/media/'

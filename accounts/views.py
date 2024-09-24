@@ -8,6 +8,14 @@ from .models import User
 from .serializers import RegisterSerializer, UserSerializer
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
+from rest_framework.authtoken.models import Token
+from django.shortcuts import get_object_or_404
+
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+
 # Customizing TokenObtainPairSerializer
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
@@ -47,10 +55,6 @@ class LogoutView(APIView):
         except Exception as e:
             return Response(status=status.HTTP_400_BAD_REQUEST)
 
-from rest_framework.authtoken.models import Token
-from django.shortcuts import get_object_or_404
-from rest_framework.decorators import api_view
-
 @api_view(['POST'])
 def signup(request):
     serializer = UserSerializer(data=request.data)
@@ -71,3 +75,15 @@ def login(request):
     token, created = Token.objects.get_or_create(user=user)
     serializer = UserSerializer(user)
     return Response({'token': token.key, 'user': serializer.data})
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+@swagger_auto_schema(
+        operation_description="Возвращяет auth юзера",
+        responses={201: openapi.Response('success')}
+    )
+def current_user_view(request):
+    user = request.user
+    user_data = UserSerializer(user).data
+    
+    return Response({"user_data": user_data})

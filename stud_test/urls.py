@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 from django.views.generic import TemplateView
 from drf_yasg.views import get_schema_view 
 from drf_yasg import openapi 
@@ -25,16 +28,17 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Snippets API",
         default_version='v1',
-        description="Test description",
+        description="aimmagic api",
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="contact@snippets.local"),
         license=openapi.License(name="BSD License"),
     ),
+    # url='https://api.aimmagic.com',
     # url=f'{settings.APP_URL}/api/v3/',
-    patterns=[path('tests/', include('test_logic.urls')), path('accounts/', include('accounts.urls')),],
+    patterns=[path('api/', include('api.urls')), ],
     public=True,
     permission_classes=(permissions.AllowAny,),
-    )
+)
 
 urlpatterns = [
 
@@ -51,8 +55,11 @@ urlpatterns = [
         name='schema-json'),
 
     path('admin/', admin.site.urls),
-    path('dashboard/', include('dashboard.urls')),
-    path('accounts/', include('accounts.urls')),
-    path('tests/', include('test_logic.urls')),
+    # path('dashboard/', include('dashboard.urls')),
+    # path('accounts/', include('accounts.urls')),
+    # path('tests/', include('test_logic.urls')),
     path('payments/', include('payments.urls')),
+    path('api/', include('api.urls')),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
