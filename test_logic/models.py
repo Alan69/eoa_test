@@ -1,7 +1,9 @@
 from django.db import models
 from accounts.models import User
+import uuid
 
 class Product(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200, blank=True, verbose_name='Имя')
     sum = models.IntegerField(verbose_name="Сумма", default=1500, null=True, blank=True)
     date_created = models.DateField(auto_now_add=True)
@@ -14,6 +16,7 @@ class Product(models.Model):
         verbose_name_plural = 'Продукты'
 
 class Test(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200, blank=True, verbose_name='Имя')
     number_of_questions = models.IntegerField(verbose_name="Количество вопросов", default=15, null=True, blank=True)
     sum = models.IntegerField(verbose_name="Сумма", default=1500, null=True, blank=True)
@@ -31,6 +34,7 @@ class Test(models.Model):
         verbose_name_plural = 'Тесты'
 
 class Question(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
     text = models.TextField()
     img = models.ImageField(upload_to='questions', null=True, blank=True)
@@ -58,6 +62,7 @@ class Question(models.Model):
         verbose_name_plural = 'Вопросы'
 
 class Option(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     text = models.CharField(max_length=200)
     is_correct = models.BooleanField(default=False)
@@ -70,6 +75,7 @@ class Option(models.Model):
         verbose_name_plural = 'Варианты'
 
 class Result(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
     student = models.ForeignKey(User, on_delete=models.CASCADE)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
@@ -86,6 +92,7 @@ class Result(models.Model):
         verbose_name_plural = 'Результаты'
 
 class BookSuggestion(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     book_title = models.CharField(max_length=200)
     book_url = models.URLField()

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+import uuid
 
 class Region(models.Model):
     CITY = 'Город'
@@ -10,6 +11,7 @@ class Region(models.Model):
         (VILLAGE, 'Село'),
     ]
 
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255, unique=True, verbose_name="Название региона")
     region_type = models.CharField(max_length=10, choices=REGION_TYPE_CHOICES, default=CITY, verbose_name="Тип региона")
     description = models.TextField(blank=True, null=True, verbose_name="Описание")
@@ -53,6 +55,7 @@ class CustomUserManager(BaseUserManager):
         return self._create_user(username, password, first_name, last_name, **extra_fields)
 
 class User(AbstractBaseUser, PermissionsMixin):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     username = models.CharField(db_index=True, unique=True, max_length=254, verbose_name="ИИН")
     email = models.EmailField(unique=True, verbose_name="Электронная почта")
     first_name = models.CharField(max_length=250, verbose_name="Имя")
