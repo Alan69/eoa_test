@@ -24,8 +24,8 @@ COPY . /app/
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Run Django makemigrations, migrations, and collect static files
-RUN python manage.py makemigrations --noinput
-RUN python manage.py migrate --noinput
+# RUN python manage.py makemigrations --noinput
+# RUN python manage.py migrate --noinput
 RUN python manage.py collectstatic --noinput
 
 # Expose the port the app runs on
