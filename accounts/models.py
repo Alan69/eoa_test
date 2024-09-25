@@ -11,7 +11,7 @@ class Region(models.Model):
         (VILLAGE, 'Село'),
     ]
 
-    # id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=255, unique=True, verbose_name="Название региона")
     region_type = models.CharField(max_length=10, choices=REGION_TYPE_CHOICES, default=CITY, verbose_name="Тип региона")
     description = models.TextField(blank=True, null=True, verbose_name="Описание")
@@ -55,12 +55,12 @@ class CustomUserManager(BaseUserManager):
         return self._create_user(username, password, first_name, last_name, **extra_fields)
 
 class User(AbstractBaseUser, PermissionsMixin):
-    # id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     username = models.CharField(db_index=True, unique=True, max_length=254, verbose_name="ИИН")
     email = models.EmailField(unique=True, verbose_name="Электронная почта")
     first_name = models.CharField(max_length=250, verbose_name="Имя")
     last_name = models.CharField(max_length=250, verbose_name="Фамилия")
-    region = models.ForeignKey(Region, on_delete=models.SET_NULL, null=True, blank=True, verbose_name="Город")
+    region = models.ForeignKey(Region, on_delete=models.CASCADE, null=True, blank=True, verbose_name="Город")
     school = models.CharField(max_length=255, verbose_name="Образовательное учреждение", null=True, blank=True)
     phone_number = models.CharField(max_length=15, verbose_name="Номер телефона", null=True, blank=True)
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, verbose_name="Баланс")
