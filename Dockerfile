@@ -23,13 +23,12 @@ COPY . /app/
 # Ensure the virtual environment is activated when running Django commands
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Run Django makemigrations, migrations, and collect static files
-# RUN python manage.py makemigrations --noinput
-# RUN python manage.py migrate --noinput
-RUN python manage.py collectstatic --noinput
-
 # Expose the port the app runs on
 EXPOSE 8000
 
-# Command to run the Django app using gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "stud_test.wsgi:application"]
+# Copy entrypoint.sh into the container
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Use entrypoint.sh to run the application
+ENTRYPOINT ["/entrypoint.sh"]
