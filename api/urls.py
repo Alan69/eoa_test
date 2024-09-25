@@ -1,4 +1,3 @@
-from rest_framework_simplejwt.views import TokenRefreshView
 from accounts.views import RegisterView, CustomTokenObtainPairView, UserDetailView, LogoutView, signup, login, current_user_view
 
 from django.urls import path, include
@@ -6,6 +5,11 @@ from rest_framework.routers import DefaultRouter
 from test_logic.views import ProductViewSet, TestViewSet, QuestionViewSet, OptionViewSet, ResultViewSet, BookSuggestionViewSet
 
 from dashboard.views import test_list, profile, test_history, history_detail
+
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet)
@@ -18,9 +22,12 @@ router.register(r'booksuggestions', BookSuggestionViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('register/', signup, name='register'),
-    path('login/', login, name='token_obtain_pair'),
+    # path('login/', login, name='token_obtain_pair'),
     path('logout/', LogoutView.as_view(), name='logout'),
+
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+
     path('user/', UserDetailView.as_view(), name='user_detail'),
     path('user/auth/', current_user_view, name='current_user_view'),
 
