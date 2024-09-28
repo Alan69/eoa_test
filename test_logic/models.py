@@ -6,6 +6,8 @@ class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200, blank=True, verbose_name='Имя')
     sum = models.IntegerField(verbose_name="Сумма", default=1500, null=True, blank=True)
+    score = models.IntegerField(help_text="%", verbose_name="Баллы", default=0, null=True, blank=True)
+    time = models.IntegerField(help_text="В минутах", verbose_name="Время теста", default=45, null=True, blank=True)
     date_created = models.DateField(auto_now_add=True)
 
     def __str__(self):
@@ -19,12 +21,11 @@ class Test(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200, blank=True, verbose_name='Имя')
     number_of_questions = models.IntegerField(verbose_name="Количество вопросов", default=15, null=True, blank=True)
-    sum = models.IntegerField(verbose_name="Сумма", default=1500, null=True, blank=True)
     time = models.IntegerField(help_text="В минутах", verbose_name="Время теста", default=45, null=True, blank=True)
-    required_score_to_pass = models.IntegerField(help_text="%", verbose_name="Проходной балл ", default=50, null=True, blank=True)
+    score = models.IntegerField(help_text="%", verbose_name="Баллы", default=0, null=True, blank=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Продукт")
     date_created = models.DateField(auto_now_add=True)
-    # created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    is_required = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
@@ -63,7 +64,7 @@ class Question(models.Model):
 
 class Option(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='options')
     text = models.CharField(max_length=200)
     is_correct = models.BooleanField(default=False)
 
@@ -73,6 +74,7 @@ class Option(models.Model):
     class Meta:
         verbose_name = 'Вариант'
         verbose_name_plural = 'Варианты'
+
 
 class Result(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -103,3 +105,19 @@ class BookSuggestion(models.Model):
     class Meta:
         verbose_name = 'Литература'
         verbose_name_plural = 'Литература'
+
+
+class CompletedTest(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='completed_tests')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='completed_tests')
+    tests = models.ManyToManyField(Test, related_name='completed_tests')
+    completed_date = models.DateField(auto_now_add=True)
+    completed_time = models.TimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"CompletedTest for {self.user.username} - {self.product.title}"
+
+    class Meta:
+        verbose_name = 'Completed Test'
+        verbose_name_plural = 'Completed Tests'

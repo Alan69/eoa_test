@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Test, Question, Option, Result, BookSuggestion, Product
+from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest
 from accounts.models import User
 
 class OptionInline(admin.TabularInline):
@@ -15,7 +15,7 @@ class QuestionInline(admin.TabularInline):
     extra = 1
 
 class TestAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'number_of_questions', 'time', 'required_score_to_pass', 'date_created')
+    list_display = ('id', 'title', 'number_of_questions', 'score', 'date_created')
     search_fields = ('title', 'created_by__username')
     list_filter = ('date_created',)
     inlines = [QuestionInline]
@@ -35,3 +35,4 @@ admin.site.register(Test, TestAdmin)
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Result, ResultAdmin)
 admin.site.register(BookSuggestion, BookSuggestionAdmin)
+admin.site.register(CompletedTest)

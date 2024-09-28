@@ -1,8 +1,13 @@
-from accounts.views import RegisterView, CustomTokenObtainPairView, UserDetailView, LogoutView, signup, login, current_user_view
+from accounts.views import UserDetailView, LogoutView, signup, current_user_view
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from test_logic.views import ProductViewSet, TestViewSet, QuestionViewSet, OptionViewSet, ResultViewSet, BookSuggestionViewSet
+from test_logic.views import ( 
+    ProductViewSet, TestViewSet, QuestionViewSet, 
+    OptionViewSet, ResultViewSet, BookSuggestionViewSet, 
+    product_tests_view, required_tests_by_product,
+    complete_test_view
+)
 
 from dashboard.views import test_list, profile, test_history, history_detail
 
@@ -17,7 +22,7 @@ router.register(r'tests', TestViewSet)
 router.register(r'questions', QuestionViewSet)
 router.register(r'options', OptionViewSet)
 router.register(r'results', ResultViewSet)
-router.register(r'booksuggestions', BookSuggestionViewSet)
+# router.register(r'booksuggestions', BookSuggestionViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
@@ -35,4 +40,10 @@ urlpatterns = [
     path('profile/', profile, name='profile'),
     path('test_history/', test_history, name='test_history'),
     path('test_history/<int:pk>/', history_detail, name='history_detail'),
+
+    path('current/test/', product_tests_view, name='get-tests'),
+
+    path('product/<uuid:product_id>/tests/', required_tests_by_product, name='required-tests-by-product'),
+
+    path('complete/test/', complete_test_view, name='complete-test'),
 ]

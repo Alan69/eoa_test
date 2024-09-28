@@ -1,26 +1,104 @@
 from rest_framework import serializers
-from .models import Product, Test, Question, Option, Result, BookSuggestion
+from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest
 from accounts.models import User
+
+class CurrentOptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Option
+        fields = ['id', 'text']
+
+class CurrentQuestionSerializer(serializers.ModelSerializer):
+    options = CurrentOptionSerializer(many=True)
+
+    class Meta:
+        model = Question
+        fields = ['id', 'text', 'options']
+
+class CurrentTestSerializer(serializers.ModelSerializer):
+    questions = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Test
+        fields = ['id', 'title', 'questions']
+
+    def get_questions(self, obj):
+        questions = Question.objects.filter(test=obj)
+        return CurrentQuestionSerializer(questions, many=True).data
+
+class CurrentProductSerializer(serializers.ModelSerializer):
+    tests = CurrentTestSerializer(many=True)
+
+    class Meta:
+        model = Product
+        fields = ['id', 'title', 'tests']
+
+
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = '__all__'
 
-
 class TestSerializer(serializers.ModelSerializer):
-    product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all())
-    created_by = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
+    # product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all())
 
     class Meta:
         model = Test
-        fields = '__all__'
+        fields = ['id', 'title', 'is_required']
 
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['product'] = ProductSerializer(instance.product).data
-        representation['created_by'] = instance.created_by.id
-        return representation
+    # def to_representation(self, instance):
+    #     representation = super().to_representation(instance)
+    #     representation['product'] = ProductSerializer(instance.product).data
+    #     return representation
+
+
+
+
+class CompletedOptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Option
+        fields = ['id', 'text', 'is_correct']
+
+class CompletedQuestionSerializer(serializers.ModelSerializer):
+    options = CompletedOptionSerializer(many=True)
+
+    class Meta:
+        model = Question
+        fields = ['id', 'text', 'options']
+
+class CompletedTestSerializer(serializers.ModelSerializer):
+    # questions = CompletedQuestionSerializer()
+    questions = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Test
+        fields = ['id', 'title', 'questions']
+    
+    def get_questions(self, obj):
+        questions = Question.objects.filter(test=obj)
+        return CurrentQuestionSerializer(questions, many=True).data
+
+class CompletedTestSerializer(serializers.ModelSerializer):
+    user = serializers.SerializerMethodField()
+    product = serializers.SerializerMethodField()
+    tests = CompletedTestSerializer(many=True)
+
+    class Meta:
+        model = CompletedTest
+        fields = ['id', 'completed_date', 'completed_time', 'user', 'product', 'tests']
+
+    def get_user(self, obj):
+        return {
+            "id": obj.user.id,
+            "username": obj.user.username,
+            "email": obj.user.email
+        }
+
+    def get_product(self, obj):
+        return {
+            "id": obj.product.id,
+            "title": obj.product.title
+        }
 
 
 class QuestionSerializer(serializers.ModelSerializer):
