@@ -10,19 +10,19 @@ class Command(BaseCommand):
         product = Product.objects.create(
             id=uuid.uuid4(),
             title="Sample Product",
-            sum=1500
+            sum=1500,
+            time=45,
         )
         self.stdout.write(self.style.SUCCESS('Created Product'))
 
         # Create 6 tests
-        for test_num in range(1, 7):
+        for test_num in range(1, 8):
             test = Test.objects.create(
                 id=uuid.uuid4(),
                 title=f"Test {test_num}",
                 number_of_questions=15,
-                sum=250,
                 time=45,
-                required_score_to_pass=50,
+                score=0,
                 product=product,
                 is_required=False
             )
