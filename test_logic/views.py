@@ -142,6 +142,7 @@ class BookSuggestionViewSet(viewsets.ModelViewSet):
 )
 @api_view(['POST'])
 def product_tests_view(request):
+    user = request.user
     product_id = request.data.get('product_id')
     tests_ids = request.data.get('tests_ids')
 
@@ -164,9 +165,15 @@ def product_tests_view(request):
     # Serialize the tests
     serialized_tests = CurrentTestSerializer(tests, many=True).data
 
+    user.product = product  # Set the product for the user
+    user.test_is_started = True  # Set test_is_started to True
+    user.total_time = total_time  # Set the total time to the sum of test and product time
+    user.save()
+
     # Return the response
     return Response({
-        "time": total_time,
+        "time": user.total_time,
+        "test_is_started": user.test_is_started,
         "tests": serialized_tests
     }, status=status.HTTP_200_OK)
 
@@ -320,6 +327,9 @@ def complete_test_view(request):
 
     # Save the completed test
     completed_test.save()
+
+    user.test_is_started = False
+    user.save()
 
     # Return the response with completed_test_id
     return Response({

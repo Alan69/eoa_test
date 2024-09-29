@@ -67,6 +67,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     referral_link = models.CharField(max_length=100, unique=True, null=True, blank=True)
     referral_bonus = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     payment_id = models.CharField(max_length=255)
+    test_is_started = models.BooleanField(default=False)
+    total_time = models.IntegerField(default=0)
+    product = models.ForeignKey('test_logic.Product', on_delete=models.SET_NULL, null=True, blank=True)
     # class_name = models.CharField(max_length=255, verbose_name="Класс", null=True, blank=True)
 
     is_student = models.BooleanField(default=False, verbose_name="Это студент?")

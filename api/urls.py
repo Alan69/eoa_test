@@ -1,4 +1,4 @@
-from accounts.views import UserDetailView, LogoutView, signup, current_user_view
+from accounts.views import UserDetailView, LogoutView, signup, current_user_view, RegisterView
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
@@ -25,7 +25,7 @@ router.register(r'options', OptionViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('register/', signup, name='register'),
+    path('register/', RegisterView.as_view(), name='register'),
     # path('login/', login, name='token_obtain_pair'),
     path('logout/', LogoutView.as_view(), name='logout'),
 
