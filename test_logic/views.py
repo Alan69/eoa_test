@@ -3,7 +3,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import get_object_or_404
-from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest
+from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest, CompletedQuestion
 from .serializers import (
     ProductSerializer, TestSerializer, QuestionSerializer,
     OptionSerializer, ResultSerializer, BookSuggestionSerializer, 
@@ -20,17 +20,17 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     # permission_classes = [IsAuthenticated]
     
-    @action(detail=True, methods=['post'])
-    def purchase(self, request, pk=None):
-        product = self.get_object()
-        user = request.user
+    # @action(detail=True, methods=['post'])
+    # def purchase(self, request, pk=None):
+    #     product = self.get_object()
+    #     user = request.user
 
-        if user.balance >= product.sum:
-            user.balance -= product.sum
-            user.save()
-            return Response({'status': 'Product purchased successfully'}, status=status.HTTP_200_OK)
+    #     if user.balance >= product.sum:
+    #         user.balance -= product.sum
+    #         user.save()
+    #         return Response({'status': 'Product purchased successfully'}, status=status.HTTP_200_OK)
         
-        return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
+    #     return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
 
 
 class TestViewSet(viewsets.ModelViewSet):
@@ -216,77 +216,55 @@ def required_tests_by_product(request, product_id):
 
 @swagger_auto_schema(
     method='post',
-    operation_description="Submit a completed test and get completion data",
+    operation_description="Submit completed test data and store selected options for each question.",
     request_body=openapi.Schema(
         type=openapi.TYPE_OBJECT,
-        required=['product_id', 'tests_ids', 'product_score', 'tests_score'],
+        required=['product_id', 'tests'],
         properties={
             'product_id': openapi.Schema(type=openapi.TYPE_STRING, description='UUID of the product'),
-            'tests_ids': openapi.Schema(
-                type=openapi.TYPE_ARRAY, 
-                items=openapi.Items(type=openapi.TYPE_STRING), 
-                description='List of test UUIDs'
-            ),
+            'tests': openapi.Schema(
+                type=openapi.TYPE_ARRAY,
+                items=openapi.Items(
+                    type=openapi.TYPE_OBJECT,
+                    properties={
+                        'id': openapi.Schema(type=openapi.TYPE_STRING, description='UUID of the test'),
+                        'questions': openapi.Schema(
+                            type=openapi.TYPE_ARRAY,
+                            items=openapi.Items(
+                                type=openapi.TYPE_OBJECT,
+                                properties={
+                                    'id': openapi.Schema(type=openapi.TYPE_STRING, description='UUID of the question'),
+                                    'option_id': openapi.Schema(type=openapi.TYPE_STRING, description='UUID of the selected option')
+                                }
+                            )
+                        )
+                    }
+                ),
+                description='List of tests and their corresponding questions and selected options'
+            )
         }
     ),
     responses={
         201: openapi.Response(
-            description="Completed test data with product and test scores, including questions and options",
+            description="Test completed successfully",
             examples={
                 "application/json": {
-                    "id": "some-completed-test-uuid",
-                    "completed_date": "2024-01-01",
-                    "completed_time": "15:30:00",
-                    "user": {
-                        "id": 1,
-                        "username": "student1",
-                        "email": "student1@example.com"
-                    },
-                    "product": {
-                        "id": "some-product-uuid",
-                        "title": "Product 1"
-                    },
-                    "product_score": 85.0,
-                    "tests_score": 90.0,
-                    "tests": [
-                        {
-                            "id": "some-test-uuid-1",
-                            "title": "Test 1",
-                            "questions": [
-                                {
-                                    "id": "some-question-uuid-1",
-                                    "text": "What is the capital of France?",
-                                    "options": [
-                                        {
-                                            "id": "some-option-uuid-1",
-                                            "text": "Paris",
-                                            "is_correct": "true"
-                                        },
-                                        {
-                                            "id": "some-option-uuid-2",
-                                            "text": "London",
-                                            "is_correct": "false"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                    "completed_test_id": "some-completed-test-uuid"
                 }
             }
         ),
         400: openapi.Response(description="Invalid input data"),
-        404: openapi.Response(description="Product not found"),
+        404: openapi.Response(description="Product or Test/Question/Option not found")
     }
 )
 @api_view(['POST'])
 def complete_test_view(request):
     user = request.user
     product_id = request.data.get('product_id')
-    tests_ids = request.data.get('tests_ids')
+    tests_data = request.data.get('tests')
 
     # Validate request data
-    if not product_id or not isinstance(tests_ids, list):
+    if not product_id or not isinstance(tests_data, list):
         return Response({"detail": "Invalid input data"}, status=status.HTTP_400_BAD_REQUEST)
 
     # Get the product
@@ -295,27 +273,178 @@ def complete_test_view(request):
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    # Get the tests
-    tests = Test.objects.filter(id__in=tests_ids)
-
-    # Ensure that questions and options are loaded for each test
-    for test in tests:
-        test.questions = Question.objects.filter(test=test).prefetch_related('options')
-
     # Create the CompletedTest instance
     completed_test = CompletedTest.objects.create(
         user=user,
         product=product,
-        completed_date=now().date(),
-        completed_time=now().time()
+        completed_date=now(),
+        completed_time=now()
     )
 
-    # Add tests to the CompletedTest instance
-    completed_test.tests.set(tests)
+    # Process each test and its questions
+    for test_data in tests_data:
+        test_id = test_data.get('id')
+        questions_data = test_data.get('questions')
+
+        # Validate test existence
+        try:
+            test = Test.objects.get(id=test_id, product=product)
+        except Test.DoesNotExist:
+            return Response({"detail": f"Test with id {test_id} not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        # Link the test to CompletedTest
+        completed_test.tests.add(test)
+
+        # Process each question
+        for question_data in questions_data:
+            question_id = question_data.get('id')
+            selected_option_id = question_data.get('option_id')
+
+            try:
+                question = Question.objects.get(id=question_id, test=test)
+            except Question.DoesNotExist:
+                return Response({"detail": f"Question with id {question_id} not found in test {test_id}."}, status=status.HTTP_404_NOT_FOUND)
+
+            try:
+                selected_option = Option.objects.get(id=selected_option_id, question=question)
+            except Option.DoesNotExist:
+                return Response({"detail": f"Option with id {selected_option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
+
+            # Save the completed question with the selected option
+            CompletedQuestion.objects.create(
+                completed_test=completed_test,
+                test=test,
+                question=question,
+                selected_option=selected_option
+            )
+
+    # Save the completed test
     completed_test.save()
 
-    # Serialize the completed test
-    serialized_completed_test = CompletedTestSerializer(completed_test).data
+    # Return the response with completed_test_id
+    return Response({
+        "completed_test_id": str(completed_test.id)
+    }, status=status.HTTP_201_CREATED)
 
-    # Return the response
-    return Response(serialized_completed_test, status=status.HTTP_201_CREATED)
+
+@swagger_auto_schema(
+    method='get',
+    operation_description="Retrieve a specific completed test by ID along with related completed questions and selected options.",
+    responses={
+        200: openapi.Response(
+            description="Details of the CompletedTest",
+            examples={
+                "application/json": {
+                    "id": "some-completed-test-uuid",
+                    "user": {
+                        "id": 1,
+                        "username": "student1"
+                    },
+                    "product": {
+                        "id": "some-product-uuid",
+                        "title": "Product 1"
+                    },
+                    "completed_at": "2024-01-01T15:30:00",
+                    "completed_questions": [
+                        {
+                            "id": "some-completed-question-uuid",
+                            "question": {
+                                "id": "some-question-uuid",
+                                "text": "What is the capital of France?",
+                                "options": [
+                                    {
+                                        "id": "some-option-uuid-1",
+                                        "text": "Paris",
+                                        "is_correct": 'false'
+                                    },
+                                    {
+                                        "id": "some-option-uuid-2",
+                                        "text": "London",
+                                        "is_correct": 'false'
+                                    }
+                                ]
+                            },
+                            "selected_option": {
+                                "id": "some-option-uuid-1",
+                                "text": "Paris",
+                                "is_correct": 'true'
+                            }
+                        }
+                    ]
+                }
+            }
+        ),
+        404: openapi.Response(description="CompletedTest not found.")
+    }
+)
+@api_view(['GET'])
+def get_completed_test_by_id(request, completed_test_id):
+    try:
+        completed_test = CompletedTest.objects.get(id=completed_test_id, user=request.user)
+    except CompletedTest.DoesNotExist:
+        return Response({"detail": "CompletedTest not found."}, status=status.HTTP_404_NOT_FOUND)
+
+    # Serialize the CompletedTest with related CompletedQuestions
+    serializer = CompletedTestSerializer(completed_test)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+
+@swagger_auto_schema(
+    method='get',
+    operation_description="Retrieve all completed tests for the authenticated user.",
+    responses={
+        200: openapi.Response(
+            description="List of all CompletedTests",
+            examples={
+                "application/json": [
+                    {
+                        "id": "some-completed-test-uuid-1",
+                        "user": {
+                            "id": 1,
+                            "username": "student1"
+                        },
+                        "product": {
+                            "id": "some-product-uuid",
+                            "title": "Product 1"
+                        },
+                        "completed_at": "2024-01-01T15:30:00",
+                        "completed_questions": [
+                            {
+                                "id": "some-completed-question-uuid-1",
+                                "question": {
+                                    "id": "some-question-uuid",
+                                    "text": "What is the capital of France?",
+                                    "options": [
+                                        {
+                                            "id": "some-option-uuid-1",
+                                            "text": "Paris",
+                                            "is_correct": 'true'
+                                        },
+                                        {
+                                            "id": "some-option-uuid-2",
+                                            "text": "London",
+                                            "is_correct": 'false'
+                                        }
+                                    ]
+                                },
+                                "selected_option": {
+                                    "id": "some-option-uuid-1",
+                                    "text": "Paris",
+                                    "is_correct": 'true'
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        )
+    }
+)
+@api_view(['GET'])
+def get_all_completed_tests(request):
+    completed_tests = CompletedTest.objects.filter(user=request.user)
+
+    # Serialize all CompletedTests
+    serializer = CompletedTestSerializer(completed_tests, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest
+from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest, CompletedQuestion
 from accounts.models import User
 
 class OptionInline(admin.TabularInline):
@@ -36,3 +36,4 @@ admin.site.register(Question, QuestionAdmin)
 admin.site.register(Result, ResultAdmin)
 admin.site.register(BookSuggestion, BookSuggestionAdmin)
 admin.site.register(CompletedTest)
+admin.site.register(CompletedQuestion)

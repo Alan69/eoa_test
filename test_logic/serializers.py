@@ -1,7 +1,9 @@
 from rest_framework import serializers
-from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest
+from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest, CompletedQuestion
 from accounts.models import User
+from accounts.serializers import UserSerializer
 
+# new
 class CurrentOptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Option
@@ -33,26 +35,16 @@ class CurrentProductSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'tests']
 
 
-
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = ['id', 'title', 'sum', 'time']
 
 class TestSerializer(serializers.ModelSerializer):
-    # product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all())
 
     class Meta:
         model = Test
         fields = ['id', 'title', 'is_required']
-
-    # def to_representation(self, instance):
-    #     representation = super().to_representation(instance)
-    #     representation['product'] = ProductSerializer(instance.product).data
-    #     return representation
-
-
-
 
 class CompletedOptionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -66,41 +58,26 @@ class CompletedQuestionSerializer(serializers.ModelSerializer):
         model = Question
         fields = ['id', 'text', 'options']
 
-class CompletedTestSerializer(serializers.ModelSerializer):
-    # questions = CompletedQuestionSerializer()
-    questions = serializers.SerializerMethodField()
+class CompletedQuestionSerializer(serializers.ModelSerializer):
+    question = CurrentQuestionSerializer()
+    selected_option = CurrentOptionSerializer()
+    test = TestSerializer()
 
     class Meta:
-        model = Test
-        fields = ['id', 'title', 'questions']
-    
-    def get_questions(self, obj):
-        questions = Question.objects.filter(test=obj)
-        return CurrentQuestionSerializer(questions, many=True).data
+        model = CompletedQuestion
+        fields = ['id', 'test', 'question', 'selected_option']
 
 class CompletedTestSerializer(serializers.ModelSerializer):
-    user = serializers.SerializerMethodField()
-    product = serializers.SerializerMethodField()
-    tests = CompletedTestSerializer(many=True)
+    completed_questions = CompletedQuestionSerializer(many=True)
+    user = UserSerializer()
+    product = ProductSerializer()
 
     class Meta:
         model = CompletedTest
-        fields = ['id', 'completed_date', 'completed_time', 'user', 'product', 'tests']
-
-    def get_user(self, obj):
-        return {
-            "id": obj.user.id,
-            "username": obj.user.username,
-            "email": obj.user.email
-        }
-
-    def get_product(self, obj):
-        return {
-            "id": obj.product.id,
-            "title": obj.product.title
-        }
+        fields = ['id', 'user', 'product', 'completed_date', 'completed_time', 'completed_questions']
 
 
+# old
 class QuestionSerializer(serializers.ModelSerializer):
     test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
 

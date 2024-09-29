@@ -121,3 +121,14 @@ class CompletedTest(models.Model):
     class Meta:
         verbose_name = 'Completed Test'
         verbose_name_plural = 'Completed Tests'
+
+
+class CompletedQuestion(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    completed_test = models.ForeignKey(CompletedTest, on_delete=models.CASCADE, related_name='completed_questions')
+    test = models.ForeignKey(Test, on_delete=models.CASCADE, related_name='completed_test_questions')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='completed_test_questions')
+    selected_option = models.ForeignKey(Option, on_delete=models.SET_NULL, null=True, blank=True)
+
+    def __str__(self):
+        return f"CompletedQuestion for {self.completed_test.user.username} - {self.question.text}"
