@@ -6,10 +6,9 @@ from test_logic.views import (
     ProductViewSet, TestViewSet, QuestionViewSet, 
     OptionViewSet, ResultViewSet, BookSuggestionViewSet, 
     product_tests_view, required_tests_by_product,
-    complete_test_view
+    complete_test_view, get_all_completed_tests,
+    get_completed_test_by_id
 )
-
-from dashboard.views import test_list, profile, test_history, history_detail
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -18,10 +17,10 @@ from rest_framework_simplejwt.views import (
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet)
-router.register(r'tests', TestViewSet)
+router.register(r'subjects', TestViewSet)
 router.register(r'questions', QuestionViewSet)
 router.register(r'options', OptionViewSet)
-router.register(r'results', ResultViewSet)
+# router.register(r'results', ResultViewSet)
 # router.register(r'booksuggestions', BookSuggestionViewSet)
 
 urlpatterns = [
@@ -36,14 +35,11 @@ urlpatterns = [
     path('user/', UserDetailView.as_view(), name='user_detail'),
     path('user/auth/', current_user_view, name='current_user_view'),
 
-    path('dashboard', test_list, name='test_list'),
-    path('profile/', profile, name='profile'),
-    path('test_history/', test_history, name='test_history'),
-    path('test_history/<int:pk>/', history_detail, name='history_detail'),
-
     path('current/test/', product_tests_view, name='get-tests'),
 
     path('product/<uuid:product_id>/tests/', required_tests_by_product, name='required-tests-by-product'),
 
     path('complete/test/', complete_test_view, name='complete-test'),
+    path('completed-tests/<uuid:completed_test_id>/', get_completed_test_by_id, name='get-completed-test-by-id'),
+    path('completed-tests/', get_all_completed_tests, name='get-all-completed-tests'),
 ]
