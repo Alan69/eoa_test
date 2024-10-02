@@ -40,11 +40,11 @@ class TestViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def questions(self, request, pk=None):
         test = self.get_object()
-        questions = Question.objects.filter(test=test).prefetch_related('option_set')
+        questions = Question.objects.filter(test=test)
         data = QuestionSerializer(questions, many=True).data
         
-        for question in data:
-            question['options'] = OptionSerializer(question['options'], many=True).data
+        # for question in data:
+        #     question['options'] = OptionSerializer(question['options'], many=True).data
         
         return Response(data)
 
@@ -312,17 +312,24 @@ def complete_test_view(request):
             except Question.DoesNotExist:
                 return Response({"detail": f"Question with id {question_id} not found in test {test_id}."}, status=status.HTTP_404_NOT_FOUND)
 
-            try:
-                selected_option = Option.objects.get(id=selected_option_id, question=question)
-            except Option.DoesNotExist:
-                return Response({"detail": f"Option with id {selected_option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
+            if selected_option_id is not None:
+                try:
+                    option = Option.objects.get(id=selected_option_id, question=question)
+                    # Process the selected option (for example, mark if correct)
+                    # You can store the selected option in a CompletedQuestion object
+                except Option.DoesNotExist:
+                    return Response({"detail": f"Option with id {selected_option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
+            else:
+                # Handle the case where no option is selected (option_id is null)
+                # You might want to log that no answer was provided, or take another action
+                pass
 
             # Save the completed question with the selected option
             CompletedQuestion.objects.create(
                 completed_test=completed_test,
                 test=test,
                 question=question,
-                selected_option=selected_option
+                selected_option=option
             )
 
     # Save the completed test

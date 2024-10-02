@@ -127,7 +127,7 @@ class CompletedQuestion(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     completed_test = models.ForeignKey(CompletedTest, on_delete=models.CASCADE, related_name='completed_questions')
     test = models.ForeignKey(Test, on_delete=models.CASCADE, related_name='completed_test_questions')
-    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='completed_test_questions')
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='completed_test_questions',  null=True, blank=True)
     selected_option = models.ForeignKey(Option, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
