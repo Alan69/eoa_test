@@ -311,6 +311,8 @@ def complete_test_view(request):
                 question = Question.objects.get(id=question_id, test=test)
             except Question.DoesNotExist:
                 return Response({"detail": f"Question with id {question_id} not found in test {test_id}."}, status=status.HTTP_404_NOT_FOUND)
+            
+            option = None
 
             if selected_option_id is not None:
                 try:
