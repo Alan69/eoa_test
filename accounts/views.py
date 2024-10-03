@@ -78,6 +78,42 @@ def login(request):
     serializer = UserSerializer(user)
     return Response({'token': token.key, 'user': serializer.data})
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+@swagger_auto_schema(
+        operation_description="Возвращяет auth юзера",
+        responses={201: openapi.Response('success')}
+    )
+def current_user_view(request):
+    user = request.user
+    user_data = UserSerializer(user).data
+    
+    return Response({"user_data": user_data})
+
+class RegisterView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    permission_classes = (AllowAny,)
+    serializer_class = RegisterSerializer
+
+    @swagger_auto_schema(
+        operation_description="Register a new user",
+        responses={201: openapi.Response('User registered successfully')}
+    )
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+
+        # Generate a token for the new user
+        refresh = RefreshToken.for_user(user)
+
+        return Response({
+            "user": UserSerializer(user, context=self.get_serializer_context()).data,
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+        }, status=status.HTTP_201_CREATED)
+    
 class ChangePasswordView(APIView):
     permission_classes = [IsAuthenticated]
 
