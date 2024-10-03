@@ -140,6 +140,7 @@ class BookSuggestionViewSet(viewsets.ModelViewSet):
         404: openapi.Response(description="Product not found"),
     }
 )
+
 @api_view(['POST'])
 def product_tests_view(request):
     user = request.user
@@ -168,6 +169,7 @@ def product_tests_view(request):
     user.product = product  # Set the product for the user
     user.test_is_started = True  # Set test_is_started to True
     user.total_time = total_time  # Set the total time to the sum of test and product time
+    user.test_start_time = now()  # Store the start time
     user.save()
 
     # Return the response
@@ -318,13 +320,8 @@ def complete_test_view(request):
                 try:
                     option = Option.objects.get(id=selected_option_id, question=question)
                     # Process the selected option (for example, mark if correct)
-                    # You can store the selected option in a CompletedQuestion object
                 except Option.DoesNotExist:
                     return Response({"detail": f"Option with id {selected_option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
-            else:
-                # Handle the case where no option is selected (option_id is null)
-                # You might want to log that no answer was provided, or take another action
-                pass
 
             # Save the completed question with the selected option
             CompletedQuestion.objects.create(
@@ -337,12 +334,15 @@ def complete_test_view(request):
     # Save the completed test
     completed_test.save()
 
+    time_spent = now() - user.test_start_time
+    time_spent_minutes = time_spent.total_seconds() // 60  # Time spent in minutes
+
     user.test_is_started = False
     user.save()
 
-    # Return the response with completed_test_id
     return Response({
-        "completed_test_id": str(completed_test.id)
+        "completed_test_id": str(completed_test.id),
+        "time_spent_minutes": time_spent_minutes
     }, status=status.HTTP_201_CREATED)
 
 
