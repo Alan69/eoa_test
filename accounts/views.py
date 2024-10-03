@@ -5,6 +5,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .models import User
+from django.contrib.auth.hashers import check_password
 from .serializers import RegisterSerializer, UserSerializer
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
@@ -112,3 +113,40 @@ class RegisterView(generics.CreateAPIView):
             "refresh": str(refresh),
             "access": str(refresh.access_token),
         }, status=status.HTTP_201_CREATED)
+    
+class ChangePasswordView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user = request.user
+        data = request.data
+
+        # Get the required fields from request data
+        current_password = data.get('current_password')
+        new_password = data.get('new_password')
+        new_password2 = data.get('new_password2')
+
+        # Check if all fields are provided
+        if not all([current_password, new_password, new_password2]):
+            return Response({"detail": "All fields are required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Check if the current password matches the user's actual password
+        if not check_password(current_password, user.password):
+            return Response({"detail": "Current password is incorrect."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Check if new password matches the confirmation
+        if new_password != new_password2:
+            return Response({"detail": "New passwords do not match."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Set the new password and save the user
+        user.set_password(new_password)
+        user.save()
+
+        # Generate new refresh token
+        refresh = RefreshToken.for_user(user)
+
+        return Response({
+            "new_password": new_password,
+            "refresh": str(refresh),
+            "access": str(refresh.access_token),
+        }, status=status.HTTP_200_OK)
