@@ -74,7 +74,7 @@ class CompletedTestSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CompletedTest
-        fields = ['id', 'user', 'product', 'completed_date', 'completed_time', 'completed_questions']
+        fields = ['id', 'user', 'product', 'completed_date', 'completed_time', 'start_test_time', 'finish_test_time', 'completed_questions']
 
 
 # old

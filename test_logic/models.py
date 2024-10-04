@@ -1,6 +1,7 @@
 from django.db import models
 from accounts.models import User
 import uuid
+from django.utils import timezone
 
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -114,6 +115,9 @@ class CompletedTest(models.Model):
     tests = models.ManyToManyField(Test, related_name='completed_tests')
     completed_date = models.DateField(auto_now_add=True)
     completed_time = models.TimeField(auto_now_add=True)
+
+    start_test_time = models.DateTimeField(default=timezone.now)  # Adjust the default as necessary
+    finish_test_time = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         return f"CompletedTest for {self.user.username} - {self.product.title}"
