@@ -167,6 +167,14 @@ class ChangePasswordView(APIView):
             "access": str(refresh.access_token),
         }, status=status.HTTP_200_OK)
 
+@swagger_auto_schema(
+    method='put',
+    request_body=UserSerializer,  # Define the input serializer
+    responses={  # Define the possible response codes and serializers
+        200: UserSerializer,  # Successful response with updated user data
+        400: openapi.Response('Invalid input'),  # Bad request response
+    }
+)
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])  # Ensure only authenticated users can update their profile
 def update_user_view(request):
