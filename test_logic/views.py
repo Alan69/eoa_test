@@ -140,7 +140,6 @@ class BookSuggestionViewSet(viewsets.ModelViewSet):
         404: openapi.Response(description="Product not found"),
     }
 )
-
 @api_view(['POST'])
 def product_tests_view(request):
     user = request.user
@@ -273,7 +272,7 @@ def complete_test_view(request):
     tests_data = request.data.get('tests')
 
     # Validate request data
-    if not product_id or not isinstance(tests_data, list):
+    if not product_id or not isinstance(tests_data, list): 
         return Response({"detail": "Invalid input data"}, status=status.HTTP_400_BAD_REQUEST)
 
     # Get the product
@@ -334,10 +333,16 @@ def complete_test_view(request):
     # Save the completed test
     completed_test.save()
 
-    time_spent = now() - user.test_start_time
-    time_spent_minutes = time_spent.total_seconds() // 60  # Time spent in minutes
+    # Check if test_start_time is set
+    if user.test_start_time:
+        time_spent = now() - user.test_start_time
+        time_spent_minutes = time_spent.total_seconds() // 60  # Time spent in minutes
+    else:
+        return Response({"detail": "Test start time is not set."}, status=status.HTTP_400_BAD_REQUEST)
 
+    # Reset user test state after completion
     user.test_is_started = False
+    user.test_start_time = None  # Clear start time
     user.save()
 
     return Response({

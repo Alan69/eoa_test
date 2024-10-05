@@ -71,10 +71,47 @@ class CompletedTestSerializer(serializers.ModelSerializer):
     completed_questions = CompletedQuestionSerializer(many=True)
     user = UserSerializer()
     product = ProductSerializer()
+    # Adding custom fields for correct/incorrect answers
+    correct_answers_count = serializers.SerializerMethodField()
+    incorrect_answers_count = serializers.SerializerMethodField()
+    subjects = serializers.SerializerMethodField()
 
     class Meta:
         model = CompletedTest
-        fields = ['id', 'user', 'product', 'completed_date', 'completed_time', 'start_test_time', 'finish_test_time', 'completed_questions']
+        fields = [
+            'id', 
+            'user', 
+            'product', 
+            'start_test_time', 
+            'finish_test_time', 
+            'completed_questions',
+            'correct_answers_count', 
+            'incorrect_answers_count', 
+            'subjects'
+        ]
+
+    # Method to calculate correct answers
+    def get_correct_answers_count(self, obj):
+        return obj.completed_questions.filter(selected_option__is_correct=True).count()
+
+    # Method to calculate incorrect answers
+    def get_incorrect_answers_count(self, obj):
+        return obj.completed_questions.filter(selected_option__is_correct=False).count()
+
+    # Method to return subjects with correct/incorrect counts
+    def get_subjects(self, obj):
+        subjects_stats = {}
+        for completed_question in obj.completed_questions.all():
+            subject_title = completed_question.question.subject_title
+            if subject_title not in subjects_stats:
+                subjects_stats[subject_title] = {'correct': 0, 'incorrect': 0}
+            
+            if completed_question.selected_option and completed_question.selected_option.is_correct:
+                subjects_stats[subject_title]['correct'] += 1
+            else:
+                subjects_stats[subject_title]['incorrect'] += 1
+        return [{'subject': k, 'correct': v['correct'], 'incorrect': v['incorrect']} for k, v in subjects_stats.items()]
+
 
 
 # old
