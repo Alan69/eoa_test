@@ -1,4 +1,4 @@
-from accounts.views import UserDetailView, LogoutView, signup, current_user_view, RegisterView, ChangePasswordView
+from accounts.views import UserDetailView, LogoutView, update_user_view, current_user_view, RegisterView, ChangePasswordView
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
@@ -36,6 +36,8 @@ urlpatterns = [
 
     path('user/', UserDetailView.as_view(), name='user_detail'),
     path('user/auth/', current_user_view, name='current_user_view'),
+
+    path('user/update/', update_user_view, name='update-user'),
 
     path('current/test/', product_tests_view, name='get-tests'),
 

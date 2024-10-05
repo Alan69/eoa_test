@@ -6,7 +6,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .models import User
 from django.contrib.auth.hashers import check_password
-from .serializers import RegisterSerializer, UserSerializer, ChangePasswordSerializer
+from .serializers import RegisterSerializer, UserSerializer, ChangePasswordSerializer, UserPUTSerializer
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 from rest_framework.authtoken.models import Token
@@ -166,3 +166,17 @@ class ChangePasswordView(APIView):
             "refresh": str(refresh),
             "access": str(refresh.access_token),
         }, status=status.HTTP_200_OK)
+
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])  # Ensure only authenticated users can update their profile
+def update_user_view(request):
+    user = request.user  # Get the current user making the request
+    
+    # Deserialize the incoming data and validate it
+    serializer = UserSerializer(user, data=request.data, partial=True)
+    
+    if serializer.is_valid():
+        serializer.save()  # Update the user's data
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
