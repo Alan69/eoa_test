@@ -408,9 +408,25 @@ def get_completed_test_by_id(request, completed_test_id):
     except CompletedTest.DoesNotExist:
         return Response({"detail": "CompletedTest not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    # Serialize the CompletedTest with related CompletedQuestions
+    # Calculate total correct/incorrect for the specific test
+    total_correct_by_test = completed_test.completed_questions.filter(selected_option__is_correct=True).count()
+    total_incorrect_by_test = completed_test.completed_questions.filter(selected_option__is_correct=False).count()
+
+    # Get total correct/incorrect across all tests by the user
+    total_correct_global = CompletedQuestion.objects.filter(completed_test__user=request.user, selected_option__is_correct=True).count()
+    total_incorrect_global = CompletedQuestion.objects.filter(completed_test__user=request.user, selected_option__is_correct=False).count()
+
+    # Serialize the test data
     serializer = CompletedTestSerializer(completed_test)
-    return Response(serializer.data, status=status.HTTP_200_OK)
+
+    # Add custom stats to the response
+    return Response({
+        'test_data': serializer.data,
+        'total_correct_by_test': total_correct_by_test,
+        'total_incorrect_by_test': total_incorrect_by_test,
+        'total_correct_global': total_correct_global,
+        'total_incorrect_global': total_incorrect_global
+    }, status=status.HTTP_200_OK)
 
 
 

@@ -71,9 +71,11 @@ class CompletedTestSerializer(serializers.ModelSerializer):
     completed_questions = CompletedQuestionSerializer(many=True)
     user = UserSerializer()
     product = ProductSerializer()
-    # Adding custom fields for correct/incorrect answers
+
+    # Adding custom fields for correct/incorrect answers and total question count
     correct_answers_count = serializers.SerializerMethodField()
     incorrect_answers_count = serializers.SerializerMethodField()
+    total_question_count = serializers.SerializerMethodField()
     subjects = serializers.SerializerMethodField()
 
     class Meta:
@@ -87,18 +89,23 @@ class CompletedTestSerializer(serializers.ModelSerializer):
             'completed_questions',
             'correct_answers_count', 
             'incorrect_answers_count', 
+            'total_question_count',  # New field for the total number of questions
             'subjects'
         ]
 
-    # Method to calculate correct answers
+    # Method to calculate correct answers for the specific test
     def get_correct_answers_count(self, obj):
         return obj.completed_questions.filter(selected_option__is_correct=True).count()
 
-    # Method to calculate incorrect answers
+    # Method to calculate incorrect answers for the specific test
     def get_incorrect_answers_count(self, obj):
         return obj.completed_questions.filter(selected_option__is_correct=False).count()
 
-    # Method to return subjects with correct/incorrect counts
+    # Method to calculate total questions for the specific test
+    def get_total_question_count(self, obj):
+        return obj.completed_questions.count()
+
+    # Method to return subjects with correct/incorrect counts for specific subjects
     def get_subjects(self, obj):
         subjects_stats = {}
         for completed_question in obj.completed_questions.all():
