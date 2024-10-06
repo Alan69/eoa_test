@@ -6,8 +6,9 @@ from django.shortcuts import get_object_or_404
 from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest, CompletedQuestion
 from .serializers import (
     ProductSerializer, TestSerializer, QuestionSerializer,
-    OptionSerializer, ResultSerializer, BookSuggestionSerializer, 
-    CurrentTestSerializer, CompletedTestSerializer
+    # OptionSerializer, ResultSerializer, BookSuggestionSerializer, 
+    CurrentTestSerializer, CompletedTestSerializer, OptionSerializer,
+    CCompletedTestSerializer
 )
 from rest_framework.decorators import api_view
 from django.db.models import Sum
@@ -66,33 +67,33 @@ class OptionViewSet(viewsets.ModelViewSet):
     # permission_classes = [IsAuthenticated]
 
 
-class ResultViewSet(viewsets.ModelViewSet):
-    queryset = Result.objects.all()
-    serializer_class = ResultSerializer
-    permission_classes = [IsAuthenticated]
+# class ResultViewSet(viewsets.ModelViewSet):
+#     queryset = Result.objects.all()
+#     serializer_class = ResultSerializer
+#     permission_classes = [IsAuthenticated]
 
-    def create(self, request, *args, **kwargs):
-        data = request.data
-        test = get_object_or_404(Test, pk=data['test'])
-        question = get_object_or_404(Question, pk=data['question'])
-        selected_option = get_object_or_404(Option, pk=data['selected_option'])
+#     def create(self, request, *args, **kwargs):
+#         data = request.data
+#         test = get_object_or_404(Test, pk=data['test'])
+#         question = get_object_or_404(Question, pk=data['question'])
+#         selected_option = get_object_or_404(Option, pk=data['selected_option'])
 
-        result = Result.objects.create(
-            test=test,
-            student=request.user,
-            question=question,
-            selected_option=selected_option,
-            score=float(selected_option.is_correct),  # score is 1.0 for correct and 0.0 for incorrect
-            is_correct=selected_option.is_correct
-        )
+#         result = Result.objects.create(
+#             test=test,
+#             student=request.user,
+#             question=question,
+#             selected_option=selected_option,
+#             score=float(selected_option.is_correct),  # score is 1.0 for correct and 0.0 for incorrect
+#             is_correct=selected_option.is_correct
+#         )
 
-        return Response(ResultSerializer(result).data, status=status.HTTP_201_CREATED)
+#         return Response(ResultSerializer(result).data, status=status.HTTP_201_CREATED)
 
 
-class BookSuggestionViewSet(viewsets.ModelViewSet):
-    queryset = BookSuggestion.objects.all()
-    serializer_class = BookSuggestionSerializer
-    permission_classes = [IsAuthenticated]
+# class BookSuggestionViewSet(viewsets.ModelViewSet):
+#     queryset = BookSuggestion.objects.all()
+#     serializer_class = BookSuggestionSerializer
+#     permission_classes = [IsAuthenticated]
 
 
 @swagger_auto_schema(
@@ -408,25 +409,9 @@ def get_completed_test_by_id(request, completed_test_id):
     except CompletedTest.DoesNotExist:
         return Response({"detail": "CompletedTest not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    # Calculate total correct/incorrect for the specific test
-    total_correct_by_test = completed_test.completed_questions.filter(selected_option__is_correct=True).count()
-    total_incorrect_by_test = completed_test.completed_questions.filter(selected_option__is_correct=False).count()
-
-    # Get total correct/incorrect across all tests by the user
-    total_correct_global = CompletedQuestion.objects.filter(completed_test__user=request.user, selected_option__is_correct=True).count()
-    total_incorrect_global = CompletedQuestion.objects.filter(completed_test__user=request.user, selected_option__is_correct=False).count()
-
-    # Serialize the test data
-    serializer = CompletedTestSerializer(completed_test)
-
-    # Add custom stats to the response
-    return Response({
-        'test_data': serializer.data,
-        'total_correct_by_test': total_correct_by_test,
-        'total_incorrect_by_test': total_incorrect_by_test,
-        'total_correct_global': total_correct_global,
-        'total_incorrect_global': total_incorrect_global
-    }, status=status.HTTP_200_OK)
+    # Pass the completed test to the serializer context
+    serializer = CCompletedTestSerializer(completed_test, context={'completed_test': completed_test})
+    return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 

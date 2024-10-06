@@ -73,8 +73,8 @@ class CompletedTestSerializer(serializers.ModelSerializer):
     product = ProductSerializer()
 
     # Adding custom fields for correct/incorrect answers and total question count
-    correct_answers_count = serializers.SerializerMethodField()
-    incorrect_answers_count = serializers.SerializerMethodField()
+    # correct_answers_count = serializers.SerializerMethodField()
+    # incorrect_answers_count = serializers.SerializerMethodField()
     total_question_count = serializers.SerializerMethodField()
     subjects = serializers.SerializerMethodField()
 
@@ -87,8 +87,8 @@ class CompletedTestSerializer(serializers.ModelSerializer):
             'start_test_time', 
             'finish_test_time', 
             'completed_questions',
-            'correct_answers_count', 
-            'incorrect_answers_count', 
+            # 'correct_answers_count', 
+            # 'incorrect_answers_count', 
             'total_question_count',  # New field for the total number of questions
             'subjects'
         ]
@@ -122,59 +122,146 @@ class CompletedTestSerializer(serializers.ModelSerializer):
 
 
 # old
-class QuestionSerializer(serializers.ModelSerializer):
-    test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
+# class QuestionSerializer(serializers.ModelSerializer):
+#     test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
 
-    class Meta:
-        model = Question
-        fields = '__all__'
+#     class Meta:
+#         model = Question
+#         fields = '__all__'
 
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['test'] = instance.test.id
-        return representation
+#     def to_representation(self, instance):
+#         representation = super().to_representation(instance)
+#         representation['test'] = instance.test.id
+#         return representation
 
 
+# class OptionSerializer(serializers.ModelSerializer):
+#     question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
+
+#     class Meta:
+#         model = Option
+#         fields = '__all__'
+
+#     def to_representation(self, instance):
+#         representation = super().to_representation(instance)
+#         representation['question'] = instance.question.id
+#         return representation
+
+
+# class ResultSerializer(serializers.ModelSerializer):
+#     test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
+#     student = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
+#     question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
+#     selected_option = serializers.PrimaryKeyRelatedField(queryset=Option.objects.all())
+
+#     class Meta:
+#         model = Result
+#         fields = '__all__'
+
+#     def to_representation(self, instance):
+#         representation = super().to_representation(instance)
+#         representation['test'] = instance.test.id
+#         representation['student'] = instance.student.id
+#         representation['question'] = instance.question.id
+#         representation['selected_option'] = instance.selected_option.id
+#         return representation
+
+
+# class BookSuggestionSerializer(serializers.ModelSerializer):
+#     question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
+
+#     class Meta:
+#         model = BookSuggestion
+#         fields = '__all__'
+
+#     def to_representation(self, instance):
+#         representation = super().to_representation(instance)
+#         representation['question'] = instance.question.id
+#         return representation
+
+
+# new
+
+# Serializer for the options within a question
 class OptionSerializer(serializers.ModelSerializer):
-    question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
-
     class Meta:
         model = Option
-        fields = '__all__'
+        fields = ['id', 'text']
 
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['question'] = instance.question.id
-        return representation
-
-
-class ResultSerializer(serializers.ModelSerializer):
-    test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
-    student = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
-    question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
-    selected_option = serializers.PrimaryKeyRelatedField(queryset=Option.objects.all())
+# Serializer for the questions within a test
+class QuestionSerializer(serializers.ModelSerializer):
+    # All options for the question, assuming reverse relation is 'options'
+    all_options = OptionSerializer(source='question.options', many=True)
+    selected_option = OptionSerializer()
 
     class Meta:
-        model = Result
-        fields = '__all__'
-
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['test'] = instance.test.id
-        representation['student'] = instance.student.id
-        representation['question'] = instance.question.id
-        representation['selected_option'] = instance.selected_option.id
-        return representation
-
-
-class BookSuggestionSerializer(serializers.ModelSerializer):
-    question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
+        model = CompletedQuestion  # Model is CompletedQuestion, not Question
+        fields = ['id', 'question', 'selected_option', 'all_options']
+    
+    # Add the text field explicitly by accessing it from the 'question' relation
+    question_text = serializers.CharField(source='question.text', read_only=True)
 
     class Meta:
-        model = BookSuggestion
-        fields = '__all__'
+        model = CompletedQuestion  # Serializer is for CompletedQuestion model
+        fields = ['id', 'question_text', 'selected_option', 'all_options']  # Include question_text
 
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['question'] = instance.question.id
-        return representation
+# Serializer for tests within the product
+class CTestSerializer(serializers.ModelSerializer):
+    questions = serializers.SerializerMethodField()  # Custom method to include questions within a test
+    total_correct_by_test = serializers.SerializerMethodField()  # Custom field for total correct answers by test
+    total_incorrect_by_test = serializers.SerializerMethodField()  # Custom field for total incorrect answers by test
+
+    class Meta:
+        model = Test
+        fields = ['id', 'title', 'questions', 'total_correct_by_test', 'total_incorrect_by_test']
+
+    # Custom method to retrieve questions and their selected options for the test
+    def get_questions(self, obj):
+        completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=self.context.get('completed_test'))
+        return QuestionSerializer(completed_questions, many=True).data
+
+    # Custom method to calculate total correct answers for the test
+    def get_total_correct_by_test(self, obj):
+        completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=self.context.get('completed_test'))
+        return completed_questions.filter(selected_option__is_correct=True).count()
+
+    # Custom method to calculate total incorrect answers for the test
+    def get_total_incorrect_by_test(self, obj):
+        completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=self.context.get('completed_test'))
+        return completed_questions.filter(selected_option__is_correct=False).count()
+
+# Serializer for products
+class ProductSerializer(serializers.ModelSerializer):
+    tests = serializers.SerializerMethodField()  # Custom method to include tests within a product
+    total_correct_by_all_tests = serializers.SerializerMethodField()  # Total correct answers across all tests
+    total_incorrect_by_all_tests = serializers.SerializerMethodField()  # Total incorrect answers across all tests
+
+    class Meta:
+        model = Product
+        fields = ['id', 'title', 'tests', 'total_correct_by_all_tests', 'total_incorrect_by_all_tests']
+
+    # Custom method to retrieve tests related to the completed test
+    def get_tests(self, obj):
+        completed_test = self.context.get('completed_test')  # Pass completed_test to the serializer context
+        return CTestSerializer(completed_test.tests.all(), many=True, context={'completed_test': completed_test}).data
+
+    # Custom method to calculate total correct answers across all tests
+    def get_total_correct_by_all_tests(self, obj):
+        completed_test = self.context.get('completed_test')
+        return CompletedQuestion.objects.filter(completed_test=completed_test, selected_option__is_correct=True).count()
+
+    # Custom method to calculate total incorrect answers across all tests
+    def get_total_incorrect_by_all_tests(self, obj):
+        completed_test = self.context.get('completed_test')
+        return CompletedQuestion.objects.filter(completed_test=completed_test, selected_option__is_correct=False).count()
+
+# Serializer for the completed test
+class CCompletedTestSerializer(serializers.ModelSerializer):
+    product = ProductSerializer()
+    user = serializers.StringRelatedField()  # Display user’s string representation
+    start_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
+    finish_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False)
+
+    class Meta:
+        model = CompletedTest
+        fields = ['id', 'user', 'product', 'start_test_time', 'finish_test_time']

@@ -3,8 +3,8 @@ from accounts.views import UserDetailView, LogoutView, update_user_view, current
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from test_logic.views import ( 
-    ProductViewSet, TestViewSet, QuestionViewSet, 
-    OptionViewSet, ResultViewSet, BookSuggestionViewSet, 
+    ProductViewSet, TestViewSet, QuestionViewSet, OptionViewSet,
+    # OptionViewSet, ResultViewSet, BookSuggestionViewSet, 
     product_tests_view, required_tests_by_product,
     complete_test_view, get_all_completed_tests,
     get_completed_test_by_id
