@@ -335,11 +335,11 @@ def complete_test_view(request):
     completed_test.save()
 
     # Check if test_start_time is set
-    if user.test_start_time:
-        time_spent = now() - user.test_start_time
-        time_spent_minutes = time_spent.total_seconds() // 60  # Time spent in minutes
-    else:
-        return Response({"detail": "Test start time is not set."}, status=status.HTTP_400_BAD_REQUEST)
+    # if user.test_start_time:
+    time_spent = now() - user.test_start_time
+    time_spent_minutes = time_spent.total_seconds() // 60
+    # else:
+        # return Response({"detail": "Test start time is not set."}, status=status.HTTP_400_BAD_REQUEST)
 
     # Reset user test state after completion
     user.test_is_started = False
