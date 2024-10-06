@@ -17,6 +17,22 @@ class CurrentQuestionSerializer(serializers.ModelSerializer):
         model = Question
         fields = ['id', 'text', 'options']
 
+    def to_representation(self, instance):
+        # Get the normal representation
+        representation = super().to_representation(instance)
+
+        # Get all questions from the queryset
+        questions_queryset = self.context.get('questions_queryset')
+
+        # Shuffle and pick 15 random questions if there are more than 15 questions
+        # if questions_queryset.count() > 15:
+        #     random_questions = random.sample(list(questions_queryset), 15)
+        # else:
+        #     random_questions = questions_queryset
+
+        # Return the representation of the selected 15 random questions
+        return CurrentQuestionSerializer(questions_queryset, many=True).data
+
 class CurrentTestSerializer(serializers.ModelSerializer):
     questions = serializers.SerializerMethodField()
 
