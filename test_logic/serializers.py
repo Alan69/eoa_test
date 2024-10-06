@@ -252,7 +252,12 @@ class CProductSerializer(serializers.ModelSerializer):
     # Custom method to calculate total incorrect answers across all tests
     def get_total_incorrect_by_all_tests(self, obj):
         completed_test = self.context.get('completed_test')
-        return CompletedQuestion.objects.filter(completed_test=completed_test, selected_option__is_correct=False).count()
+        # Filter for incorrect answers where selected_option__is_correct is either False or Null
+        return CompletedQuestion.objects.filter(
+            completed_test=completed_test
+        ).filter(
+            Q(selected_option__is_correct=False) | Q(selected_option__is_correct__isnull=True)
+        ).count()
 
 # Serializer for the completed test
 class CCompletedTestSerializer(serializers.ModelSerializer):
