@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest, CompletedQuestion
 from accounts.models import User
 from accounts.serializers import UserSerializer
+from django.db.models import Q
 
 # new
 class CurrentOptionSerializer(serializers.ModelSerializer):
@@ -222,9 +223,12 @@ class CTestSerializer(serializers.ModelSerializer):
 
     # Custom method to calculate total incorrect answers for the test
     def get_total_incorrect_by_test(self, obj):
-        completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=self.context.get('completed_test'))
-        return completed_questions.filter(selected_option__is_correct=False).count()
-    # + completed_questions.filter(selected_option__is_correct=None)
+        completed_test = self.context.get('completed_test')
+        # Retrieve completed questions for the given test
+        completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=completed_test)
+        # Filter for incorrect answers where selected_option__is_correct is either False or Null
+        return completed_questions.filter(Q(selected_option__is_correct=False) | Q(selected_option__is_correct__isnull=True)).count()
+    
 # Serializer for products
 class CProductSerializer(serializers.ModelSerializer):
     tests = serializers.SerializerMethodField()  # Custom method to include tests within a product
