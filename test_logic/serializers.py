@@ -182,7 +182,7 @@ class CompletedTestSerializer(serializers.ModelSerializer):
 class OptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Option
-        fields = ['id', 'text']
+        fields = ['id', 'text', 'is_correct']
 
 # Serializer for the questions within a test
 class QuestionSerializer(serializers.ModelSerializer):
