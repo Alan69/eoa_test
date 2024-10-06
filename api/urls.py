@@ -10,6 +10,8 @@ from test_logic.views import (
     get_completed_test_by_id
 )
 
+from payments.views import AddBalanceView
+
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
@@ -46,4 +48,6 @@ urlpatterns = [
     path('complete/test/', complete_test_view, name='complete-test'),
     path('completed-tests/<uuid:completed_test_id>/', get_completed_test_by_id, name='get-completed-test-by-id'),
     path('completed-tests/', get_all_completed_tests, name='get-all-completed-tests'),
+
+    path('update/balance/', AddBalanceView.as_view(), name='add_balance'),
 ]

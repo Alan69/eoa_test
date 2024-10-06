@@ -13,6 +13,8 @@ import re
 import base64
 from .models import FetchedEmailData
 from accounts.models import User
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
@@ -134,6 +136,27 @@ class FetchEmailsView(views.APIView):
 class AddBalanceView(views.APIView):
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_description="Adds the fetched payment amount to the authenticated user's balance.",
+        responses={
+            200: openapi.Response(
+                description="Balance successfully added and fetched email data deleted.",
+                examples={
+                    "application/json": {
+                        "success": "Balance of 100.00 added to user 123456789. Fetched email data deleted."
+                    }
+                }
+            ),
+            500: openapi.Response(
+                description="Error occurred while adding balance.",
+                examples={
+                    "application/json": {
+                        "error": "Error adding balance: some error message."
+                    }
+                }
+            )
+        },
+    )
     def post(self, request):
         try:
             payment_id = request.user.payment_id
