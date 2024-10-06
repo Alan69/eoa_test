@@ -223,7 +223,8 @@ class CTestSerializer(serializers.ModelSerializer):
     # Custom method to calculate total incorrect answers for the test
     def get_total_incorrect_by_test(self, obj):
         completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=self.context.get('completed_test'))
-        return completed_questions.filter(selected_option__is_correct=False).count() + completed_questions.filter(selected_option__is_correct=None)
+        return completed_questions.filter(selected_option__is_correct=False).count()
+    # + completed_questions.filter(selected_option__is_correct=None)
 # Serializer for products
 class CProductSerializer(serializers.ModelSerializer):
     tests = serializers.SerializerMethodField()  # Custom method to include tests within a product
