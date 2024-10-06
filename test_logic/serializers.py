@@ -68,15 +68,15 @@ class CompletedQuestionSerializer(serializers.ModelSerializer):
         fields = ['id', 'test', 'question', 'selected_option']
 
 class CompletedTestSerializer(serializers.ModelSerializer):
-    completed_questions = CompletedQuestionSerializer(many=True)
-    user = UserSerializer()
+    # completed_questions = CompletedQuestionSerializer(many=True)
+    # user = UserSerializer()
     product = ProductSerializer()
 
     # Adding custom fields for correct/incorrect answers and total question count
     # correct_answers_count = serializers.SerializerMethodField()
     # incorrect_answers_count = serializers.SerializerMethodField()
-    total_question_count = serializers.SerializerMethodField()
-    subjects = serializers.SerializerMethodField()
+    # total_question_count = serializers.SerializerMethodField()
+    # subjects = serializers.SerializerMethodField()
 
     class Meta:
         model = CompletedTest
@@ -85,12 +85,7 @@ class CompletedTestSerializer(serializers.ModelSerializer):
             'user', 
             'product', 
             'start_test_time', 
-            'finish_test_time', 
-            'completed_questions',
-            # 'correct_answers_count', 
-            # 'incorrect_answers_count', 
-            'total_question_count',  # New field for the total number of questions
-            'subjects'
+            'finish_test_time',
         ]
 
     # Method to calculate correct answers for the specific test
@@ -228,8 +223,7 @@ class CTestSerializer(serializers.ModelSerializer):
     # Custom method to calculate total incorrect answers for the test
     def get_total_incorrect_by_test(self, obj):
         completed_questions = CompletedQuestion.objects.filter(test=obj, completed_test=self.context.get('completed_test'))
-        return completed_questions.filter(selected_option__is_correct=False).count()
-
+        return completed_questions.filter(selected_option__is_correct=False).count() + completed_questions.filter(selected_option__is_correct=None)
 # Serializer for products
 class CProductSerializer(serializers.ModelSerializer):
     tests = serializers.SerializerMethodField()  # Custom method to include tests within a product
