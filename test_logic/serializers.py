@@ -234,10 +234,11 @@ class CProductSerializer(serializers.ModelSerializer):
     tests = serializers.SerializerMethodField()  # Custom method to include tests within a product
     total_correct_by_all_tests = serializers.SerializerMethodField()  # Total correct answers across all tests
     total_incorrect_by_all_tests = serializers.SerializerMethodField()  # Total incorrect answers across all tests
+    total_question_count_by_all_tests = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
-        fields = ['id', 'title', 'tests', 'total_correct_by_all_tests', 'total_incorrect_by_all_tests']
+        fields = ['id', 'title', 'tests', 'total_correct_by_all_tests', 'total_incorrect_by_all_tests', 'total_question_count_by_all_tests']
 
     # Custom method to retrieve tests related to the completed test
     def get_tests(self, obj):
@@ -258,6 +259,11 @@ class CProductSerializer(serializers.ModelSerializer):
         ).filter(
             Q(selected_option__is_correct=False) | Q(selected_option__is_correct__isnull=True)
         ).count()
+    
+    def get_total_question_count_by_all_tests(self, obj):
+        completed_test = self.context.get('completed_test')
+        # Count the total number of completed questions for this test
+        return CompletedQuestion.objects.filter(completed_test=completed_test).count()
 
 # Serializer for the completed test
 class CCompletedTestSerializer(serializers.ModelSerializer):
