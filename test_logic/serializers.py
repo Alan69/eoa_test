@@ -231,7 +231,7 @@ class CTestSerializer(serializers.ModelSerializer):
         return completed_questions.filter(selected_option__is_correct=False).count()
 
 # Serializer for products
-class ProductSerializer(serializers.ModelSerializer):
+class CProductSerializer(serializers.ModelSerializer):
     tests = serializers.SerializerMethodField()  # Custom method to include tests within a product
     total_correct_by_all_tests = serializers.SerializerMethodField()  # Total correct answers across all tests
     total_incorrect_by_all_tests = serializers.SerializerMethodField()  # Total incorrect answers across all tests
@@ -257,7 +257,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
 # Serializer for the completed test
 class CCompletedTestSerializer(serializers.ModelSerializer):
-    product = ProductSerializer()
+    product = CProductSerializer()
     user = serializers.StringRelatedField()  # Display user’s string representation
     start_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     finish_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False)
