@@ -15,6 +15,8 @@ from .models import FetchedEmailData
 from accounts.models import User
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
+from django.utils import timezone
+from datetime import timedelta
 
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
@@ -86,7 +88,17 @@ def parse_message(message):
 
 def get_messages(service):
     try:
-        results = service.users().messages().list(userId='me', q='from:' + SENDER_EMAIL).execute()
+        # Calculate the timestamp for 10 minutes ago
+        ten_minutes_ago = timezone.now() - timedelta(minutes=10)
+        # Convert the datetime to the format required by Gmail API
+        after_timestamp = int(ten_minutes_ago.timestamp() * 1000000)  # Convert to microseconds
+
+        # Construct the search query for Gmail
+        results = service.users().messages().list(
+            userId='me',
+            q=f'from:{SENDER_EMAIL} after:{after_timestamp}'
+        ).execute()
+        
         messages = results.get('messages', [])
 
         parsed_messages = []
@@ -133,6 +145,27 @@ class FetchEmailsView(views.APIView):
         return Response(parsed_messages, status=status.HTTP_200_OK)
 
 
+def fetch_and_process_emails(service):
+    parsed_messages = get_messages(service)
+
+    for parsed_message in parsed_messages:
+        fio_student = parsed_message.get('fio_student')
+        jsn_iin = parsed_message.get('jsn_iin')
+        payment_amount = parsed_message.get('payment_amount')
+        payment_id = parsed_message.get('payment_id')
+
+        if FetchedEmailData.objects.filter(payment_id_match=payment_id).exists():
+            continue  # Skip saving if payment_id already exists
+
+        FetchedEmailData.objects.create(
+            fio_student=fio_student,
+            jsn_iin=jsn_iin,
+            payment_amount=payment_amount,
+            payment_id_match=payment_id
+        )
+
+    return parsed_messages
+
 class AddBalanceView(views.APIView):
     permission_classes = [IsAuthenticated]
 
@@ -159,6 +192,14 @@ class AddBalanceView(views.APIView):
     )
     def post(self, request):
         try:
+            # Authenticate and build the Gmail service object
+            service = AuthenticateGmailView().get(request)
+            if isinstance(service, Response) and service.status_code == status.HTTP_302_FOUND:
+                return service  # Redirect to OAuth2 authorization URL
+            
+            # Call the email fetching function
+            fetch_and_process_emails(service)
+
             payment_id = request.user.payment_id
             fetched_email = get_object_or_404(FetchedEmailData, payment_id_match=payment_id)
 
@@ -166,7 +207,7 @@ class AddBalanceView(views.APIView):
             user.balance += Decimal(fetched_email.payment_amount)
             user.save()
 
-            fetched_email.delete()
+            # fetched_email.delete()  # Optionally delete the fetched email data
 
             return Response(
                 {'success': f'Balance of {fetched_email.payment_amount} added to user {fetched_email.jsn_iin}. Fetched email data deleted.'},
@@ -174,3 +215,4 @@ class AddBalanceView(views.APIView):
             )
         except Exception as e:
             return Response({'error': f'Error adding balance: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
