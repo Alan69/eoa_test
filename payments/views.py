@@ -15,8 +15,6 @@ from .models import FetchedEmailData
 from accounts.models import User
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from django.utils import timezone
-from datetime import timedelta
 
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
@@ -88,17 +86,7 @@ def parse_message(message):
 
 def get_messages(service):
     try:
-        # Calculate the timestamp for 10 minutes ago
-        ten_minutes_ago = timezone.now() - timedelta(minutes=10)
-        # Convert the datetime to the format required by Gmail API
-        after_timestamp = int(ten_minutes_ago.timestamp() * 1000000)  # Convert to microseconds
-
-        # Construct the search query for Gmail
-        results = service.users().messages().list(
-            userId='me',
-            q=f'from:{SENDER_EMAIL} after:{after_timestamp}'
-        ).execute()
-        
+        results = service.users().messages().list(userId='me', q='from:' + SENDER_EMAIL).execute()
         messages = results.get('messages', [])
 
         parsed_messages = []
@@ -145,68 +133,44 @@ class FetchEmailsView(views.APIView):
         return Response(parsed_messages, status=status.HTTP_200_OK)
 
 
-def fetch_and_process_emails(service):
-    parsed_messages = get_messages(service)
-
-    for parsed_message in parsed_messages:
-        fio_student = parsed_message.get('fio_student')
-        jsn_iin = parsed_message.get('jsn_iin')
-        payment_amount = parsed_message.get('payment_amount')
-        payment_id = parsed_message.get('payment_id')
-
-        if FetchedEmailData.objects.filter(payment_id_match=payment_id).exists():
-            continue  # Skip saving if payment_id already exists
-
-        FetchedEmailData.objects.create(
-            fio_student=fio_student,
-            jsn_iin=jsn_iin,
-            payment_amount=payment_amount,
-            payment_id_match=payment_id
-        )
-
-    return parsed_messages
-
 class AddBalanceView(views.APIView):
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_description="Adds the fetched payment amount to the authenticated user's balance.",
+        responses={
+            200: openapi.Response(
+                description="Balance successfully added and fetched email data deleted.",
+                examples={
+                    "application/json": {
+                        "success": "Balance of 100.00 added to user 123456789. Fetched email data deleted."
+                    }
+                }
+            ),
+            500: openapi.Response(
+                description="Error occurred while adding balance.",
+                examples={
+                    "application/json": {
+                        "error": "Error adding balance: some error message."
+                    }
+                }
+            )
+        },
+    )
     def post(self, request):
         try:
-            # Authenticate and build the Gmail service object
-            service = AuthenticateGmailView().get(request)
-            if isinstance(service, Response) and service.status_code == status.HTTP_302_FOUND:
-                return service  # Redirect to OAuth2 authorization URL
-            
-            # Call the email fetching function
-            fetch_and_process_emails(service)
+            payment_id = request.user.payment_id
+            fetched_email = get_object_or_404(FetchedEmailData, payment_id_match=payment_id)
 
-            payment_id = request.user.payment_id  # This is the current user's payment_id
-            fetched_email = FetchedEmailData.objects.filter(payment_id_match=payment_id).first()
-
-            if not fetched_email:
-                # If no fetched email data exists with the current user's payment_id,
-                # try to find it using jsn_iin (username)
-                fetched_email = FetchedEmailData.objects.filter(jsn_iin=request.user.username).first()
-                
-                if not fetched_email:
-                    return Response({'error': 'No fetched email data found for this user.'}, status=status.HTTP_404_NOT_FOUND)
-
-                # Update the user's payment_id with the payment_id from fetched_email
-                request.user.payment_id = fetched_email.payment_id_match
-                request.user.save()
-
-            # Proceed to add balance
             user = request.user
             user.balance += Decimal(fetched_email.payment_amount)
             user.save()
 
-            # Optionally delete the fetched email data
-            fetched_email.delete()
+            # fetched_email.delete()
 
             return Response(
-                {'success': f'Balance of {fetched_email.payment_amount} added to user {user.username}.'},
+                {'success': f'Balance of {fetched_email.payment_amount} added to user {fetched_email.jsn_iin}. Fetched email data deleted.'},
                 status=status.HTTP_200_OK
             )
         except Exception as e:
             return Response({'error': f'Error adding balance: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
