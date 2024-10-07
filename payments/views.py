@@ -169,27 +169,6 @@ def fetch_and_process_emails(service):
 class AddBalanceView(views.APIView):
     permission_classes = [IsAuthenticated]
 
-    @swagger_auto_schema(
-        operation_description="Adds the fetched payment amount to the authenticated user's balance.",
-        responses={
-            200: openapi.Response(
-                description="Balance successfully added and fetched email data deleted.",
-                examples={
-                    "application/json": {
-                        "success": "Balance of 100.00 added to user 123456789. Fetched email data deleted."
-                    }
-                }
-            ),
-            500: openapi.Response(
-                description="Error occurred while adding balance.",
-                examples={
-                    "application/json": {
-                        "error": "Error adding balance: some error message."
-                    }
-                }
-            )
-        },
-    )
     def post(self, request):
         try:
             # Authenticate and build the Gmail service object
@@ -200,19 +179,34 @@ class AddBalanceView(views.APIView):
             # Call the email fetching function
             fetch_and_process_emails(service)
 
-            payment_id = request.user.payment_id
-            fetched_email = get_object_or_404(FetchedEmailData, payment_id_match=payment_id)
+            payment_id = request.user.payment_id  # This is the current user's payment_id
+            fetched_email = FetchedEmailData.objects.filter(payment_id_match=payment_id).first()
 
+            if not fetched_email:
+                # If no fetched email data exists with the current user's payment_id,
+                # try to find it using jsn_iin (username)
+                fetched_email = FetchedEmailData.objects.filter(jsn_iin=request.user.username).first()
+                
+                if not fetched_email:
+                    return Response({'error': 'No fetched email data found for this user.'}, status=status.HTTP_404_NOT_FOUND)
+
+                # Update the user's payment_id with the payment_id from fetched_email
+                request.user.payment_id = fetched_email.payment_id_match
+                request.user.save()
+
+            # Proceed to add balance
             user = request.user
             user.balance += Decimal(fetched_email.payment_amount)
             user.save()
 
-            # fetched_email.delete()  # Optionally delete the fetched email data
+            # Optionally delete the fetched email data
+            fetched_email.delete()
 
             return Response(
-                {'success': f'Balance of {fetched_email.payment_amount} added to user {fetched_email.jsn_iin}. Fetched email data deleted.'},
+                {'success': f'Balance of {fetched_email.payment_amount} added to user {user.username}.'},
                 status=status.HTTP_200_OK
             )
         except Exception as e:
             return Response({'error': f'Error adding balance: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
