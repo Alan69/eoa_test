@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 # ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
-ALLOWED_HOSTS = ['185.22.65.38', 'synaqtest.kz', 'www.synaqtest.kz', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['api.synaqtest.kz', 'www.api.synaqtest.kz', '127.0.0.1', 'localhost']
 
 
 # Application definition
