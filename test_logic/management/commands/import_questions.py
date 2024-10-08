@@ -25,7 +25,7 @@ class Command(BaseCommand):
         for item in data:
             test_id = item.get(2)  # Assuming there's a 'test_id' field in your JSON
             try:
-                test = Test.objects.get(id="28ccc4c0-6467-45b1-8493-8228ad7fa75d")
+                test = Test.objects.get(id="e606c902-f904-4edd-b3bb-9a877e2037be")
             except Test.DoesNotExist:
                 self.stdout.write(self.style.ERROR(f'Test with ID {test_id} does not exist.'))
                 continue
