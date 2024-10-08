@@ -186,7 +186,7 @@ def import_questions_view(request):
     if request.method == 'POST':
         form = ImportQuestionsForm(request.POST, request.FILES)
         if form.is_valid():
-            test_id = form.cleaned_data['test']
+            test = form.cleaned_data['test']
             json_file = request.FILES['json_file']
 
             # Save the uploaded file temporarily
@@ -202,10 +202,10 @@ def import_questions_view(request):
                 return render(request, 'payments/import_questions.html', {'form': form, 'error': 'File not found.'})
 
             # Fetch the Test object
-            try:
-                test = Test.objects.get(id=test_id)
-            except Test.DoesNotExist:
-                return render(request, 'payments/import_questions.html', {'form': form, 'error': f'Test with ID {test_id} does not exist.'})
+            # try:
+            #     test = Test.objects.get(id=test_id)
+            # except Test.DoesNotExist:
+            #     return render(request, 'payments/import_questions.html', {'form': form, 'error': f'Test with ID {test_id} does not exist.'})
 
             # Process the questions and options
             for item in data:
