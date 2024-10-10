@@ -157,6 +157,14 @@ def product_tests_view(request):
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
+    # Check if the user has enough balance to purchase the product
+    if user.balance < product.sum:
+        return Response({"detail": "Insufficient balance."}, status=status.HTTP_400_BAD_REQUEST)
+
+    # Deduct the product sum from the user's balance
+    user.balance -= product.sum
+    user.save()
+
     # Get the tests based on the provided IDs
     tests = Test.objects.filter(product=product, id__in=tests_ids)
 
@@ -166,6 +174,7 @@ def product_tests_view(request):
     # Serialize the tests
     serialized_tests = CurrentTestSerializer(tests, many=True).data
 
+    # Set the product, test start flag, and times for the user
     user.product = product  # Set the product for the user
     user.test_is_started = True  # Set test_is_started to True
     user.total_time = total_time  # Set the total time to the sum of test and product time
