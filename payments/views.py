@@ -170,10 +170,10 @@ class AddBalanceView(views.APIView):
         operation_description="Adds the fetched payment amount to the authenticated user's balance.",
         responses={
             200: openapi.Response(
-                description="Balance successfully added and fetched email data deleted.",
+                description="Balance successfully added.",
                 examples={
                     "application/json": {
-                        "success": "Balance of 100.00 added to user 123456789. Fetched email data deleted."
+                        "success": "Balance of 100.00 added to user 123456789."
                     }
                 }
             ),
@@ -200,6 +200,10 @@ class AddBalanceView(views.APIView):
             if not fetched_email:
                 return Response({'error': 'No new payment email to process or payment already processed.'}, status=status.HTTP_404_NOT_FOUND)
 
+            # Check if the payment has already been processed
+            if fetched_email.is_payed:
+                return Response({'error': 'Payment has already been processed.'}, status=status.HTTP_400_BAD_REQUEST)
+
             # Update the user's payment_id before adding balance
             user = request.user
             user.payment_id = fetched_email.payment_id_match  # Assign fetched email's payment ID to the user
@@ -214,11 +218,12 @@ class AddBalanceView(views.APIView):
             user.payment_id = None  # Set payment_id to None after successful payment
             user.save()
 
-            # Delete the fetched email data
-            fetched_email.delete()
+            # Mark the payment as processed
+            fetched_email.is_payed = True
+            fetched_email.save()
 
             return Response(
-                {'success': f'Balance of {fetched_email.payment_amount} added to user {fetched_email.jsn_iin}. Fetched email data deleted.'},
+                {'success': f'Balance of {fetched_email.payment_amount} added to user {fetched_email.jsn_iin}.'},
                 status=status.HTTP_200_OK
             )
         except Exception as e:
