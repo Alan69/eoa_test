@@ -198,11 +198,11 @@ class AddBalanceView(views.APIView):
             fetched_email = fetch_and_save_last_email(service)
 
             if not fetched_email:
-                return Response({'error': 'No new payment email to process or payment already processed.'}, status=status.HTTP_404_NOT_FOUND)
+                return Response({'error': 'Вы не оплатили.'}, status=status.HTTP_404_NOT_FOUND)
 
             # Check if the payment has already been processed
             if fetched_email.is_payed:
-                return Response({'error': 'Payment has already been processed.'}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'error': 'Оалата уже прошла.'}, status=status.HTTP_400_BAD_REQUEST)
 
             # Update the user's payment_id before adding balance
             user = request.user
