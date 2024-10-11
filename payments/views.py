@@ -197,19 +197,21 @@ class AddBalanceView(views.APIView):
             # Fetch and save the last email
             fetched_email = fetch_and_save_last_email(service)
 
+            if not fetched_email:
+                return Response({'error': 'No new payment email to process or payment already processed.'}, status=status.HTTP_404_NOT_FOUND)
+
+            # Update the user's payment_id before adding balance
             user = request.user
             user.payment_id = fetched_email.payment_id_match  # Assign fetched email's payment ID to the user
             user.save()
 
-            if not fetched_email:
-                return Response({'error': 'Оплата уже прощла.'}, status=status.HTTP_404_NOT_FOUND)
-
             # Check if the fetched email belongs to the current user by payment_id or jsn_iin
-            if fetched_email.jsn_iin != request.user.username or fetched_email.payment_id_match != request.user.payment_id:
+            if fetched_email.jsn_iin != user.username or fetched_email.payment_id_match != user.payment_id:
                 return Response({'error': 'Fetched email data does not match the user.'}, status=status.HTTP_400_BAD_REQUEST)
 
             # Add balance to the user
             user.balance += Decimal(fetched_email.payment_amount)
+            user.payment_id = None  # Set payment_id to None after successful payment
             user.save()
 
             # Delete the fetched email data
@@ -221,6 +223,7 @@ class AddBalanceView(views.APIView):
             )
         except Exception as e:
             return Response({'error': f'Error adding balance: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 
 from django.shortcuts import render, redirect

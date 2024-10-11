@@ -66,7 +66,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.00, verbose_name="Баланс")
     referral_link = models.CharField(max_length=100, unique=True, null=True, blank=True)
     referral_bonus = models.DecimalField(max_digits=10, decimal_places=2, default=0)
-    payment_id = models.CharField(max_length=255)
+    payment_id = models.CharField(max_length=255, null=True, blank=True)
     test_is_started = models.BooleanField(default=False)
     total_time = models.IntegerField(default=0)
     test_start_time = models.DateTimeField(null=True, blank=True)
