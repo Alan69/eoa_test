@@ -132,6 +132,36 @@ class FetchEmailsView(views.APIView):
 
         return Response(parsed_messages, status=status.HTTP_200_OK)
 
+def fetch_and_save_last_email(service):
+    try:
+        # Fetch the last message
+        results = service.users().messages().list(userId='me', q=f'from:{SENDER_EMAIL}', maxResults=1).execute()
+        messages = results.get('messages', [])
+
+        if messages:
+            # Get the last message
+            message = messages[0]
+            msg = service.users().messages().get(userId='me', id=message['id']).execute()
+            msg_str = base64.urlsafe_b64decode(msg['payload']['body']['data']).decode('utf-8')
+            parsed_message = parse_message(msg_str)
+
+            if parsed_message:
+                # Check if payment ID already exists
+                if FetchedEmailData.objects.filter(payment_id_match=parsed_message['payment_id']).exists():
+                    return None  # Skip if payment_id already exists
+
+                # Save the parsed email data to the database
+                fetched_email = FetchedEmailData.objects.create(
+                    fio_student=parsed_message['fio_student'],
+                    jsn_iin=parsed_message['jsn_iin'],
+                    payment_amount=parsed_message['payment_amount'],
+                    payment_id_match=parsed_message['payment_id']
+                )
+                return fetched_email
+        return None
+    except Exception as e:
+        return None
+
 
 class AddBalanceView(views.APIView):
     permission_classes = [IsAuthenticated]
@@ -159,14 +189,28 @@ class AddBalanceView(views.APIView):
     )
     def post(self, request):
         try:
-            payment_id = request.user.payment_id
-            fetched_email = get_object_or_404(FetchedEmailData, payment_id_match=payment_id)
+            # Authenticate and build the Gmail service object
+            service = AuthenticateGmailView().get(request)
+            if isinstance(service, Response) and service.status_code == status.HTTP_302_FOUND:
+                return service  # Redirect to OAuth2 authorization URL if required
 
+            # Fetch and save the last email
+            fetched_email = fetch_and_save_last_email(service)
+
+            if not fetched_email:
+                return Response({'error': 'No new email to process or payment already exists.'}, status=status.HTTP_404_NOT_FOUND)
+
+            # Check if the fetched email belongs to the current user by payment_id or jsn_iin
+            if fetched_email.jsn_iin != request.user.username or fetched_email.payment_id_match != request.user.payment_id:
+                return Response({'error': 'Fetched email data does not match the user.'}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Add balance to the user
             user = request.user
             user.balance += Decimal(fetched_email.payment_amount)
             user.save()
 
-            # fetched_email.delete()
+            # Delete the fetched email data
+            fetched_email.delete()
 
             return Response(
                 {'success': f'Balance of {fetched_email.payment_amount} added to user {fetched_email.jsn_iin}. Fetched email data deleted.'},
@@ -174,6 +218,7 @@ class AddBalanceView(views.APIView):
             )
         except Exception as e:
             return Response({'error': f'Error adding balance: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 from django.shortcuts import render, redirect
 from django.core.files.storage import default_storage
