@@ -9,6 +9,7 @@ class Product(models.Model):
     sum = models.IntegerField(verbose_name="Сумма", default=1500, null=True, blank=True)
     score = models.IntegerField(help_text="%", verbose_name="Баллы", default=0, null=True, blank=True)
     time = models.IntegerField(help_text="В минутах", verbose_name="Время теста", default=45, null=True, blank=True)
+    subject_limit = models.IntegerField(help_text="Не обязательные предметы", verbose_name="Не обязательные предметы", default=1, null=True, blank=True)
     date_created = models.DateField(auto_now_add=True)
 
     def __str__(self):
