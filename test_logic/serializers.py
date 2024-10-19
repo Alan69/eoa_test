@@ -74,7 +74,7 @@ class CompletedTestSerializer(serializers.ModelSerializer):
     product = ProductSerializer()
 
     # Adding custom fields for correct/incorrect answers and total question count
-    # correct_answers_count = serializers.SerializerMethodField()
+    correct_answers_count = serializers.SerializerMethodField()
     # incorrect_answers_count = serializers.SerializerMethodField()
     # total_question_count = serializers.SerializerMethodField()
     # subjects = serializers.SerializerMethodField()
@@ -86,7 +86,10 @@ class CompletedTestSerializer(serializers.ModelSerializer):
             'user', 
             'product', 
             'start_test_time', 
-            'finish_test_time',
+            # 'finish_test_time',
+            'correct_answers_count',
+            'completed_date',
+            'completed_time',
         ]
 
     # Method to calculate correct answers for the specific test
