@@ -12,7 +12,9 @@ from rest_framework.decorators import api_view
 from django.db.models import Sum
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
+from datetime import timezone
 from django.utils.timezone import now
+from django.utils import timezone
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -247,12 +249,20 @@ def complete_test_view(request):
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
+
+    test_finish_test_time = user.finish_test_time = now()
+    test_start_time = user.test_start_time
+
+    time_spent = user.finish_test_time - user.test_start_time
+    time_spent_minutes = time_spent.total_seconds()
+
     # Create the CompletedTest instance
     completed_test = CompletedTest.objects.create(
         user=user,
         product=product,
-        completed_date=now(),
-        completed_time=now()
+        completed_date=test_finish_test_time,
+        start_test_time = test_start_time,
+        time_spent = time_spent_minutes
     )
 
     # Process each test and its questions
@@ -287,7 +297,7 @@ def complete_test_view(request):
                     # Process the selected option (for example, mark if correct)
                 except Option.DoesNotExist:
                     return Response({"detail": f"Option with id {selected_option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
-
+            
             # Save the completed question with the selected option
             CompletedQuestion.objects.create(
                 completed_test=completed_test,
@@ -296,17 +306,12 @@ def complete_test_view(request):
                 selected_option=option
             )
 
-    # Save the completed test
     completed_test.save()
-
-    # Check if test_start_time is set
-    # if user.test_start_time:
-    time_spent = now() - user.test_start_time
-    time_spent_minutes = time_spent.total_seconds() // 60
 
     # Reset user test state after completion
     user.test_is_started = False
-    user.test_start_time = None  # Clear start time
+    user.test_start_time = None
+    user.finish_test_time = None
     user.save()
 
     return Response({
