@@ -89,7 +89,7 @@ class CompletedTestSerializer(serializers.ModelSerializer):
             # 'finish_test_time',
             'correct_answers_count',
             'completed_date',
-            'completed_time',
+            # 'completed_time',
         ]
 
     # Method to calculate correct answers for the specific test

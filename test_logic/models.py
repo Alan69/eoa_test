@@ -114,7 +114,7 @@ class CompletedTest(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='completed_tests')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='completed_tests')
     tests = models.ManyToManyField(Test, related_name='completed_tests')
-    completed_date = models.DateField(auto_now_add=True)
+    completed_date = models.DateTimeField(auto_now_add=True)
     completed_time = models.TimeField(auto_now_add=True)
 
     start_test_time = models.DateTimeField(default=timezone.now)  # Adjust the default as necessary
