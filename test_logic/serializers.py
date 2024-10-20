@@ -189,19 +189,19 @@ class OptionSerializer(serializers.ModelSerializer):
 # Serializer for the questions within a test
 class QuestionSerializer(serializers.ModelSerializer):
     # All options for the question, assuming reverse relation is 'options'
-    # all_options = OptionSerializer(source='question.options', many=True)
-    # # selected_option = OptionSerializer()
+    all_options = OptionSerializer(source='question.options', many=True)
+    selected_option = OptionSerializer()
 
-    # class Meta:
-    #     model = CompletedQuestion  # Model is CompletedQuestion, not Question
-    #     fields = ['id', 'all_options']
+    class Meta:
+        model = CompletedQuestion  # Model is CompletedQuestion, not Question
+        fields = ['id', 'question_text', 'selected_option', 'all_options']
     
     # Add the text field explicitly by accessing it from the 'question' relation
     question_text = serializers.CharField(source='question.text', read_only=True)
 
     class Meta:
         model = CompletedQuestion  # Serializer is for CompletedQuestion model
-        fields = ['id', 'question_text', 'selected_option']  # Include question_text
+        fields = ['id', 'question_text', 'selected_option', 'all_options']  # Include question_text
 
 # Serializer for tests within the product
 class CTestSerializer(serializers.ModelSerializer):
