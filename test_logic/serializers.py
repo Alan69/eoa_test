@@ -273,8 +273,8 @@ class CCompletedTestSerializer(serializers.ModelSerializer):
     product = CProductSerializer()
     user = serializers.StringRelatedField()  # Display user’s string representation
     start_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
-    finish_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", required=False)
+    completed_date = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
 
     class Meta:
         model = CompletedTest
-        fields = ['id', 'user', 'product', 'start_test_time', 'finish_test_time']
+        fields = ['id', 'user', 'product', 'start_test_time', 'completed_date']
