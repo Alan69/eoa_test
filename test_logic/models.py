@@ -6,6 +6,7 @@ from django.utils import timezone
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200, blank=True, verbose_name='Имя')
+    description = models.TextField(null=True, blank=True, default="Test description")
     sum = models.IntegerField(verbose_name="Сумма", default=1500, null=True, blank=True)
     score = models.IntegerField(help_text="%", verbose_name="Баллы", default=0, null=True, blank=True)
     time = models.IntegerField(help_text="В минутах", verbose_name="Время теста", default=45, null=True, blank=True)
