@@ -4,13 +4,14 @@ from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from .models import User
+from .models import User, Region
 from django.contrib.auth.hashers import check_password
-from .serializers import RegisterSerializer, UserSerializer, ChangePasswordSerializer, UserPUTSerializer
+from .serializers import RegisterSerializer, UserSerializer, ChangePasswordSerializer, UserPUTSerializer, RegionSerializer
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 from rest_framework.authtoken.models import Token
 from django.shortcuts import get_object_or_404
+from rest_framework import viewsets
 
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -188,3 +189,7 @@ def update_user_view(request):
         return Response(serializer.data, status=status.HTTP_200_OK)
     
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class RegionViewSet(viewsets.ModelViewSet):
+    queryset = Region.objects.all()
+    serializer_class = RegionSerializer
