@@ -170,9 +170,9 @@ class ChangePasswordView(APIView):
 
 @swagger_auto_schema(
     method='put',
-    request_body=UserSerializer,  # Define the input serializer
+    request_body=UserPUTSerializer,  # Define the input serializer
     responses={  # Define the possible response codes and serializers
-        200: UserSerializer,  # Successful response with updated user data
+        200: UserPUTSerializer,  # Successful response with updated user data
         400: openapi.Response('Invalid input'),  # Bad request response
     }
 )
