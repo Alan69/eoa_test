@@ -39,7 +39,7 @@ class CurrentProductSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ['id', 'title', 'sum', 'description', 'time', 'subject_limit']
+        fields = ['id', 'title', 'sum', 'description', 'time', 'subject_limit', 'product_type']
 
 class TestSerializer(serializers.ModelSerializer):
 
@@ -116,69 +116,6 @@ class CompletedTestSerializer(serializers.ModelSerializer):
             else:
                 subjects_stats[subject_title]['incorrect'] += 1
         return [{'subject': k, 'correct': v['correct'], 'incorrect': v['incorrect']} for k, v in subjects_stats.items()]
-
-
-
-# old
-# class QuestionSerializer(serializers.ModelSerializer):
-#     test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
-
-#     class Meta:
-#         model = Question
-#         fields = '__all__'
-
-#     def to_representation(self, instance):
-#         representation = super().to_representation(instance)
-#         representation['test'] = instance.test.id
-#         return representation
-
-
-# class OptionSerializer(serializers.ModelSerializer):
-#     question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
-
-#     class Meta:
-#         model = Option
-#         fields = '__all__'
-
-#     def to_representation(self, instance):
-#         representation = super().to_representation(instance)
-#         representation['question'] = instance.question.id
-#         return representation
-
-
-# class ResultSerializer(serializers.ModelSerializer):
-#     test = serializers.PrimaryKeyRelatedField(queryset=Test.objects.all())
-#     student = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
-#     question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
-#     selected_option = serializers.PrimaryKeyRelatedField(queryset=Option.objects.all())
-
-#     class Meta:
-#         model = Result
-#         fields = '__all__'
-
-#     def to_representation(self, instance):
-#         representation = super().to_representation(instance)
-#         representation['test'] = instance.test.id
-#         representation['student'] = instance.student.id
-#         representation['question'] = instance.question.id
-#         representation['selected_option'] = instance.selected_option.id
-#         return representation
-
-
-# class BookSuggestionSerializer(serializers.ModelSerializer):
-#     question = serializers.PrimaryKeyRelatedField(queryset=Question.objects.all())
-
-#     class Meta:
-#         model = BookSuggestion
-#         fields = '__all__'
-
-#     def to_representation(self, instance):
-#         representation = super().to_representation(instance)
-#         representation['question'] = instance.question.id
-#         return representation
-
-
-# new
 
 # Serializer for the options within a question
 class OptionSerializer(serializers.ModelSerializer):
