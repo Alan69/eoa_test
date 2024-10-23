@@ -182,7 +182,7 @@ def update_user_view(request):
     user = request.user  # Get the current user making the request
     
     # Deserialize the incoming data and validate it
-    serializer = UserSerializer(user, data=request.data, partial=True)
+    serializer = UserPUTSerializer(user, data=request.data, partial=True)
     
     if serializer.is_valid():
         serializer.save()  # Update the user's data
