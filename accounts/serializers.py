@@ -66,7 +66,7 @@ class RegionSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'region_type', 'description']
 
 class UserPUTSerializer(serializers.ModelSerializer):
-    region = RegionSerializer()
+    # region = RegionSerializer()
 
     class Meta:
         model = User
