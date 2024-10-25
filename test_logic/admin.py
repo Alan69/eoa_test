@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest, CompletedQuestion
 from accounts.models import User
+from django.contrib import messages
 
 class OptionInline(admin.TabularInline):
     model = Option
@@ -13,6 +14,14 @@ class QuestionAdmin(admin.ModelAdmin):
 class QuestionInline(admin.TabularInline):
     model = Question
     extra = 1
+
+    @admin.action(description='Delete Questions with no text')
+    def delete_empty_text_questions(self, request, queryset):
+        deleted, _ = Question.objects.filter(text__isnull=True).delete()
+        messages.success(request, f'Successfully deleted {deleted} question(s) with no text.')
+
+    # Register the action
+    actions = [delete_empty_text_questions]
 
 class TestAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'number_of_questions', 'score', 'date_created')
