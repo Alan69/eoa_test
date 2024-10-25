@@ -30,6 +30,7 @@ DEBUG = env('DEBUG')
 # ALLOWED_HOSTS = ['synaqtest.kz', '185.22.65.38']
 ALLOWED_HOSTS = ['api.synaqtest.kz', 'www.api.synaqtest.kz', '127.0.0.1', 'localhost']
 
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10000
 
 # Application definition
 
