@@ -25,7 +25,8 @@ class CurrentTestSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'questions']
 
     def get_questions(self, obj):
-        questions = Question.objects.filter(test=obj)[:15]
+        number_of_questions = obj.number_of_questions if obj.number_of_questions else 15
+        questions = Question.objects.filter(test=obj)[:number_of_questions]
         return CurrentQuestionSerializer(questions, many=True).data
 
 class CurrentProductSerializer(serializers.ModelSerializer):
