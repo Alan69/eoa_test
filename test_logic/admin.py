@@ -25,7 +25,7 @@ class QuestionInline(admin.TabularInline):
 
 class TestAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'number_of_questions', 'score', 'date_created')
-    search_fields = ('title', 'created_by__username')
+    search_fields = ('id','title',)
     list_filter = ('date_created',)
     inlines = [QuestionInline]
 
