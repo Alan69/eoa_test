@@ -12,7 +12,7 @@ class Command(BaseCommand):
         file_path = os.path.join(os.path.dirname(__file__), 'quiz_data.json')
 
         # Ensure the specified Product exists
-        product_id = uuid.UUID("4b935da7-5a44-4a5c-8493-62609f6b5faf")
+        product_id = uuid.UUID("4ce7261c-29e8-4514-94c0-68344010c2d9")
         try:
             product = Product.objects.get(id=product_id)
         except Product.DoesNotExist:
