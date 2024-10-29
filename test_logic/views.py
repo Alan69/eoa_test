@@ -182,25 +182,19 @@ def required_tests_by_product(request, product_id):
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    # Filter tests where is_required=True
+    # Filter tests by product and where is_required is True
     required_tests = Test.objects.filter(product=product, is_required=True)
 
-    # Group tests by grade using defaultdict
+    # Group the tests by grade
     tests_by_grade = defaultdict(list)
     for test in required_tests:
-        tests_by_grade[test.grade].append(test)
+        tests_by_grade[test.grade].append(TestSerializer(test).data)
 
-    # Prepare data for serialization
-    grouped_data = [
-        {"grade": grade, "tests": tests}
-        for grade, tests in tests_by_grade.items()
-    ]
+    # Format the response by grade
+    response_data = [{"grade": grade, "tests": tests} for grade, tests in tests_by_grade.items()]
 
-    # Serialize the grouped data
-    serializer = GradeGroupedTestSerializer(grouped_data, many=True)
-
-    # Return the serialized data
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    # Return the response
+    return Response(response_data, status=status.HTTP_200_OK)
 
 @swagger_auto_schema(
     method='post',
