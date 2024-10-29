@@ -12,7 +12,7 @@ class Command(BaseCommand):
         file_path = os.path.join(os.path.dirname(__file__), 'quiz_data.json')
 
         # Ensure the specified Product exists
-        product_id = uuid.UUID("4ce7261c-29e8-4514-94c0-68344010c2d9")
+        product_id = uuid.UUID("59c6f3a4-14e9-4270-a859-c1131724f51c")
         try:
             product = Product.objects.get(id=product_id)
         except Product.DoesNotExist:
@@ -25,7 +25,7 @@ class Command(BaseCommand):
 
         for quiz_data in quizzes:
             # Process only quizzes with lng_title "казахский"
-            if quiz_data['lng_title'] != "казахский":
+            if quiz_data['lng_title'] != "русский":
                 continue
 
             # Create a new Test entry
