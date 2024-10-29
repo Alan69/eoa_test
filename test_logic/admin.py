@@ -24,8 +24,8 @@ class QuestionInline(admin.TabularInline):
     actions = [delete_empty_text_questions]
 
 class TestAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'number_of_questions', 'score', 'date_created', 'product')
-    search_fields = ('id','title', 'product',)
+    list_display = ('id', 'title', 'number_of_questions', 'score', 'grade', 'date_created', 'product')
+    search_fields = ('id','title', 'product', 'grade',)
     list_filter = ('date_created',)
     inlines = [QuestionInline]
 
