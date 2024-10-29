@@ -192,7 +192,7 @@ def required_tests_by_product(request, product_id):
     # Group tests by grade
     tests_by_grade = defaultdict(list)
     for test in serialized_tests:
-        grade = str(test.get('grade', 'unknown'))  # Convert grade to string
+        grade = str(test.get('grade', 0))  # Convert None to '0'
         test.pop('grade', None)  # Remove 'grade' from individual test objects
         tests_by_grade[grade].append(test)
 
@@ -203,8 +203,6 @@ def required_tests_by_product(request, product_id):
 
     # Return the response
     return Response(grouped_response, status=status.HTTP_200_OK)
-
-
 
 
 @swagger_auto_schema(
