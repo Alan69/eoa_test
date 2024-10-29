@@ -1,3 +1,4 @@
+from collections import defaultdict
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -146,27 +147,27 @@ def product_tests_view(request):
         "tests": serialized_tests
     }, status=status.HTTP_200_OK)
 
+test_schema = openapi.Schema(
+    type=openapi.TYPE_OBJECT,
+    properties={
+        "id": openapi.Schema(type=openapi.TYPE_STRING, format='uuid', description="Test ID"),
+        "title": openapi.Schema(type=openapi.TYPE_STRING, description="Test Title"),
+        "is_required": openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Is Test Required"),
+        "grade": openapi.Schema(type=openapi.TYPE_INTEGER, description="Grade Level"),
+    }
+)
+
+grouped_response_schema = openapi.Schema(
+    type=openapi.TYPE_OBJECT,
+    additional_properties=openapi.Schema(type=openapi.TYPE_ARRAY, items=test_schema),
+    description="Grouped tests by grade"
+)
+
 @swagger_auto_schema(
     method='get',
-    operation_description="Retrieve required tests for a given product ID",
+    operation_description="Retrieve required tests for a given product ID, grouped by grade.",
     responses={
-        200: openapi.Response(
-            description="List of required tests",
-            examples={
-                "application/json": [
-                    {
-                        "id": "some-test-uuid-1",
-                        "title": "Required Test 1",
-                        "is_required": True
-                    },
-                    {
-                        "id": "some-test-uuid-2",
-                        "title": "Required Test 2",
-                        "is_required": True
-                    }
-                ]
-            }
-        ),
+        200: openapi.Response(description="Grouped Tests by Grade", schema=grouped_response_schema),
         404: openapi.Response(description="Product not found"),
     }
 )
@@ -178,14 +179,23 @@ def required_tests_by_product(request, product_id):
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    # Filter tests by product and where is_required is True
+    # Filter tests by product
     required_tests = Test.objects.filter(product=product)
 
     # Serialize the tests
     serialized_tests = TestSerializer(required_tests, many=True).data
 
-    # Return the response
-    return Response(serialized_tests, status=status.HTTP_200_OK)
+    # Group tests by grade using defaultdict
+    tests_by_grade = defaultdict(list)
+    for test in serialized_tests:
+        grade = test.get('grade', 'unknown')  # Handle cases where grade might be None
+        tests_by_grade[grade].append(test)
+
+    # Convert defaultdict to a regular dictionary
+    grouped_response = dict(tests_by_grade)
+
+    # Return the grouped response
+    return Response(grouped_response, status=status.HTTP_200_OK)
 
 
 
