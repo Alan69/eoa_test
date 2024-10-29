@@ -1,4 +1,3 @@
-from collections import defaultdict
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -7,7 +6,7 @@ from .models import Product, Test, Question, Option, CompletedTest, CompletedQue
 from .serializers import (
     ProductSerializer, TestSerializer, QuestionSerializer,
     CurrentTestSerializer, CompletedTestSerializer, OptionSerializer,
-    CCompletedTestSerializer, GradeGroupedTestSerializer
+    CCompletedTestSerializer
 )
 from rest_framework.decorators import api_view
 from django.db.models import Sum
@@ -149,24 +148,21 @@ def product_tests_view(request):
 
 @swagger_auto_schema(
     method='get',
-    operation_description="Retrieve required tests for a given product ID, grouped by grade",
+    operation_description="Retrieve required tests for a given product ID",
     responses={
         200: openapi.Response(
-            description="List of required tests grouped by grade",
+            description="List of required tests",
             examples={
                 "application/json": [
                     {
-                        "grade": 4,
-                        "tests": [
-                            {"id": "test-uuid-1", "title": "Test 1", "is_required": True},
-                            {"id": "test-uuid-2", "title": "Test 2", "is_required": True}
-                        ]
+                        "id": "some-test-uuid-1",
+                        "title": "Required Test 1",
+                        "is_required": True
                     },
                     {
-                        "grade": 5,
-                        "tests": [
-                            {"id": "test-uuid-3", "title": "Test 3", "is_required": True}
-                        ]
+                        "id": "some-test-uuid-2",
+                        "title": "Required Test 2",
+                        "is_required": True
                     }
                 ]
             }
@@ -176,29 +172,23 @@ def product_tests_view(request):
 )
 @api_view(['GET'])
 def required_tests_by_product(request, product_id):
+    # Get the product
     try:
         product = Product.objects.get(id=product_id)
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    required_tests = Test.objects.filter(product=product, is_required=True)
+    # Filter tests by product and where is_required is True
+    required_tests = Test.objects.filter(product=product)
 
-    # Group tests by grade
-    from collections import defaultdict
-    tests_by_grade = defaultdict(list)
-    for test in required_tests:
-        tests_by_grade[test.grade].append(test)
+    # Serialize the tests
+    serialized_tests = TestSerializer(required_tests, many=True).data
 
-    # Prepare data for serialization
-    grouped_data = [
-        {"grade": grade, "tests": tests}
-        for grade, tests in tests_by_grade.items()
-    ]
+    # Return the response
+    return Response(serialized_tests, status=status.HTTP_200_OK)
 
-    # Serialize the grouped data
-    serializer = GradeGroupedTestSerializer(grouped_data, many=True)
 
-    return Response(serializer.data, status=status.HTTP_200_OK)
+
 
 @swagger_auto_schema(
     method='post',

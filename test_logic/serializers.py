@@ -45,7 +45,7 @@ class ProductSerializer(serializers.ModelSerializer):
 class TestSerializer(serializers.ModelSerializer):
     class Meta:
         model = Test
-        fields = ['id', 'title', 'is_required']
+        fields = ['id', 'title', 'is_required', 'grade']
 
 class GradeGroupedTestSerializer(serializers.Serializer):
     grade = serializers.IntegerField()
