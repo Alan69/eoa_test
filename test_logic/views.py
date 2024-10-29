@@ -153,14 +153,18 @@ test_schema = openapi.Schema(
         "id": openapi.Schema(type=openapi.TYPE_STRING, format='uuid', description="Test ID"),
         "title": openapi.Schema(type=openapi.TYPE_STRING, description="Test Title"),
         "is_required": openapi.Schema(type=openapi.TYPE_BOOLEAN, description="Is Test Required"),
-        "grade": openapi.Schema(type=openapi.TYPE_INTEGER, description="Grade Level"),
     }
 )
 
 grouped_response_schema = openapi.Schema(
-    type=openapi.TYPE_OBJECT,
-    additional_properties=openapi.Schema(type=openapi.TYPE_ARRAY, items=test_schema),
-    description="Grouped tests by grade"
+    type=openapi.TYPE_ARRAY,
+    items=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        properties={
+            "grade": openapi.Schema(type=openapi.TYPE_STRING, description="Grade"),
+            "tests": openapi.Schema(type=openapi.TYPE_ARRAY, items=test_schema),
+        },
+    ),
 )
 
 @swagger_auto_schema(
@@ -185,16 +189,19 @@ def required_tests_by_product(request, product_id):
     # Serialize the tests
     serialized_tests = TestSerializer(required_tests, many=True).data
 
-    # Group tests by grade using defaultdict
+    # Group tests by grade
     tests_by_grade = defaultdict(list)
     for test in serialized_tests:
-        grade = test.get('grade', 'unknown')  # Handle cases where grade might be None
+        grade = str(test.get('grade', 'unknown'))  # Convert grade to string
+        test.pop('grade', None)  # Remove 'grade' from individual test objects
         tests_by_grade[grade].append(test)
 
-    # Convert defaultdict to a regular dictionary
-    grouped_response = dict(tests_by_grade)
+    # Transform the grouped data into the desired structure
+    grouped_response = [
+        {"grade": grade, "tests": tests} for grade, tests in tests_by_grade.items()
+    ]
 
-    # Return the grouped response
+    # Return the response
     return Response(grouped_response, status=status.HTTP_200_OK)
 
 
