@@ -3,6 +3,7 @@ from .models import Product, Test, Question, Option, Result, BookSuggestion, Com
 from accounts.models import User
 from accounts.serializers import UserSerializer
 from django.db.models import Q
+from random import sample
 
 # new
 class CurrentOptionSerializer(serializers.ModelSerializer):
@@ -26,8 +27,11 @@ class CurrentTestSerializer(serializers.ModelSerializer):
 
     def get_questions(self, obj):
         number_of_questions = obj.number_of_questions if obj.number_of_questions else 15
-        questions = Question.objects.filter(test=obj)[:number_of_questions]
-        return CurrentQuestionSerializer(questions, many=True).data
+        # Fetch all questions related to the test
+        all_questions = list(Question.objects.filter(test=obj))
+        # Randomly select questions up to the specified number
+        selected_questions = sample(all_questions, min(number_of_questions, len(all_questions)))
+        return CurrentQuestionSerializer(selected_questions, many=True).data
 
 class CurrentProductSerializer(serializers.ModelSerializer):
     tests = CurrentTestSerializer(many=True)
