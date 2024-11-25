@@ -7,9 +7,21 @@ class OptionInline(admin.TabularInline):
     model = Option
     extra = 1
 
+
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'text', 'test')
+    list_display = ('id', 'text', 'test', 'get_product')  # Added 'get_product' to display Product
+    search_fields = ('text', 'test__title', 'test__product__title')  # Allow searching by related fields
+    list_filter = ('test__product', 'test')  # Add filters for Test and Product
     inlines = [OptionInline]
+
+    def get_product(self, obj):
+        """
+        Display the Product related to the Question via the Test relationship.
+        """
+        return obj.test.product.title if obj.test and obj.test.product else 'N/A'
+
+    get_product.short_description = 'Product'  # Set column header in admin
+
 
 class QuestionInline(admin.TabularInline):
     model = Question
@@ -20,13 +32,13 @@ class QuestionInline(admin.TabularInline):
         deleted, _ = Question.objects.filter(text__isnull=True).delete()
         messages.success(request, f'Successfully deleted {deleted} question(s) with no text.')
 
-    # Register the action
     actions = [delete_empty_text_questions]
+
 
 class TestAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'number_of_questions', 'score', 'grade', 'date_created', 'product')
-    search_fields = ('id','title', 'product', 'grade',)
-    list_filter = ('date_created',)
+    search_fields = ('id', 'title', 'product__title', 'grade')
+    list_filter = ('date_created', 'product')
     inlines = [QuestionInline]
 
 class ResultAdmin(admin.ModelAdmin):
