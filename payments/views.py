@@ -318,10 +318,8 @@ def import_questions_view(request):
 
     return render(request, 'payments/import_questions.html', {'form': form})
 
-from django.shortcuts import render
 from django.views import View
 from django.http import JsonResponse
-from .models import Question, Option, Test
 import pandas as pd
 
 
