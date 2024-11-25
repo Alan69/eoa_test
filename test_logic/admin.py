@@ -9,9 +9,9 @@ class OptionInline(admin.TabularInline):
 
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'text', 'test', 'get_product')  # Added 'get_product' to display Product
-    search_fields = ('text', 'test__title', 'test__product__title')  # Allow searching by related fields
-    list_filter = ('test__product', 'test')  # Add filters for Test and Product
+    list_display = ('id', 'text', 'test', 'get_product')  # Display test and its product
+    search_fields = ('text', 'test__title', 'test__product__title')
+    list_filter = ('test__product', 'test')
     inlines = [OptionInline]
 
     def get_product(self, obj):
@@ -20,7 +20,17 @@ class QuestionAdmin(admin.ModelAdmin):
         """
         return obj.test.product.title if obj.test and obj.test.product else 'N/A'
 
-    get_product.short_description = 'Product'  # Set column header in admin
+    get_product.short_description = 'Product'
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == 'test':
+            # If a Product is selected, filter Test dropdown to show only related Tests
+            product_id = request.GET.get('product')
+            if product_id:
+                kwargs['queryset'] = Test.objects.filter(product_id=product_id)
+            else:
+                kwargs['queryset'] = Test.objects.none()  # Show no Tests if no Product is selected
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
 
 class QuestionInline(admin.TabularInline):
