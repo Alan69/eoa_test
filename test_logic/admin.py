@@ -7,12 +7,35 @@ class OptionInline(admin.TabularInline):
     model = Option
     extra = 1
 
+class TestFilter(admin.SimpleListFilter):
+    title = 'Test'
+    parameter_name = 'test'
+
+    def lookups(self, request, model_admin):
+        """
+        Display a dropdown of Tests in the filter.
+        Dynamically show only Tests associated with the selected Product.
+        """
+        product_id = request.GET.get('test__product__id__exact')  # Get selected product filter
+        if product_id:
+            tests = Test.objects.filter(product_id=product_id)
+        else:
+            tests = Test.objects.all()
+        return [(test.id, test.title) for test in tests]
+
+    def queryset(self, request, queryset):
+        """
+        Filter the queryset based on the selected Test.
+        """
+        if self.value():
+            return queryset.filter(test_id=self.value())
+        return queryset
+
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'text', 'test', 'get_product')  # Added 'get_product' to display Product
-    search_fields = ('text', 'test__title', 'test__product__title')  # Allow searching by related fields
-    list_filter = ('test__product', 'test')  # Add filters for Test and Product
-    inlines = [OptionInline]
+    list_display = ('id', 'text', 'test', 'get_product')
+    search_fields = ('text', 'test__title', 'test__product__title')
+    list_filter = ('test__product', TestFilter)  # Add TestFilter while keeping Product filter
 
     def get_product(self, obj):
         """
@@ -20,7 +43,7 @@ class QuestionAdmin(admin.ModelAdmin):
         """
         return obj.test.product.title if obj.test and obj.test.product else 'N/A'
 
-    get_product.short_description = 'Product'  # Set column header in admin
+    get_product.short_description = 'Product'
 
 
 class QuestionInline(admin.TabularInline):
