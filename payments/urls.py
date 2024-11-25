@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AuthenticateGmailView, OAuth2CallbackView, FetchEmailsView, AddBalanceView, import_questions_view
+from .views import AuthenticateGmailView, OAuth2CallbackView, FetchEmailsView, AddBalanceView, import_questions_view, UploadQuestionsView
 
 urlpatterns = [
     path('authenticate-gmail/', AuthenticateGmailView.as_view(), name='authenticate_gmail'),
@@ -7,5 +7,6 @@ urlpatterns = [
     path('fetch-emails/', FetchEmailsView.as_view(), name='fetch_emails'),
     path('add-balance/', AddBalanceView.as_view(), name='add_balance'),
     path('import-questions/', import_questions_view, name='import_questions'),
+    path('upload-questions/', UploadQuestionsView.as_view(), name='upload_questions'),
     # path('success/', TemplateView.as_view(template_name='success.html'), name='success_view'),  # Optional success page
 ]

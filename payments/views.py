@@ -317,3 +317,56 @@ def import_questions_view(request):
         form = ImportQuestionsForm()
 
     return render(request, 'payments/import_questions.html', {'form': form})
+
+from django.shortcuts import render
+from django.views import View
+from django.http import JsonResponse
+from .models import Question, Option, Test
+import pandas as pd
+
+
+class UploadQuestionsView(View):
+    def get(self, request, *args, **kwargs):
+        # Render the upload form for GET requests
+        return render(request, 'payments/upload_questions.html')
+
+    def post(self, request, *args, **kwargs):
+        # Retrieve the Test ID (hardcoded or passed via request)
+        test_id = '1f886430-2014-44fe-af88-1530208a597d'
+
+        try:
+            test = Test.objects.get(id=test_id)
+        except Test.DoesNotExist:
+            return JsonResponse({"error": "Test not found"}, status=404)
+
+        excel_file = request.FILES.get('file')
+        if not excel_file:
+            return JsonResponse({"error": "No file uploaded"}, status=400)
+
+        try:
+            # Read and process the Excel file
+            data = pd.read_excel(excel_file)
+            for _, row in data.iterrows():
+                question_text = row.get('вопрос')
+                option_text = row.get('ответ')
+                is_correct = row.get('правильный/неправильный', 0) == 1
+
+                if pd.isna(question_text):
+                    continue
+
+                question, _ = Question.objects.get_or_create(
+                    test=test,
+                    text=question_text.strip(),
+                )
+
+                if not pd.isna(option_text):
+                    Option.objects.create(
+                        question=question,
+                        text=option_text.strip(),
+                        is_correct=is_correct
+                    )
+
+            return JsonResponse({"success": "Questions and options uploaded successfully"}, status=200)
+
+        except Exception as e:
+            return JsonResponse({"error": str(e)}, status=500)
