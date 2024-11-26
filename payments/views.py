@@ -324,6 +324,10 @@ import pandas as pd
 
 
 class UploadQuestionsView(View):
+    def get(self, request, *args, **kwargs):
+        # Render the upload form for GET requests
+        return render(request, 'payments/upload_questions.html')
+
     def post(self, request, *args, **kwargs):
         # Retrieve the Test ID (hardcoded or passed via request)
         test_id = '1f886430-2014-44fe-af88-1530208a597d'
