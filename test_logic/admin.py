@@ -36,6 +36,7 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ('id', 'text', 'test', 'get_product')
     search_fields = ('text', 'test__title', 'test__product__title')
     list_filter = ('test__product', TestFilter)  # Add TestFilter while keeping Product filter
+    inlines = [OptionInline]
 
     def get_product(self, obj):
         """
