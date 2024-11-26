@@ -324,10 +324,6 @@ import pandas as pd
 
 
 class UploadQuestionsView(View):
-    def get(self, request, *args, **kwargs):
-        # Render the upload form for GET requests
-        return render(request, 'payments/upload_questions.html')
-
     def post(self, request, *args, **kwargs):
         # Retrieve the Test ID (hardcoded or passed via request)
         test_id = '1f886430-2014-44fe-af88-1530208a597d'
@@ -344,24 +340,61 @@ class UploadQuestionsView(View):
         try:
             # Read and process the Excel file
             data = pd.read_excel(excel_file)
+
+            # Track questions and options
+            current_question_text = None
+            options = []
+
             for _, row in data.iterrows():
                 question_text = row.get('вопрос')
                 option_text = row.get('ответ')
                 is_correct = row.get('правильный/неправильный', 0) == 1
 
-                if pd.isna(question_text):
-                    continue
+                # If we encounter a new question, process the previous question
+                if pd.notna(question_text):
+                    if current_question_text and len(options) > 0:
+                        # Ensure exactly 4 options by padding with placeholders
+                        while len(options) < 4:
+                            options.append({"text": "Option N/A", "is_correct": False})
 
+                        # Save the question and its options
+                        question, _ = Question.objects.get_or_create(
+                            test=test,
+                            text=current_question_text.strip(),
+                        )
+
+                        for opt in options:
+                            Option.objects.create(
+                                question=question,
+                                text=opt['text'],
+                                is_correct=opt['is_correct']
+                            )
+
+                    # Start a new question
+                    current_question_text = question_text
+                    options = []
+
+                # Collect options
+                if pd.notna(option_text):
+                    options.append({"text": option_text.strip(), "is_correct": is_correct})
+
+            # Handle the last question
+            if current_question_text and len(options) > 0:
+                # Ensure exactly 4 options
+                while len(options) < 4:
+                    options.append({"text": "Option N/A", "is_correct": False})
+
+                # Save the last question and its options
                 question, _ = Question.objects.get_or_create(
                     test=test,
-                    text=question_text.strip(),
+                    text=current_question_text.strip(),
                 )
 
-                if not pd.isna(option_text):
+                for opt in options:
                     Option.objects.create(
                         question=question,
-                        text=option_text.strip(),
-                        is_correct=is_correct
+                        text=opt['text'],
+                        is_correct=opt['is_correct']
                     )
 
             return JsonResponse({"success": "Questions and options uploaded successfully"}, status=200)
