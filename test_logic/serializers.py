@@ -16,7 +16,7 @@ class CurrentQuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        fields = ['id', 'text', 'options']
+        fields = ['id', 'text', 'img', 'options']
 
 class CurrentTestSerializer(serializers.ModelSerializer):
     questions = serializers.SerializerMethodField()
