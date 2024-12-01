@@ -16,7 +16,6 @@ from drf_yasg import openapi
 from datetime import timezone
 from django.utils.timezone import now
 from django.utils import timezone
-from uuid import UUID
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -256,7 +255,7 @@ def complete_test_view(request):
     tests_data = request.data.get('tests')
 
     # Validate request data
-    if not product_id or not isinstance(tests_data, list):
+    if not product_id or not isinstance(tests_data, list): 
         return Response({"detail": "Invalid input data"}, status=status.HTTP_400_BAD_REQUEST)
 
     # Get the product
@@ -265,17 +264,20 @@ def complete_test_view(request):
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
+
     test_finish_test_time = user.finish_test_time = now()
     test_start_time = user.test_start_time
-    time_spent = (user.finish_test_time - user.test_start_time).total_seconds()
+
+    time_spent = user.finish_test_time - user.test_start_time
+    time_spent_minutes = time_spent.total_seconds()
 
     # Create the CompletedTest instance
     completed_test = CompletedTest.objects.create(
         user=user,
         product=product,
         completed_date=test_finish_test_time,
-        start_test_time=test_start_time,
-        time_spent=time_spent,
+        start_test_time = test_start_time,
+        time_spent = time_spent_minutes
     )
 
     # Process each test and its questions
@@ -283,39 +285,45 @@ def complete_test_view(request):
         test_id = test_data.get('id')
         questions_data = test_data.get('questions')
 
+        # Validate test existence
         try:
             test = Test.objects.get(id=test_id, product=product)
         except Test.DoesNotExist:
             return Response({"detail": f"Test with id {test_id} not found."}, status=status.HTTP_404_NOT_FOUND)
 
+        # Link the test to CompletedTest
         completed_test.tests.add(test)
 
+        # Process each question
         for question_data in questions_data:
             question_id = question_data.get('id')
-            option_ids = question_data.get('option_id')  # Ensure this is a list
+            selected_option_id = question_data.get('option_id')
 
             try:
                 question = Question.objects.get(id=question_id, test=test)
             except Question.DoesNotExist:
                 return Response({"detail": f"Question with id {question_id} not found in test {test_id}."}, status=status.HTTP_404_NOT_FOUND)
+            
+            option = None
 
-            if not isinstance(option_ids, list):
-                option_ids = [option_ids]  # Normalize to list if a single value
-
-            for option_id in option_ids:
+            if selected_option_id is not None:
                 try:
-                    UUID(option_id)  # Validate UUID format
-                    option = Option.objects.get(id=option_id, question=question)
-                except (Option.DoesNotExist, ValueError):
-                    return Response({"detail": f"Option with id {option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
+                    option = Option.objects.get(id=selected_option_id, question=question)
+                    # Process the selected option (for example, mark if correct)
+                except Option.DoesNotExist:
+                    return Response({"detail": f"Option with id {selected_option_id} not found for question {question_id}."}, status=status.HTTP_404_NOT_FOUND)
+            
+            # Save the completed question with the selected option
+            CompletedQuestion.objects.create(
+                completed_test=completed_test,
+                test=test,
+                question=question,
+                selected_option=option
+            )
 
-                CompletedQuestion.objects.create(
-                    completed_test=completed_test,
-                    test=test,
-                    question=question,
-                    selected_option=option,
-                )
+    completed_test.save()
 
+    # Reset user test state after completion
     user.test_is_started = False
     user.test_start_time = None
     user.finish_test_time = None
@@ -323,9 +331,8 @@ def complete_test_view(request):
 
     return Response({
         "completed_test_id": str(completed_test.id),
-        "time_spent_minutes": time_spent / 60,
+        "time_spent_minutes": time_spent_minutes
     }, status=status.HTTP_201_CREATED)
-
 
 
 @swagger_auto_schema(
