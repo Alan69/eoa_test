@@ -9,7 +9,12 @@
     <h1>Upload Questions</h1>
     <form method="post" action="{% url 'upload_questions' %}" enctype="multipart/form-data">
         {% csrf_token %}
-        <input type="file" name="file" accept=".xlsx" required />
+        <label for="test_id">Test ID:</label>
+        <input type="text" id="test_id" name="test_id" placeholder="Enter Test ID" required />
+        <br><br>
+        <label for="file">Upload Excel File:</label>
+        <input type="file" id="file" name="file" accept=".xlsx" required />
+        <br><br>
         <button type="submit">Upload</button>
     </form>
 </body>

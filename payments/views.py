@@ -330,7 +330,9 @@ class UploadQuestionsView(View):
 
     def post(self, request, *args, **kwargs):
         # Retrieve the Test ID (hardcoded or passed via request)
-        test_id = '1f886430-2014-44fe-af88-1530208a597d'
+        test_id = request.POST.get('test_id')
+        if not test_id:
+            return JsonResponse({"error": "Test ID is required"}, status=400)
 
         try:
             test = Test.objects.get(id=test_id)
