@@ -9,7 +9,7 @@ from random import sample
 class CurrentOptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Option
-        fields = ['id', 'text']
+        fields = ['id', 'text', 'img']
 
 class CurrentQuestionSerializer(serializers.ModelSerializer):
     options = CurrentOptionSerializer(many=True)
@@ -77,15 +77,9 @@ class CompletedQuestionSerializer(serializers.ModelSerializer):
         fields = ['id', 'test', 'question', 'selected_option']
 
 class CompletedTestSerializer(serializers.ModelSerializer):
-    # completed_questions = CompletedQuestionSerializer(many=True)
-    # user = UserSerializer()
     product = ProductSerializer()
 
-    # Adding custom fields for correct/incorrect answers and total question count
     correct_answers_count = serializers.SerializerMethodField()
-    # incorrect_answers_count = serializers.SerializerMethodField()
-    # total_question_count = serializers.SerializerMethodField()
-    # subjects = serializers.SerializerMethodField()
 
     class Meta:
         model = CompletedTest
