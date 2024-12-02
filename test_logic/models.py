@@ -83,6 +83,7 @@ class Option(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='options')
     text = models.CharField(max_length=200)
+    img = models.ImageField(upload_to='options', null=True, blank=True)
     is_correct = models.BooleanField(default=False)
 
     def __str__(self):
@@ -148,7 +149,7 @@ class CompletedQuestion(models.Model):
     completed_test = models.ForeignKey(CompletedTest, on_delete=models.CASCADE, related_name='completed_questions')
     test = models.ForeignKey(Test, on_delete=models.CASCADE, related_name='completed_test_questions')
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='completed_test_questions',  null=True, blank=True)
-    selected_option = models.ForeignKey(Option, on_delete=models.SET_NULL, null=True, blank=True)
+    selected_options = models.ManyToManyField(Option, blank=True)
 
     def __str__(self):
         return f"CompletedQuestion for {self.completed_test.user.username} - {self.question.text}"
