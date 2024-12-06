@@ -329,79 +329,96 @@ class UploadQuestionsView(View):
         return render(request, 'payments/upload_questions.html')
 
     def post(self, request, *args, **kwargs):
-        # Retrieve the Test ID (hardcoded or passed via request)
-        test_id = '9d52c5b8-accd-4388-9795-caad8c5cb715'
+        print("POST request received.")
+        test_id = '01b0677d-633d-4708-a0a1-969f71313799'
 
         try:
             test = Test.objects.get(id=test_id)
+            print(f"Test found: {test}")
         except Test.DoesNotExist:
+            print("Test not found.")
             return JsonResponse({"error": "Test not found"}, status=404)
 
         excel_file = request.FILES.get('file')
         if not excel_file:
+            print("No file uploaded.")
             return JsonResponse({"error": "No file uploaded"}, status=400)
 
         try:
-            # Read and process the Excel file
+            print("Reading the Excel file...")
             data = pd.read_excel(excel_file)
+            print("Excel file read successfully. Here's the data preview:")
+            print(data.head())
 
-            # Track questions and options
             current_question_text = None
             options = []
 
-            for _, row in data.iterrows():
-                question_text = row.get('вопрос')
-                option_text = row.get('ответ')
-                is_correct = row.get('правильный/неправильный', 0) == 1
+            for index, row in data.iterrows():
+                print(f"Processing row {index}: {row.to_dict()}")
+                question_text = row.get('Вопросы')
+                option_text = row.get('Ответы')
+                is_correct = row.get('Правильный/ неправильный ', 0) == 1
 
-                # If we encounter a new question, process the previous question
-                if pd.notna(question_text):
-                    if current_question_text and len(options) > 0:
-                        # Ensure exactly 4 options by padding with placeholders
+                # Ensure text is processed safely
+                question_text = str(question_text).strip() if pd.notna(question_text) else None
+                option_text = str(option_text).strip() if pd.notna(option_text) else None
+
+                if question_text:
+                    if current_question_text and options:
                         while len(options) < 4:
                             options.append({"text": "Option N/A", "is_correct": False})
 
-                        # Save the question and its options
-                        question, _ = Question.objects.get_or_create(
-                            test=test,
-                            text=current_question_text.strip(),
-                        )
-
-                        for opt in options:
-                            Option.objects.create(
-                                question=question,
-                                text=opt['text'],
-                                is_correct=opt['is_correct']
+                        print(f"Attempting to save question: {current_question_text}")
+                        try:
+                            question, created = Question.objects.get_or_create(
+                                test=test,
+                                text=current_question_text,
                             )
+                            print(f"Question {'created' if created else 'already exists'}: {question}")
 
-                    # Start a new question
+                            for opt in options:
+                                print(f"Saving option: {opt}")
+                                Option.objects.create(
+                                    question=question,
+                                    text=opt['text'],
+                                    is_correct=opt['is_correct']
+                                )
+                        except Exception as e:
+                            print(f"Error saving question or options: {e}")
+
                     current_question_text = question_text
                     options = []
 
-                # Collect options
-                if pd.notna(option_text):
-                    options.append({"text": option_text.strip(), "is_correct": is_correct})
+                if option_text:
+                    options.append({"text": option_text, "is_correct": is_correct})
 
-            # Handle the last question
-            if current_question_text and len(options) > 0:
-                # Ensure exactly 4 options
+            # Save the last question
+            if current_question_text and options:
                 while len(options) < 4:
                     options.append({"text": "Option N/A", "is_correct": False})
 
-                # Save the last question and its options
-                question, _ = Question.objects.get_or_create(
-                    test=test,
-                    text=current_question_text.strip(),
-                )
-
-                for opt in options:
-                    Option.objects.create(
-                        question=question,
-                        text=opt['text'],
-                        is_correct=opt['is_correct']
+                print(f"Attempting to save last question: {current_question_text}")
+                try:
+                    question, created = Question.objects.get_or_create(
+                        test=test,
+                        text=current_question_text,
                     )
+                    print(f"Last question {'created' if created else 'already exists'}: {question}")
+
+                    for opt in options:
+                        print(f"Saving option: {opt}")
+                        Option.objects.create(
+                            question=question,
+                            text=opt['text'],
+                            is_correct=opt['is_correct']
+                        )
+                except Exception as e:
+                    print(f"Error saving last question or options: {e}")
+
 
             return JsonResponse({"success": "Questions and options uploaded successfully"}, status=200)
 
         except Exception as e:
+            print(f"An error occurred: {e}")
             return JsonResponse({"error": str(e)}, status=500)
+
