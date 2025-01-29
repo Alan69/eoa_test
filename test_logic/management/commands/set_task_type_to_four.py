@@ -9,8 +9,8 @@ class Command(BaseCommand):
         updated_count = 0
 
         for question in questions:
-            if question.options.count() == 8:  # Check related options count
-                question.task_type = 8
+            if question.options.count() == 4:  # Check related options count
+                question.task_type = 4
                 question.save()
                 updated_count += 1
 

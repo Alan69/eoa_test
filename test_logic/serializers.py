@@ -5,7 +5,7 @@ from accounts.serializers import UserSerializer
 from django.db.models import Q
 from random import sample
 
-# new
+# start test
 class CurrentOptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Option
@@ -26,12 +26,41 @@ class CurrentTestSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'questions']
 
     def get_questions(self, obj):
-        number_of_questions = obj.number_of_questions if obj.number_of_questions else 15
+    # Ensure the logic only applies when number_of_questions == 40
+        if obj.number_of_questions != 40:
+            # Return random selection of up to the number_of_questions
+            all_questions = list(Question.objects.filter(test=obj))
+            selected_questions = sample(all_questions, min(obj.number_of_questions, len(all_questions)))
+            return CurrentQuestionSerializer(selected_questions, many=True).data
+
         # Fetch all questions related to the test
-        all_questions = list(Question.objects.filter(test=obj))
-        # Randomly select questions up to the specified number
-        selected_questions = sample(all_questions, min(number_of_questions, len(all_questions)))
-        return CurrentQuestionSerializer(selected_questions, many=True).data
+        all_questions = Question.objects.filter(test=obj)
+
+        # Initialize lists for selected questions
+        selected_questions = []
+
+        # Fetch questions based on the specified ranges and task types
+        questions_1_to_25 = list(all_questions.filter(task_type=4)[:25])  # First 25 questions, task_type 4
+        questions_26_to_30 = list(all_questions.filter(task_type=10)[25:30])  # Task type 10
+        questions_31_to_35 = list(all_questions.filter(task_type=8)[30:35])  # Task type 8
+        questions_36_to_40 = list(all_questions.filter(task_type=6)[35:40])  # Task type 6
+
+        # Add selected questions to the list
+        selected_questions.extend(questions_1_to_25)
+        selected_questions.extend(questions_26_to_30)
+        selected_questions.extend(questions_31_to_35)
+        selected_questions.extend(questions_36_to_40)
+
+        # Ensure the list has 40 questions by filling in any gaps with random questions
+        if len(selected_questions) < 40:
+            remaining_questions = all_questions.exclude(id__in=[q.id for q in selected_questions])
+            selected_questions.extend(sample(list(remaining_questions), min(40 - len(selected_questions), remaining_questions.count())))
+
+        # Serialize and return the selected questions
+        return CurrentQuestionSerializer(selected_questions[:40], many=True).data
+
+    
+# start test end
 
 class CurrentProductSerializer(serializers.ModelSerializer):
     tests = CurrentTestSerializer(many=True)

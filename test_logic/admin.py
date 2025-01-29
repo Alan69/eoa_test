@@ -33,7 +33,7 @@ class TestFilter(admin.SimpleListFilter):
 
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'text', 'test', 'get_product')
+    list_display = ('id', 'text', 'test', 'task_type', 'get_product')
     search_fields = ('text', 'test__title', 'test__product__title')
     list_filter = ('test__product', TestFilter)  # Add TestFilter while keeping Product filter
     inlines = [OptionInline]
