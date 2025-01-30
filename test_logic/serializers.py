@@ -25,41 +25,63 @@ class CurrentTestSerializer(serializers.ModelSerializer):
         model = Test
         fields = ['id', 'title', 'questions']
 
-    def get_questions(self, obj):
-    # Ensure the logic only applies when number_of_questions == 40
-        if obj.number_of_questions != 40:
-            # Return random selection of up to the number_of_questions
-            all_questions = list(Question.objects.filter(test=obj))
-            selected_questions = sample(all_questions, min(obj.number_of_questions, len(all_questions)))
-            return CurrentQuestionSerializer(selected_questions, many=True).data
+    from random import sample
 
-        # Fetch all questions related to the test
+    def get_questions(self, obj):
+        # Fetch all questions related to the test as a queryset
         all_questions = Question.objects.filter(test=obj)
+
+        # If the number of questions is not 40, return a random selection
+        if obj.number_of_questions != 40:
+            selected_questions = sample(list(all_questions), min(obj.number_of_questions, all_questions.count()))
+            return CurrentQuestionSerializer(selected_questions, many=True).data
 
         # Initialize lists for selected questions
         selected_questions = []
 
-        # Fetch questions based on the specified ranges and task types
-        questions_1_to_25 = list(all_questions.filter(task_type=4)[:25])  # First 25 questions, task_type 4
-        questions_26_to_30 = list(all_questions.filter(task_type=10)[25:30])  # Task type 10
-        questions_31_to_35 = list(all_questions.filter(task_type=8)[30:35])  # Task type 8
-        questions_36_to_40 = list(all_questions.filter(task_type=6)[35:40])  # Task type 6
-
-        # Add selected questions to the list
+        # Step 1: Select 25 questions (1–25) with any task_type except 10, 8, and 6
+        questions_1_to_25 = list(all_questions.exclude(task_type__in=[10, 8, 6])[:25])
         selected_questions.extend(questions_1_to_25)
-        selected_questions.extend(questions_26_to_30)
-        selected_questions.extend(questions_31_to_35)
-        selected_questions.extend(questions_36_to_40)
 
-        # Ensure the list has 40 questions by filling in any gaps with random questions
+        # Step 2: Select 5 questions (26–30) with task_type=10
+        questions_task_type_10 = list(all_questions.filter(task_type=10)[:5])
+        selected_questions.extend(questions_task_type_10)
+
+        # If there are not enough questions with task_type=10, fill the gaps with random questions
+        if len(questions_task_type_10) < 5:
+            remaining_questions = all_questions.exclude(id__in=[q.id for q in selected_questions])
+            additional_questions = sample(list(remaining_questions), min(5 - len(questions_task_type_10), remaining_questions.count()))
+            selected_questions.extend(additional_questions)
+
+        # Step 3: Select 5 questions (31–35) with task_type=8
+        questions_task_type_8 = list(all_questions.filter(task_type=8)[:5])
+        selected_questions.extend(questions_task_type_8)
+
+        # If there are not enough questions with task_type=8, fill the gaps with random questions
+        if len(questions_task_type_8) < 5:
+            remaining_questions = all_questions.exclude(id__in=[q.id for q in selected_questions])
+            additional_questions = sample(list(remaining_questions), min(5 - len(questions_task_type_8), remaining_questions.count()))
+            selected_questions.extend(additional_questions)
+
+        # Step 4: Select 5 questions (36–40) with task_type=6
+        questions_task_type_6 = list(all_questions.filter(task_type=6)[:5])
+        selected_questions.extend(questions_task_type_6)
+
+        # If there are not enough questions with task_type=6, fill the gaps with random questions
+        if len(questions_task_type_6) < 5:
+            remaining_questions = all_questions.exclude(id__in=[q.id for q in selected_questions])
+            additional_questions = sample(list(remaining_questions), min(5 - len(questions_task_type_6), remaining_questions.count()))
+            selected_questions.extend(additional_questions)
+
+        # Step 5: Ensure the list has exactly 40 questions
         if len(selected_questions) < 40:
             remaining_questions = all_questions.exclude(id__in=[q.id for q in selected_questions])
-            selected_questions.extend(sample(list(remaining_questions), min(40 - len(selected_questions), remaining_questions.count())))
+            additional_questions = sample(list(remaining_questions), min(40 - len(selected_questions), remaining_questions.count()))
+            selected_questions.extend(additional_questions)
 
         # Serialize and return the selected questions
         return CurrentQuestionSerializer(selected_questions[:40], many=True).data
 
-    
 # start test end
 
 class CurrentProductSerializer(serializers.ModelSerializer):
