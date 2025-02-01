@@ -127,11 +127,14 @@ def product_tests_view(request):
     # Get the tests based on the provided IDs
     tests = Test.objects.filter(product=product, id__in=tests_ids)
 
+    # Sort tests: is_required=True first, is_required=False at the end
+    sorted_tests = sorted(tests, key=lambda x: not x.is_required)
+
     # Get total time for all tests
     total_time = tests.aggregate(total_time=Sum('time'))['total_time'] or 0
 
     # Serialize the tests
-    serialized_tests = CurrentTestSerializer(tests, many=True).data
+    serialized_tests = CurrentTestSerializer(sorted_tests, many=True).data
 
     # Set the product, test start flag, and times for the user
     user.product = product  # Set the product for the user
