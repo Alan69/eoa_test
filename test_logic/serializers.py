@@ -1,7 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Test, Question, Option, Result, BookSuggestion, CompletedTest, CompletedQuestion
-from accounts.models import User
-from accounts.serializers import UserSerializer
+from .models import Product, Test, Question, Option, CompletedTest, CompletedQuestion
 from django.db.models import Q
 from random import sample
 
@@ -24,8 +22,6 @@ class CurrentTestSerializer(serializers.ModelSerializer):
     class Meta:
         model = Test
         fields = ['id', 'title', 'questions']
-
-    from random import sample
 
     def get_questions(self, obj):
         # Fetch all questions related to the test as a queryset
@@ -180,7 +176,7 @@ class OptionSerializer(serializers.ModelSerializer):
 class QuestionSerializer(serializers.ModelSerializer):
     # All options for the question, assuming reverse relation is 'options'
     all_options = OptionSerializer(source='question.options', many=True)
-    selected_option = OptionSerializer()
+    selected_option = OptionSerializer(many=True)
 
     class Meta:
         model = CompletedQuestion  # Model is CompletedQuestion, not Question
