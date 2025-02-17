@@ -20,27 +20,57 @@ class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, validators=[validate_password])
     password2 = serializers.CharField(write_only=True, required=True)
     region = serializers.PrimaryKeyRelatedField(queryset=Region.objects.all(), required=False, allow_null=True)
+    referral_code = serializers.CharField(required=False, write_only=True, allow_blank=True)
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'first_name', 'last_name', 'password', 'password2', 'region', 'school', 'phone_number')
+        fields = ('username', 'email', 'first_name', 'last_name', 'password', 'password2', 'region', 'school', 'phone_number', 'referral_code')
 
     def validate(self, attrs):
         if attrs['password'] != attrs['password2']:
             raise serializers.ValidationError({"password": "Password fields didn't match."})
+
+        # Handle referral code validation
+        referral_code = attrs.pop('referral_code', None)
+        print(f"Validating referral code: {referral_code}")
+        if referral_code:
+            try:
+                referrer = User.objects.get(referral_link=referral_code)
+                print(f"Found referrer: {referrer.username}")
+                attrs['referred_by'] = referrer
+            except User.DoesNotExist:
+                print(f"No user found with referral code: {referral_code}")
+                raise serializers.ValidationError({"referral_code": "Invalid referral code"})
+        else:
+            print("No referral code provided")
 
         return attrs
 
     def create(self, validated_data):
         password = validated_data.pop('password')
         validated_data.pop('password2', None)
+        referrer = validated_data.pop('referred_by', None)
         
+        print(f"Creating user with data: {validated_data}")
         # Create the user with other fields
-        user = User.objects.create(**validated_data)
+        user = User.objects.create_user(
+            password=password,  # Pass password to create_user
+            **validated_data  # This will include username and all other fields
+        )
         
-        # Set the password
-        user.set_password(password)
-        user.save()
+        # Handle referral
+        if referrer:
+            print(f"Applying referral from user {referrer.username}")
+            user.referred_by = referrer
+            user.save()
+            # Apply bonus to referrer
+            print(f"Referrer's current balance: {referrer.balance}")
+            print(f"Referrer's current bonus: {referrer.referral_bonus}")
+            referrer.apply_referral_bonus()
+            print(f"Referrer's new balance: {referrer.balance}")
+            print(f"Referrer's new bonus: {referrer.referral_bonus}")
+        else:
+            print("No referrer found in validated data")
 
         return user
 

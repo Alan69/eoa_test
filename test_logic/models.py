@@ -54,7 +54,9 @@ class Test(models.Model):
 class Question(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
-    text = models.TextField()
+    text = models.TextField(null=True, blank=True)
+    text2 = models.TextField(null=True, blank=True)
+    text3 = models.TextField(null=True, blank=True)
     img = models.ImageField(upload_to='questions', null=True, blank=True)
     task_type = models.IntegerField(null=True, blank=True)
     level = models.IntegerField(null=True, blank=True)

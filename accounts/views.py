@@ -38,6 +38,18 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
 class CustomTokenObtainPairView(TokenObtainPairView):
     serializer_class = CustomTokenObtainPairSerializer
 
+    def post(self, request, *args, **kwargs):
+        print("Login attempt with username:", request.data.get('username'))
+        try:
+            user = User.objects.get(username=request.data.get('username'))
+            print(f"Found user: {user.username}")
+            print(f"User active status: {user.is_active}")
+            print(f"Password valid: {user.check_password(request.data.get('password'))}")
+        except User.DoesNotExist:
+            print("User not found")
+        
+        return super().post(request, *args, **kwargs)
+
 class UserDetailView(generics.RetrieveAPIView):
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -102,9 +114,20 @@ class RegisterView(generics.CreateAPIView):
     )
 
     def post(self, request, *args, **kwargs):
+        print("Registration request data:", request.data)
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
+        
+        print(f"User created: {user.username}")
+        print(f"User active status: {user.is_active}")
+        print(f"User password set: {user.has_usable_password()}")
+
+        # Ensure user is active
+        if not user.is_active:
+            user.is_active = True
+            user.save()
+            print("User activated")
 
         # Generate a token for the new user
         refresh = RefreshToken.for_user(user)
@@ -193,3 +216,28 @@ def update_user_view(request):
 class RegionViewSet(viewsets.ModelViewSet):
     queryset = Region.objects.all()
     serializer_class = RegionSerializer
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+@swagger_auto_schema(
+    operation_description="Generate or retrieve a referral link for the current user",
+    responses={
+        200: openapi.Response(
+            description="Referral link generated/retrieved successfully",
+            examples={
+                "application/json": {
+                    "referral_link": "example-referral-code",
+                    "referral_bonus": "1500.00"
+                }
+            }
+        )
+    }
+)
+def generate_referral_link(request):
+    user = request.user
+    referral_link = user.generate_referral_link()
+    
+    return Response({
+        "referral_link": referral_link,
+        "referral_bonus": user.referral_bonus
+    })

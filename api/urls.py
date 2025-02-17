@@ -1,4 +1,4 @@
-from accounts.views import UserDetailView, LogoutView, update_user_view, current_user_view, RegisterView, ChangePasswordView, RegionViewSet
+from accounts.views import UserDetailView, LogoutView, update_user_view, current_user_view, RegisterView, ChangePasswordView, RegionViewSet, generate_referral_link
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
@@ -41,6 +41,7 @@ urlpatterns = [
     path('user/auth/', current_user_view, name='current_user_view'),
 
     path('user/update/', update_user_view, name='update-user'),
+    path('user/referral/', generate_referral_link, name='generate-referral-link'),
 
     path('current/test/', product_tests_view, name='get-tests'),
 

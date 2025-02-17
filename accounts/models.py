@@ -67,6 +67,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     referral_link = models.CharField(max_length=100, unique=True, null=True, blank=True)
     referral_bonus = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     payment_id = models.CharField(max_length=255, null=True, blank=True)
+    referred_by = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True, related_name='referrals')
 
     test_is_started = models.BooleanField(default=False)
     total_time = models.IntegerField(default=0)
@@ -107,7 +108,23 @@ class User(AbstractBaseUser, PermissionsMixin):
         recipient.save()
     
     def generate_referral_link(self):
-        import secrets
-        token = secrets.token_urlsafe(10)  # Generate a random token
-        self.referral_link = f'/register-referral?ref={token}'  # Example URL format
+        if not self.referral_link:
+            import secrets
+            import base64
+            
+            # Generate a unique referral code based on user ID and random string
+            random_part = secrets.token_urlsafe(8)
+            referral_code = f"{self.id.hex[:8]}-{random_part}"
+            
+            # Save the referral code
+            self.referral_link = referral_code
+            self.save()
+        
+        return self.referral_link
+
+    def apply_referral_bonus(self):
+        """Apply the referral bonus when a referred user signs up"""
+        REFERRAL_BONUS_AMOUNT = 1500
+        self.balance += REFERRAL_BONUS_AMOUNT
+        self.referral_bonus += REFERRAL_BONUS_AMOUNT
         self.save()
