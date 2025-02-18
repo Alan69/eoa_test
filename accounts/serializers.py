@@ -3,6 +3,8 @@ from .models import User
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.contrib.auth.password_validation import validate_password
 from .models import Region
+from urllib.parse import urlparse, parse_qs
+from datetime import datetime
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
@@ -31,19 +33,27 @@ class RegisterSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({"password": "Password fields didn't match."})
 
         # Handle referral code validation
-        referral_code = attrs.pop('referral_code', None)
-        print(f"Validating referral code: {referral_code}")
+        referral_code = attrs.get('referral_code', None)
+        print(f"Raw referral code received: {referral_code}")
+        
         if referral_code:
             try:
-                referrer = User.objects.get(referral_link=referral_code)
-                print(f"Found referrer: {referrer.username}")
-                attrs['referred_by'] = referrer
-            except User.DoesNotExist:
-                print(f"No user found with referral code: {referral_code}")
-                raise serializers.ValidationError({"referral_code": "Invalid referral code"})
-        else:
-            print("No referral code provided")
-
+                # Find user by referral code directly
+                referrer = User.objects.filter(
+                    referral_link__contains=referral_code,
+                    referral_expiry_date__gt=datetime.now()
+                ).first()
+                
+                if referrer:
+                    print(f"Found referrer: {referrer.username}")
+                    attrs['referred_by'] = referrer
+                else:
+                    print("No active referrer found with this code")
+                    raise serializers.ValidationError({"referral_code": "Invalid or expired referral link"})
+            except Exception as e:
+                print(f"Error processing referral: {str(e)}")
+                raise serializers.ValidationError({"referral_code": f"Invalid referral link: {str(e)}"})
+        
         return attrs
 
     def create(self, validated_data):
@@ -52,26 +62,22 @@ class RegisterSerializer(serializers.ModelSerializer):
         referrer = validated_data.pop('referred_by', None)
         
         print(f"Creating user with data: {validated_data}")
-        # Create the user with other fields
         user = User.objects.create_user(
-            password=password,  # Pass password to create_user
-            **validated_data  # This will include username and all other fields
+            password=password,
+            **validated_data
         )
         
-        # Handle referral
         if referrer:
-            print(f"Applying referral from user {referrer.username}")
+            print(f"Setting referrer for user {user.username} to {referrer.username}")
             user.referred_by = referrer
             user.save()
-            # Apply bonus to referrer
-            print(f"Referrer's current balance: {referrer.balance}")
-            print(f"Referrer's current bonus: {referrer.referral_bonus}")
-            referrer.apply_referral_bonus()
-            print(f"Referrer's new balance: {referrer.balance}")
-            print(f"Referrer's new bonus: {referrer.referral_bonus}")
-        else:
-            print("No referrer found in validated data")
-
+            print(f"User {user.username} successfully linked to referrer {referrer.username}")
+            
+            # Add this user to referrer's referrals
+            referrer.referrals.add(user)
+            referrer.save()
+            print(f"Added user {user.username} to referrer's {referrer.username} referrals")
+        
         return user
 
 class UserSerializer(serializers.ModelSerializer):

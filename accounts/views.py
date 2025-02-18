@@ -241,3 +241,48 @@ def generate_referral_link(request):
         "referral_link": referral_link,
         "referral_bonus": user.referral_bonus
     })
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+@swagger_auto_schema(
+    operation_description="Get list of users who signed up using current user's referral link",
+    responses={
+        200: openapi.Response(
+            description="List of referred users retrieved successfully",
+            examples={
+                "application/json": {
+                    "referrals": [
+                        {
+                            "username": "user123",
+                            "first_name": "John",
+                            "last_name": "Doe",
+                            "joined_at": "2024-03-20T12:00:00Z",
+                            "total_purchases": "1500.00"
+                        }
+                    ]
+                }
+            }
+        )
+    }
+)
+def get_referred_users(request):
+    user = request.user
+    print(f"Getting referrals for user: {user.username}")
+    
+    referred_users = user.referrals.all().order_by('-id')
+    print(f"Found {referred_users.count()} referrals")
+    
+    referral_data = []
+    for referred_user in referred_users:
+        print(f"Processing referral: {referred_user.username}")
+        data = {
+            "username": referred_user.username,
+            "first_name": referred_user.first_name,
+            "last_name": referred_user.last_name,
+            "total_purchases": str(referred_user.total_purchases or '0.00')
+        }
+        referral_data.append(data)
+        print(f"Added referral data: {data}")
+    
+    print(f"Final referral data: {referral_data}")
+    return Response(referral_data)
