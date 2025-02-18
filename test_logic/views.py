@@ -17,10 +17,57 @@ from datetime import timezone
 from django.utils.timezone import now
 from django.utils import timezone
 import uuid
+from decimal import Decimal
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+    def post(self, request, *args, **kwargs):
+        try:
+            product = Product.objects.get(id=request.data.get('product_id'))
+            user = request.user
+            
+            # Check if user has enough balance
+            if user.balance < product.price:
+                return Response(
+                    {"error": "Недостаточно средств на балансе"},
+                    status=status.HTTP_400_BAD_REQUEST
+                )
+            
+            # Process the purchase
+            purchase_amount = product.price
+            user.balance -= purchase_amount
+            user.total_purchases += purchase_amount  # Add to total purchases
+            user.save()
+            
+            # Apply referral bonus if user was referred
+            if user.referred_by:
+                print(f"User {user.username} was referred by {user.referred_by.username}")
+                # Calculate bonus amount based on referral percentage
+                bonus_amount = (Decimal(purchase_amount) * Decimal(user.referred_by.referral_percentage)) / Decimal(100)
+                
+                # Add bonus to referrer's balance and referral bonus
+                user.referred_by.balance += bonus_amount
+                user.referred_by.referral_bonus += bonus_amount
+                user.referred_by.save()
+                
+                print(f"Applied bonus of {bonus_amount} KZT to referrer {user.referred_by.username}")
+                print(f"Referrer new balance: {user.referred_by.balance} KZT")
+                print(f"Referrer total referral bonus: {user.referred_by.referral_bonus} KZT")
+            
+            return Response({"success": "Purchase successful"}, status=status.HTTP_200_OK)
+            
+        except Product.DoesNotExist:
+            return Response(
+                {"error": "Product not found"},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response(
+                {"error": str(e)},
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
 
 class TestViewSet(viewsets.ModelViewSet):
@@ -111,19 +158,35 @@ def product_tests_view(request):
     if not product_id or not isinstance(tests_ids, list):
         return Response({"detail": "Invalid input data"}, status=status.HTTP_400_BAD_REQUEST)
 
-    # Get the product
     try:
         product = Product.objects.get(id=product_id)
     except Product.DoesNotExist:
         return Response({"detail": "Product not found."}, status=status.HTTP_404_NOT_FOUND)
 
-    # Check if the user has enough balance to purchase the product
+    # Check if user has enough balance
     if user.balance < product.sum:
         return Response({"detail": "Insufficient balance."}, status=status.HTTP_400_BAD_REQUEST)
 
-    # Deduct the product sum from the user's balance
-    user.balance -= product.sum
+    # Process the purchase
+    purchase_amount = product.sum
+    user.balance -= purchase_amount
+    user.total_purchases += purchase_amount  # Add to total purchases
     user.save()
+
+    # Apply referral bonus if user was referred
+    if user.referred_by:
+        print(f"User {user.username} was referred by {user.referred_by.username}")
+        # Calculate bonus amount based on referral percentage
+        bonus_amount = (Decimal(purchase_amount) * Decimal(user.referred_by.referral_percentage)) / Decimal(100)
+        
+        # Add bonus to referrer's balance and referral bonus
+        user.referred_by.balance += bonus_amount
+        user.referred_by.referral_bonus += bonus_amount
+        user.referred_by.save()
+        
+        print(f"Applied bonus of {bonus_amount} KZT to referrer {user.referred_by.username}")
+        print(f"Referrer new balance: {user.referred_by.balance} KZT")
+        print(f"Referrer total referral bonus: {user.referred_by.referral_bonus} KZT")
 
     # Get the tests based on the provided IDs
     tests = Test.objects.filter(product=product, id__in=tests_ids)
