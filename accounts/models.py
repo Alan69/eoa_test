@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 import uuid
 from decimal import Decimal
+from django.utils import timezone
 
 class Region(models.Model):
     CITY = 'Город'
@@ -141,29 +142,27 @@ class User(AbstractBaseUser, PermissionsMixin):
     def generate_referral_link(self):
         """Generate a referral link for the user"""
         if not self.referral_link:
-            # Generate a unique referral code based on username and timestamp
             import hashlib
-            from datetime import datetime, timedelta
+            from datetime import timedelta
             
-            # Create a unique string
-            unique_string = f"{self.username}-{datetime.now().timestamp()}"
-            # Create a hash of the string
+            # Create a unique string using timezone-aware datetime
+            unique_string = f"{self.username}-{timezone.now().timestamp()}"
             hash_object = hashlib.sha256(unique_string.encode())
             ref_code = hash_object.hexdigest()[:8]
             
             # Create the full referral link with frontend URL
-            base_url = "https://synaqtest.kz"  # Frontend URL
+            base_url = "https://synaqtest.kz"
             self.referral_link = f"{base_url}/signup?ref={ref_code}"
             
-            # Set expiry date (default 1 year)
-            self.referral_expiry_date = datetime.now() + timedelta(days=365)
+            # Set expiry date using timezone-aware datetime
+            self.referral_expiry_date = timezone.now() + timedelta(days=365)
             self.save()
         
         return self.referral_link
 
     def apply_referral_bonus(self, purchase_amount):
         """Apply the referral bonus when a referred user makes a purchase"""
-        if self.referral_expiry_date and datetime.now() > self.referral_expiry_date:
+        if self.referral_expiry_date and timezone.now() > self.referral_expiry_date:
             print(f"Referral expired for user {self.username}")
             return False
             
@@ -189,7 +188,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         if not self.referral_expiry_date:
             return "Inactive"
         
-        if datetime.now() > self.referral_expiry_date:
+        if timezone.now() > self.referral_expiry_date:
             return "Expired"
         
         return "Active"
