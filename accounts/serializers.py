@@ -22,7 +22,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, validators=[validate_password])
     password2 = serializers.CharField(write_only=True, required=True)
     region = serializers.PrimaryKeyRelatedField(queryset=Region.objects.all(), required=False, allow_null=True)
-    referral_code = serializers.CharField(required=False, write_only=True, allow_blank=True)
+    referral_code = serializers.CharField(required=False, allow_null=True)
 
     class Meta:
         model = User
