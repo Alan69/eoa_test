@@ -4,7 +4,7 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.contrib.auth.password_validation import validate_password
 from .models import Region
 from urllib.parse import urlparse, parse_qs
-from datetime import datetime
+from datetime import datetime, timezone
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
@@ -32,16 +32,15 @@ class RegisterSerializer(serializers.ModelSerializer):
         if attrs['password'] != attrs['password2']:
             raise serializers.ValidationError({"password": "Password fields didn't match."})
 
-        # Handle referral code validation
-        referral_code = attrs.get('referral_code', None)
+        # Handle referral code validation only if it exists
+        referral_code = attrs.get('referral_code')
         print(f"Raw referral code received: {referral_code}")
         
         if referral_code:
             try:
-                # Find user by referral code directly
                 referrer = User.objects.filter(
                     referral_link__contains=referral_code,
-                    referral_expiry_date__gt=datetime.now()
+                    referral_expiry_date__gt=timezone.now()
                 ).first()
                 
                 if referrer:
@@ -53,6 +52,9 @@ class RegisterSerializer(serializers.ModelSerializer):
             except Exception as e:
                 print(f"Error processing referral: {str(e)}")
                 raise serializers.ValidationError({"referral_code": f"Invalid referral link: {str(e)}"})
+        else:
+            print("No referral code provided, continuing without referrer")
+            attrs['referred_by'] = None
         
         return attrs
 
