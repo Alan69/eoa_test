@@ -126,12 +126,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 SECURE_CROSS_ORIGIN_OPENER_POLICY=None
 SESSION_COOKIE_SECURE=False
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5173",
-#     "http://127.0.0.1:5173",
-# ]
-
-
 CORS_ALLOW_CREDENTIALS = True
 
 
@@ -140,21 +134,21 @@ AUTH_USER_MODEL = 'accounts.User'
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = True  # Use True if using HTTPS
+SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = True  # Use True if using HTTPS
+TEST_COOKIE_SECURE = False  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
+CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
-CSRF_TRUSTED_ORIGINS = ['https://api.synaqtest.kz', 'https://www.api.synaqtest.kz']
+# CSRF_TRUSTED_ORIGINS = ['https://api.synaqtest.kz', 'https://www.api.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 
@@ -234,7 +228,7 @@ TIME_ZONE = 'Asia/Almaty'
 
 USE_I18N = True
 
-USE_TZ = True
+# USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -249,7 +243,8 @@ STATICFILES_DIRS=[
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = 'https://api.synaqtest.kz/media/'
+# MEDIA_URL = 'https://api.synaqtest.kz/media/'
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
