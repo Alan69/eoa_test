@@ -51,6 +51,17 @@ class Test(models.Model):
         verbose_name = 'Тест'
         verbose_name_plural = 'Тесты'
 
+class Source(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    text = models.TextField()
+
+    def __str__(self):
+        return f"Source {self.text}"
+
+    class Meta:
+        verbose_name = 'Источник'
+        verbose_name_plural = 'Источники'
+
 class Question(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
@@ -66,7 +77,8 @@ class Question(models.Model):
     theme = models.CharField(max_length=1000, null=True, blank=True)
     subtheme = models.CharField(max_length=1000, null=True, blank=True)
     target = models.TextField(null=True, blank=True)
-    source = models.TextField(null=True, blank=True)
+    source = models.CharField(max_length=200, null=True, blank=True)
+    source_text = models.ForeignKey(Source, on_delete=models.CASCADE, null=True, blank=True)
     detail_id = models.IntegerField(null=True, blank=True)
     lng_id = models.IntegerField(null=True, blank=True)
     lng_title = models.CharField(max_length=100, null=True, blank=True)

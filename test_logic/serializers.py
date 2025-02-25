@@ -11,10 +11,11 @@ class CurrentOptionSerializer(serializers.ModelSerializer):
 
 class CurrentQuestionSerializer(serializers.ModelSerializer):
     options = CurrentOptionSerializer(many=True)
+    source_text = serializers.CharField(source='source_text.text', read_only=True)
 
     class Meta:
         model = Question
-        fields = ['id', 'text', 'text2', 'text3', 'img', 'task_type', 'options']
+        fields = ['id', 'text', 'text2', 'text3', 'img', 'task_type', 'options', 'source_text']
 
 class CurrentTestSerializer(serializers.ModelSerializer):
     questions = serializers.SerializerMethodField()
@@ -40,14 +41,29 @@ class CurrentTestSerializer(serializers.ModelSerializer):
         selected_questions.extend(questions_1_to_25)
 
         # Step 2: Select 5 questions (26–30) with task_type=10
-        questions_task_type_10 = list(all_questions.filter(task_type=10)[:5])
-        selected_questions.extend(questions_task_type_10)
+        questions_task_type_10 = list(all_questions.filter(task_type=10))
+        
+        # Group questions by source_id
+        source_groups = {}
+        for q in questions_task_type_10:
+            if q.source_text:
+                id = q.source_text
+                if id not in source_groups:
+                    source_groups[id] = []
+                source_groups[id].append(q)
 
-        # If there are not enough questions with task_type=10, fill the gaps with random questions
-        if len(questions_task_type_10) < 5:
-            remaining_questions = all_questions.exclude(id__in=[q.id for q in selected_questions])
-            additional_questions = sample(list(remaining_questions), min(5 - len(questions_task_type_10), remaining_questions.count()))
-            selected_questions.extend(additional_questions)
+        # Select a group of 5 questions with the same source_id if available
+        selected_source_questions = []
+        for source_questions in source_groups.values():
+            if len(source_questions) >= 5:
+                selected_source_questions = sample(source_questions, 5)
+                break
+
+        # If no group of 5 found, take random questions
+        if not selected_source_questions:
+            selected_source_questions = sample(questions_task_type_10, min(5, len(questions_task_type_10)))
+        
+        selected_questions.extend(selected_source_questions)
 
         # Step 3: Select 5 questions (31–35) with task_type=8
         questions_task_type_8 = list(all_questions.filter(task_type=8)[:5])
@@ -256,7 +272,7 @@ class CProductSerializer(serializers.ModelSerializer):
 # Serializer for the completed test
 class CCompletedTestSerializer(serializers.ModelSerializer):
     product = CProductSerializer()
-    user = serializers.StringRelatedField()  # Display user’s string representation
+    user = serializers.StringRelatedField()  # Display user's string representation
     start_test_time = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     completed_date = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
 

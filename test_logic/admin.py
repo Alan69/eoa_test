@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest, CompletedQuestion
+from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest, CompletedQuestion, Source
 from accounts.models import User
 from django.contrib import messages
 
@@ -75,6 +75,10 @@ class BookSuggestionAdmin(admin.ModelAdmin):
     search_fields = ('book_title', 'question__text')
     list_filter = ('question',)
 
+class SourceAdmin(admin.ModelAdmin):
+    list_display = ('id', 'text')
+    search_fields = ('text',)
+
 admin.site.register(Product)
 admin.site.register(Test, TestAdmin)
 admin.site.register(Question, QuestionAdmin)
@@ -82,3 +86,4 @@ admin.site.register(Result, ResultAdmin)
 admin.site.register(BookSuggestion, BookSuggestionAdmin)
 admin.site.register(CompletedTest)
 admin.site.register(CompletedQuestion)
+admin.site.register(Source, SourceAdmin)
