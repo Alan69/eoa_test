@@ -152,7 +152,7 @@ class User(AbstractBaseUser, PermissionsMixin):
             
             # Create the full referral link with frontend URL
             base_url = "https://synaqtest.kz"
-            self.referral_link = f"{base_url}/signup?ref={ref_code}"
+            self.referral_link = f"{base_url}/signup?asdqweg={ref_code}"
             
             # Set expiry date using timezone-aware datetime
             self.referral_expiry_date = timezone.now() + timedelta(days=365)
