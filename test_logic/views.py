@@ -403,7 +403,7 @@ def complete_test_view(request):
     user.finish_test_time = None
     user.save()
     
-    print(f"user: {user.email} completed test" )
+    print(f"user: {user.email} completed test {product.title}, user.test_is_started: {user.test_is_started}, user.test_start_time: {user.test_start_time}, user.finish_test_time: {user.finish_test_time}" )
 
     return Response({
         "completed_test_id": str(completed_test.id),
