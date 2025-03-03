@@ -18,6 +18,8 @@ from django.utils.timezone import now
 from django.utils import timezone
 import uuid
 from decimal import Decimal
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import permission_classes
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -316,6 +318,7 @@ def required_tests_by_product(request, product_id):
     }
 )
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def complete_test_view(request):
     user = request.user
     product_id = request.data.get('product_id')
@@ -399,6 +402,8 @@ def complete_test_view(request):
     user.test_start_time = None
     user.finish_test_time = None
     user.save()
+    
+    print(f"user: {user.email} completed test" )
 
     return Response({
         "completed_test_id": str(completed_test.id),

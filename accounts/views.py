@@ -267,14 +267,14 @@ def generate_referral_link(request):
 )
 def get_referred_users(request):
     user = request.user
-    print(f"Getting referrals for user: {user.username}")
+    # print(f"Getting referrals for user: {user.username}")
     
     referred_users = user.referrals.all().order_by('-id')
-    print(f"Found {referred_users.count()} referrals")
+    # print(f"Found {referred_users.count()} referrals")
     
     referral_data = []
     for referred_user in referred_users:
-        print(f"Processing referral: {referred_user.username}")
+        # print(f"Processing referral: {referred_user.username}")
         data = {
             "username": referred_user.username,
             "first_name": referred_user.first_name,
@@ -282,7 +282,7 @@ def get_referred_users(request):
             "total_purchases": str(referred_user.total_purchases or '0.00')
         }
         referral_data.append(data)
-        print(f"Added referral data: {data}")
+        # print(f"Added referral data: {data}")
     
-    print(f"Final referral data: {referral_data}")
+    # print(f"Final referral data: {referral_data}")
     return Response(referral_data)
