@@ -47,7 +47,7 @@ class Command(BaseCommand):
                         "fields": {
                             "test": str(question.test.id),
                             "text": question.text,
-                            "img": str(question.img) if question.img else None,
+                            "img": question.img.url if question.img and question.img.name else None,
                             "task_type": question.task_type,
                             "level": question.level,
                             "status": question.status,
@@ -63,12 +63,13 @@ class Command(BaseCommand):
                             "subject_id": question.subject_id,
                             "subject_title": question.subject_title,
                             "class_number": question.class_number,
+                            # "question_usage": question.question_usage,
                             "options": [
                                 {
                                     "id": str(option.id),
                                     "text": option.text,
                                     "is_correct": option.is_correct,
-                                    "img": str(option.img) if option.img else None
+                                    "img": option.img.url if option.img and option.img.name else None
                                 } for option in options
                             ]
                         }
