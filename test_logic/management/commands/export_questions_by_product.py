@@ -63,7 +63,6 @@ class Command(BaseCommand):
                             "subject_id": question.subject_id,
                             "subject_title": question.subject_title,
                             "class_number": question.class_number,
-                            "question_usage": question.question_usage,
                             "options": [
                                 {
                                     "id": str(option.id),
