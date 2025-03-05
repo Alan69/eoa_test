@@ -20,6 +20,9 @@ import uuid
 from decimal import Decimal
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import permission_classes
+import logging
+
+logger = logging.getLogger(__name__)
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -321,11 +324,18 @@ def required_tests_by_product(request, product_id):
 @permission_classes([IsAuthenticated])
 def complete_test_view(request):
     user = request.user
+    
+    logger.debug(f"User attempting to complete test: {user.username}, is_authenticated: {user.is_authenticated}")
+    logger.debug(f"Request headers: {request.headers}")
+    
     product_id = request.data.get('product_id')
     tests_data = request.data.get('tests')
+    
+    logger.debug(f"Received data - product_id: {product_id}, tests_data length: {len(tests_data) if tests_data else 0}")
 
     # Validate request data
     if not product_id or not isinstance(tests_data, list):
+        logger.error(f"Invalid input data: product_id={product_id}, tests_data type={type(tests_data)}")
         return Response({"detail": "Invalid input data"}, status=status.HTTP_400_BAD_REQUEST)
 
     # Get the product
