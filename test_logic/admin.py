@@ -81,7 +81,7 @@ class SourceAdmin(admin.ModelAdmin):
     
 class CompletedTestAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'product', 'completed_date', 'start_test_time', 'time_spent')
-    search_fields = ('user__username')
+    search_fields = ('user__username', 'product__title')
     list_filter = ('completed_date', 'start_test_time')
 
 admin.site.register(Product)
