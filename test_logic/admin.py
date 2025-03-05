@@ -80,14 +80,9 @@ class SourceAdmin(admin.ModelAdmin):
     search_fields = ('text',)
     
 class CompletedTestAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'test', 'score', 'created')
-    search_fields = ('user__username', 'test__title')
-    list_filter = ('created',)
-
-class CompletedQuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'completed_test', 'question', 'is_correct')
-    search_fields = ('completed_test__user__username', 'question__text')
-    list_filter = ('completed_test__user', 'question__test__product')
+    list_display = ('id', 'user', 'product', 'completed_date', 'start_test_time', 'time_spent')
+    search_fields = ('user__username')
+    list_filter = ('completed_date', 'start_test_time')
 
 admin.site.register(Product)
 admin.site.register(Test, TestAdmin)
@@ -95,5 +90,5 @@ admin.site.register(Question, QuestionAdmin)
 admin.site.register(Result, ResultAdmin)
 admin.site.register(BookSuggestion, BookSuggestionAdmin)
 admin.site.register(CompletedTest, CompletedTestAdmin)
-admin.site.register(CompletedQuestion, CompletedQuestionAdmin)
+admin.site.register(CompletedQuestion)
 admin.site.register(Source, SourceAdmin)
