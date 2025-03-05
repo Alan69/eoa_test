@@ -134,21 +134,21 @@ AUTH_USER_MODEL = 'accounts.User'
 # Cookie settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-SESSION_COOKIE_SECURE = False  # Use True if using HTTPS
+SESSION_COOKIE_SECURE = True  # Use True if using HTTPS
 SESSION_SAVE_EVERY_REQUEST = True  # Save the session to the database on every request
 
 # Custom cookie settings
 TEST_COOKIE_NAME = 'test_responses'
 TEST_COOKIE_AGE = 1209600  # 2 weeks in seconds
 TEST_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the cookie
-TEST_COOKIE_SECURE = False  # Use True if using HTTPS
+TEST_COOKIE_SECURE = True  # Use True if using HTTPS
 
 # Security settings
-CSRF_COOKIE_SECURE = False  # Use True if using HTTPS
+CSRF_COOKIE_SECURE = True  # Use True if using HTTPS
 CSRF_COOKIE_HTTPONLY = True  # Prevent JavaScript access to the CSRF cookie
 CSRF_COOKIE_AGE = 31449600  # 1 year in seconds
 
-# CSRF_TRUSTED_ORIGINS = ['https://api.synaqtest.kz', 'https://www.api.synaqtest.kz']
+CSRF_TRUSTED_ORIGINS = ['https://api.synaqtest.kz', 'https://www.api.synaqtest.kz']
 
 ROOT_URLCONF = 'stud_test.urls'
 
@@ -243,8 +243,8 @@ STATICFILES_DIRS=[
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_ROOT = BASE_DIR / 'media'
-# MEDIA_URL = 'https://api.synaqtest.kz/media/'
-MEDIA_URL = '/media/'
+MEDIA_URL = 'https://api.synaqtest.kz/media/'
+# MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
