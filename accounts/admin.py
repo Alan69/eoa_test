@@ -8,8 +8,8 @@ from django.db.models import Sum
 
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
-    form = UserChangeForm
-    add_form = UserCreationForm
+    # form = UserChangeForm
+    # add_form = UserCreationForm
 
     list_display = ('username', 'first_name', 'last_name', 'region', 'school', 'email', 'phone_number', 
                    'referral_percentage', 'referral_status', 'referral_earnings', 'referral_count')
