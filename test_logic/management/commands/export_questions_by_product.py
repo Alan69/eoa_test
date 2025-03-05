@@ -45,7 +45,10 @@ class Command(BaseCommand):
                         "model": "test_logic.question",
                         "pk": str(question.id),
                         "fields": {
-                            "test": str(question.test.id),
+                            "test": {
+                                "id": str(question.test.id),
+                                "title": question.test.title
+                            },
                             "text": question.text,
                             "img": question.img.url if question.img and question.img.name else None,
                             "task_type": question.task_type,
