@@ -1,4 +1,4 @@
-from accounts.views import UserDetailView, LogoutView, update_user_view, current_user_view, RegisterView, ChangePasswordView, RegionViewSet, generate_referral_link, get_referred_users
+from accounts.views import UserDetailView, LogoutView, update_user_view, current_user_view, RegisterView, ChangePasswordView, RegionViewSet, generate_referral_link, get_referred_users, PasswordResetRequestView, PasswordResetConfirmView
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
@@ -33,6 +33,8 @@ urlpatterns = [
     path('logout/', LogoutView.as_view(), name='logout'),
 
     path('change/password/', ChangePasswordView.as_view(), name='change-password'),
+    path('password/reset/', PasswordResetRequestView.as_view(), name='password-reset-request'),
+    path('password/reset/confirm/', PasswordResetConfirmView.as_view(), name='password-reset-confirm'),
 
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

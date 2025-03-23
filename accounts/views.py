@@ -6,7 +6,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 
 from .models import User, Region
 from django.contrib.auth.hashers import check_password
-from .serializers import RegisterSerializer, UserSerializer, ChangePasswordSerializer, UserPUTSerializer, RegionSerializer
+from .serializers import RegisterSerializer, UserSerializer, ChangePasswordSerializer, UserPUTSerializer, RegionSerializer, PasswordResetRequestSerializer, PasswordResetConfirmSerializer
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 from rest_framework.authtoken.models import Token
@@ -18,6 +18,14 @@ from rest_framework.permissions import IsAuthenticated
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from rest_framework.permissions import AllowAny
+from django.contrib.auth.tokens import default_token_generator
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.utils.encoding import force_bytes, force_str
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Customizing TokenObtainPairSerializer
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
@@ -286,3 +294,105 @@ def get_referred_users(request):
     
     # print(f"Final referral data: {referral_data}")
     return Response(referral_data)
+
+class PasswordResetRequestView(APIView):
+    permission_classes = [AllowAny]
+
+    @swagger_auto_schema(
+        request_body=PasswordResetRequestSerializer,
+        operation_description="Request a password reset via email",
+        responses={
+            200: openapi.Response(
+                description="Password reset email sent.",
+                examples={
+                    "application/json": {
+                        "detail": "Password reset email has been sent."
+                    }
+                }
+            ),
+            400: "Email address is not registered."
+        }
+    )
+    def post(self, request):
+        serializer = PasswordResetRequestSerializer(data=request.data)
+        if serializer.is_valid():
+            email = serializer.validated_data['email']
+            try:
+                user = User.objects.get(email=email)
+                
+                # Generate token and UID
+                token = default_token_generator.make_token(user)
+                uid = urlsafe_base64_encode(force_bytes(user.pk))
+                
+                # Create password reset link
+                frontend_url = "https://synaqtest.kz/reset-password"
+                reset_url = f"{frontend_url}?uid={uid}&token={token}"
+                
+                # Render email content
+                context = {
+                    'user': user,
+                    'reset_url': reset_url
+                }
+                email_subject = render_to_string('accounts/emails/password_reset_subject.txt')
+                email_body = render_to_string('accounts/emails/password_reset_email.html', context)
+                
+                # Send email
+                send_mail(
+                    subject=email_subject,
+                    message="",  # Plain text version, we don't need it since we're using HTML
+                    from_email=None,  # Uses DEFAULT_FROM_EMAIL from settings
+                    recipient_list=[user.email],
+                    html_message=email_body,
+                    fail_silently=False,
+                )
+                
+                logger.info(f"Password reset email sent to {user.email}")
+                return Response({"detail": "Password reset email has been sent."}, status=status.HTTP_200_OK)
+            except User.DoesNotExist:
+                logger.warning(f"Password reset requested for non-existent email: {email}")
+                # Return 200 for security reasons (don't reveal whether an email exists)
+                return Response({"detail": "Password reset email has been sent."}, status=status.HTTP_200_OK)
+        
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class PasswordResetConfirmView(APIView):
+    permission_classes = [AllowAny]
+
+    @swagger_auto_schema(
+        request_body=PasswordResetConfirmSerializer,
+        operation_description="Confirm password reset with token and new password",
+        responses={
+            200: openapi.Response(
+                description="Password has been reset successfully.",
+                examples={
+                    "application/json": {
+                        "detail": "Password has been reset successfully."
+                    }
+                }
+            ),
+            400: "Invalid token or user ID."
+        }
+    )
+    def post(self, request):
+        serializer = PasswordResetConfirmSerializer(data=request.data)
+        if serializer.is_valid():
+            try:
+                uid = force_str(urlsafe_base64_decode(serializer.validated_data['uid']))
+                user = User.objects.get(pk=uid)
+                
+                # Verify token
+                if default_token_generator.check_token(user, serializer.validated_data['token']):
+                    # Set new password
+                    user.set_password(serializer.validated_data['new_password'])
+                    user.save()
+                    
+                    logger.info(f"Password reset successful for user: {user.email}")
+                    return Response({"detail": "Password has been reset successfully."}, status=status.HTTP_200_OK)
+                else:
+                    logger.warning(f"Invalid token for password reset: {user.email}")
+                    return Response({"detail": "Invalid token."}, status=status.HTTP_400_BAD_REQUEST)
+            except (TypeError, ValueError, OverflowError, User.DoesNotExist):
+                logger.warning(f"Invalid UID for password reset: {serializer.validated_data['uid']}")
+                return Response({"detail": "Invalid user ID."}, status=status.HTTP_400_BAD_REQUEST)
+        
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
