@@ -10,12 +10,23 @@ class CurrentOptionSerializer(serializers.ModelSerializer):
         fields = ['id', 'text', 'img']
 
 class CurrentQuestionSerializer(serializers.ModelSerializer):
-    options = CurrentOptionSerializer(many=True)
+    options = serializers.SerializerMethodField()
     source_text = serializers.CharField(source='source_text.text', read_only=True)
 
     class Meta:
         model = Question
         fields = ['id', 'text', 'text2', 'text3', 'img', 'task_type', 'options', 'source_text']
+        
+    def get_options(self, obj):
+        # For task_type=8 (matching questions), preserve the original order of options
+        # This is critical for matching questions where the order determines the matching pairs
+        if obj.task_type == 8:
+            # Use ordered queryset instead of potentially randomized result
+            options = obj.options.all().order_by('id')
+            return CurrentOptionSerializer(options, many=True).data
+        else:
+            # For other question types, use the default serialization
+            return CurrentOptionSerializer(obj.options.all(), many=True).data
 
 class CurrentTestSerializer(serializers.ModelSerializer):
     questions = serializers.SerializerMethodField()
