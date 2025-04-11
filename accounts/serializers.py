@@ -4,7 +4,8 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from django.contrib.auth.password_validation import validate_password
 from .models import Region
 from urllib.parse import urlparse, parse_qs
-from datetime import datetime, timezone
+from datetime import datetime
+from django.utils import timezone
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
