@@ -24,6 +24,7 @@ class RegisterSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(write_only=True, required=True)
     region = serializers.PrimaryKeyRelatedField(queryset=Region.objects.all(), required=False, allow_null=True)
     referral_code = serializers.CharField(required=False, allow_null=True)
+    school = serializers.CharField(required=False, allow_null=True)
 
     class Meta:
         model = User
