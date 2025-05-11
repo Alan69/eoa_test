@@ -2,12 +2,17 @@ import json
 import os
 from django.core.management.base import BaseCommand
 from test_logic.models import Question
+from django.conf import settings
 
 class Command(BaseCommand):
     help = 'Parse subjects JSON files and create Question objects'
 
     def handle(self, *args, **options):
-        subjects_dir = 'eoa_test/subjects'
+        # Use BASE_DIR to construct the absolute path
+        subjects_dir = os.path.join(settings.BASE_DIR, 'eoa_test', 'subjects')
+        if not os.path.exists(subjects_dir):
+            self.stdout.write(self.style.ERROR(f'Subjects directory does not exist: {subjects_dir}'))
+            return
         
         for filename in os.listdir(subjects_dir):
             if filename.endswith('.json'):
