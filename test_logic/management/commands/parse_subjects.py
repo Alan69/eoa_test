@@ -1,7 +1,7 @@
 import json
 import os
 from django.core.management.base import BaseCommand
-from test_logic.models import Question
+from test_logic.models import Question, Test
 from django.conf import settings
 
 class Command(BaseCommand):
@@ -52,8 +52,9 @@ class Command(BaseCommand):
                             task_type = original_task_type
                         
                         # Create Question object
+                        test_instance = Test.objects.get(id=subject_id)
                         Question.objects.create(
-                            test=subject_id,
+                            test=test_instance,
                             text=question_text,
                             options=options,
                             task_type=task_type
