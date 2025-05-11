@@ -9,7 +9,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # Use BASE_DIR to construct the absolute path
-        subjects_dir = os.path.join(settings.BASE_DIR, 'eoa_test', 'subjects')
+        subjects_dir = os.path.join(settings.BASE_DIR, 'subjects')
         if not os.path.exists(subjects_dir):
             self.stdout.write(self.style.ERROR(f'Subjects directory does not exist: {subjects_dir}'))
             return
