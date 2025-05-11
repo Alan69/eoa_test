@@ -53,11 +53,12 @@ class Command(BaseCommand):
                         
                         # Create Question object
                         test_instance = Test.objects.get(id=subject_id)
-                        Question.objects.create(
+                        question = Question.objects.create(
                             test=test_instance,
                             text=question_text,
-                            options=options,
                             task_type=task_type
                         )
+                        # Set options if needed
+                        question.options.set(options)
                         
                 self.stdout.write(self.style.SUCCESS(f'Successfully parsed {filename}')) 
