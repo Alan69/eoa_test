@@ -1,0 +1,2220 @@
+{
+  "subject_id": "8e214273-26ed-41ca-9945-15f4f1fc4cba",
+  "subject_title": "География (рус)",
+  "questions": [
+    {
+      "id": 286823,
+      "question": "Первый этап полевого исследования территории&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "изучение природных компонентов",
+        "сбор образцов горных пород",
+        "фотосъемка местности",
+        "обход изучаемой территории"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286825,
+      "question": "Метаморфическая горная порода",
+      "answers": [
+        3
+      ],
+      "options": [
+        "гранит",
+        "известняк",
+        "мрамор",
+        "песок"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286826,
+      "question": "Процесс наращивания новой океанической земной коры",
+      "answers": [
+        2
+      ],
+      "options": [
+        "субдукция",
+        "спрединг",
+        "обдукция",
+        "рифтинг"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286827,
+      "question": "Климатический пояс, расположенный между 30 и 40 градусами широты, где летом господствуют тропические воздушные массы, зимой &ndash; умеренные&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "экваториальный",
+        "&nbsp;субэкваториальный",
+        "тропический",
+        "субтропический"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286829,
+      "question": "Направление &nbsp;общей геоэкологии&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "экология недр",
+        "урбоэкология",
+        "геоэкология рек",
+        "агроэкология"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286832,
+      "question": "Страна историко-географического региона Латинская Америка&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Мексика",
+        "США",
+        "Канада",
+        "Габон"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286833,
+      "question": "&nbsp;Государство с низкими показатели рождаемости, смертности, естественного прироста &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Ангола",
+        "Афганистан",
+        "Пакистан",
+        "Швеция"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286834,
+      "question": "Страна, в которой выплачивается пособие при рождении каждого ребенка&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Франция",
+        "Индия",
+        "Нигерия",
+        "Китай"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286836,
+      "question": "Отрасли вторичного сектора экономики&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "металлургия, электроэнергетика",
+        "рыболовство, птицеводство",
+        "образование, здравоохранение",
+        "торговля, нефтедобыча"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286837,
+      "question": "Мировое хозяйство сформировалось на рубеже&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "XV-XVI в.",
+        "XIX-XX в.",
+        "XX-XXI в.",
+        "XVIII-XIX в."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286838,
+      "question": "Характерная черта территориальной структуры экономики развивающихся стран&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "роль главного центра играет столица",
+        "имеет старопромышленные районы",
+        "имеет&nbsp; районы нового освоения",
+        "наличие высотехнологичных центров"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286839,
+      "question": "Морфологическая особенность территории данной страны&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "государство вытянутой формы",
+        "государство с рассеянной территорией",
+        "государство с компактной территорией",
+        "государство, имеющее в своем составе анклавы"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/PkkEbonCIW58XBlraUUQO0huzT8QZxSZUKP1Hhp3.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286840,
+      "question": "Способ картографического изображения на данном фрагменте карте&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "ареалов",
+        "линейный",
+        "значков",
+        "точечный"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/qPW01CLMFdl3KYPkW5hFvgmqyWGIUqBPzCUvPYVP.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286843,
+      "question": "Единица измерения экологической емкости территории&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "квадратный метр",
+        "квадратный километр",
+        "мировой гектар",
+        "мировой акр"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286845,
+      "question": "Народы романской группы индоевропейской семьи&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "русские, украинцы",
+        "китайцы, румыны",
+        "немцы, французы",
+        "испанцы, молдаване"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286848,
+      "question": "Главная задача организации, эмблема которой представлена на рисунке",
+      "answers": [
+        3
+      ],
+      "options": [
+        "безопасность и борьба с терроризмом",
+        "укрепление экономического сотрудничества между странами",
+        "равенство прав и свобод всех граждан страны",
+        "борьба за независимость народов стран Азии"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/NGaNUz45KIzdSB1FcnmOT2rljtni3rczSWEghzuR.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286849,
+      "question": "&nbsp; Страна Латинской Америки с наименьшим показателем ВВП&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Парагвай",
+        "Боливия",
+        "Аргентина",
+        "Перу"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/GTMEMb31IiIKNMlTJZmES95WTmMwCy1bDZsVgDWX.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286850,
+      "question": "Специализация промышленности Ертисского экономического района Казахстана (2017г)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "легкая, химическая",
+        "мебельная, химическая",
+        "угольная, цветная металлургия",
+        "нефтегазовая, пищевая"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286851,
+      "question": "Авторы теории &laquo;развитие государства как социального организма&raquo;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "С.Коэн, А.Маккиндер",
+        "Ф.Ратцель, Р.Челлен",
+        "Ф.Бродель, К. Хаусховер",
+        "А.Мэхэн, К. Риттер"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286852,
+      "question": "Особенность геополитического положения Казахстана, показанная на рисунке линией&nbsp; &nbsp; &nbsp; &nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "приморское положение",
+        "транзитное положение",
+        "удаленность от океанов",
+        "соседское положение"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/e9RFNkSSMiHM7rVNI0MZ1Xdag0TSaiwV0NEfQq29.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286853,
+      "question": "&nbsp;Климатический пояс и тип климата&nbsp; по данным рисунка&nbsp; &nbsp; &nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "тропический, морской",
+        "субэкваториальный, муссонный",
+        "умеренный, резко-континентальный",
+        "субарктический, континентальный"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/kvdliIKeIyPi2LFls6dpqcGHlkpseBsxlj7Enw1G.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286854,
+      "question": "Показатель данной анаморфированной карты&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "численность населения",
+        "ВВП на душу населения",
+        "уровень урбанизации",
+        "калорийность питания"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/8SJORitfbyx0JwtC5lrbh1hTvgoyHOBtkU7TE9rj.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286855,
+      "question": "Угол наклона солнечных лучей в г. Усть-Каменогорск (50&deg;с.ш) 22 декабря&nbsp; &nbsp; &nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "40 &deg;",
+        "63,5&deg;",
+        "16,5&deg;",
+        "23,5&deg;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286856,
+      "question": "Ресурсообеспеченность страны углем, если ежегодная добыча - 10 млн.т, запасы месторождений страны - 3,3 млрд.т",
+      "answers": [
+        1
+      ],
+      "options": [
+        "330 лет",
+        "33 года",
+        "3300 лет",
+        "150 лет"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286858,
+      "question": "Если килограмм пшеничной муки в России стоит 20 рублей, а в Казахстане &ndash; 120 тенге, то паритет покупательской способности этих валют для муки составит ....(при курсе 5,56/руб)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "140 тенге/руб",
+        "60 тенге/руб",
+        "6 тенге/руб",
+        "2400 тенге/руб"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286859,
+      "question": "Виды передачи информации на цифровых картах&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "options": [
+        "точка",
+        "линия",
+        "полигон",
+        "пунктир",
+        "масштаб",
+        "широта"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286860,
+      "question": "Реки Балхаш-Алакольского бассейна",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "Лепси&nbsp;&nbsp;",
+        "Сырдарья&nbsp;",
+        "Жайык&nbsp;&nbsp;",
+        "Нура",
+        "Каратал",
+        "Сарысу&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286862,
+      "question": "Природно-территориальный(-ые) комплекс(-ы) Казахстана, сформированный(-ые) на древней и молодой платформах",
+      "answers": [
+        1,
+        3,
+        4
+      ],
+      "options": [
+        "Западная Сибирь",
+        "горы Сарыарка",
+        "Туранская равнина",
+        "Восточно-Европейская равнина",
+        "горы Мугалжары",
+        "Сауыр-Тарбагатай"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286864,
+      "question": "Примером(-ми) проявления азональной закономерности является (-ются)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1,
+        5,
+        6
+      ],
+      "options": [
+        "движение литосферных плит",
+        "смена времен года",
+        "экваториальный климатический пояс",
+        "формирование типов почв",
+        "строение земной коры",
+        "формирование горных пород"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286865,
+      "question": "Абсолютный и относительный показатели естественного прироста населения, если общая численность 2690 тыс.чел., родилось 35 тыс. чел., умерло 21,5 тыс.чел.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2,
+        4
+      ],
+      "options": [
+        "15,6 тыс.чел",
+        "13,5 тыс.чел",
+        "18,9 тыс.чел",
+        "5 промилле",
+        "13 промилле",
+        "8 промилле"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286866,
+      "question": "Установите соответствие между религией и их направлениями&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "христианство",
+        "буддизм",
+        "католицизм",
+        "&nbsp;махаяна",
+        "даосизм",
+        "синтоизм"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286867,
+      "question": "Установите соответствие: &nbsp;ученый-географ, путешественник &nbsp;- вклад в развитие географии&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "Эратосфен&nbsp;&nbsp;",
+        "Х. Колумб&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "изобрел способ измерения размеров Земли",
+        "открыл северное побережье Карибского моря",
+        "изучал историю, этнографию народов Средней Азии",
+        "доказал единство Мирового океана"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286868,
+      "question": "Установите соответствие между почвами и их долей в площади Казахстана&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "каштановые",
+        "бурые и серо-бурые&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "34%",
+        "44%",
+        "15%",
+        "25%"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286869,
+      "question": "Соотнесите глобальные проблемы и пути их решения&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "продовольственная проблема&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "энергетическая проблема&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "инвестиции в сельское хозяйство",
+        "использование возобновляемых ресурсов",
+        "разоружение и мирные переговоры",
+        "сокращение видового состава биоресурсов"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286870,
+      "question": "Установите соответствие: страна &ndash;запасы минеральных ресурсов&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "Китай",
+        "Зимбабве&nbsp;",
+        "уголь",
+        "хромиты",
+        "нефть",
+        "фосфориты"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286872,
+      "question": "Доля грамотного населения в Казахстане",
+      "answers": [
+        4
+      ],
+      "options": [
+        "50-70%",
+        "70-80%",
+        "90-98%",
+        "98-100%"
+      ],
+      "group_text": "&nbsp;По карте &laquo;Грамотность населения мира&raquo; определите",
+      "language": "русский",
+      "image_path": "public/images/9uBiffEv6cpjLTM4t5olywoBq1xi39Ph3Tzr797a.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286873,
+      "question": "Страну,&nbsp; доля грамотного населения которой ниже 50%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Перу",
+        "Ангола",
+        "Мозамбик",
+        "Нигер"
+      ],
+      "group_text": "&nbsp;По карте &laquo;Грамотность населения мира&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286874,
+      "question": "Страну,&nbsp; грамотность населения которой ниже среднемирового показателя&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Монголия",
+        "Индия",
+        "Китай",
+        "Аргентина"
+      ],
+      "group_text": "&nbsp;По карте &laquo;Грамотность населения мира&raquo; определите",
+      "language": "русский",
+      "image_path": "public/images/uOjjaCe1mBu3ZZIULYT25dwjamauNqchxTcclBKK.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286876,
+      "question": "Способ изображения информации на карте",
+      "answers": [
+        3
+      ],
+      "options": [
+        "картоид",
+        "картодиаграмма",
+        "картограмма",
+        "анаморфоза"
+      ],
+      "group_text": "&nbsp;По карте &laquo;Грамотность населения мира&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 286879,
+      "question": "Грамотность населения &ndash; показатель",
+      "answers": [
+        3
+      ],
+      "options": [
+        "ВВП",
+        "ВРП",
+        "ИЧР",
+        "ППС"
+      ],
+      "group_text": "&nbsp;По карте &laquo;Грамотность населения мира&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288865,
+      "question": "Период эпохи &quot;Великих Географических Открытий&raquo;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "начало Х - конец ХII века",
+        "середина XII-начало XV века",
+        "конец XV - середина XVII века",
+        "конец XVI-середина XVIII века"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288866,
+      "question": "Преимущество программы ArcGIS в картографии&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "мониторинг водных ресурсов",
+        "работа с контурной картой",
+        "создание тематических карт",
+        "рисование объектов на бумаге"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288867,
+      "question": "Главный путь решения природоохранных проблем&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "создание очистных сооружений",
+        "переход к безотходным технологиям",
+        "рациональное размещение &laquo;грязных производств&raquo;",
+        "применение малосернистого топлива"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288868,
+      "question": "Процесс возвращения на историческую родину &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "эмиграция",
+        "иммиграция",
+        "репатриация",
+        "миграция"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288869,
+      "question": "Причина высокой рождаемости&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "преобладание сельского населения",
+        "распространение городского образа жизни",
+        "снижение доли ручного труда",
+        "независимость от детей в старости"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288870,
+      "question": "Этнос Казахстана сино-тибетской языковой семьи&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "узбеки",
+        "таджики",
+        "чеченцы",
+        "дунгане"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288871,
+      "question": "Историко-культурная область Старого Света&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Англо-Саксонская Америка",
+        "Латинская Америка",
+        "Южная Африка",
+        "Ближний Восток"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288872,
+      "question": "Главный принцип размещения алюминиевого завода в г. Павлодаре&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "сырьевой",
+        "энергетический",
+        "водный",
+        "транспортный"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288873,
+      "question": "Отрасль промышленности группы &laquo;Б&raquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "топливная",
+        "металлургия",
+        "машиностроение",
+        "легкая"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288874,
+      "question": "Новый фактор размещения производительных сил &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "экологический",
+        "природно-ресурсный",
+        "транспортный",
+        "трудовые ресурсы"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288876,
+      "question": "Главная задача бизнес-инкубатора&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "государственная поддержка субъектов индустриализации",
+        "создание новых отраслей для конкурентоспособности экономики",
+        "взрастить высокотехнологические компании с ранних этапов",
+        "решение социально-экономических и экологических проблем"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288879,
+      "question": "&laquo;Страна огня и льда&raquo; в данном регионе&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Норвегия",
+        "Швеция",
+        "Финляндия",
+        "Исландия"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/43d4P2BeRCITZ2QB57X3olNsfqXnDpk9ri5KfK4U.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288880,
+      "question": "Метод, целью которого является предсказание дальнейшего развития процессов&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "эксперимент",
+        "экспедиция",
+        "наблюдение",
+        "описание"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288881,
+      "question": "На рисунке изображена схема движения воздуха &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "теплого фронта",
+        "циклона",
+        "антициклона",
+        "холодного фронта"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/eXekpSkSw5aySLKtqgwMemwkS3M1rweKI8jJAUpS.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288883,
+      "question": "Природные районы, граничащие с районом № 4 на западе и востоке&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Восточно-Европейская равнина, Сарыарка",
+        "Туранская равнина, Западная Сибирь",
+        "горы Южной Сибири, Западная Сибирь",
+        "Восточно-Европейская равнина, Туран"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/oBVlgL2M8VNbOLuz2FE4A5VOH1k8YbktMbLedq3Z.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288884,
+      "question": "Тип семьи, состоящей из одной брачной пары с детьми&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "сложная",
+        "нуклеарная",
+        "неполная",
+        "достаточная"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288885,
+      "question": "Страна, для которой характерна данная половозрастная пирамида&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Болгария",
+        "Германия",
+        "Танзания",
+        "Испания"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/nOjbE5ifOYPRul0XpYSG3jJsqgoXzmUOCzVsxxJW.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288886,
+      "question": "В городе Актобе расположен завод по выпуску",
+      "answers": [
+        3
+      ],
+      "options": [
+        "пластмассы",
+        "азотных удобрений",
+        "хромовых соединений",
+        "химического волокна"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288887,
+      "question": "Через пустыню Кызылкум Казахстан граничит с&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Россией",
+        "Узбекистаном",
+        "Кыргызстаном",
+        "Китаем"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288888,
+      "question": "Столица&nbsp; страны Центральной Азии, выделенной на карте цветом&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Бишкек",
+        "Ташкент",
+        "Ашгабад",
+        "Душанбе"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/qa1E5jEUDq1GXMXtdLOSPNUJN4ZFUtA5ZH0vbV6M.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288911,
+      "question": "Если у подножия горы температура воздуха +16 градусов С, а на ее вершине -8градусов С, то высота горы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "5000м&nbsp;",
+        "400м&nbsp;",
+        "10000м",
+        "4000м &nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288912,
+      "question": "Река с преимущественно снеговым питанием &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/ZW1ZnnWyCaobDcgBtsUWh8T7rnNkpGODHuA2HByE.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288913,
+      "question": "Полуострова Евразии, где распространена природная зона саванн и редколесий",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Балканский, Малая Азия",
+        "Пиренейский, Апеннинский",
+        "Индостан, Индокитай",
+        "Аравийский, Корейский"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288914,
+      "question": "Уровень безработицы в Казахстане (тыс. чел 2018г), если Уб=Б/ЭАН &times;100%&nbsp;&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tРегион\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tЭкономически активное население\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tВ том числе\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tзанятые\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tбезработные\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tКазахстан\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t9135\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t8690\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t445",
+      "answers": [
+        4
+      ],
+      "options": [
+        "5,67 %",
+        "3,95 %",
+        "6,32 %",
+        "4,87 %"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288916,
+      "question": "Достижение 2-й волны третьей промышленной революции (1969-2000 г)&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "электрификация",
+        "автоматизация",
+        "информатизация",
+        "механизация"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288917,
+      "question": "Географические объекты на севере Северной Америки&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1,
+        2,
+        5
+      ],
+      "options": [
+        "море Бофорта",
+        "Гудзонов залив",
+        "Мексиканский залив",
+        "Саргассово море",
+        "море Баффина",
+        "Калифорнийский залив"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288918,
+      "question": "Химический элемент земной коры, занимающий 47% массы, 96% объема&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "кальций",
+        "магний",
+        "кислород",
+        "натрий",
+        "кремний",
+        "калий"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288920,
+      "question": "Признак (-и) второго этапа развития географии (середина XVIII &ndash; начало XXвв)",
+      "answers": [
+        2,
+        4,
+        5
+      ],
+      "options": [
+        "накопление сведений о планете и ее поверхности",
+        "дифференциация естественных наук",
+        "внедрение аэрокосмической съемки",
+        "выявление причин географических явлений",
+        "выделение климатологии, почвоведения",
+        "применение электроники, лазерных лучей"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288922,
+      "question": "Верные характеристики распределения рисоводства в мире по данной карте&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;",
+      "answers": [
+        1,
+        4,
+        5
+      ],
+      "options": [
+        "страны Юго-Восточной Азии специализируются на выращивании риса",
+        "Южная Африка специализируются на выращивании риса",
+        "страны Европы специализируются на выращивании риса",
+        "&nbsp;\r\n\r\nстатистические данные представлены точечным методом картодиаграмм",
+        "на специализацию стран Азии рисом большое влияние оказал климат",
+        "статистические данные представлены точечным методом гистограмм"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/1BWemUDEzsqhHjqxb7lujME66DZxgjPBEQ8IVS6N.jpg",
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288923,
+      "question": "Заповедник (-и) степной зоны Казахстана, внесенный (-ые) в список всемирного наследия ЮНЕСКО&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3,
+        5
+      ],
+      "options": [
+        "Устирт",
+        "Алматинский",
+        "Наурызым",
+        "Барсакельмес",
+        "Коргалжынский",
+        "Маркакольский"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288924,
+      "question": "Установите соответствие: структура экономики &ndash; характерная черта&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "аграрная",
+        "индустриальная&nbsp;",
+        "ведущая роль принадлежит сельскому хозяйству",
+        "преобладание отраслей обрабатывающей промышленности",
+        "большую роль играют информация, наука, знания",
+        "доля сферы услуг в ВВП превышает 70%"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288925,
+      "question": "Установите соответствие: материк &ndash; форма рельефа&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "Африка",
+        "&nbsp;Евразия&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "Капские горы",
+        "плоскогорье Декан",
+        "горы Кордильеры",
+        "Гвианское плоскогорье"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288928,
+      "question": "Установите соответствие: водохранилище &ndash; река Казахстана&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "Капшагайское&nbsp;",
+        "Бухтарминское&nbsp;",
+        "р. Иле",
+        "р. Ертис",
+        "р. Жайык",
+        "р. Есиль"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288935,
+      "question": "Установите соответствие: индекс ИЧРП &ndash; страны &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "0,955&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "0,304&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "Норвегия, Швеция, Япония",
+        "Бурунди, Нигер, Эритрея",
+        "Казахстан, Болгария, Куба",
+        "Вьетнам, Таджикистан, Ирак"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288938,
+      "question": "Установите соответствие: степень опустынивания в Казахстане &ndash; доля в площади страны&nbsp;",
+      "answers": [],
+      "options": [
+        "сильная&nbsp;&nbsp;",
+        "значительная",
+        "1,5%",
+        "25,5%",
+        "44,4%",
+        "4,4 %"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288940,
+      "question": "Слои, возникающие в процессе почвообразования, различающиеся по цвету, сложению, плотности",
+      "answers": [
+        2
+      ],
+      "options": [
+        "почвенные покровы",
+        "почвенные горизонты",
+        "почвенные профили",
+        "почвенные слои"
+      ],
+      "group_text": "Почвы Казахстана.\r\n\r\nЗональность почвенного покрова выражена в Казахстане очень четко. Это связано со значительной протяженностью территории Казахстана с севера на юг и преобладанием равнинного рельефа. На равнинах Казахстана развиты три главные почвенные зоны:\r\n\r\n&ndash; зона чернозёмов (к северу от 52ᵒ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона каштановых почв (52-48◦ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона бурых и серо-бурых пустынных почв чередуется с пустынными песчаными и такыровидными почвами (южнее 48ᵒ с.ш., имеет две подзоны).\r\n\r\nПочвенный&nbsp;профиль &ndash; это профиль, показывающий закономерное изменение почвенной толщи сверху вниз.",
+      "language": "русский",
+      "image_path": "public/images/YZi2FyZGjwNJF4lGKee80HdZF8XpQDfD5yfSMynV.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288941,
+      "question": "Для пустынных территорий Казахстана характерны",
+      "answers": [
+        4
+      ],
+      "options": [
+        "обыкновенные черноземы",
+        "темно-каштановые почвы",
+        "светло-каштановые почвы",
+        "бурые, серо-бурые почвы"
+      ],
+      "group_text": "Почвы Казахстана.\r\n\r\nЗональность почвенного покрова выражена в Казахстане очень четко. Это связано со значительной протяженностью территории Казахстана с севера на юг и преобладанием равнинного рельефа. На равнинах Казахстана развиты три главные почвенные зоны:\r\n\r\n&ndash; зона чернозёмов (к северу от 52ᵒ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона каштановых почв (52-48◦ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона бурых и серо-бурых пустынных почв чередуется с пустынными песчаными и такыровидными почвами (южнее 48ᵒ с.ш., имеет две подзоны).\r\n\r\nПочвенный&nbsp;профиль &ndash; это профиль, показывающий закономерное изменение почвенной толщи сверху вниз.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288943,
+      "question": "Слой почвы с зернистой структурой темно-серого или черного цвета, мощностью 35-120 см",
+      "answers": [
+        2
+      ],
+      "options": [
+        "А0",
+        "А1",
+        "А2",
+        "В"
+      ],
+      "group_text": "Почвы Казахстана.\r\n\r\nЗональность почвенного покрова выражена в Казахстане очень четко. Это связано со значительной протяженностью территории Казахстана с севера на юг и преобладанием равнинного рельефа. На равнинах Казахстана развиты три главные почвенные зоны:\r\n\r\n&ndash; зона чернозёмов (к северу от 52ᵒ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона каштановых почв (52-48◦ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона бурых и серо-бурых пустынных почв чередуется с пустынными песчаными и такыровидными почвами (южнее 48ᵒ с.ш., имеет две подзоны).\r\n\r\nПочвенный&nbsp;профиль &ndash; это профиль, показывающий закономерное изменение почвенной толщи сверху вниз.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288944,
+      "question": "Слой почвы, примыкающий к материнской породе",
+      "answers": [
+        3
+      ],
+      "options": [
+        "гумусовый горизонт",
+        "горизонт вымывания",
+        "горизонт вмывания",
+        "лесная подстилка"
+      ],
+      "group_text": "Почвы Казахстана.\r\n\r\nЗональность почвенного покрова выражена в Казахстане очень четко. Это связано со значительной протяженностью территории Казахстана с севера на юг и преобладанием равнинного рельефа. На равнинах Казахстана развиты три главные почвенные зоны:\r\n\r\n&ndash; зона чернозёмов (к северу от 52ᵒ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона каштановых почв (52-48◦ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона бурых и серо-бурых пустынных почв чередуется с пустынными песчаными и такыровидными почвами (южнее 48ᵒ с.ш., имеет две подзоны).\r\n\r\nПочвенный&nbsp;профиль &ndash; это профиль, показывающий закономерное изменение почвенной толщи сверху вниз.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 288945,
+      "question": "Процесс восстановления почв",
+      "answers": [
+        2
+      ],
+      "options": [
+        "мелиорация",
+        "рекультивация",
+        "химизация",
+        "регенерация"
+      ],
+      "group_text": "Почвы Казахстана.\r\n\r\nЗональность почвенного покрова выражена в Казахстане очень четко. Это связано со значительной протяженностью территории Казахстана с севера на юг и преобладанием равнинного рельефа. На равнинах Казахстана развиты три главные почвенные зоны:\r\n\r\n&ndash; зона чернозёмов (к северу от 52ᵒ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона каштановых почв (52-48◦ с.ш., имеет три подзоны);\r\n\r\n&ndash; зона бурых и серо-бурых пустынных почв чередуется с пустынными песчаными и такыровидными почвами (южнее 48ᵒ с.ш., имеет две подзоны).\r\n\r\nПочвенный&nbsp;профиль &ndash; это профиль, показывающий закономерное изменение почвенной толщи сверху вниз.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289270,
+      "question": "Метод географических исследований, использующий показатели глубины и высоты территорий",
+      "answers": [
+        2
+      ],
+      "options": [
+        "сравнительный",
+        "статистический",
+        "исторический",
+        "описательный"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289271,
+      "question": "Самый длинный ледник в Казахстане &ndash; ледник Корженевского расположен в горах&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Алтай",
+        "Тянь-Шань",
+        "Жонгар Алатау",
+        "Сауыр-Тарбагатай"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289272,
+      "question": "Целостность географической оболочки &nbsp;-это &hellip;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "повторяемость во времени природных процессов и явлений",
+        "дифференциация по климатическим, биогеографическим особенностям",
+        "взаимосвязь и взаимозависимость природных компонентов",
+        "обмен веществ и энергии: круговорот воды, веществ земной коры"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289273,
+      "question": "Пример нерационального природопользования",
+      "answers": [
+        2
+      ],
+      "options": [
+        "формирование культурных ландшафтов",
+        "развитие экстенсивного хозяйства",
+        "развитие интенсивного хозяйства",
+        "высадка лесозащитных полос"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289274,
+      "question": "Область, в которой проживает более 90% уйгуров&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Туркестанская",
+        "Жамбылская",
+        "Алматинская",
+        "Костанайская"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289275,
+      "question": "Наиболее распространенный язык в мире&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "китайский",
+        "английский",
+        "испанский",
+        "арабский"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289276,
+      "question": "Экономическая мера демографической политики",
+      "answers": [
+        4
+      ],
+      "options": [
+        "половое воспитание молодежи",
+        "закон о режиме труда женщин",
+        "политика планирования семьи",
+        "налоговые и жилищные льготы"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289277,
+      "question": "Категория трудоспособного населения Казахстана, относящаяся к ЭАН&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "студенты",
+        "учащиеся",
+        "домохозяйки",
+        "безработные"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289278,
+      "question": "Устойчивые производственные связи между различными предприятиями для выпуска общей продукции&nbsp; &nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "специализация",
+        "кооперирование",
+        "концентрация",
+        "комбинирование"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289279,
+      "question": "Объем всех благ, произведенных в стране за год с вычетом прибылей иностранных компаний и зарплаты иностранных рабочих.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "валовый внутренний продукт",
+        "паритет покупательской способности",
+        "валовый национальный продукт",
+        "валовый региональный продукт"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289281,
+      "question": "Страна с наименьшим ВВП на душу населения&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Швейцария",
+        "Индия",
+        "Польша",
+        "Чехия"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289282,
+      "question": "Основной путь решения проблемы в странах с &laquo;серьезным уровнем голода&raquo; в Африке&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "инвестиции в сельское хозяйство",
+        "энергоэффективная экономика",
+        "управление природными ресурсами",
+        "восстановление почв и лесов"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289284,
+      "question": "Круглую карту мира с изображением тюркских городов составил&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "М.Кашгари",
+        "К.Жалаири",
+        "Аль-Фараби",
+        "Ибн-Батута"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289286,
+      "question": "Месторождение, отмеченное на карте&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "каменный уголь &ndash; Екибастуз",
+        "бурый&nbsp; уголь &ndash; Торгай",
+        "каменный уголь &ndash; Караганда&nbsp;",
+        "бурый&nbsp; уголь &ndash; Майкобен &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/yPmjVNux2OLCwWAPn63Z4pSkJzLglnihuqistb8Z.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289287,
+      "question": "На климат нашей страны влияют циклоны, образующиеся в&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Алеутском минимуме",
+        "Исландском минимуме",
+        "Азорском максимуме",
+        "Арктическом максимуме"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289289,
+      "question": "Индекс антропогенного изменения ландшафтов в Северном Казахстане, если Iизм.=2А+В/200, где А-доля полностью измененных ландшафтов, В-доля нарушенных ландшафтов.\r\n\r\nСоотношение ландшафтов разной степени измененности&nbsp;&nbsp;под влиянием хозяйственной деятельности\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tЭкономический район\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tДоля ландшафтов %\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tполностью измененных\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tнарушенных\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tестественных (коренных)\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tСеверный Казахстан\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t50\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t43\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t7",
+      "answers": [
+        1
+      ],
+      "options": [
+        "0,71",
+        "1,71",
+        "1,02",
+        "0,56"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289290,
+      "question": "Тип природопользования, для которого характерна частичная трансформация компонентов природы, связанная с обработкой земли&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "рекреационный",
+        "лесохозяйственный",
+        "сельскохозяйственный",
+        "горнопромышленный"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289292,
+      "question": "Ресурсообеспеченность Казахстана углем, если запасы составляют 25600 млн.т, добыча 118 млн.т (2018г)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "217 лет",
+        "300 лет",
+        "145 лет",
+        "590 лет"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289294,
+      "question": "На рисунке представлена структура экономики&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Казахстана",
+        "Великобритании",
+        "Индонезии",
+        "Бразилии"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/KoPSpJoMxyoP8QpkPFWzcrkC9SjndIUpkQY3MJiq.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289295,
+      "question": "Международная организация, координирующая работу по преодолению глобальных проблем человечества&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "АСЕАН",
+        "ООН",
+        "ЛАГ",
+        "НАФТА"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289297,
+      "question": "На рисунке изображен маршрут экспедиции&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Х. Колумба - А. Веспуччи",
+        "Ф. Магеллана - Х. Элькано",
+        "М. Лазарева - Ф. Беллинсгаузена",
+        "Д. Кука&nbsp; - А. Тасмана"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/dTpy20GTG1JwNNAwHNvbVYzggvQTrmqYaLzjtR9W.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289299,
+      "question": "Море и страна, изображенные на спутниковом рисунке&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Каспийское море, Бахрейн",
+        "Средиземное море, Кипр",
+        "Черное море, ОАЭ",
+        "Красное море, Кувейт&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/F3c8Tx83r8xjcZiW7f7jlhnfRZ8IM1qC57cpHkDG.jpg",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289300,
+      "question": "Причина образования ветра &ndash; &nbsp;разность (перепады) в атмосферном давлении. Наиболее сильный ветер указан стрелкой &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": "public/images/O95EPgO85twQLHHbO4gn8qlNPicRX0DOAwMXTr0a.png",
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289302,
+      "question": "Уклон реки Волга, если высота истока 226 м, высота устья (&ndash; 28) м, длина реки &ndash; 3530 км.&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0,065 м/км",
+        "0,072 м/км",
+        "0,046 м/км",
+        "0,091 м/км"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289303,
+      "question": "Коэффициент смертности населения, если в течение года родилось 1283062 чел, коэффициент естественного прироста 12&permil;, численность населения -75627384 чел.&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "16,96&permil;",
+        "4,96&permil;",
+        "5,84&permil;",
+        "15,05&permil;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289308,
+      "question": "Признаки тематической карты&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3,
+        5
+      ],
+      "options": [
+        "составляется в крупном масштабе",
+        "раскрываются две и более тем",
+        "раскрывается одна тема",
+        "основа-политическая карта",
+        "основа-общегеографическая карта",
+        "отображает вымышленную территорию"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289310,
+      "question": "Представитель(-и) флоры и фауны Австралии&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2,
+        3,
+        5
+      ],
+      "options": [
+        "слоновья трава",
+        "эвкалипт",
+        "страус эму",
+        "араукария",
+        "ехидна",
+        "баобаб"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289311,
+      "question": "Горы Казахстана, входящие в состав природно-территориального комплекса &ndash; горы Южной Сибири&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2,
+        3,
+        6
+      ],
+      "options": [
+        "Тянь-Шань",
+        "Сауыр",
+        "Тарбагатай",
+        "Жонгар Алатау",
+        "Мугалжар",
+        "Алтай"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289313,
+      "question": "Страны Юго- Восточной Азии&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2,
+        4,
+        6
+      ],
+      "options": [
+        "Непал",
+        "Мьянма",
+        "Индия",
+        "Филиппины",
+        "Япония",
+        "Сингапур"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289314,
+      "question": "На картограмме распределение изучаемого признака по территории изображается&nbsp;",
+      "answers": [
+        1,
+        2,
+        3
+      ],
+      "options": [
+        "цветом",
+        "точками",
+        "штриховкой",
+        "графиком",
+        "стрелкой",
+        "масштабом"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289315,
+      "question": "Установите соответствие:&nbsp; материк &ndash; горы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "Евразия",
+        "Южная Америка&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "Альпы",
+        "Анды",
+        "Кордильеры",
+        "Драконовы"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289316,
+      "question": "Установите соответствие: &nbsp;страна &ndash; религия &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "Израиль&nbsp;&nbsp;",
+        "&nbsp;Япония&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "иудаизм",
+        "&nbsp;синтоизм",
+        "буддизм",
+        "&nbsp;даосизм"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289318,
+      "question": "Установите соответствие: классификация природных ресурсов &ndash; вид ресурса&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "исчерпаемые невозобновляемые ресурсы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "исчерпаемые возобновляемые ресурсы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "фосфориты",
+        "&nbsp;почва",
+        "энергия ветра",
+        "энергия Солнца"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289323,
+      "question": "Установите соответствие: железно-дорожная магистраль &ndash; транспортные узлы&nbsp;",
+      "answers": [],
+      "options": [
+        "Трансказахстанская меридиональная&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "Трансказахстанская широтная&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "Петропавловск-Астана-Караганда",
+        "Достык-Жезказган-Актау",
+        "Семей-Алматы-Луговая",
+        "Карталы-Астана-Кулунда"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289324,
+      "question": "Установите соответствие: форма правления &ndash; страна&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [],
+      "options": [
+        "конституционная монархия&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "абсолютная монархия&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "Андорра",
+        "Оман",
+        "Ватикан",
+        "Алжир"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289325,
+      "question": "Уровень ИЧР Казахстана&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "очень низкий",
+        "очень высокий",
+        "низкий",
+        "высокий"
+      ],
+      "group_text": "По карте &laquo;Индекс человеческого развития&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289326,
+      "question": "Доля неграмотного населения в мире &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "15,9%",
+        "10,5%",
+        "30,7%",
+        "14.3%"
+      ],
+      "group_text": "По карте &laquo;Индекс человеческого развития&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289327,
+      "question": "Страны СНГ, имеющие средний уровень ИЧР&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Беларусь, Таджикистан",
+        "Россия, Узбекистан",
+        "Кыргызстан, Туркменистан",
+        "Таджикистан, Азербайджан"
+      ],
+      "group_text": "По карте &laquo;Индекс человеческого развития&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289328,
+      "question": "Страна Юго-Западной Азии, имеющая низкий уровень ИЧР&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Оман",
+        "Йемен",
+        "Катар",
+        "Сирия"
+      ],
+      "group_text": "По карте &laquo;Индекс человеческого развития&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    },
+    {
+      "id": 289329,
+      "question": "Показатель, который НЕ используется при расчете ИЧР&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "доход на душу населения",
+        "продолжительность жизни",
+        "продолжительность обучения",
+        "качество окружающей среды"
+      ],
+      "group_text": "По карте &laquo;Индекс человеческого развития&raquo; определите",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "География (рус)"
+    }
+  ]
+}

@@ -1,0 +1,2211 @@
+{
+  "subject_id": "5457c4ae-5aa8-4e67-aea9-e00cddd4770c",
+  "subject_title": "Английский язык (рус)",
+  "questions": [
+    {
+      "id": 286871,
+      "question": "1. Choose the correct present simple forms to complete the following sentence\r\nPeople ___________ (speak) Spanish here, they speak French",
+      "answers": [
+        1
+      ],
+      "options": [
+        "don&#39;t&nbsp;",
+        "doesn&#39;t&nbsp;",
+        "wouldn&#39;t&nbsp;",
+        "is not"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286875,
+      "question": "Which word correctly completes the sentence below, using the comparative form of the adjective &quot;happy&quot;?\r\n\r\n&quot;Yesterday, Sarah was _________ than today.&quot;\r\n\r\n&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "happy",
+        "happier",
+        "much happy",
+        "the happiest&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286877,
+      "question": "Which sentence correctly uses the comparative form of the adjective &quot;fast&quot;?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "The car moves fastly down the highway.",
+        "Tom runs more fast than his brother.",
+        "This train is faster than the previous one.",
+        "She types very fast than anyone I know."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286880,
+      "question": "Which word correctly completes the sentence below, regarding an uncountable noun?\r\n\r\n&quot;There is _________ water in the glass than in the bottle.&quot;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "many",
+        "more",
+        "most",
+        "much"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286881,
+      "question": "Which sentence correctly uses the future continuous tense?",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Tomorrow, I am reading a book.",
+        "By next week, they will drive to the beach.",
+        "&nbsp;\r\n\r\nAt 9 PM tonight, she is cooking dinner.",
+        "At noon tomorrow, he will be playing basketball."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286882,
+      "question": "Convert the following direct speech into reported speech:\r\n\r\nDirect Speech: &quot;I will visit my grandparents next weekend,&quot; said Tom.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Tom said that he visited his grandparents the following weekend.",
+        "Tom said that he would visit his grandparents the following weekend.",
+        "Tom said that he is visiting his grandparents next weekend.",
+        "Tom said that he visits his grandparents next weekend."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286884,
+      "question": "Choose the sentence with the correct time clause usage:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "We will go to the park after it is raining.",
+        "&nbsp;\r\n\r\nShe will call you before she is finishing work.",
+        "&nbsp;\r\n\r\nThey arrived at the party after they will eat dinner.",
+        "He will start studying once he will finish his dinner."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286885,
+      "question": "Identify the sentence with the correct usage of indirect questions:",
+      "answers": [
+        2
+      ],
+      "options": [
+        "She asked, &quot;What time does the movie start?&quot;",
+        "&nbsp;\r\n\r\nHe wondered if they were going to the party.",
+        "&nbsp;\r\n\r\n&quot;Can you tell me where is the nearest ATM?&quot; she inquired.",
+        "She asked if we was doing it correctly&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286886,
+      "question": "Choose the sentence that correctly uses a modal verb to express possibility:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "She must go to the beach tomorrow.",
+        "They can went to the concert last night.",
+        "It could will rain later this evening.",
+        "He may arrive late due to traffic."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286887,
+      "question": "Choose the sentence that correctly uses a modal verb to express obligation:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&nbsp;\r\n\r\nYou have to finish your homework before you leave.",
+        "&nbsp;\r\n\r\nShe may go to the dentist tomorrow.",
+        "&nbsp;\r\n\r\nHe must to clean his room before going out.",
+        "We might to arrive early for the meeting."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286888,
+      "question": "Choose the sentence that correctly uses &quot;going to&quot; to express future plans or intentions:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "He is going to cook dinner yesterday.",
+        "We are going to see to the beach&nbsp;",
+        "We are going to visit our grandparents next Sunday.",
+        "Elizabet is going to the office at the moment"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286889,
+      "question": "Choose the sentence that correctly uses the present continuous tense to express future arrangements:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "They are flying to Paris next week.",
+        "She is watching a movie now.",
+        "He is cooking dinner at the moment.",
+        "We are going to buy you a present."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286890,
+      "question": "Choose the sentence that correctly uses a phrase to talk about the future:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "You need to prepare the exam on the spot&nbsp;",
+        "This heavy vehicle is out of order&nbsp;",
+        "I am about to send you my presentation&nbsp;",
+        "She likes to think out of the box"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286891,
+      "question": "Choose the sentence that correctly uses the past perfect tense:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "She had finished her homework before dinner.",
+        "They had went to the concert last night.",
+        "He has been studying for the exam all day.",
+        "We have visited the museum yesterday."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286892,
+      "question": "Choose the sentence that correctly uses a verb followed by a gerund:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "She enjoys to read novels in her free time.",
+        "They stopped to eat lunch at the caf&eacute;.",
+        "He likes skiing on weekends.",
+        "We decided going fishing last summer."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286893,
+      "question": "Choose the sentence that correctly uses a verb followed by an infinitive:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "She avoids to read books in the late evening.",
+        "They forgot bringing their umbrellas on the rainy day.",
+        "He needs to finish his homework before going out.",
+        "We decided going for a hike in the mountains."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286894,
+      "question": "Choose the sentence that correctly uses &quot;in order to&quot;:",
+      "answers": [
+        2
+      ],
+      "options": [
+        "She woke up early in order to catching the train.",
+        "They rushed to the store in order to buy groceries.",
+        "He went for a run in order to will improve his fitness.",
+        "We studied hard in order to so pass the exam."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286895,
+      "question": "Choose the sentence that correctly uses the passive voice:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "A delicious meal was being cooked by the chef in the kitchen.",
+        "They have finished the project ahead of schedule.",
+        "He will be eating dinner at the restaurant tonight with his friends.",
+        "We are studying for the exam tomorrow.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286896,
+      "question": "Choose the sentence that correctly conveys surprise:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "She was not expecting to see her friend at the party.",
+        "They had planned a surprise birthday party for their mother.",
+        "We decided to go on a spontaneous road trip.",
+        "He didn&#39;t do the task that was given before.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286897,
+      "question": "Choose the sentence that correctly uses a linker of contrast:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "She loves both chocolate ice cream and vanilla ice cream.",
+        "He enjoys playing soccer as well as basketball.",
+        "While he is outgoing, she is shy and reserved.",
+        "They went to the beach because it was a sunny day."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286899,
+      "question": "Choose the synonym for the word &quot;encourage&quot;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Demand&nbsp;",
+        "Support",
+        "Criticize",
+        "Hinder"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286900,
+      "question": "Choose the group of words that is related to the topic &quot;movies&quot;:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Hammer, nail, saw",
+        "Structure, writer, poem&nbsp;",
+        "Setting, plot, villain",
+        "Hero, Book, Twist"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286901,
+      "question": "Choose the synonym for the phrase &quot;once upon a time&quot;:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Eventually",
+        "Abruptly",
+        "Formerly",
+        "Presently"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286902,
+      "question": "Choose the synonym for the phrase &quot;be inclined to&quot;:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "having predisposition&nbsp;",
+        "restraining from doing&nbsp;",
+        "to have control&nbsp;",
+        "to ease something"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286903,
+      "question": "Choose the appropriate completion for the sentence:\r\n\r\nIt was&nbsp; _____&nbsp; a nice jacket that i decided to buy it&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "so",
+        "such",
+        "very",
+        "like"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286904,
+      "question": "Choose the appropriate completion for the sentence:\r\n\r\nDespite the challenges, she was determined to __________ in her endeavors.",
+      "answers": [
+        3,
+        4
+      ],
+      "options": [
+        "fail",
+        "struggle",
+        "succeed",
+        "persist",
+        "overcome",
+        "flourish"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286905,
+      "question": "Choose the appropriate completion for the sentence:\r\n\r\nBased on the weather forecast, it _________ rain later today.",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "might",
+        "should",
+        "will",
+        "could",
+        "must",
+        "has to"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286906,
+      "question": "Choose the appropriate completion for the sentence:\r\n\r\nShe decided to __________ in the upcoming marathon.",
+      "answers": [
+        2,
+        4
+      ],
+      "options": [
+        "connect",
+        "participate",
+        "engage",
+        "take part",
+        "perform",
+        "throw"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286907,
+      "question": "Select the two nouns with the suffix &quot;-ment&quot;:",
+      "answers": [
+        4,
+        6
+      ],
+      "options": [
+        "Confidement",
+        "Computerment&nbsp;",
+        "Desiciment&nbsp;",
+        "Argument&nbsp;",
+        "Appearement&nbsp;",
+        "Development"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 286908,
+      "question": "Select the correct noun with the suffix &quot;-ity&quot;:",
+      "answers": [
+        2,
+        5
+      ],
+      "options": [
+        "Creationity",
+        "Generosity",
+        "Believity&nbsp;",
+        "Fascinity&nbsp;",
+        "Masculinity",
+        "Musclinity&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287080,
+      "question": "Complete the sentences with the correct adjectives",
+      "answers": [],
+      "options": [
+        "&nbsp;\r\n\r\nDespite his best efforts, John remained ___________ for months after losing his job due to company downsizing.",
+        "&nbsp;\r\n\r\nThe children grew increasingly ____________ as they waited in line for their turn on the amusement park ride.",
+        "unemployed",
+        "impatient",
+        "imemployed",
+        "unpatient"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287136,
+      "question": "Find the synonyms for the words in bold&nbsp;",
+      "answers": [],
+      "options": [
+        "Her passion for music was evident in every note she played on the piano, filling the room with pure emotion.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "&nbsp;\r\n\r\nI had to deal with a challenging situation at work today, but I managed to handle it calmly and effectively.",
+        "love",
+        "tackle&nbsp;",
+        "hate",
+        "avoid"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287140,
+      "question": "What were the main goals of the &quot;Guldene ber, tugan el!&quot; campaign in West Kazakhstan?\r\n\r\n\r\n\r\n\r\n&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "to disregard national tourism&nbsp;",
+        "to bring attention to the country&rsquo;s heritage",
+        "to distribute free trees to local residents",
+        "to organize cultural festivals"
+      ],
+      "group_text": "Tree Day was a nationwide campaign held in cities and towns of Kazakhstan in April and May 2017. During this period people planted about 1&nbsp;million trees &ndash; Canadian maple, white willow, oak, spruce, ash, birch, pine and many others.\r\n\r\nThe organisers hoped that this initiative would eventually become a real holiday for all citizens of our country, and each resident would plant a tree or, even better, a few trees! &ldquo;Together we have the opportunity to both preserve and increase the green lungs of Kazakhstan. After all, the role of forests in our lives is impossible to overestimate. They not only have an impact on the life of the individual but also act as a&nbsp;guarantee for the wellbeing of the environment&rdquo;, the Foundation noted.\r\n\r\nIn West Kazakhstan there is a large-scale campaign called &ldquo;Guldene ber, tugan el!&rdquo;. The main aims of the campaign are to raise awareness of the country&rsquo;s heritage and ecological education and to improve conditions in the city. In total, 36 thousand inhabitants of the region took part in the campaign, about 8&nbsp;thousand of&nbsp;whom were young people.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287145,
+      "question": "According to the following sentence what does the author want?\r\n\r\n&quot;&ldquo;Together we have the opportunity to both preserve and increase the green lungs of Kazakhstan&quot;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "to tell that wildlife in Kazakhstan is poor&nbsp;",
+        "to tell the reader that wildlife can be improved",
+        "to call Kazakhstan&#39;s authority to financially aid&nbsp;",
+        "to criticize the wildlife in Kazakhstan&nbsp;"
+      ],
+      "group_text": "Tree Day was a nationwide campaign held in cities and towns of Kazakhstan in April and May 2017. During this period people planted about 1&nbsp;million trees &ndash; Canadian maple, white willow, oak, spruce, ash, birch, pine and many others.\r\n\r\nThe organisers hoped that this initiative would eventually become a real holiday for all citizens of our country, and each resident would plant a tree or, even better, a few trees! &ldquo;Together we have the opportunity to both preserve and increase the green lungs of Kazakhstan. After all, the role of forests in our lives is impossible to overestimate. They not only have an impact on the life of the individual but also act as a&nbsp;guarantee for the wellbeing of the environment&rdquo;, the Foundation noted.\r\n\r\nIn West Kazakhstan there is a large-scale campaign called &ldquo;Guldene ber, tugan el!&rdquo;. The main aims of the campaign are to raise awareness of the country&rsquo;s heritage and ecological education and to improve conditions in the city. In total, 36 thousand inhabitants of the region took part in the campaign, about 8&nbsp;thousand of&nbsp;whom were young people.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287146,
+      "question": "According to the context, what is the synonym of the word &quot;resident&quot;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "inhabitant&nbsp;",
+        "nature",
+        "flora",
+        "fauna"
+      ],
+      "group_text": "Tree Day was a nationwide campaign held in cities and towns of Kazakhstan in April and May 2017. During this period people planted about 1&nbsp;million trees &ndash; Canadian maple, white willow, oak, spruce, ash, birch, pine and many others.\r\n\r\nThe organisers hoped that this initiative would eventually become a real holiday for all citizens of our country, and each resident would plant a tree or, even better, a few trees! &ldquo;Together we have the opportunity to both preserve and increase the green lungs of Kazakhstan. After all, the role of forests in our lives is impossible to overestimate. They not only have an impact on the life of the individual but also act as a&nbsp;guarantee for the wellbeing of the environment&rdquo;, the Foundation noted.\r\n\r\nIn West Kazakhstan there is a large-scale campaign called &ldquo;Guldene ber, tugan el!&rdquo;. The main aims of the campaign are to raise awareness of the country&rsquo;s heritage and ecological education and to improve conditions in the city. In total, 36 thousand inhabitants of the region took part in the campaign, about 8&nbsp;thousand of&nbsp;whom were young people.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287148,
+      "question": "According to the text, what role do forests play in our lives?\r\n\r\n\r\n\r\n\r\n&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "It helps people breathe&nbsp;",
+        "It helps flora and fauna&nbsp;",
+        "It helps local farmers",
+        "It helps the government&#39;s initiatives&nbsp;"
+      ],
+      "group_text": "Tree Day was a nationwide campaign held in cities and towns of Kazakhstan in April and May 2017. During this period people planted about 1&nbsp;million trees &ndash; Canadian maple, white willow, oak, spruce, ash, birch, pine and many others.\r\n\r\nThe organisers hoped that this initiative would eventually become a real holiday for all citizens of our country, and each resident would plant a tree or, even better, a few trees! &ldquo;Together we have the opportunity to both preserve and increase the green lungs of Kazakhstan. After all, the role of forests in our lives is impossible to overestimate. They not only have an impact on the life of the individual but also act as a&nbsp;guarantee for the wellbeing of the environment&rdquo;, the Foundation noted.\r\n\r\nIn West Kazakhstan there is a large-scale campaign called &ldquo;Guldene ber, tugan el!&rdquo;. The main aims of the campaign are to raise awareness of the country&rsquo;s heritage and ecological education and to improve conditions in the city. In total, 36 thousand inhabitants of the region took part in the campaign, about 8&nbsp;thousand of&nbsp;whom were young people.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287149,
+      "question": "What is the main idea of the text?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "The text outlines Kazakhstan&#39;s launch of local projects, including Tree Day and &quot;Guldene ber, tugan el!&quot;, to discourage environmental awareness, hinder tree planting, and neglect cultural heritage.",
+        "The text highlights Kazakhstan&#39;s adoption of nationwide initiatives such as Tree Day and &quot;Guldene ber, tugan el!&quot; to enhance environmental consciousness, stimulate tree cultivation, and uphold cultural heritage.",
+        "The text emphasizes Kazakhstan&#39;s implementation of international campaigns like Tree Day and &quot;Guldene ber, tugan el!&quot; to foster economic development, deter tree planting, and ignore cultural heritage.",
+        "The text discusses Kazakhstan&#39;s involvement in regional initiatives such as Tree Day and &quot;Guldene ber, tugan el!&quot; to address political issues, discourage tree planting, and dismiss cultural heritage."
+      ],
+      "group_text": "Tree Day was a nationwide campaign held in cities and towns of Kazakhstan in April and May 2017. During this period people planted about 1&nbsp;million trees &ndash; Canadian maple, white willow, oak, spruce, ash, birch, pine and many others.\r\n\r\nThe organisers hoped that this initiative would eventually become a real holiday for all citizens of our country, and each resident would plant a tree or, even better, a few trees! &ldquo;Together we have the opportunity to both preserve and increase the green lungs of Kazakhstan. After all, the role of forests in our lives is impossible to overestimate. They not only have an impact on the life of the individual but also act as a&nbsp;guarantee for the wellbeing of the environment&rdquo;, the Foundation noted.\r\n\r\nIn West Kazakhstan there is a large-scale campaign called &ldquo;Guldene ber, tugan el!&rdquo;. The main aims of the campaign are to raise awareness of the country&rsquo;s heritage and ecological education and to improve conditions in the city. In total, 36 thousand inhabitants of the region took part in the campaign, about 8&nbsp;thousand of&nbsp;whom were young people.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287151,
+      "question": "Match the people with the people they mostly deal with&nbsp;",
+      "answers": [],
+      "options": [
+        "Flight attendants&nbsp;",
+        "Radio presenters&nbsp;",
+        "Passangers&nbsp;",
+        "Listeners&nbsp;",
+        "Visitors&nbsp;",
+        "Customers&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287189,
+      "question": "Which verb correctly completes this sentence in the present simple tense?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "feeding",
+        "feed",
+        "feeds",
+        "fed"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287192,
+      "question": "Which adjective correctly completes this sentence in the comparative form?\r\n\r\nJohn is _____________ than his brother.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "tall",
+        "taller",
+        "tallest",
+        "tallier"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287193,
+      "question": "Which interrogative sentence correctly transforms the affirmative sentence?\r\n\r\nSarah used to go swimming every morning.",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Did Sarah use to go swimming every morning?",
+        "Did Sarah used to go swimming every morning?",
+        "&nbsp;\r\n\r\nDoes Sarah used to go swimming every morning?",
+        "Does Sarah use to go swimming every morning?"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287194,
+      "question": "Which option correctly forms a relative clause about the house?\r\n\r\nThe house that Jack built is beautiful.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&nbsp;\r\n\r\nThe house who Jack built is beautiful.",
+        "&nbsp;\r\n\r\nThe house whom Jack built is beautiful.",
+        "&nbsp;\r\n\r\nThe house what Jack built is beautiful.",
+        "The house which Jack built is beautiful."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287195,
+      "question": "Which option correctly forms a comparative adverb about the way she sings?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "&nbsp;\r\n\r\nShe sings most beautifully than anyone else in the choir.",
+        "She sings beautifully than anyone else in the choir.",
+        "She sings more beautifully than anyone else in the choir.",
+        "She sings beautiful than anyone else in the choir."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287196,
+      "question": "Convert the following sentence into reported speech\r\n\r\nTom said, &quot;I am going to the party tonight.&quot;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Tom said he was going to the party that night.&nbsp;",
+        "Tom said he is going to the party that night.",
+        "Tom said he will be going to the party that night.&nbsp;",
+        "Tom said he has gone to the party that night.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287197,
+      "question": "Fill the missing gap with the right article&nbsp;\r\n\r\n&quot;She is going to ________ university we recently discussed.&quot;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "a",
+        "an",
+        "-",
+        "the"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 287198,
+      "question": "Choose the right explanation of the following phrasal verb &quot;try out&quot;\r\n\r\nJack wants to try out for the basketball team this year.",
+      "answers": [
+        1
+      ],
+      "options": [
+        "he attempts to join the basketball team",
+        "he wants to leave the basketball team",
+        "he looks forward to criticizing the basketball team&nbsp;",
+        "he believes that the basketball team fails&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288175,
+      "question": "Which of the following is the correct opposite adjective formed by adding a negative prefix?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "unkind",
+        "imfriendly&nbsp;",
+        "inable&nbsp;",
+        "ilperfect"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288184,
+      "question": "Choose the right usage of the phrase &quot;fed up with&quot;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Sarah was fed up with her demanding boss who never appreciated her hard work.",
+        "Sarah will fed up with her demanding boss who never appreciate her hard work.&nbsp;",
+        "Sarah is going to fed up&nbsp;with her demanding boss who never appreciate her hard work.",
+        "Sarah would&nbsp;with her demanding boss who never appreciated her hard work."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288185,
+      "question": "The modal verb is",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Run",
+        "Should",
+        "Will",
+        "Does"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288186,
+      "question": "&quot;After weeks of preparation, the rocket finally began to ________________ into the vast expanse of space.&quot;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "take out",
+        "take up",
+        "take off",
+        "take in&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288188,
+      "question": "Modal verb followed by &quot;to&quot;:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "could",
+        "had better&nbsp;",
+        "have&nbsp;",
+        "might"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288190,
+      "question": "Choose the correct preposition:\r\n\r\n&quot;During the winter holidays, we always enjoy cozying up ____&nbsp;front of the fireplace with a cup of hot cocoa.&quot;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "off",
+        "in",
+        "of",
+        "up"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288191,
+      "question": "Choose the correct preposition:\r\n\r\nJohn couldn&#39;t hide his surprise _______ the news of his promotion.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "of",
+        "in",
+        "too",
+        "at"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288369,
+      "question": "Choose the right phrasal verbs&nbsp;",
+      "answers": [],
+      "options": [
+        "The rocket is scheduled to __________ at dawn, carrying a payload of scientific instruments bound for Mars.",
+        "She reached into her bag to ________ her phone, only to realize she had left it on the kitchen counter.",
+        "take off",
+        "take out&nbsp;",
+        "take up",
+        "take in&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288518,
+      "question": "Choose the right modal verbs&nbsp;",
+      "answers": [],
+      "options": [
+        "If you really want to reach that goal, you _______ work really hard&nbsp;",
+        "One of the students _______ open this door, as the security guard didn&#39;t do so.",
+        "ought to&nbsp;",
+        "might&nbsp;",
+        "should to",
+        "can&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288578,
+      "question": "Choose the right adjective:\r\n\r\n&quot;She was _________ about&nbsp; environmental conservation and spent hours on volunteering for local cleanup initiatives&quot;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Interested",
+        "Passionate",
+        "thought&nbsp;",
+        "energetic&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288579,
+      "question": "The correct Present Perfect sentence is",
+      "answers": [
+        1
+      ],
+      "options": [
+        "She has just binge-watched the entire series of her favorite television show on Netflix.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "Sarah had been arrested for violating the copyrights of a famous influencer.",
+        "He has saw many different episodes of this famous masterpiece.&nbsp;",
+        "I have thinked about the problem for a very long time as I had to prepare for publishing.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288580,
+      "question": "Complete the sentence\r\n\r\nThe sudden clap of _________ startled the sleeping cat.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "rain",
+        "earthquake&nbsp;",
+        "thunder",
+        "lightning&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288581,
+      "question": "Sentence with a correct preposition",
+      "answers": [
+        1
+      ],
+      "options": [
+        "He placed the book on the table before leaving.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "She was waiting for the right bus in the bus stop.",
+        "He walked at the speciality store from the street.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "She put the groceries at the fridge."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288582,
+      "question": "Which phrase is used in giving an opinion",
+      "answers": [
+        2
+      ],
+      "options": [
+        "As a result&nbsp;",
+        "From my perspective",
+        "At present&nbsp;",
+        "On the other hand"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288598,
+      "question": "Choose the right meaning of the phrase &quot;to be into something&quot;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "to promote something&nbsp;",
+        "to enjoy something",
+        "to dislike something&nbsp;",
+        "to accept something&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288599,
+      "question": "Choose the healthy habits",
+      "answers": [
+        2
+      ],
+      "options": [
+        "sleeping enough/eating junk food/drinking a lot of water/doing sports&nbsp;",
+        "sleeping enough/eating organic food/drinking a lot of water/doing sports&nbsp;",
+        "sleeping enough/eating organic food/drinking fizzy drinks/doing sports&nbsp;",
+        "sleeping less/eating organic food/drinking a lot of water/doing sports"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288600,
+      "question": "The structure of the third conditional is:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&quot;If + past perfect, would have + past participle.&quot;",
+        "&quot;If + present perfect, would have + past participle.&quot;",
+        "&quot;If + past perfect, would had + past participle.&quot;",
+        "&quot;If + present perfect, would had + past participle.&quot;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288601,
+      "question": "A person whose profession is performing on the stage, in films, or on television.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "director",
+        "showman",
+        "actor",
+        "conductor"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288602,
+      "question": "Find the correct sentence with the second conditional",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&quot;If it rained tomorrow, we would stay indoors.&quot;",
+        "&quot;If it has rained tomorrow, we would stay indoors.&quot;",
+        "&quot;If it had rained tomorrow, we would stay indoors.&quot;",
+        "&quot;If it rained tomorrow, we would stayed indoors.&quot;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288603,
+      "question": "Find the synonyms of the word &ldquo;small&rdquo;",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "tiny",
+        "huge",
+        "gigantic",
+        "gorgeous",
+        "little",
+        "dry"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288769,
+      "question": "Choose what the words in bold mean\r\n\r\n&quot;I&#39;m trying to improve my health, so I&#39;ve decided to cut down on sugary snacks and soda.&quot;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "Reduce",
+        "Improve",
+        "Increase",
+        "Minimize",
+        "Develop",
+        "Add"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288770,
+      "question": "What do the words in bold mean?\r\n\r\nWhen I was younger, I used to play soccer with my friends every weekend.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "I played it actively in the past",
+        "I didn&#39;t have a chance to play it&nbsp;",
+        "I was an active player in the past",
+        "I wasn&#39;t looking forward to playing it&nbsp;",
+        "I didn&#39;t really play it in the past",
+        "I never liked playing it&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288774,
+      "question": "Appropriate variant(s)\r\n\r\n&quot;Tomorrow, we&nbsp; ____________ a movie at the cinema.&quot;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        3,
+        4
+      ],
+      "options": [
+        "will have watched",
+        "will watching",
+        "are watching",
+        "are going to watch",
+        "going to watch&nbsp;",
+        "are being watched"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288960,
+      "question": "The correct Reported Speech sentences are:",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "She said that she was going to the store.",
+        "She said that she will finish the project tomorrow.",
+        "He said that he meet her at 3 PM.",
+        "They said that they has been working on this project.",
+        "He said that he had finished his work.",
+        "&nbsp;\r\n\r\nShe said that she could went to the party."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288961,
+      "question": "Choose the right reported speech tenses:&nbsp;",
+      "answers": [],
+      "options": [
+        "&quot;She said, &#39;I will attend the meeting tomorrow.&#39;&quot;",
+        "&quot;He said, &#39;I am working on a new project.&#39;&quot;",
+        "She said that she would attend the meeting the next day.",
+        "He mentioned that he was working on a new project.",
+        "She said that she would attended the meeting the next day.",
+        "He mentioned that he is working on a new project."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288962,
+      "question": "Choose the right adjectives with the negative meaning",
+      "answers": [],
+      "options": [
+        "The __________ (kind) treatment from her colleagues made her question her place in the workplace.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "The _____________ (organized) shelves in the store made it difficult for customers to find what they were looking for.",
+        "unkind",
+        "disorganized",
+        "diskind",
+        "inorganized&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288976,
+      "question": "Complete the sentences with the right question tags",
+      "answers": [],
+      "options": [
+        "She finished her assignment early, __________?",
+        "You&#39;ll be attending the meeting tomorrow, _________?",
+        "didn&#39;t she",
+        "won&#39;t you",
+        "did she",
+        "will she"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 288977,
+      "question": "Choose the right articles&nbsp;",
+      "answers": [],
+      "options": [
+        "______ cat lounged lazily in the sunbeam streaming through the window.",
+        "_____ apple a day keeps the doctor away.",
+        "The",
+        "An&nbsp;",
+        "A&nbsp;",
+        "The&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289418,
+      "question": "Complete the sentences&nbsp;",
+      "answers": [],
+      "options": [
+        "The illegal poaching of _______________ species continues to pose a significant threat to biodiversity worldwide",
+        "The _________ poaching of endangered species continues to pose a significant threat to biodiversity worldwide.",
+        "endangered",
+        "illegal&nbsp;",
+        "endangerous&nbsp;",
+        "legal"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289419,
+      "question": "What is the main takeaway regarding the asteroid 2002 NT7?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "It will definitely collide with Earth in February 2019.",
+        "Scientists are confident it will narrowly miss Earth in 2019.",
+        "There is uncertainty about its future collision in February 2060.",
+        "It has already collided with Earth causing significant damage."
+      ],
+      "group_text": "Invaders from Outer The Space&nbsp;\r\n\r\n1 Is a huge asteroid going to hit the Earth in February 2019? Probably not, according to scientists, but it&rsquo;s going to be close. The asteroid, called 2002 NT7, was discovered in July 2002. Since then, astronomers have been working hard to calculate its exact path. They are now fairly con\u001d dent that it will just miss the Earth in 2019.\r\n\r\n2 But will it ever collide with Earth in the future? Scientists are not sure. The next possible collision date is February 2060 and, as the asteroid orbits the Sun every 2.2 years, it&rsquo;s quite likely that it will hit us at some point in the future. If it does, it will almost certainly destroy an area the size of Europe and cause global climate changes.\r\n\r\n3 But before you start panicking, we&rsquo;ll have plenty of time to prepare for the collision and prevent it from happening. Unlike in the movies, though, this probably won&rsquo;t be done by destroying it with nuclear weapons. There will be two simpler options. The \u001drst will involve landing a small rocket on the asteroid and &lsquo;driving&rsquo; it slightly o\u001b course so it misses the Earth. The second option will be to use a &lsquo;solar sail&rsquo;, which is a bit like the sail on a ship, to change the asteroid&rsquo;s course.\r\n\r\n4 Meteors (asteroids which enter the Earth&rsquo;s atmosphere) have hit the Earth before and caused huge damage. Indeed it&rsquo;s possible that a meteor was responsible for the dinosaurs becoming extinct. These days, however, we have the technology to detect them in time and to take appropriate action. Next time it happens, we&rsquo;ll be ready for it.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289420,
+      "question": "What is one proposed method for preventing the asteroid from colliding with Earth?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Using nuclear weapons to destroy the asteroid.",
+        "Landing a small rocket on the asteroid to alter its course.",
+        "Ignoring the asteroid and hoping it changes direction on its own.",
+        "Building a shield around Earth to deflect the asteroid&#39;s path."
+      ],
+      "group_text": "Invaders from Outer The Space&nbsp;\r\n\r\n1 Is a huge asteroid going to hit the Earth in February 2019? Probably not, according to scientists, but it&rsquo;s going to be close. The asteroid, called 2002 NT7, was discovered in July 2002. Since then, astronomers have been working hard to calculate its exact path. They are now fairly con\u001d dent that it will just miss the Earth in 2019.\r\n\r\n2 But will it ever collide with Earth in the future? Scientists are not sure. The next possible collision date is February 2060 and, as the asteroid orbits the Sun every 2.2 years, it&rsquo;s quite likely that it will hit us at some point in the future. If it does, it will almost certainly destroy an area the size of Europe and cause global climate changes.\r\n\r\n3 But before you start panicking, we&rsquo;ll have plenty of time to prepare for the collision and prevent it from happening. Unlike in the movies, though, this probably won&rsquo;t be done by destroying it with nuclear weapons. There will be two simpler options. The \u001drst will involve landing a small rocket on the asteroid and &lsquo;driving&rsquo; it slightly o\u001b course so it misses the Earth. The second option will be to use a &lsquo;solar sail&rsquo;, which is a bit like the sail on a ship, to change the asteroid&rsquo;s course.\r\n\r\n4 Meteors (asteroids which enter the Earth&rsquo;s atmosphere) have hit the Earth before and caused huge damage. Indeed it&rsquo;s possible that a meteor was responsible for the dinosaurs becoming extinct. These days, however, we have the technology to detect them in time and to take appropriate action. Next time it happens, we&rsquo;ll be ready for it.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289421,
+      "question": "How does the passage describe the likelihood of a future collision with the asteroid?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "It is certain to collide with Earth in 2060.",
+        "There is uncertainty about a future collision.",
+        "It will definitely miss Earth in all future orbits.",
+        "It will collide with Earth in 2019."
+      ],
+      "group_text": "Invaders from Outer The Space&nbsp;\r\n\r\n1 Is a huge asteroid going to hit the Earth in February 2019? Probably not, according to scientists, but it&rsquo;s going to be close. The asteroid, called 2002 NT7, was discovered in July 2002. Since then, astronomers have been working hard to calculate its exact path. They are now fairly con\u001d dent that it will just miss the Earth in 2019.\r\n\r\n2 But will it ever collide with Earth in the future? Scientists are not sure. The next possible collision date is February 2060 and, as the asteroid orbits the Sun every 2.2 years, it&rsquo;s quite likely that it will hit us at some point in the future. If it does, it will almost certainly destroy an area the size of Europe and cause global climate changes.\r\n\r\n3 But before you start panicking, we&rsquo;ll have plenty of time to prepare for the collision and prevent it from happening. Unlike in the movies, though, this probably won&rsquo;t be done by destroying it with nuclear weapons. There will be two simpler options. The \u001drst will involve landing a small rocket on the asteroid and &lsquo;driving&rsquo; it slightly o\u001b course so it misses the Earth. The second option will be to use a &lsquo;solar sail&rsquo;, which is a bit like the sail on a ship, to change the asteroid&rsquo;s course.\r\n\r\n4 Meteors (asteroids which enter the Earth&rsquo;s atmosphere) have hit the Earth before and caused huge damage. Indeed it&rsquo;s possible that a meteor was responsible for the dinosaurs becoming extinct. These days, however, we have the technology to detect them in time and to take appropriate action. Next time it happens, we&rsquo;ll be ready for it.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289422,
+      "question": "How does the passage suggest we would handle a potential asteroid collision differently from past events?",
+      "answers": [
+        4
+      ],
+      "options": [
+        "By relying on luck and chance to avoid collision.",
+        "By waiting until the last minute to take action.",
+        "By using meteors as signs that could potentially warn us beforehand.&nbsp;",
+        "By using advanced technology detect and prevent collisions."
+      ],
+      "group_text": "Invaders from Outer The Space&nbsp;\r\n\r\n1 Is a huge asteroid going to hit the Earth in February 2019? Probably not, according to scientists, but it&rsquo;s going to be close. The asteroid, called 2002 NT7, was discovered in July 2002. Since then, astronomers have been working hard to calculate its exact path. They are now fairly con\u001d dent that it will just miss the Earth in 2019.\r\n\r\n2 But will it ever collide with Earth in the future? Scientists are not sure. The next possible collision date is February 2060 and, as the asteroid orbits the Sun every 2.2 years, it&rsquo;s quite likely that it will hit us at some point in the future. If it does, it will almost certainly destroy an area the size of Europe and cause global climate changes.\r\n\r\n3 But before you start panicking, we&rsquo;ll have plenty of time to prepare for the collision and prevent it from happening. Unlike in the movies, though, this probably won&rsquo;t be done by destroying it with nuclear weapons. There will be two simpler options. The \u001drst will involve landing a small rocket on the asteroid and &lsquo;driving&rsquo; it slightly o\u001b course so it misses the Earth. The second option will be to use a &lsquo;solar sail&rsquo;, which is a bit like the sail on a ship, to change the asteroid&rsquo;s course.\r\n\r\n4 Meteors (asteroids which enter the Earth&rsquo;s atmosphere) have hit the Earth before and caused huge damage. Indeed it&rsquo;s possible that a meteor was responsible for the dinosaurs becoming extinct. These days, however, we have the technology to detect them in time and to take appropriate action. Next time it happens, we&rsquo;ll be ready for it.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289423,
+      "question": "What is the overall tone of the passage regarding humanity&#39;s ability to handle potential asteroid collisions?",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Pessimistic, suggesting that asteroid collisions are inevitable and catastrophic.",
+        "Indifferent, implying that humanity&#39;s efforts will have little impact on the outcome.",
+        "Cautious, acknowledging the potential threat but also the measures in place for prevention.",
+        "Optimistic, emphasizing the effectiveness of advanced technology in prevention."
+      ],
+      "group_text": "Invaders from Outer The Space&nbsp;\r\n\r\n1 Is a huge asteroid going to hit the Earth in February 2019? Probably not, according to scientists, but it&rsquo;s going to be close. The asteroid, called 2002 NT7, was discovered in July 2002. Since then, astronomers have been working hard to calculate its exact path. They are now fairly con\u001d dent that it will just miss the Earth in 2019.\r\n\r\n2 But will it ever collide with Earth in the future? Scientists are not sure. The next possible collision date is February 2060 and, as the asteroid orbits the Sun every 2.2 years, it&rsquo;s quite likely that it will hit us at some point in the future. If it does, it will almost certainly destroy an area the size of Europe and cause global climate changes.\r\n\r\n3 But before you start panicking, we&rsquo;ll have plenty of time to prepare for the collision and prevent it from happening. Unlike in the movies, though, this probably won&rsquo;t be done by destroying it with nuclear weapons. There will be two simpler options. The \u001drst will involve landing a small rocket on the asteroid and &lsquo;driving&rsquo; it slightly o\u001b course so it misses the Earth. The second option will be to use a &lsquo;solar sail&rsquo;, which is a bit like the sail on a ship, to change the asteroid&rsquo;s course.\r\n\r\n4 Meteors (asteroids which enter the Earth&rsquo;s atmosphere) have hit the Earth before and caused huge damage. Indeed it&rsquo;s possible that a meteor was responsible for the dinosaurs becoming extinct. These days, however, we have the technology to detect them in time and to take appropriate action. Next time it happens, we&rsquo;ll be ready for it.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289544,
+      "question": "Choose the correct sentence with the word &ldquo;enough&rdquo;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "He&#39;s bad&nbsp;enough, but his brother&nbsp;is far worse.",
+        "I don&#39;t think you should visit this place enough.&nbsp;",
+        "Enough of people have come to the given location.",
+        "That wasn&#39;t drawn enough beautifully."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289547,
+      "question": "Choose the right interrogative question of present perfect tense",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Has you ever seen this precious thing?&nbsp;",
+        "Have you visited the new art museum downtown?\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "Did you ever tried this delicious cake?",
+        "Have you did this exercise previously?&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289559,
+      "question": "Choose the right modal verb\r\n\r\n_______ I have a slice of cake, please?\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Might",
+        "Would",
+        "Must",
+        "May"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289560,
+      "question": "Which sentence correctly uses the Future Simple tense?\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "I will go to the store tomorrow to buy groceries\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "I will be going to the supermarket to find the things",
+        "I will have visited this place by Sunday evening",
+        "Many students will planned their spring break&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289561,
+      "question": "Which sentence correctly uses the irregular adverb form of &quot;hard&quot;?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "The exam was hard, but she studied diligently and managed to pass.",
+        "After a long day of manual labor, his hands were rough and hard from the work.",
+        "She worked hard to achieve the goals that she had set before.&nbsp;",
+        "It&#39;s hard to believe how quickly the weather can change in this unpredictable climate."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289562,
+      "question": "The following sentence is&nbsp;\r\n\r\n&quot;If they had arrived on time, they would have caught the train.&quot;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "First Conditional&nbsp;",
+        "Second Conditional&nbsp;",
+        "Third Conditional&nbsp;",
+        "Zero Conditional&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289563,
+      "question": "The meaning of the word &quot;departs&quot; is&nbsp;\r\n\r\nThe plane&nbsp;departs at 6 a.m.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "sets out",
+        "sets off&nbsp;",
+        "sets up",
+        "sets in&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289564,
+      "question": "The following sentence requires the preposition&nbsp;\r\n\r\nShe is good _____ playing the piano, often impressing others with her musical talent.\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "in",
+        "on",
+        "at",
+        "about"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289565,
+      "question": "Sentence with the modal perfect",
+      "answers": [
+        1
+      ],
+      "options": [
+        "She should have finished her homework before going to bed.",
+        "I have played another football match with my ex-colleagues.&nbsp;",
+        "You must have the right skill to understand what is written here.&nbsp;",
+        "Sarah would know this thing if only she read it before."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289568,
+      "question": "Going to in this sentence implies&nbsp;\r\n\r\n&quot;We are going to meet at the cafe tomorrow afternoon to discuss our project.&quot;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "This is a prohibiton&nbsp;",
+        "This is an arrangement",
+        "This is a prediction&nbsp;",
+        "This is an obligation&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289646,
+      "question": "Choose the word which is formed with suffix&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Simplify",
+        "Give",
+        "Understand",
+        "Reject"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289648,
+      "question": "Choos passive voice sentence with modal verb&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "The document was signed by the CEO after thorough review.",
+        "The house was painted by the workers during the weekend.\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "The project was completed by the team ahead of schedule.",
+        "The report should be reviewed by the committee before making any decisions ."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289649,
+      "question": "Find the uncountable noun&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Resource&nbsp;",
+        "Knowledge",
+        "Computer",
+        "People"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289651,
+      "question": "The sentence with the comparative adjective&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "The new smartphone is faster than the old one.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "This is the most beautiful painting in the gallery.",
+        "The most delicious cake I&#39;ve ever tasted in my life is in Paris.",
+        "This painting is probably the biggest that exists.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289892,
+      "question": "The sentence with the comparative adjective&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "The river flowed more gently today than it did after last week&#39;s heavy rains.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "Everybody knows that Jim is the tallest man in his class.&nbsp;",
+        "Sarah doesn&#39;t like getting gorgeous flowers because she thinks money could be spent elsewhere.",
+        "Jim is a sharp-faced guy who wants to build his body now.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289893,
+      "question": "Choose the right sentence that uses a relative pronoun correctly&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "The book, who you lent me last week was absolutely fascinating.",
+        "The baker, who won the local pie contest, is opening a new shop in town.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "She chose the dress where sparkled the most under the lights.",
+        "The teacher, that advice I always seek, suggested reading more historical novels."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289895,
+      "question": "The correct sentence with reported speech in the past perfect tense is",
+      "answers": [
+        1
+      ],
+      "options": [
+        "He said that he had finished all his homework before going to the movies.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "He said that she has cooked dinner when he came home.",
+        "She said that they had leave before she arrived.",
+        "They said that we had seen that movie next week."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289896,
+      "question": "The word that can be both countable and uncountable depending on the context and meaning",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Water",
+        "Childhood",
+        "Experience",
+        "Intelligence&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289897,
+      "question": "Which of the following is an example of a zero conditional sentence?",
+      "answers": [
+        4
+      ],
+      "options": [
+        "If she had studied harder, she would have passed the exam.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "If I won the lottery, I would buy a new house",
+        "If it rains tomorrow, we will cancel the picnic.",
+        "If you leave bread out in the open, it becomes stale..\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289899,
+      "question": "Which of the following sentences correctly uses the phrasal verb &quot;turn out&quot;?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "She turned out leaving the meeting early because she was sick.",
+        "The party turned out to be a lot more fun than we expected.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "We turned out the lights in the room.&nbsp;",
+        "She is looking forward to turn out all the distractions.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289924,
+      "question": "Which of the following words correctly uses the suffix &quot;-ship&quot;?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Localship",
+        "Scholarship",
+        "Educationship",
+        "Markship&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289925,
+      "question": "Which of the following sentences correctly uses the conjunction &quot;while&quot;?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "While I was reading, the phone rang suddenly.\r\n.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "While he sat down on the chair, Andrew arrived.&nbsp;",
+        "I didn&#39;t understand while was happenning.&nbsp;",
+        "Tanya is looking for her desk while smoking.&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289926,
+      "question": "The alternative of the phrasal verb &quot;cope with&quot;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "To finish&nbsp;",
+        "To identify&nbsp;",
+        "To tackle",
+        "To seek&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289928,
+      "question": "Which of the following options correctly completes the sentence &quot;I would recommend...&quot;?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "to try the seafood pasta at that new Italian restaurant; it&#39;s absolutely delicious!&nbsp;",
+        "trying the seafood pasta at that new Italian restaurant; it&#39;s absolutely delicious!\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "to trying&nbsp;the seafood pasta at that new Italian restaurant; it&#39;s absolutely delicious!&nbsp;",
+        "you trying&nbsp;the seafood pasta at that new Italian restaurant; it&#39;s absolutely delicious!&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289929,
+      "question": "Past continuous sentence:&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "As we were hiking up the steep trail, the clouds were gathering above,&nbsp;creating a peaceful yet ominous atmosphere.",
+        "As we are hiking up the steep trail, the clouds are gathering above,&nbsp;creating a peaceful yet ominous atmosphere.",
+        "As we are hiking up the steep trail, the clouds have gathered above,&nbsp;creating a peaceful yet ominous atmosphere.",
+        "As we hiked up the steep trail, the clouds gathered above,&nbsp;creating a peaceful yet ominous atmosphere."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289930,
+      "question": "The word &quot;encourage&quot; has the following meaning:&nbsp;",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "support",
+        "solve&nbsp;",
+        "excel&nbsp;",
+        "help&nbsp;",
+        "build",
+        "make"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289931,
+      "question": "Which verbs are used when expressing obligation",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "I have to be at work at nine tomorrow",
+        "You have to wear a uniform at school",
+        "I should do this task by tomorrow",
+        "I really need to cut down on sugar",
+        "I think you should not take it personally",
+        "You better make it yourself"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289932,
+      "question": "Fruits are&nbsp;",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "Cherry&nbsp;",
+        "Chery&nbsp;",
+        "Pomegranate&nbsp;",
+        "Peas",
+        "Pumpkin",
+        "Corn&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289933,
+      "question": "Which verbs are followed by &ndash;ing",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "Avoid",
+        "Agree",
+        "Choose",
+        "Admit&nbsp;",
+        "Expect",
+        "Attempt&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289934,
+      "question": "Find Perfect tense sentence(s)",
+      "answers": [
+        2,
+        4
+      ],
+      "options": [
+        "We aim to increase the speed of delivery.&nbsp;",
+        "He had finished his homework before the movie started.",
+        "She will be happy with her exam results.",
+        "By next week, I will have completed all my assignments.",
+        "The children were shouting when the teacher came in.",
+        "You are not going to finish on time if you keep working slow."
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289935,
+      "question": "Complete the sentences with the correct adjectives/nouns",
+      "answers": [],
+      "options": [
+        "The doctor asked the __________ to relax and take deep breaths during the examination.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "She was _______________ at the new tech startup for three years before she decided to start her own business.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "patient&nbsp;",
+        "employed",
+        "impatient&nbsp;",
+        "employer&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289936,
+      "question": "Choose the right words that suit the context:&nbsp;",
+      "answers": [],
+      "options": [
+        "Every summer, we ___________ to Hawaii to enjoy the beaches and the vibrant culture.",
+        "During our picnic, a persistent _______&nbsp; kept buzzing around our food, making it hard to eat peacefully.",
+        "fly&nbsp;",
+        "fly&nbsp;",
+        "high&nbsp;",
+        "high&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289937,
+      "question": "Choose the right verbs to complete the sentences:&nbsp;",
+      "answers": [],
+      "options": [
+        "We&nbsp; __________ watch a movie tonight.",
+        "She is ________ a new job next Monday.",
+        "are going to&nbsp;",
+        "starting&nbsp;",
+        "go to&nbsp;",
+        "starts&nbsp;"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289938,
+      "question": "Choose the right modal verbs&nbsp;",
+      "answers": [],
+      "options": [
+        "You ____________ submit your application by the end of the day to be considered for the position.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "&nbsp;\r\n\r\nYou ____________ check the weather forecast before you go hiking this weekend.\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;\r\n\r\n&nbsp;",
+        "must",
+        "ought to",
+        "might&nbsp;",
+        "can"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289939,
+      "question": "Complete the sentences using the right articles",
+      "answers": [],
+      "options": [
+        "________ Mississippi River, is often called the backbone of America&#39;s waterway system.",
+        "Jimmy tries to read a book for at least thirty minutes __________ day to relax before bedtime.",
+        "The&nbsp;",
+        "A",
+        "A",
+        "The"
+      ],
+      "group_text": "",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289940,
+      "question": "What is the primary goal of the &#39;TEENS&#39; project in Kazakhstan?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "To entertain teenagers",
+        "To support teenagers",
+        "To provide jobs for teenagers",
+        "To educate teenagers in schools"
+      ],
+      "group_text": "The online project &lsquo;TEENS&rsquo;, recently launched in Kazakhstan, is aimed to help teenagers cope with their problems. The time between 13 and 16 is a period full of changes as we start to become more grown-up. However, the majority of teens often encounter problems such as misunderstandings with parents, teachers or peers, family quarrels or depression. The reasons for these problems are often very different, from being bullied at school to questioning one&rsquo;s place in life. The founders of the &lsquo;TEENS&rsquo; project believe that any problem can be worked out successfully. It becomes easier to do so when a teenager and their family know where to find help. On the project&rsquo;s website you can find contact details for experienced psychologists and a teenage helpline, do a psychological test, and read useful resources in order to learn more about dealing with problems.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289941,
+      "question": "Why do 13-16 years old teenagers have problems?&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "They have some as they simply age&nbsp;",
+        "They have them because of too much homework&nbsp;",
+        "They have them because parents work too much",
+        "They have them because they don&#39;t want to study&nbsp;"
+      ],
+      "group_text": "The online project &lsquo;TEENS&rsquo;, recently launched in Kazakhstan, is aimed to help teenagers cope with their problems. The time between 13 and 16 is a period full of changes as we start to become more grown-up. However, the majority of teens often encounter problems such as misunderstandings with parents, teachers or peers, family quarrels or depression. The reasons for these problems are often very different, from being bullied at school to questioning one&rsquo;s place in life. The founders of the &lsquo;TEENS&rsquo; project believe that any problem can be worked out successfully. It becomes easier to do so when a teenager and their family know where to find help. On the project&rsquo;s website you can find contact details for experienced psychologists and a teenage helpline, do a psychological test, and read useful resources in order to learn more about dealing with problems.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289942,
+      "question": "The word &quot;encounter&quot; in this text means",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Face&nbsp;",
+        "Surprise&nbsp;",
+        "Make",
+        "Borrow"
+      ],
+      "group_text": "The online project &lsquo;TEENS&rsquo;, recently launched in Kazakhstan, is aimed to help teenagers cope with their problems. The time between 13 and 16 is a period full of changes as we start to become more grown-up. However, the majority of teens often encounter problems such as misunderstandings with parents, teachers or peers, family quarrels or depression. The reasons for these problems are often very different, from being bullied at school to questioning one&rsquo;s place in life. The founders of the &lsquo;TEENS&rsquo; project believe that any problem can be worked out successfully. It becomes easier to do so when a teenager and their family know where to find help. On the project&rsquo;s website you can find contact details for experienced psychologists and a teenage helpline, do a psychological test, and read useful resources in order to learn more about dealing with problems.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289943,
+      "question": "What does the project founders believe about teenage problems?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "They are unavoidable",
+        "They are insignificant",
+        "They can be resolved",
+        "They should be ignored"
+      ],
+      "group_text": "The online project &lsquo;TEENS&rsquo;, recently launched in Kazakhstan, is aimed to help teenagers cope with their problems. The time between 13 and 16 is a period full of changes as we start to become more grown-up. However, the majority of teens often encounter problems such as misunderstandings with parents, teachers or peers, family quarrels or depression. The reasons for these problems are often very different, from being bullied at school to questioning one&rsquo;s place in life. The founders of the &lsquo;TEENS&rsquo; project believe that any problem can be worked out successfully. It becomes easier to do so when a teenager and their family know where to find help. On the project&rsquo;s website you can find contact details for experienced psychologists and a teenage helpline, do a psychological test, and read useful resources in order to learn more about dealing with problems.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    },
+    {
+      "id": 289945,
+      "question": "Based on the description of the &#39;TEENS&#39; project, which of the following best reflects the underlying philosophy of the project&#39;s approach to addressing teenage problems?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Immediate resolution of problems is crucial to prevent long-term psychological effects.",
+        "Understanding and addressing teenage problems requires active involvement from both teenagers and their families.",
+        "Teenage problems are best managed through strict disciplinary actions.",
+        "Teenagers should handle their problems independently to build resilience."
+      ],
+      "group_text": "The online project &lsquo;TEENS&rsquo;, recently launched in Kazakhstan, is aimed to help teenagers cope with their problems. The time between 13 and 16 is a period full of changes as we start to become more grown-up. However, the majority of teens often encounter problems such as misunderstandings with parents, teachers or peers, family quarrels or depression. The reasons for these problems are often very different, from being bullied at school to questioning one&rsquo;s place in life. The founders of the &lsquo;TEENS&rsquo; project believe that any problem can be worked out successfully. It becomes easier to do so when a teenager and their family know where to find help. On the project&rsquo;s website you can find contact details for experienced psychologists and a teenage helpline, do a psychological test, and read useful resources in order to learn more about dealing with problems.",
+      "language": "русский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Английский язык (рус)"
+    }
+  ]
+}
