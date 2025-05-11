@@ -1,7 +1,7 @@
 import json
 import os
 from django.core.management.base import BaseCommand
-from test_logic.models import Question, Test
+from test_logic.models import Question, Test, Option
 from django.conf import settings
 
 class Command(BaseCommand):
@@ -30,6 +30,7 @@ class Command(BaseCommand):
                         options = question_data.get('options', [])
                         group_text = question_data.get('group_text', '')
                         original_task_type = question_data.get('task_type')
+                        answers = question_data.get('answers', [])
                         
                         # Determine task type based on conditions
                         if group_text:
@@ -58,7 +59,13 @@ class Command(BaseCommand):
                             text=question_text,
                             task_type=task_type
                         )
-                        # Set options if needed
-                        question.options.set(options)
-                        
+                        # Create Option objects and set is_correct
+                        for idx, opt_text in enumerate(options):
+                            is_correct = (idx + 1) in answers
+                            Option.objects.create(
+                                question=question,
+                                text=opt_text,
+                                is_correct=is_correct
+                            )
+                
                 self.stdout.write(self.style.SUCCESS(f'Successfully parsed {filename}')) 
