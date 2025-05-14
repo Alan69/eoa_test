@@ -9,7 +9,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         # Use BASE_DIR to construct the absolute path
-        subjects_dir = os.path.join(settings.BASE_DIR, 'subjects')
+        subjects_dir = os.path.join(settings.BASE_DIR, 'subjects2')
         if not os.path.exists(subjects_dir):
             self.stdout.write(self.style.ERROR(f'Subjects directory does not exist: {subjects_dir}'))
             return

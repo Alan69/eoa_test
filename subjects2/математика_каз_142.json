@@ -1,0 +1,4420 @@
+{
+  "subject_id": 142,
+  "subject_title": "Математика (каз)",
+  "questions": [
+    {
+      "id": 284929,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "3,5",
+        "2,5",
+        "3",
+        "4,5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284951,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284952,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "&ndash; 2; 4",
+        "&ndash; 8; 0",
+        "1; 8",
+        "&ndash; 4; 2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284953,
+      "question": "Әрбір қорапта 60-тан болатындай етіп лампа шамдары 14 қорапқа орналастырылған. Осынша мөлшердегі лампа шамдарын әр қорапта 70-тен болатындай етіп қораптарға салатын болсақ, барлығы қанша қорап қажет болады?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "10",
+        "12",
+        "14",
+        "13"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284955,
+      "question": "Жүзім кептірілген кезде өзінің массасының 65% -н жоғалтады. 40 кг таза жүзімнен қанша килограмм кептірілген жүзім алуға болады?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "14 кг",
+        "16 кг",
+        "",
+        "11,8 кг"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284956,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "(- &infin;; -6)",
+        "(-6; 6)",
+        "(-6; &infin;)",
+        "(- &infin;; -6) (6; &infin;)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284960,
+      "question": "Геометриялық прогрессияның алғашқы алты мүшесінің қосындысын табыңыз, егер &nbsp;болса",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284961,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284964,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "-2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284965,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "12",
+        "4",
+        "3",
+        "-12"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284968,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284970,
+      "question": "",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284972,
+      "question": "",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284973,
+      "question": "АВСД төртбұрыштың төбелері берілген: А(1;1), В(2;3), С(5;0), Д(7;-5). Төртбұрыштың түрін анықтаңыз.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Ромб",
+        "Тіктөртбұрыш",
+        "Параллелограмм",
+        "Трапеция"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284976,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284978,
+      "question": "",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284980,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284981,
+      "question": "Банк өзінің салымшыларына салымның жылдық өсуін 20%-ке арттырмақ. Егер адам банкке 100000 теңге салса, онда бір жылдан кейін алатын ақшасын табыңыз:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "120120 тг",
+        "112000 тг",
+        "120000 тг",
+        "107280 тг"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284983,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284984,
+      "question": "Моторлы қайық өзен ағысымен 14 км, одан кейін өзен ағысына қарсы&nbsp; 9 км жүзді. Және барлығына 5 сағат уақыт кетті. Егер моторлы қайықтың тұнық судағы жылдамдығы 5 км/сағ болса, онда өзен ағысының жылдамдығын табыңыз.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "6 км/ сағ",
+        "3 км/ сағ",
+        "4 км/ сағ",
+        "2 км/ сағ"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284986,
+      "question": "",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284987,
+      "question": "",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284989,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284991,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284992,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "1,5",
+        "3,5",
+        "6,5",
+        "2,5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284993,
+      "question": "2003 жыл мен 2007 жылы жинаған дауыс саны бірдей болған партия",
+      "answers": [
+        4
+      ],
+      "options": [
+        "К",
+        "&nbsp;\r\n\r\nЛ",
+        "М",
+        "Н"
+      ],
+      "group_text": "Төмендегі кестеде 2003 және 2007 жылдардағы сайлауда К, Л, М, Н және П партияларының жинаған дауыстары пайызбен көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tПартиялар\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2003 (%)\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2007 (%)\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tК\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t13\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tЛ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tМ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t25\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tН\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t40\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t30\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tП\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t22\r\n\t\t\t\r\n\t\t\r\n\t\r\n\r\n\r\n&nbsp;\r\n\r\n2003 жылы 1,5 млн. , ал 2007 жылы 2 млн. сайлаушы қатысқан.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284994,
+      "question": "2007 жылғы сайлауда К партиясы Л партиясына қарағанда артық жинаған дауыс саны",
+      "answers": [
+        3
+      ],
+      "options": [
+        "30000",
+        "63000",
+        "60000",
+        "39000"
+      ],
+      "group_text": "Төмендегі кестеде 2003 және 2007 жылдардағы сайлауда К, Л, М, Н және П партияларының жинаған дауыстары пайызбен көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tПартиялар\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2003 (%)\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2007 (%)\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tК\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t13\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tЛ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tМ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t25\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tН\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t40\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t30\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tП\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t22\r\n\t\t\t\r\n\t\t\r\n\t\r\n\r\n\r\n&nbsp;\r\n\r\n2003 жылы 1,5 млн. , ал 2007 жылы 2 млн. сайлаушы қатысқан.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284995,
+      "question": "Кесте бойынша дұрыс емес сөйлем",
+      "answers": [
+        2
+      ],
+      "options": [
+        "2003 жылы Л партиясы 150000 дауыс жинады",
+        "2007 жылы М партиясы жинаған дауыс 2003 жинаған дауысына қарағанда 150000-ға артық",
+        "2003 жылы сайлауда ең көп дауысты Н партиясы жинады",
+        "Н партиясының 2003 жылы жинаған дауысы, П партиясының 2007 жылы жинаған дауысынан артық"
+      ],
+      "group_text": "Төмендегі кестеде 2003 және 2007 жылдардағы сайлауда К, Л, М, Н және П партияларының жинаған дауыстары пайызбен көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tПартиялар\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2003 (%)\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2007 (%)\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tК\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t13\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tЛ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tМ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t25\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tН\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t40\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t30\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tП\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t22\r\n\t\t\t\r\n\t\t\r\n\t\r\n\r\n\r\n&nbsp;\r\n\r\n2003 жылы 1,5 млн. , ал 2007 жылы 2 млн. сайлаушы қатысқан.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284997,
+      "question": "2007 жылғы сайлаушылар санының 2003 жылмен салыстырғанда артқан пайызы",
+      "answers": [
+        3
+      ],
+      "options": [
+        "35,(33)%",
+        "33,(35)%",
+        "33,(33)%",
+        "34,(33)%"
+      ],
+      "group_text": "Төмендегі кестеде 2003 және 2007 жылдардағы сайлауда К, Л, М, Н және П партияларының жинаған дауыстары пайызбен көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tПартиялар\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2003 (%)\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2007 (%)\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tК\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t13\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tЛ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tМ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t25\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tН\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t40\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t30\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tП\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t22\r\n\t\t\t\r\n\t\t\r\n\t\r\n\r\n\r\n&nbsp;\r\n\r\n2003 жылы 1,5 млн. , ал 2007 жылы 2 млн. сайлаушы қатысқан.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 284998,
+      "question": "А &ndash; 2003 жылғы сайлаушылардан таңдап алынған бір адамның М немесе П партиясына дауыс беруші болып табылу ықтималдығы. В &ndash; 2007 жылғы сайлаушылардан таңдап алынған бір адамның М немесе П партиясына дауыс беруші болып табылу ықтималдығы. А мен В&nbsp; қанағаттандыратын өрнек",
+      "answers": [
+        4
+      ],
+      "options": [
+        "А &ndash; В = 0",
+        "А &ndash; В &gt; 0",
+        "А &ndash; В = 0,05",
+        "А &ndash; В &lt; 0"
+      ],
+      "group_text": "Төмендегі кестеде 2003 және 2007 жылдардағы сайлауда К, Л, М, Н және П партияларының жинаған дауыстары пайызбен көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tПартиялар\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2003 (%)\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2007 (%)\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tК\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t13\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tЛ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tМ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t25\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tН\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t40\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t30\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tП\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t20\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t22\r\n\t\t\t\r\n\t\t\r\n\t\r\n\r\n\r\n&nbsp;\r\n\r\n2003 жылы 1,5 млн. , ал 2007 жылы 2 млн. сайлаушы қатысқан.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285000,
+      "question": "",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285001,
+      "question": "",
+      "answers": [
+        2,
+        3,
+        6
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285004,
+      "question": "Пирамида табанында гипотенузасы с&ndash; ға тең, бір сүйір бұрышы 30 градусқа тең тік бұрышты үшбұрыш жатыр. Пирамиданың бүйір қыры табан жазықтығымен 45 градус бұрыш жасай көлбеген. Пирамиданың көлемін табыңыз.",
+      "answers": [
+        2,
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285006,
+      "question": "",
+      "answers": [
+        2,
+        5
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285008,
+      "question": "f(x)=lncos(l-x) функциясының туындысын табыңыз.",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285387,
+      "question": "",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "14",
+        "-14",
+        "2",
+        "-2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285389,
+      "question": "",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "256",
+        "126",
+        "128",
+        "254"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285394,
+      "question": "Тік бұрышты үшбұрыштың катеттері 5 және 12. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "Осы үшбұрышқа сырттай сызылған шеңбер радиусын",
+        "Осы үшбұрышқа іштей сызылған шеңбер радиусын",
+        "6,5",
+        "2",
+        "6",
+        "2,5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285395,
+      "question": "",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "12",
+        "17",
+        "8",
+        "15"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285396,
+      "question": "",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "2,5",
+        "0,5",
+        "&nbsp;1",
+        "&ndash; 2,5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285869,
+      "question": "\\(y=\\sqrt(4-x)\\)&nbsp;функциясына кері функцияны табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(y=ln{x}\\)",
+        "\\(y=4\\sqrt x\\)",
+        "\\(y=4-x^2\\)",
+        "\\(y=5x-4\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285870,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285872,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285873,
+      "question": "Қаражатты банкте сақтағаны үшін салымшыға процент төленеді. Жылына 20% өсетін банктің есепшотына 100000 теңге салынды. Үш жылдан кейін банк есепшотындағы қаражаттың мөлшері:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "180000 тг&nbsp;&nbsp; &nbsp;",
+        "160000 тг&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;",
+        "144000 тг&nbsp;&nbsp;&nbsp;",
+        "172800 тг&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285874,
+      "question": "Екі заттан құралған қоспаның салмағы 18 кг. Бірінші заттың 40% -ын және екінші заттың 25% -ын бөліп алғаннан кейін, қоспадағы заттар үлесі тең болды. Бастапқыдағы қоспадағы әр заттың үлесін табыңыз.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "7кг, 11кг&nbsp;&nbsp;&nbsp;&nbsp;",
+        "9кг, 9кг&nbsp;&nbsp;&nbsp;",
+        "10кг, 8кг &nbsp;&nbsp;&nbsp;",
+        "6 кг, 12кг&nbsp;&nbsp;&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285875,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "x&gt; -8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "x&lt; -9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "x&gt; -5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "x&lt; 11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285877,
+      "question": "",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285879,
+      "question": "",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285880,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0",
+        "2",
+        "-2",
+        "1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285881,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "-1",
+        "1",
+        "2",
+        "-2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285882,
+      "question": "Үш оң сан бірінші мүшесі 4 болатын геометриялық прогрессия құрайды.&nbsp; Егер екінші мүшесін 8-ге арттырсақ, онда ол арифметикалық прогрессияға айналады. Геометриялық прогрессияның еселігін табыңыз.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "-2",
+        "2",
+        "-1",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285883,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "-2",
+        "1",
+        "2",
+        "-1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285885,
+      "question": "",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285886,
+      "question": "Параллелограммның бір бұрышының биссектрисасы қабырғаларын 14 см және 28 см болатын екі кесіндіге бөледі. Параллелограммның периметрін анықтаңыз.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "128 см немесе 111 см&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "225 см немесе 104 см",
+        "140 см немесе 112 см&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "100 см немесе 114 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285889,
+      "question": "",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285890,
+      "question": "Толық беті 36 см&sup2; болатын кубтың айқыш екі қырының орталарының арақашықтығын табыңыз.",
+      "answers": [
+        1
+      ],
+      "options": [
+        "3&nbsp;см",
+        "2&nbsp;см",
+        "4&nbsp;см",
+        "1&nbsp;см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285893,
+      "question": "а) нөлдерін.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; б) өсу аралығын.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; в) кему аралығын.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&nbsp; &nbsp; &nbsp;&nbsp;",
+        "&nbsp;&nbsp;",
+        "&nbsp;&nbsp;",
+        "&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285896,
+      "question": "",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285897,
+      "question": "Функцияның ең кіші мәнін табыңыз:&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "3",
+        "-1",
+        "2,5",
+        "6"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285899,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(1;4)",
+        "(1;5)",
+        "(1;6)",
+        "(2;4)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285902,
+      "question": "Екі санның қосындысы &nbsp;, ал айырмасы &nbsp;болса,&nbsp; онда осы екі санның көбейтіндісін табыңдар:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "281.96&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "8",
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;",
+        "4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285905,
+      "question": "Квадратқа іштей сызылған тіктөртбұрыштың әрбір төбесі квадраттың бір қабырғасына тірелген және тіктөртбұрыштың қабырғалары квадраттың диагональдарына пераллель болып келген. Тіктөртбұрыштың қабырғаларының бірі екіншісінен екі есе артық және квадраттың диагоналы 12 м-ге тең, тік төртбұрыштың қабырғаларын табыңыз.",
+      "answers": [
+        1
+      ],
+      "options": [
+        "4 және 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "5 және 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "6 және 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "3 және 6"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285906,
+      "question": "",
+      "answers": [
+        4
+      ],
+      "options": [
+        "0",
+        "1",
+        "4",
+        "2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285908,
+      "question": "",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285910,
+      "question": "",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285913,
+      "question": "Егер тудың ені (Е) мен ұзындығы (Ұ) бүтін сандар болса, онда төмендегі жауаптардың ішінен тудың периметрі болатын мәнді көрсетіңіз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "25",
+        "32",
+        "20",
+        "30"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Қазақстан Республикасының мемлекеттік туы\r\n\r\nҚазақстан Республикасының Мемлекеттік Туы &mdash; ортасында шұғылалы күн, оның астында қалықтап ұшқан қыран бейнеленген тіктөртбұрышты көгілдір түсті мата.&nbsp;Авторы - суретшi Шәкен Ниязбеков.\r\n\r\n\r\n\r\n&nbsp;\r\n\r\nЕ &ndash; тудың енін өрнектейтін нақты сан. Төмендегі кестеде ҚР-ның мемлекеттік нышандары заңы негізінде мемлекеттік ту элементтерінің өлшемдері арасындағы байланыс көрсетілген.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285914,
+      "question": "Күннің диаметрін (Н) 13,8 см етіп салу үшін тудың ұзындығы (Ұ) қандай болуы қажет?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "1 м&nbsp;&nbsp;&nbsp;&nbsp;",
+        "1,6 м&nbsp;&nbsp;&nbsp;&nbsp;",
+        "2,5 м&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "2 м&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Қазақстан Республикасының мемлекеттік туы\r\n\r\nҚазақстан Республикасының Мемлекеттік Туы &mdash; ортасында шұғылалы күн, оның астында қалықтап ұшқан қыран бейнеленген тіктөртбұрышты көгілдір түсті мата.&nbsp;Авторы - суретшi Шәкен Ниязбеков.\r\n\r\n\r\n\r\n&nbsp;\r\n\r\nЕ &ndash; тудың енін өрнектейтін нақты сан. Төмендегі кестеде ҚР-ның мемлекеттік нышандары заңы негізінде мемлекеттік ту элементтерінің өлшемдері арасындағы байланыс көрсетілген.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285915,
+      "question": "Мемлекеттік туды 1 м х 2 м өлшемді матадан әзірледі. (Қ)&ndash;ның мәнін табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "6,29 см",
+        "9,62 см",
+        "92,6 см",
+        "62,9 см"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Қазақстан Республикасының мемлекеттік туы\r\n\r\nҚазақстан Республикасының Мемлекеттік Туы &mdash; ортасында шұғылалы күн, оның астында қалықтап ұшқан қыран бейнеленген тіктөртбұрышты көгілдір түсті мата.&nbsp;Авторы - суретшi Шәкен Ниязбеков.\r\n\r\n\r\n\r\n&nbsp;\r\n\r\nЕ &ndash; тудың енін өрнектейтін нақты сан. Төмендегі кестеде ҚР-ның мемлекеттік нышандары заңы негізінде мемлекеттік ту элементтерінің өлшемдері арасындағы байланыс көрсетілген.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285917,
+      "question": "&nbsp;Берілген өлшемдері бойынша кестедегі шартты қанағаттандыратын ҚР-ның мемлекеттік туын анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Қазақстан Республикасының мемлекеттік туы\r\n\r\nҚазақстан Республикасының Мемлекеттік Туы &mdash; ортасында шұғылалы күн, оның астында қалықтап ұшқан қыран бейнеленген тіктөртбұрышты көгілдір түсті мата.&nbsp;Авторы - суретшi Шәкен Ниязбеков.\r\n\r\n\r\n\r\n&nbsp;\r\n\r\nЕ &ndash; тудың енін өрнектейтін нақты сан. Төмендегі кестеде ҚР-ның мемлекеттік нышандары заңы негізінде мемлекеттік ту элементтерінің өлшемдері арасындағы байланыс көрсетілген.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285918,
+      "question": "Егер тудағы күннің радиусы 8,28 см болса, тудағы оюдың ені",
+      "answers": [
+        2
+      ],
+      "options": [
+        "7 см",
+        "7,2 см",
+        "8 см",
+        "8,2 см"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Қазақстан Республикасының мемлекеттік туы\r\n\r\nҚазақстан Республикасының Мемлекеттік Туы &mdash; ортасында шұғылалы күн, оның астында қалықтап ұшқан қыран бейнеленген тіктөртбұрышты көгілдір түсті мата.&nbsp;Авторы - суретшi Шәкен Ниязбеков.\r\n\r\n\r\n\r\n&nbsp;\r\n\r\nЕ &ndash; тудың енін өрнектейтін нақты сан. Төмендегі кестеде ҚР-ның мемлекеттік нышандары заңы негізінде мемлекеттік ту элементтерінің өлшемдері арасындағы байланыс көрсетілген.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285919,
+      "question": "",
+      "answers": [
+        3,
+        5,
+        6
+      ],
+      "options": [
+        "9,25&nbsp;&nbsp;",
+        "9,05&nbsp;&nbsp;&nbsp;",
+        "9,5",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285920,
+      "question": "",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "0",
+        "-5",
+        "&Oslash;",
+        "-2",
+        "5",
+        "2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285921,
+      "question": "",
+      "answers": [
+        2,
+        5
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285922,
+      "question": "",
+      "answers": [
+        3,
+        4
+      ],
+      "options": [
+        "x ˃ 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "x ˂ 0, x ˃ 1&nbsp;&nbsp;",
+        "(1; +&infin;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "x ˃ 1",
+        "(- &infin;; 0) (1;+&infin;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+        "(0; +&infin;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285924,
+      "question": "",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285925,
+      "question": "",
+      "answers": [],
+      "options": [
+        "&nbsp;мәнін",
+        "&nbsp;мәнін",
+        "",
+        "&ndash; 3",
+        "3",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285926,
+      "question": "Арифметикалық прогрессияда &nbsp;екені белгілі. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;мүшесін",
+        "&nbsp;қосындысын",
+        "76",
+        "80",
+        "71",
+        "81"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285927,
+      "question": "Тік бұрышты үшбұрыштың катеттері 5 және 12. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "Осы үшбұрыштың периметрін",
+        "Осы үшбұрыштың ауданын",
+        "30",
+        "30",
+        "60",
+        "32,5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285928,
+      "question": "&nbsp;өрнегі берілген. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;болғандағы өрнектің мәнін",
+        "&nbsp;болғандағы өрнектің мәнін",
+        "-4",
+        "1",
+        "-1",
+        "4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 285929,
+      "question": "&nbsp;теңдеуі берілген. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;өрнегінің мәнін",
+        "&nbsp;өрнегінің мәнін",
+        "30",
+        "2",
+        "36",
+        "-2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286235,
+      "question": "&nbsp; өрнегіндегі p&nbsp; және&nbsp; q &nbsp;параметрлерінің көбейтіндісі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "188",
+        "214",
+        "196",
+        "202"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286237,
+      "question": "Егер&nbsp; &nbsp;берілген болса, &nbsp;өрнегінің мәні&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "36",
+        "29",
+        "25",
+        "32"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286414,
+      "question": "Нүктеден жазықтыққа 13 см және 15 см-ге тең екі көлбеу жүргізілген. Осы көлбеулердің проекцияларының қосындысы 14 см-ге тең. Көлбеулердің проекцияларының айырмасының мәні",
+      "answers": [
+        1
+      ],
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286415,
+      "question": "Егер  &nbsp; тепе-теңдігі орындалса, онда келесі өрнектердің мәндерін сәйкестендеріңіз:",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "11",
+        "14",
+        "13",
+        "12"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286416,
+      "question": "Периметрі 38 см болатын үшбұрыштың AB &nbsp;табанына параллель орта сызығы 6 см. Бүйір қабырғаларының қатынасы  &nbsp;қатынасында. Үшбұрыштың AB&nbsp;, BC&nbsp; қабырғаларын ұзындықтарымен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "AB&nbsp;​​",
+        "BC&nbsp;",
+        "12 см",
+        "10 см",
+        "14 см",
+        "16 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286417,
+      "question": "&nbsp;көпмүшесінің бүтін түбірлерінің қосындысы мен көбейтіндісін мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "бүтін түбірлерінің қосындысы",
+        "бүтін түбірлерінің көбейтіндісі",
+        "0",
+        "-1",
+        "1",
+        "2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286418,
+      "question": "&nbsp; өрнегін бірмүше түріне келтіріп, сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "бірмүшенің дәрежесі",
+        "бірмүшенің коэффициенті",
+        "8",
+        "4",
+        "2",
+        "16"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286420,
+      "question": "Суретте көрсетілгендей радиусы 30 см шеңберге екі қиылысатын хорда сызылған.  &nbsp;кіші доғасы 32&deg;&nbsp;, ал хордалар арасындағы бұрыш 36&deg;.&nbsp;Доғаларды ұзындықтарымен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "&nbsp;кіші доғасы",
+        "&nbsp;кіші доғасы",
+        "16 см",
+        "20 см",
+        "18 см",
+        "24 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286422,
+      "question": "Б үлгідегі бассейінді жасауға кеткен тент материялының ауданын табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "БАССЕЙН\r\n\r\n\r\n\r\nТент материалдан жасалған екі бассейн сатуға қойылған. А үлгідегі бассейн табаны он бұрышты дұрыс призма тәріздес, ал Б үлгідегі бассейн төртбұрышты дұрыс призма тәрізді. Екі бассейннің де өлшемдері кестеде көрсетілген\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tҮлгі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырлар саны\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырларының ұзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1,2 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286423,
+      "question": "А үлгідегі бассейіннің бүйір беті ауданын табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "БАССЕЙН\r\n\r\n\r\n\r\nТент материалдан жасалған екі бассейн сатуға қойылған. А үлгідегі бассейн табаны он бұрышты дұрыс призма тәріздес, ал Б үлгідегі бассейн төртбұрышты дұрыс призма тәрізді. Екі бассейннің де өлшемдері кестеде көрсетілген\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tҮлгі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырлар саны\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырларының ұзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1,2 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286428,
+      "question": "А үлгідегі бассейннің табаны суреттегідей он бұрыш болса, онда пайда болған үшбұрыштардың бұрыштарын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "БАССЕЙН\r\n\r\n\r\n\r\nТент материалдан жасалған екі бассейн сатуға қойылған. А үлгідегі бассейн табаны он бұрышты дұрыс призма тәріздес, ал Б үлгідегі бассейн төртбұрышты дұрыс призма тәрізді. Екі бассейннің де өлшемдері кестеде көрсетілген\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tҮлгі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырлар саны\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырларының ұзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1,2 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286434,
+      "question": "Б үлгідегі бассейіннің көлемін табыңыз&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "БАССЕЙН\r\n\r\n\r\n\r\nТент материалдан жасалған екі бассейн сатуға қойылған. А үлгідегі бассейн табаны он бұрышты дұрыс призма тәріздес, ал Б үлгідегі бассейн төртбұрышты дұрыс призма тәрізді. Екі бассейннің де өлшемдері кестеде көрсетілген\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tҮлгі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырлар саны\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырларының ұзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1,2 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286439,
+      "question": "А үлгідегі бассейіннің көлемін табыңыз&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "БАССЕЙН\r\n\r\n\r\n\r\nТент материалдан жасалған екі бассейн сатуға қойылған. А үлгідегі бассейн табаны он бұрышты дұрыс призма тәріздес, ал Б үлгідегі бассейн төртбұрышты дұрыс призма тәрізді. Екі бассейннің де өлшемдері кестеде көрсетілген\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tҮлгі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырлар саны\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tТабан қырларының ұзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t10\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1,2 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 м\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 м",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286441,
+      "question": "Бөлшекті қысқартыңыз:",
+      "answers": [
+        2,
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286445,
+      "question": "Егер геометриялық прогрессияның алғашқы екі мүшесінің қосындысы 24-ке, ал алғашқы үш мүшесінің қосындысы 28-ге тең болса, онда еселіктерін табыңыз",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286446,
+      "question": "Үшбұрыштың периметрі 15-ке тең. Оның қабырғалары арифметикалық прогрессия құрайтын әр түрлі натурал сандар. Осы үшбұрыштың қабырғаларының ұзындықтары бола алатын натурал сандардың көбейтіндісі",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "120",
+        "90",
+        "105",
+        "150",
+        "110",
+        "90"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286449,
+      "question": "&nbsp;теңдеуі түбірлерінің қосындысын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "2",
+        "-2",
+        "-1",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286451,
+      "question": "Бір айнымалысы бар теңсіздік жүйесін шешіңіз: &nbsp;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286590,
+      "question": "&nbsp;функциясының графигіне  &nbsp;нүктесінде жүргізілген жанаманың теңдеуі&nbsp;&nbsp; &nbsp;болса,  &nbsp;өрнегінің мәні",
+      "answers": [
+        1
+      ],
+      "options": [
+        "-2",
+        "-5",
+        "-6",
+        "-7"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286591,
+      "question": "Егер  &nbsp; теңдеулер жүйесінің шешімі &nbsp; болса, онда  &nbsp;өрнегінің мәні",
+      "answers": [
+        3
+      ],
+      "options": [
+        "5",
+        "8",
+        "9",
+        "6"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286592,
+      "question": "Бөлшектің бөлімін иррационалдықтан арылтыңыз:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286593,
+      "question": "Есептеңіз:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286594,
+      "question": "&nbsp;және  &nbsp;функциялары берілген.  &nbsp;функциясының  &nbsp;мәнін есептеңіз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0,88",
+        "0,16",
+        "0,25",
+        "0,44"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286595,
+      "question": "-ның қандай мәнінде  &nbsp; және&nbsp;  &nbsp;түзулері параллель болатынын анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "6",
+        "4",
+        "2",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286596,
+      "question": "&nbsp; &nbsp;&nbsp;функциясына кері  &nbsp;функциясын табыңыз&nbsp;&nbsp;(x&gt;3)",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286597,
+      "question": "Дұрыс төртбұрышты пирамиданың табан қабырғасы 4-ке, биіктігі 6-ға тең болса, оның көлемін табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "24",
+        "30",
+        "32",
+        "58"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286600,
+      "question": "Конустың биіктігі 4 см және оның жасаушысы 5 см-ге тең болса, конустың көлемін табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286601,
+      "question": "Бір-бірімен сырттай жанасатын, радиустары 2 және 6 болатын екі шеңберге ортақ жанама жүргізілген. Жанасу нүктелерінің ара қашықтығын табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286603,
+      "question": ",  &nbsp;,&nbsp;  &nbsp;және  &nbsp;өрнектерінің арифметикалық ортасын анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286929,
+      "question": "&nbsp;дұрыс үшбұрышты призманың табанының қабырғалары 2-ге тең болса, С төбесінен  &nbsp;жазықтығына дейінгі қашықтықты табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286930,
+      "question": "&nbsp; және  &nbsp;векторлары берілген.&nbsp;&nbsp; &nbsp;векторының ұзындығын табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "3",
+        "6",
+        "4",
+        "5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286932,
+      "question": "&nbsp; &nbsp;теңдеуінің түбірлер саны",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286933,
+      "question": "&nbsp;теңдеуінің шешімі&nbsp;  &nbsp;болса,\r\n\r\n &nbsp;өрнегінің мәнін табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286936,
+      "question": "Ықшамдаңыз:",
+      "answers": [
+        3,
+        5
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286937,
+      "question": "Мәні 1-ге тең өрнектерді анықтаңыз",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286938,
+      "question": "Ықшамдаңыз:  &nbsp;. Мұндағы",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286940,
+      "question": "Есептеңіз:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286942,
+      "question": "&nbsp;және  &nbsp;сандары&nbsp;  &nbsp; теңдеулер жүйесінің шешімі болса  &nbsp;өрнектерінің мәнін табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "30",
+        "16",
+        "20",
+        "34"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286943,
+      "question": "Теңсіздікті шешіңіз:",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 286944,
+      "question": "Теңдеуді шешіңіз:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288229,
+      "question": "\\(x^3-12x^2+x-12=0\\)&nbsp;&nbsp;теңдеуді шешіңіз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "12",
+        "14",
+        "16",
+        "15"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288230,
+      "question": "\\(2x+3y-2(x-5y)\\)&nbsp; &nbsp;өрнегінің мәнін табңыз, мұндағы&nbsp; \\(y=4\\)&nbsp;​​​",
+      "answers": [
+        4
+      ],
+      "options": [
+        "36",
+        "29",
+        "25",
+        "32"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288231,
+      "question": "Нүктеден жазықтыққа 13 см және 15 см-ге тең екі көлбеу жүргізілген. Осы көлбеулердің &nbsp;сәйкесінше біріншісінің проекциясы 5 см-ге тең. Екінші көлбеудің проекциясының мәні",
+      "answers": [
+        2
+      ],
+      "options": [
+        "7 см",
+        "9 см",
+        "8 см",
+        "6 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288585,
+      "question": "&nbsp;\\(f(x)=x^2-7x+3\\)&nbsp;функциясының графигіне \\(x_0=2\\)&nbsp; нүктесінде жүргізілген жанаманың теңдеуі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(y=-3x-1\\)",
+        "\\(y=-3x+11\\)",
+        "\\(y=-7x+11\\)",
+        "\\(y=-7x-1\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288588,
+      "question": "Егер&nbsp;&nbsp; &nbsp; &nbsp;теңдеулер жүйесінің шешімі&nbsp;\\((x_0;y_0 ) \\) &nbsp;болса, онда &nbsp;\\(x_0+y_0\\) өрнегінің мәні",
+      "answers": [
+        4
+      ],
+      "options": [
+        "9",
+        "4",
+        "1",
+        "2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288591,
+      "question": "Бөлшектің бөлімін иррационалдықтан арылтыңыз:\\( {6 \\over 3 \\sqrt2+4}\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(9\\sqrt2-12\\)",
+        "\\(2\\sqrt2-8\\)",
+        "\\(4-\\sqrt2\\over2\\)",
+        "\\(\\sqrt2-4\\over2\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288709,
+      "question": "Квадраттың қабырғалары 25%-ке ұзартылған. Квадраттың ауданы қанша процентке көбейеді?&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "52,65%",
+        "50%",
+        "30%",
+        "56,25%"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288710,
+      "question": "Теңдеуді шешіңіз: 5 - 3(x - 2(x - 2(x - 2))) = 2.",
+      "answers": [
+        1
+      ],
+      "options": [
+        "3",
+        "7",
+        "-4",
+        "2,2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288716,
+      "question": "Бөлшектің бөліміндегі иррационалдықтан құтылыңыз: &nbsp;.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "- 3",
+        "2 -",
+        "2(2 + ) ++",
+        "2(2 - )&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288735,
+      "question": "Теңсіздікті шешіңіз:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&nbsp;",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288736,
+      "question": "у-ті х арқылы өрнектеңіз: 2х + 5у - 16 = 0.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "у = 2,5х - 8",
+        "у = -0,4х + 3,2",
+        "у = -2,5х + 8",
+        "у = 2,75х - 8"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288737,
+      "question": "Жазықтықта тік бұрышты үшбұрыш берілген, гипотенузасы 12 см. Кеңістікте берілген бір нүктеден үшбұрыш төбелеріне дейінгі қашықтық 10 см-ден. Үшбұрыш жазықтығынан кеңістіктегі нүктеге дейінгі қашықтықты табыңыз.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "5 см",
+        "7 см",
+        "8 см",
+        "6 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288738,
+      "question": "Квадраттың диагоналі 4 см. Бұл квадраттың қабырғасы басқа 2-ші квадраттың диагоналі болып табылады. Екінші квадраттың қабырғасын табыңыз:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "6 см",
+        "8 см",
+        "4 см",
+        "2 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288740,
+      "question": "Ромбының биіктігі 10см, ал сүйір бұрышы 30&deg; &ndash;қа тең деп алып, оның ауданын табыңыз:",
+      "answers": [
+        3
+      ],
+      "options": [
+        "100 см2",
+        "400 см2",
+        "200 см2",
+        "300 см2"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288745,
+      "question": "&nbsp;шеңбердің центрінен координаттар басына дейінгі ара қашықтықты табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "4",
+        "3",
+        "",
+        "5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288746,
+      "question": "Есептеңіз:&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "23,456",
+        "23,683",
+        "23,865",
+        "20,850"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288748,
+      "question": "Теңдеуді шешіңіз:&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "1,5",
+        "-6",
+        "-1,5",
+        "6"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288752,
+      "question": "Теңсіздіктің дұрыс шешімін анықтаңыз:&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288753,
+      "question": "Көбейткіштерге жіктеңіз: x3 + 5x2 + 3x - 9.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288773,
+      "question": "Геометриялық прогрессияның мүшелері оң және &nbsp; &nbsp; екені белгілі болса, онда  есептеңіз.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "25",
+        "40"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288775,
+      "question": "Есептеңіз:&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "60",
+        "62",
+        "12",
+        "58"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288776,
+      "question": "Теңдеулер жүйесін шешіңіз:&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "(-2; 5); (1; 2)",
+        "(2; 1); (5; -2)",
+        "(2; -1); (-5; 2)",
+        "(-5; -2); (-1; 2)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288777,
+      "question": "Функцияның туындысын тап&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288778,
+      "question": "&nbsp; функциясының кему аралығын табыңыз.",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(0; 1]",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288779,
+      "question": "а-параметрінің қандай мәнінде&nbsp; интегралы 3-тен артық болмайды",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&nbsp;",
+        "&nbsp;",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288780,
+      "question": "Өлшемдері а, в, с болатын тік бұрышты параллелепипедке &nbsp;сырттай сызылған сфера ауданын табыңыз:",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288781,
+      "question": "функциясы берілген,  нүктесіндегі туындыны табыңыз:",
+      "answers": [
+        1
+      ],
+      "options": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288782,
+      "question": "АВС үшбұрышының төбелері центрі О болатын шеңберді АВ, ВС және АС үш доғаға бөледі. Олардың градустық шамасы 7 : 5 : 6 қатынасындай. Үшбұрыштың кіші бұрышын табыңыз.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "80&deg;",
+        "50&deg;",
+        "70&deg;",
+        "60&deg;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288783,
+      "question": "Есептеңіз tga, егер&nbsp; &nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288784,
+      "question": "Теңдеулер жүйесін шешіңіз:&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&nbsp;(-3; 9), (4; -6)",
+        "(0; 6), (6; -6)",
+        "(2; 2), (12; 0)",
+        "(-6; 6), (0; 0)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288785,
+      "question": "Теңсіздікті шешіңіз:&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(-2; 3)&nbsp;",
+        "(1; -5)",
+        "(-1; -3)",
+        "(6; 1)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288786,
+      "question": "А фигурасындағы жарты цилиндрлердің радиусын табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "4,5 см",
+        "2,5 см",
+        "4 см",
+        "5 см"
+      ],
+      "group_text": "ТЕМІР ЖОНУШЫ\r\n\r\n \r\n\r\nТемір жонушы А, Б, В фигураларынан жоғарыда көрсетілген тетікті дайындады. А фигурасы табаны шаршы тәріздес параллелепипед пен екі жарты цилиндрлерден жасалынған. В фигурасы А және Б фигураларының ортасынан ойылып алынған.\r\n\r\nТетіктердің кейбір өлшемдері кестеде көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tҰзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tЕні\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tДиаметрі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t9 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см және 8 см\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tB фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 см",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288787,
+      "question": "В фигурасының биіктігін табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "8 см",
+        "6 см",
+        "9 см",
+        "5 см"
+      ],
+      "group_text": "ТЕМІР ЖОНУШЫ\r\n\r\n \r\n\r\nТемір жонушы А, Б, В фигураларынан жоғарыда көрсетілген тетікті дайындады. А фигурасы табаны шаршы тәріздес параллелепипед пен екі жарты цилиндрлерден жасалынған. В фигурасы А және Б фигураларының ортасынан ойылып алынған.\r\n\r\nТетіктердің кейбір өлшемдері кестеде көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tҰзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tЕні\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tДиаметрі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t9 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см және 8 см\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tB фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 см",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288788,
+      "question": "Б фигурасының сыртқы бүйір бетінің ауданын табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "ТЕМІР ЖОНУШЫ\r\n\r\n \r\n\r\nТемір жонушы А, Б, В фигураларынан жоғарыда көрсетілген тетікті дайындады. А фигурасы табаны шаршы тәріздес параллелепипед пен екі жарты цилиндрлерден жасалынған. В фигурасы А және Б фигураларының ортасынан ойылып алынған.\r\n\r\nТетіктердің кейбір өлшемдері кестеде көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tҰзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tЕні\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tДиаметрі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t9 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см және 8 см\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tB фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 см",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288789,
+      "question": "В фигурасының көлемін табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "ТЕМІР ЖОНУШЫ\r\n\r\n \r\n\r\nТемір жонушы А, Б, В фигураларынан жоғарыда көрсетілген тетікті дайындады. А фигурасы табаны шаршы тәріздес параллелепипед пен екі жарты цилиндрлерден жасалынған. В фигурасы А және Б фигураларының ортасынан ойылып алынған.\r\n\r\nТетіктердің кейбір өлшемдері кестеде көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tҰзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tЕні\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tДиаметрі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t9 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см және 8 см\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tB фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 см",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288790,
+      "question": "Темір жонушы жасап шыққан тетіктің көлемін табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "&nbsp;",
+        "",
+        ""
+      ],
+      "group_text": "ТЕМІР ЖОНУШЫ\r\n\r\n \r\n\r\nТемір жонушы А, Б, В фигураларынан жоғарыда көрсетілген тетікті дайындады. А фигурасы табаны шаршы тәріздес параллелепипед пен екі жарты цилиндрлерден жасалынған. В фигурасы А және Б фигураларының ортасынан ойылып алынған.\r\n\r\nТетіктердің кейбір өлшемдері кестеде көрсетілген\r\n\r\n&nbsp;\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tҰзындығы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tЕні\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБиіктігі\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tДиаметрі\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t9 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tБ фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t4 см\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t2 см және 8 см\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tB фигурасы\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t-\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1 см",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288791,
+      "question": "Ромбының диагональдарының қатынасы 2:3, ал ауданы&nbsp;\\(12 см^2\\)-қа тең. Ромбының диагональдарын табыңыз.",
+      "answers": [
+        2,
+        5
+      ],
+      "options": [
+        "3 см",
+        "4 см ++",
+        "2 см",
+        "8 см",
+        "6 см ++",
+        "12 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288792,
+      "question": "y= x(3-x) функция графигімен және абсцисса осімен шектелген фигураның ауданын табыңыз:",
+      "answers": [
+        4,
+        6
+      ],
+      "options": [
+        "3",
+        "6",
+        "&nbsp;",
+        "",
+        "2,2",
+        "4,5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288794,
+      "question": "&nbsp;функциясының туындысын табыңыз.",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "",
+        "&nbsp;",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288795,
+      "question": "Сырттай жанасатын екі дөңгелектің аудандарының қосындысы\r\n\r\n . Егер олардың центрлерінің ара қашықтығы 14 см-ге тең болса, онда олардың радиустары неге тең?",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "11 см",
+        "3 см",
+        "12 см",
+        "10 см",
+        "4 см",
+        "2 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288796,
+      "question": "&nbsp; &nbsp;функциясы берілген.  &nbsp;есептеңіз.",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "0,32",
+        "&nbsp;",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288797,
+      "question": "&nbsp;&nbsp;өрнегі берілген. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;болғандағы өрнектің мәнін",
+        "&nbsp;болғандағы өрнектің мәнін",
+        "3",
+        "&ndash; 1",
+        "&ndash; 3",
+        "1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288798,
+      "question": "Арифметикалық прогрессияда  &nbsp;екені белгілі. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;мүшесін",
+        "&nbsp;қосындысын",
+        "62",
+        "70",
+        "60",
+        "65"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288799,
+      "question": "Тік бұрышты үшбұрыштың бір катеті мен гипотенузасы 12 және 20. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "Осы үшбұрыштың периметрін",
+        "Осы үшбұрыштың ауданын",
+        "48",
+        "96",
+        "240",
+        "192"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288800,
+      "question": "&nbsp;өрнегі берілген. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;болғандағы өрнектің мәнін",
+        "&nbsp;болғандағы өрнектің мәнін",
+        "98",
+        "&ndash; 98",
+        "88",
+        "-88"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288801,
+      "question": "&nbsp;теңдеуі берілген. Сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "&nbsp;түбірінің мәнін",
+        "&nbsp;түбірінің мәнін",
+        "&nbsp;++A",
+        "&nbsp;++B",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288802,
+      "question": "Есептеңіз:&nbsp;\\(\\sqrt{2} (5-7\\sqrt{2})+4(7+\\sqrt2)-8\\)",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\(21\\)",
+        "\\(6\\sqrt2\\)",
+        "\\(9+6\\sqrt2\\)",
+        "\\(9\\sqrt2+6\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288803,
+      "question": "\\(f(x)=x^2-3\\)&nbsp;&nbsp;және&nbsp;&nbsp;\\(g(x)={2x\\over3x+2}\\)&nbsp;&nbsp;&nbsp;функциялары берілген. \\(h(x)=g(f'(x))\\)&nbsp; функциясының \\(h(1)\\)&nbsp; мәнін есептеңіз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "0,8",
+        "0,6",
+        "0,5",
+        "0,4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288804,
+      "question": "k -ның қандай мәнінде \\(f(x)=5x+7\\)&nbsp;&nbsp; және&nbsp; \\(h(x)={k\\over2} x-4\\)&nbsp;&nbsp;түзулері параллель болатынын анықтаңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "16",
+        "13",
+        "10",
+        "12"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288805,
+      "question": "\\(f(x)={{6x+3}\\over{2x-5}}\\)&nbsp;&nbsp;функциясына кері \\(g(x)\\)&nbsp; функциясын табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(g(x)={{2x-5}\\over{6x+3}}\\)",
+        "\\(g(x)={{5x+3}\\over{2x-6}}\\)",
+        "\\(g(x)={{5x-2}\\over{3x+6}}\\)",
+        "\\(g(x)={{3x+6}\\over{5x-2}}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288806,
+      "question": "Дұрыс төртбұрышты пирамиданың табан қабырғасы 5-ке, биіктігі 9-ға тең болса, оның көлемін табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "75",
+        "64",
+        "72",
+        "96"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288807,
+      "question": "Конустың биіктігі 6 см және оның жасаушысы 10 см-ге тең болса, конустың көлемін табыңыз&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(136π см^3\\)",
+        "\\(156π см^3\\)",
+        "\\(128π см^3\\)",
+        "\\(145πсм^3\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288808,
+      "question": "Есептеңіз:&nbsp;\\(26sin(arctg {12\\over5})\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "24",
+        "12",
+        "10",
+        "18"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288809,
+      "question": "Функцияның нөлдерін табыңыз:&nbsp;\\(y={|x-3|\\over3-x}-1\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\((-∞;3)\\)",
+        "\\((3;+∞)\\)",
+        "\\(0\\)",
+        "\\(3\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288811,
+      "question": "\\(8x^2-4x+3\\)&nbsp;, \\(4x^2-4x+3\\)&nbsp; және \\(8x-12x^2\\)&nbsp; өрнектерінің арифметикалық ортасын анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\({х-6}\\over3\\)",
+        "\\({х+6}\\over3\\)",
+        "\\(-2\\)",
+        "\\(2\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288812,
+      "question": "3 пен 96 сандарының арасына осы алты сан геометриялық&nbsp; прогрессия құрайтындай төрт санды тауып жазыңыз. Табылғансандардың ең үлкенін анықтаңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "32",
+        "64",
+        "48",
+        "56"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288813,
+      "question": "Теңдеуді шешіңіз:&nbsp;\\(2x^{x-2}-1=x^{2x-4}\\)",
+      "answers": [
+        2
+      ],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288814,
+      "question": "\\(\\sqrt{3x^2-2x}-6\\sqrt[4]{3x^2-2x}=7\\)&nbsp;&nbsp; теңдеуінің шешімі&nbsp; \\(x_1\\)&nbsp;және\\(x_2\\)&nbsp; болса,\r\n\r\n\\(x_1+x_2\\)&nbsp; өрнегінің мәнін табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(1\\over6\\)",
+        "\\(2\\over5\\)",
+        "\\(2\\over3\\)",
+        "\\(1\\over4\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288815,
+      "question": "\\(2∙16^x+64=24∙4^x\\)&nbsp; теңдеуі түбірлерінің қосындысын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "4,5",
+        "3,8",
+        "2,5",
+        "1,8"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288816,
+      "question": "Бір айнымалысы бар теңсіздік жүйесін шешіңіз:&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\((-∞;7)\\)",
+        "\\((7;9)\\)",
+        "\\((2;7)\\)",
+        "\\((9;+∞)\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288817,
+      "question": "\\(x^2-6x+3=0\\)&nbsp;теңдеуді шешіп оның түбірлеріне байланысты өрнектерді жауабымен сәйкестендіріңіз&nbsp;",
+      "answers": [],
+      "options": [
+        "\\(x_1^2+x_2^2\\)&nbsp;өрнегінің мәні",
+        "\\({x_1+x_2}\\over{x_1∙x_2 }\\)&nbsp; өрнегінің мәні",
+        "30",
+        "2",
+        "12",
+        "15"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288819,
+      "question": "Арифметикалық прогрессияда&nbsp;\\(a_1=6\\)&nbsp;,&nbsp; \\(a_2=11\\)&nbsp;. Келесі мәндерді сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "\\(a_{15}\\)",
+        "\\(S_{5}\\)",
+        "76",
+        "80",
+        "81",
+        "72"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288822,
+      "question": "\\(a^2-2b^2\\)&nbsp;өрнегі берілген. Өрнектерді келесі жағдайлардағы мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "мұндағы&nbsp;&nbsp;\\(a=2,b=2\\)",
+        "мұндағы&nbsp;&nbsp;\\(a=3,b=2\\)",
+        "-4",
+        "1",
+        "-1",
+        "4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288823,
+      "question": "Тікбқрышты үшбұрыштың катеттері 9 және 12. Төмендегі сөйлемдерді олардың мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "Периметрі",
+        "Ауданы",
+        "36",
+        "54",
+        "42",
+        "64"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288825,
+      "question": "\\(f(x)={{1-x}\\over{1+x}}\\)&nbsp; &nbsp;функциясы берілген.&nbsp;Келесі өрнектерді мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "&nbsp;\\(f(2)\\)",
+        "\\(f(-2)\\)",
+        "\\(-{1\\over3}\\)",
+        "\\(-3\\)",
+        "\\(1\\over3\\)",
+        "\\(3\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288830,
+      "question": "Контейнерді орналастыру үшін жер телімінің тегістеп дайындады. Контейнер орналасатын жер ауданын анықтаңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(14,4 м^2\\)",
+        "\\(15,6 м^2\\)",
+        "\\(16,4 м^2\\)",
+        "\\(15,4 м^2\\)"
+      ],
+      "group_text": "КОНТЕЙНЕР\r\n\r\nРуслан ені 2,4м ұзындығы 6м ал биіктігі 2,6 м болатын контейнер сатып алды.\r\n\r\nБұл контейнерді өзінің жер үйіне қойма ретінде қолданғысы келеді. Контейнер суретте көрсетілгендей тек бір жағынан ғана ашылады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288831,
+      "question": "Контейнер есігінің өлшемдері ені мен биіктігі өлшемдерімен бірдей болса, онда контейнер есігінің ауданын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(5,64 м^2\\)",
+        "\\(6,14 м^2\\)",
+        "\\(5,76 м^2\\)",
+        "\\(6,54 м^2\\)"
+      ],
+      "group_text": "КОНТЕЙНЕР\r\n\r\nРуслан ені 2,4м ұзындығы 6м ал биіктігі 2,6 м болатын контейнер сатып алды.\r\n\r\nБұл контейнерді өзінің жер үйіне қойма ретінде қолданғысы келеді. Контейнер суретте көрсетілгендей тек бір жағынан ғана ашылады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288832,
+      "question": "Контейнердің көлемін табыңыз (Сыртқы өлшемдері бойынша)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(37,44 м^3\\)",
+        "\\(35,49 м^3\\)",
+        "\\(39,45 м^3\\)",
+        "\\(34,47 м^3\\)&nbsp;​"
+      ],
+      "group_text": "КОНТЕЙНЕР\r\n\r\nРуслан ені 2,4м ұзындығы 6м ал биіктігі 2,6 м болатын контейнер сатып алды.\r\n\r\nБұл контейнерді өзінің жер үйіне қойма ретінде қолданғысы келеді. Контейнер суретте көрсетілгендей тек бір жағынан ғана ашылады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288833,
+      "question": "Контейнердің ішін жылытуға арналған электрлік жылу пештерін қолданады. Жылу пешінің 1 бөлігі&nbsp;&nbsp;\\(3,12 м^3\\)&nbsp; көлемге есептелетін болса, онда Руслан неше бөлігі бар электрлік пеш алуы қажет екенін табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "10",
+        "12",
+        "15",
+        "11"
+      ],
+      "group_text": "КОНТЕЙНЕР\r\n\r\nРуслан ені 2,4м ұзындығы 6м ал биіктігі 2,6 м болатын контейнер сатып алды.\r\n\r\nБұл контейнерді өзінің жер үйіне қойма ретінде қолданғысы келеді. Контейнер суретте көрсетілгендей тек бір жағынан ғана ашылады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288834,
+      "question": "Руслан контейнердің ішін жылу сақтағыш пеналастпен толық (еденін және есігін де) қаптағысы келді. Пенапласт ұзындығы 1,2 м ал ені 0,6 м болса, онда ол кем дегенде неше дана пенапласт алуы қажет. (Контейнердің ішкі және сыртқы өлшемдері арасындағы айырмашылық ескерілмейді)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "100",
+        "110",
+        "101",
+        "106"
+      ],
+      "group_text": "КОНТЕЙНЕР\r\n\r\nРуслан ені 2,4м ұзындығы 6м ал биіктігі 2,6 м болатын контейнер сатып алды.\r\n\r\nБұл контейнерді өзінің жер үйіне қойма ретінде қолданғысы келеді. Контейнер суретте көрсетілгендей тек бір жағынан ғана ашылады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288837,
+      "question": "Бөлшекті қысқартыңыз:&nbsp;\\({2y^2-18}\\over{9+3y}\\)",
+      "answers": [
+        1,
+        2,
+        4
+      ],
+      "options": [
+        "\\({2y-6}\\over3\\)",
+        "\\(-{6-2y}\\over3\\)",
+        "\\(- {{9-y}\\over3}\\)",
+        "\\({{2y}\\over3}-2\\)",
+        "\\({y-9}\\over3\\)",
+        "\\({3-2y}\\over3\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288839,
+      "question": "Ықшамдаңыз: \\(\\sqrt{a^2-6a+9}+2a+1\\)&nbsp; . Мұндағы&nbsp;\\(a≤1\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(4+a\\)",
+        "\\(2a+1\\)",
+        "\\(3a-2\\)",
+        "\\(2-3a\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288850,
+      "question": "Суретте көрсетілгендей радиусы 30 см шеңберге екі қиылысатын хорда сызылған.  &nbsp;кіші доғасы  , ал хордалар арасындағы бұрыш  .\r\n\r\n\r\n\r\n&nbsp; және&nbsp; &nbsp;кіші доғалардың ұзындықтарын табыңыз&nbsp;",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "16 см",
+        "18 см",
+        "20 см",
+        "24 см",
+        "32 см",
+        "36 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288851,
+      "question": "Теңсіздіктер жүйесінің бүтін шешімдер санын анықтаңыз&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288852,
+      "question": "\\(y=2x^2+3x\\)&nbsp; және \\(y=-1\\)&nbsp; &nbsp;сызықтарымен шектелген фигураның ауданын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(1\\over48\\)",
+        "\\(1\\over6\\)",
+        "\\(1\\over24\\)",
+        "\\(1\\over12\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288853,
+      "question": "A(0; 2; 0), B(1; 0; 0) және C(2; 0; 2) &nbsp;ромбтың тізбектес төбелері. Ромбтың ауданын табыңыз",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "\\(\\sqrt{24}\\)",
+        "\\(\\sqrt{18}\\)",
+        "\\(\\sqrt{12}\\)",
+        "\\(3\\sqrt2\\)",
+        "\\(2\\sqrt6\\)",
+        "\\(2\\sqrt3\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288855,
+      "question": "Геометриялық прогрессиясының төртінші мүшесі 40, ал еселігі q=-2. &nbsp;Осы прогрессияның бірінші мүшесін анықтаңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "-4",
+        "-8",
+        "-5",
+        "-9"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288856,
+      "question": "Теңдеуді шешіңіз:&nbsp;\\(cos⁡(-x)=-1\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(π+2πn,n∈Z\\)",
+        "\\(-{π\\over4}+2πn,n∈Z\\)",
+        "\\(-{π\\over2}+2πn,n∈Z\\)",
+        "\\({π\\over2}+2πn,n∈Z\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288908,
+      "question": "Жазықтықтан тыс жатқан А және В нүктелерінен жазықтыққа дейінгі қашықтық сәйкесінше 2 см және 6 см. Ал олардың жазықтықтағы ортогональ проекциясының ұзындығы 6 см. А және В нүктелері арақашықтығын табыңыз",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "\\(10\\)",
+        "\\(5\\sqrt2\\)",
+        "\\(2\\sqrt{13}\\)",
+        "\\(26\\)",
+        "\\(2\\sqrt5\\)",
+        "\\(13\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 288963,
+      "question": "Нормаль векторы \\(n ⃗(a;b;c)\\)&nbsp; болатын және \\(М_0 (x;y;z)\\)&nbsp;&nbsp;нүктесі арқылы өтетін жазықтықтың теңдеуі \\(2x+3y+z-5=0\\)&nbsp; болса, онда осы \\(n ⃗\\)&nbsp; нормаль вектор мен \\(М_0\\)&nbsp; нүктесінің координаталарын табыңыз",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "\\((2;3;1)\\)",
+        "\\((2;-1;4)\\)",
+        "\\((3;-2;4)\\)",
+        "\\((-1;2;1)\\)",
+        "\\((-3;0;-2)\\)",
+        "\\((0;-1;2)\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289341,
+      "question": "Есептеңіз:&nbsp;\\({7\\over15}∙2 {6\\over7}\\)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(2{1\\over3}\\)",
+        "\\({3\\over4}\\)",
+        "\\(1{1\\over3}\\)",
+        "\\({1\\over3}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289342,
+      "question": "Теңдеуді шешіңіз:&nbsp;\\({{x-2}\\over{x-3}}={5\\over6}\\)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "2",
+        "-2",
+        "-3",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289343,
+      "question": "Теңдеуді шешіңіз:&nbsp;\\(log_5⁡6=log_5⁡(х^2+2х+3)\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "-3; 1",
+        "0; 1",
+        "-1; 3",
+        "-3; -1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289344,
+      "question": "Өрнекті ықшамдаңыз:&nbsp;\\((b-2a)(2a+b)-4a^2\\)",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(-8a^2\\)",
+        "\\(b^2-8a^2\\)",
+        "\\(-b^2-8a^2\\)",
+        "\\(-b^2\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289345,
+      "question": "Теңсіздіктің ең кіші бүтін шешімі:&nbsp;\\(log_{1\\over3}⁡(х-2)&lt;log_{1\\over3}⁡5-log_{1\\over3}⁡(х+2)\\)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "2",
+        "5",
+        "4",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289346,
+      "question": "Тригонометриялық өрнектің мәнін табыңыз:&nbsp;\\(tg(-765^o)\\)",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\(-{\\sqrt3\\over3}\\)",
+        "\\({\\sqrt3\\over3}\\)",
+        "\\(1\\)",
+        "\\(-1\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289347,
+      "question": "\\(f(x)=2cosx-3sinx\\)&nbsp; &nbsp;функциясы үшін алғашқы функциясының жалпы түрін табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(2sinx-3cosx+С\\)",
+        "\\(–3sinx-2cosx+С\\)",
+        "\\(2sinx +3cosx +С\\)",
+        "\\(–2cosx+3sinx+С \\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289348,
+      "question": "Қабырғалары 15 см, 20 см және 25 см болатын АВС үшбұрышы берілген. Осы үшбұрыштың үлкен биіктігін табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "10 см",
+        "12 см",
+        "15 см",
+        "20 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289349,
+      "question": "\\(|x|+|x - 1|=1\\)&nbsp; &nbsp;теңдеуінің бүтін түбірлерінің қосындысын табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289350,
+      "question": "Екі қаладан қарама-қарсы бір мезгілде 2 пойыз шықты. 1-ші пойыз \\(1\\over3\\)&nbsp; &nbsp;сағатта 18 км, ал екіншісі одан 1,5 есе артық өтті. Егер пойыздар екі сағаттан кейін кездесетін болса, онда қалалардың ара қашықтығын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "54 км",
+        "108 км",
+        "270 км",
+        "135 км"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289667,
+      "question": "Теңдеулер жүйесін шешіңіз:&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "(3;0)",
+        "(-3;3)",
+        "(3;-3)",
+        "(0;3)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289668,
+      "question": "Теңсіздіктің дұрыс шешімін анықтаңыз:&nbsp;\\(|1+2x|&gt;1\\)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\((-1;0)\\)",
+        "\\((-1;+∞)\\)",
+        "\\((-∞;-1)∪(0;+∞)\\)",
+        "\\((-∞;0)∪(1;+∞)\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289669,
+      "question": "Функцияның анықталу обласын есептеңіз:&nbsp; \\(y={\\sqrt {cosx} \\over{sinx+1}}\\)",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\((π+2πn;3π/2+2πn),n∈Z\\)",
+        "\\((π+πn;3π/2+πn),n∈Z\\)",
+        "\\((-π/2+2πn;π/2+2πn),n∈Z\\)",
+        "\\((-π/2+2πn; π/2+2πn],n∈Z\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289670,
+      "question": "Қабырғалары 25 см, 30 см және 25 см болатын үшбұрыш ауданынын табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(288 см^2\\)",
+        "\\(300 см^2\\)",
+        "\\(256 см^2\\)",
+        "\\(346 см^2\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289672,
+      "question": "Бұрыштардың біреуі&nbsp; \\(40°\\)- қа тең болатын үшбұрыштың басқа екі бұрышының биссектрисаларының арасындағы доғал бұрышын табыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(40°\\)",
+        "\\(110°\\)",
+        "\\(70°\\)",
+        "\\(140°\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289674,
+      "question": "Функцияның туындысын табыңыз:\\(f(x)=\\sqrt{3x^2-6x}\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "\\(\\sqrt3 (x-1)\\over\\sqrt{x^2-2x}\\)",
+        "\\(6 (x-1)\\over\\sqrt{3x^2-6x}\\)",
+        "\\(1\\over2\\sqrt{3x^2-6x}\\)",
+        "\\({1\\over2} {\\sqrt{6x-6}}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289676,
+      "question": "Теңдеулер жүйесін шешіңіз:&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "(-2;1), (-1; 2)",
+        "(-1;2), (2; -1)",
+        "(2; -1), (-1; 1)",
+        "(1;2)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289677,
+      "question": "Теңдеуді шешіңіз:&nbsp;\\(3tg {x\\over3}=\\sqrt3\\)",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(π+3πk,k∈Z\\)",
+        "\\(π/6+πk,k∈Z\\)",
+        "\\(π/2+3πk,k∈Z\\)",
+        "\\(π/3+πk,k∈Z\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289678,
+      "question": "Барлық мүшелері оң геометриялық прогресиияның үшінші мен жетінші мүшелерінің көбейтіндісі 25-ке тең. \\(b_5+1\\over{b_5} \\)&nbsp; &nbsp;мәнін табыңыз, мұндағы&nbsp;\\(b_5\\) - прогрессияның бесінші мүшесі.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(16\\over15\\)",
+        "\\(6\\over5\\)",
+        "\\(11\\over10\\)",
+        "\\(21\\over20\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289679,
+      "question": "Теңдеуді шешіңіз:&nbsp;\\(\\sqrt{x-2}=a\\)&nbsp;&nbsp;егер&nbsp;\\(а&gt;0\\)",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\(\\sqrt{2-a}\\)",
+        "\\(\\sqrt{2+a}\\)",
+        "\\(a^2-2\\)",
+        "\\(a^2+2\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289680,
+      "question": "Өрнектің мәні жатқан аралықтарды табыңыз:&nbsp;&nbsp;\\({8((5х+4)^2-(5х+4))}\\over6(5х+4) (5х+3) \\)",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\((2;15)\\)",
+        "\\([1;23]\\)",
+        "\\((2;19)\\)",
+        "\\([5;13]\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289681,
+      "question": "Өрнекті ықшамдаңыз:&nbsp;&nbsp;\\({(a+1+{1\\over{a-1}})}: {a^2\\over{1-2a+a^2}}\\)",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(1-a\\)",
+        "\\(a-1\\)",
+        "\\(a+1\\)",
+        "\\(a+1\\over{a-1}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289682,
+      "question": "Есептеңіз:&nbsp;\\({lg27+lg12}\\over{lg2+2lg3}\\)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289683,
+      "question": "Өрнектің мәні жатқан аралықтарды көрсетіңіз&nbsp;&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289684,
+      "question": "&nbsp;&nbsp;теңдігі орындалатындай&nbsp; а-ның мәнін табыңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\(-3{2\\over3}\\)",
+        "\\(3{1\\over3}\\)",
+        "\\(-2{1\\over3}\\)",
+        "\\(2{2\\over3}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289710,
+      "question": "Өрнекті ықшамдаңыз:&nbsp;\\(1\\over{\\sqrt5+\\sqrt3-\\sqrt2}\\)",
+      "answers": [
+        3,
+        6
+      ],
+      "options": [
+        "\\({\\sqrt{30}-\\sqrt{18}-\\sqrt{12}}\\over12\\)",
+        "\\({\\sqrt5-\\sqrt3-\\sqrt{2}}\\over12\\)",
+        "\\({\\sqrt{30}-\\sqrt{18}+\\sqrt{12}}\\over12\\)",
+        "\\({\\sqrt5-\\sqrt3+\\sqrt{2}}\\over12\\)",
+        "\\({2\\sqrt3-\\sqrt{30}-3\\sqrt{2}}\\over12\\)",
+        "\\({2\\sqrt3+\\sqrt{30}-3\\sqrt{2}}\\over12\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289711,
+      "question": "Егер \\(cosα={1\\over√3}\\)&nbsp; болса, онда келесі өрнектерді мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "\\(sin2α\\)&nbsp;мәні",
+        "\\(cos4α\\)&nbsp;мәні",
+        "\\(2\\sqrt2\\over3\\)",
+        "\\(-{7\\over9}\\)",
+        "\\(3\\sqrt2\\over2\\)",
+        "\\(-{8\\over9}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289712,
+      "question": "Берілген өрнектерді мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "\\(tg75°\\)&nbsp;өрнегінің мәні",
+        "\\(ctg105°\\)&nbsp; өрнегінің мәні",
+        "\\(2+\\sqrt3\\)",
+        "\\(\\sqrt3-2\\)",
+        "\\(2-\\sqrt3\\)",
+        "\\(-\\sqrt3-2\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289727,
+      "question": "Жүк машинасының жылдамдығын анықтаңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "40 км/сағ",
+        "60 км/сағ",
+        "30 км/сағ",
+        "120 км/сағ"
+      ],
+      "group_text": "Жолаушылар\r\n\r\nА және В қалаларының арақашықтығы 120 км. Жеңіл машина бұл жолды 1 сағатта , ал жүк машинасы одан 2 есе артық уақытта жүріп өтеді.&nbsp; Жеңіл машина мен жүк машиналары бір уақытта, бір &ndash; біріне қарама &ndash; қарсы бағытта жолға шықты.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289728,
+      "question": "Жеңіл машина мен жүк машиналары қанша уақыттан кейін кездесті?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "50 минут",
+        "20 минут",
+        "40 минут",
+        "30 минут"
+      ],
+      "group_text": "Жолаушылар\r\n\r\nА және В қалаларының арақашықтығы 120 км. Жеңіл машина бұл жолды 1 сағатта , ал жүк машинасы одан 2 есе артық уақытта жүріп өтеді.&nbsp; Жеңіл машина мен жүк машиналары бір уақытта, бір &ndash; біріне қарама &ndash; қарсы бағытта жолға шықты.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289729,
+      "question": "Жеңіл машинаның жылдамдығын анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "140&nbsp;км/сағ",
+        "60&nbsp;км/сағ",
+        "30&nbsp;км/сағ",
+        "120&nbsp;км/сағ"
+      ],
+      "group_text": "Жолаушылар\r\n\r\nА және В қалаларының арақашықтығы 120 км. Жеңіл машина бұл жолды 1 сағатта , ал жүк машинасы одан 2 есе артық уақытта жүріп өтеді.&nbsp; Жеңіл машина мен жүк машиналары бір уақытта, бір &ndash; біріне қарама &ndash; қарсы бағытта жолға шықты.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289730,
+      "question": "Көліктер осы бағытында жолдарын жалғастыратын болса, жеңіл машина мен жүк машинасының 2 сағаттан кейінгі арақашықтығын анықтаңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "360 км",
+        "240 км",
+        "320&nbsp; км",
+        "210 км"
+      ],
+      "group_text": "Жолаушылар\r\n\r\nА және В қалаларының арақашықтығы 120 км. Жеңіл машина бұл жолды 1 сағатта , ал жүк машинасы одан 2 есе артық уақытта жүріп өтеді.&nbsp; Жеңіл машина мен жүк машиналары бір уақытта, бір &ndash; біріне қарама &ndash; қарсы бағытта жолға шықты.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289731,
+      "question": "Жүк көлігі А қаласынан В қаласына жеткен кезде, жеңіл машина А қаласынан қандай қашықтықта болатынын табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "120 км",
+        "240 км",
+        "180 км",
+        "210 км"
+      ],
+      "group_text": "Жолаушылар\r\n\r\nА және В қалаларының арақашықтығы 120 км. Жеңіл машина бұл жолды 1 сағатта , ал жүк машинасы одан 2 есе артық уақытта жүріп өтеді.&nbsp; Жеңіл машина мен жүк машиналары бір уақытта, бір &ndash; біріне қарама &ndash; қарсы бағытта жолға шықты.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289736,
+      "question": "Өрнекті ықшамдаңыз:\\(cosα cos {α\\over2}+sinα sin {α\\over2}\\)",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "\\(cos {α\\over2}\\)",
+        "\\(sin {α\\over2}\\)",
+        "\\(sin {0,5α}\\)",
+        "\\(cos {0,5α}\\)",
+        "\\(sin {α}\\)",
+        "\\(cos {α}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289737,
+      "question": "\\(f(x)={{x^2-1}\\over{x^2+1}}\\)&nbsp;функциясының&nbsp;\\(f' (-2)\\)&nbsp; мәнін табыңыз",
+      "answers": [
+        1,
+        5
+      ],
+      "options": [
+        "\\(-{8\\over25}\\)",
+        "\\(0,6\\)",
+        "\\(3\\over5\\)",
+        "\\(-1,6\\)",
+        "\\(-0,32\\)",
+        "\\(-{8\\over5}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289738,
+      "question": "Есептеңіз:&nbsp;",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "\\(-{13\\over3}\\)",
+        "\\(-4{1\\over3}\\)",
+        "\\(-{8\\over3}\\)",
+        "\\(-2{2\\over3}\\)",
+        "\\(-{11\\over4}\\)",
+        "\\(-2{3\\over4}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289739,
+      "question": "Тікбқрышты үшбұрыштың бір катеті 20 см, ал гипотенузасы 25 см. Келесі өрнектерді дұрыс мәндерімен сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "Үшбұрыштың периметрі (см)",
+        "Үшбұрыштың ауданы (\\(см^2\\))",
+        "60",
+        "150",
+        "120",
+        "75"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289914,
+      "question": "\\((9с^3 )^5∙(с^3 )^7:(3c^4 )^8\\)&nbsp;өрнегін бірмүше түріне келтіріп, сәйкестендіріңіз:",
+      "answers": [],
+      "options": [
+        "бірмүшенің дәрежесі",
+        "бірмүшенің коэффициенті",
+        "4",
+        "9",
+        "6",
+        "8"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289917,
+      "question": "Тікбұрышты үшбұрыштың медианасы 5 см, ал оның бір катеті 6 см. Осы үшбқрышқа іштей және сырттай сызылған шеңберлердің радиустарын табыңыз",
+      "answers": [],
+      "options": [
+        "Сырттай сызылған шеңбер радиусы",
+        "Іштей сызылған шеңбер радиусы",
+        "5 см",
+        "2 см",
+        "3 см",
+        "4 см"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Математика (каз)"
+    },
+    {
+      "id": 289946,
+      "question": "Теңдеудің түбірлерін табыңыз:&nbsp;&nbsp;\\(|x-5|^{5-x}=|5-x|^2\\)",
+      "answers": [
+        1,
+        2,
+        4
+      ],
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "2",
+        "1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Математика (каз)"
+    }
+  ]
+}

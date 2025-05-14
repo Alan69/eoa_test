@@ -1,0 +1,4419 @@
+{
+  "subject_id": 25,
+  "subject_title": "Информатика (каз)",
+  "questions": [
+    {
+      "id": 285274,
+      "question": "Python-да екі жолды біріктіру (конкатенация) үшін қандай оператор қолданылады?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "+",
+        "&amp;",
+        "concat()",
+        "join()"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285276,
+      "question": "Басқа веб-бетке сілтеме жасау үшін қандай HTML тегі қолданылады?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "&nbsp;\r\n\r\n&lt;link&gt;",
+        "&lt;a&gt;",
+        "&nbsp;\r\n\r\n&lt;url&gt;",
+        "&nbsp;\r\n\r\n&lt;href&gt;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285279,
+      "question": "Комбинациялық блок сызбаға сәйкес келетін логикалық операция",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(&not;B+A)&amp;A",
+        "(&not;B&amp;A)+A",
+        "(&not;A+B)&amp;A",
+        "(&not;A&amp;B)+A"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/PUI4MzCHaq6rrvJ6Gapa1AgVx51faoyAJivbo5Ze.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285280,
+      "question": "C1 ұяшығында келесі формула =$A1+B$1. Егер сіз формуланы С2 ұяшығына, содан кейін С3 ұяшығына көшірсеңіз, С2 және С3 деректері қалай өңделеді?",
+      "answers": [
+        4
+      ],
+      "options": [
+        "С2: 15, С3: 18",
+        "С2: 16, С3: 21",
+        "C2: 11, C3: 10",
+        "C2: 18, C3: 13"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/t2blowoeDLaw7dmxfP13rPWXjPIDGWYHOSdl60gb.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285283,
+      "question": "Келесі өрнектің жауабы болмайтынын тап: 1378+9716+10110112",
+      "answers": [
+        4
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285286,
+      "question": "Берілген граф бойынша көршілес матрицаны құрыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/inqChcGMbjUDD4zOmzPJMfZk3LtcVInCBFpZNauo.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285287,
+      "question": "Шешімді қабылдау үшін мәліметтердің жеткілікті болуын немесе солардың негізінде жаңа деректер құруын сипаттайтын қасиет&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Толықтылық",
+        "Құндылық",
+        "Дәлдік",
+        "Нақтылық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285288,
+      "question": "ASCII кодтау кестесінің стандартты бөлігінде 1 символдың ақпараттық салмағы",
+      "answers": [
+        4
+      ],
+      "options": [
+        "16 бит",
+        "8 бит",
+        "32 бит",
+        "7 бит"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285289,
+      "question": "А, B және C логикалық айнымалылар болып табылады. Қай логикалық операция олардың кемінде екеуі ақиқат мәні кірісінде болса, ақиқат мәнін қайтарады?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(A AND B) OR (B AND C) OR (A AND C)",
+        "A AND B AND C",
+        "NOT A AND NOT B AND NOT C",
+        "(A OR B) AND (B AND C) AND (A OR C)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285290,
+      "question": "Компьютерлік желіде &ldquo;mac&rdquo; мекенжайларына негізделген құрылғылар арасында деректер пакеттерін тиімді жіберуге мүмкіндік беретін құрылғы",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Модем",
+        "Маршрутизатор",
+        "Концентратор",
+        "Коммутатор"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285291,
+      "question": "Жеткізу жылдамдығы 100 Мбит/с дейінгі жылдамдық",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Төмен жылдамдық",
+        "Орташа жылдамдық",
+        "Жоғары жылдамдық",
+        "Өте жоғары жылдамдық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285292,
+      "question": "Сервистік программалық құралдарға жататын программа",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Компилятор",
+        "Интерпретатор",
+        "Утилита",
+        "Операциялық жүйе"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285293,
+      "question": "Деректер қорында кестедегі іздеуді тездету үшін көмектесетін көмекші кесте",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Өріс",
+        "Белгі",
+        "Индекс",
+        "Модель"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285294,
+      "question": "Жас өспірімдар арасында кең тараған виртуалды лаңкестік(террор)",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Жарыс",
+        "Кибербуллинг",
+        "Фишинг",
+        "Спорт"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285295,
+      "question": "Процессордың негізгі құрылғысына жатпайды",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Шиналар блогы",
+        "Тұрақты есте сақтау құрылғысы",
+        "Командалық кэш жад",
+        "Арифметикалық-логикалық құрылғы"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285296,
+      "question": "Компьютерлік желі ұйымдастыру типіне байланысты бөлінеді",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Ведомствалық, мемлекеттік",
+        "Бір рангілік, серверге негізделген",
+        "PAN, LAN, MAN, WAN",
+        "Коаксиальды, Есулі қосақталған, Оптикалық талшық сымдар"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285297,
+      "question": "Берілген құрылымдық схема бойынша логикалық операцияны жазып шығыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(A and (A or not B) ) and (not A or not B)",
+        "(A and (A and not B) ) and (A and not B)",
+        "(A and (not A or not B) ) and (not A and not B)",
+        "(A and (A or not B) ) and (not A and not B)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/Cmb3Q6h4OPLcQ9v2odgwvKTHC14mr9TOZcBbKdNF.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285298,
+      "question": "ASCII кодтау кестесінің стандартты бөлігі арқылы 400 символдық хабарлама жіберілді. Хабарламаның ақпараттық көлемі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "350 байт",
+        "400 байт",
+        "1 Кбайт",
+        "0,5 Кбайт"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285299,
+      "question": "Ақпаратты басқарудың дәстүрлі деректер қорының жүйесі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Реляциялық",
+        "Кестелік",
+        "Индекстік",
+        "Желілік"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285300,
+      "question": "Қандай SQL сұрауы &quot;Name&quot; және &quot;price&quot; бағандары үшін көрсетілген мәндері бар &quot;products&quot;кестесіне жаңа жол қосады?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "INSERT INTO PRODUCTS (NAME, PRICE) VALUES (&#39;MONITOR&#39;, 199.99);",
+        "ӨНІМДЕРГЕ ҚОСУ (АТЫ, БАҒАСЫ) (&#39;МОНИТОР&#39;, 199.99);",
+        "CREATE ROW IN PRODUCTS SET NAME = &#39;MONITOR&#39;, PRICE = 199.99;",
+        "UPDATE PRODUCTS ADD (&#39;MONITOR&#39;, 199.99) TO NAME, PRICE;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285301,
+      "question": "Макрос",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Командалар тізбегі",
+        "Автоматты сілтемелер жасау",
+        "Есеп жасаушы",
+        "Сандық мәлімет жиынтығы"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285302,
+      "question": "Орталық процессордың сипаттамасын табыңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "ақпаратты өңдеуге жауап береді және оның ең маңызды сипаттамасы сағат жылдамдығы болып табылады",
+        "магниттік жазу принципіне негізделген кездейсоқ қол жетімділікті сақтау құрылғысы (ақпаратты сақтау құрылғысы)",
+        "барлық негізгі бөлшектер мен түйіндер орнатылған компьютердің негізгі чипі",
+        "дыбыстық динамиктер мен құлаққаптар арқылы компьютерден дыбысты ойнату және дыбысты жазу үшін қолданылады"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285303,
+      "question": "Бес өрісті қамтитын &quot;оқушылар&quot; кестесінде негізгі өрісті көрсетіңіз: &quot;аты&quot;, &quot;тегі&quot;, &quot;сынып&quot;, &quot;Туған күні&quot;,&quot;ЖСН&quot;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Аты",
+        "ЖСН",
+        "Сынып",
+        "Тегі"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285307,
+      "question": "",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285308,
+      "question": "Сандық ақпаратты байланыстырушы ретінде пайдаланылатын өткізгіштер тобы",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Сумматор",
+        "Регистр",
+        "Басқару құрылғысы",
+        "Шина"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285310,
+      "question": "Мәселені шешетін программа кодын табыңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "Тіктөртбұрыштың ауданы\r\n\r\nЖандосқа тіктөртбұрыштың ауданын табатын программа тапсырылды. Алайда программа жұмыс жасамай тұр. Жандосқа көмектес.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285311,
+      "question": "Python-да функцияны қалай құруға болады?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "def function_name()",
+        "create function_name:",
+        "function function_name()",
+        "func() function_name:"
+      ],
+      "group_text": "Тіктөртбұрыштың ауданы\r\n\r\nЖандосқа тіктөртбұрыштың ауданын табатын программа тапсырылды. Алайда программа жұмыс жасамай тұр. Жандосқа көмектес.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285312,
+      "question": "Қате жазылған программа коды іске жіберілген соң экранға шығатын қателік",
+      "answers": [
+        2
+      ],
+      "options": [
+        "ZeroDivisionError",
+        "NameError",
+        "IndexError",
+        "ValueError"
+      ],
+      "group_text": "Тіктөртбұрыштың ауданы\r\n\r\nЖандосқа тіктөртбұрыштың ауданын табатын программа тапсырылды. Алайда программа жұмыс жасамай тұр. Жандосқа көмектес.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285313,
+      "question": "Python-да return командасының қызметі",
+      "answers": [
+        2
+      ],
+      "options": [
+        "мәтінді экранға шығарады",
+        "функцияның орындалуын тоқтатады және қайтарудан кейін көрсетілген мәнді қайтарады",
+        "жаңа айнымалыны анықтайды",
+        "жадтан айнымалыларды жояды"
+      ],
+      "group_text": "Тіктөртбұрыштың ауданы\r\n\r\nЖандосқа тіктөртбұрыштың ауданын табатын программа тапсырылды. Алайда программа жұмыс жасамай тұр. Жандосқа көмектес.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285315,
+      "question": "Программа коды дұрысталғаннан кейінгі нәтижесі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Тіктөртбұрыш ауданы: 15",
+        "Тіктөртбұрыш ауданы:13",
+        "Тіктөртбұрыш ауданы: 12",
+        "Тіктөртбұрыш ауданы:10"
+      ],
+      "group_text": "Тіктөртбұрыштың ауданы\r\n\r\nЖандосқа тіктөртбұрыштың ауданын табатын программа тапсырылды. Алайда программа жұмыс жасамай тұр. Жандосқа көмектес.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285317,
+      "question": "Логикалық өрнек берілген: (P AND Q) OR (R AND NOT S). P, Q, R және S айнымалыларының қандай мәндер жиынтығында бұл өрнек ақиқат болып табылады?",
+      "answers": [
+        2,
+        4,
+        5
+      ],
+      "options": [
+        "P = TRUE, Q = TRUE, R = TRUE, S = TRUE",
+        "P = TRUE, Q = FALSE, R = TRUE, S = FALSE",
+        "P = FALSE, Q = TRUE, R = TRUE, S = TRUE",
+        "P = TRUE, Q = TRUE, R = FALSE, S = TRUE",
+        "P = TRUE, Q = FALSE, R = FALSE, S = TRUE",
+        "P = FALSE, Q = FALSE, R = FALSE, S = FALSE"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285319,
+      "question": "",
+      "answers": [
+        1,
+        4,
+        6
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "​​​​​​​"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285320,
+      "question": "Программа нәтижесі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/gBcp0Pby2LxUCAfqhMlnREvN6xGeGUemVyKk5qhA.png",
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285321,
+      "question": "128 символдық алфавитпен кітаптың 250 беті және әр бетте 64 символдан тұратын 30 қатары жазылды. Енді осы кітаптың электронды нұсқасын желінің өткізуге қабілеті 200 бод болатын желі арқылы жіберілу уақыты",
+      "answers": [
+        3
+      ],
+      "options": [
+        "200 мин",
+        "3 сағат",
+        "280 мин",
+        "320 мин",
+        "6 сағат",
+        "5 сағат 20 мин"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285322,
+      "question": "Егер A1 ұяшығында =$C1+$D$3+D$4 формуласы жазылғаны белгілі болса, онда A1 ұяшығынан көшіріліп алынған формуланы A1:B4 диапазонына көшіргенде мәні 18-ге тең болатын ұяшық(-тар)",
+      "answers": [
+        1,
+        6
+      ],
+      "options": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "A4",
+        "B4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285369,
+      "question": "",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285371,
+      "question": "Диапазонға сәйкес келетін IP адрес классын анықтаңыз",
+      "answers": [],
+      "options": [
+        "192.0.0.0 &ndash; 223.255.255.255",
+        "0.0.0.0 &ndash; 127.255.255.255",
+        "C класс",
+        "A класс",
+        "B класс",
+        "D класс"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285374,
+      "question": "Суреттегі диаграмманың түрі",
+      "answers": [],
+      "options": [
+        "",
+        "",
+        "Сызықтық",
+        "Жапырақ",
+        "Гистограмма",
+        "График"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285377,
+      "question": "Программа нәтижесі",
+      "answers": [],
+      "options": [
+        "number=3",
+        "number=2",
+        "48",
+        "12",
+        "24",
+        "36"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/DkmmE8qNbBTPFRMf4fUmjUhpFywnHYQE55izzm4n.png",
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285379,
+      "question": "IP адрес пен масканы қолданып, ішкі желі номері мен масканың екілік мәнін табыңыз.\r\n\r\nIP адрес: 192.168.0.33\r\n\r\nМаска: /24",
+      "answers": [],
+      "options": [
+        "Ішкі желі нөмері:",
+        "Маска:",
+        "11000000.10101000.00000000.00000000",
+        "11111111.11111111.11111111.00000000",
+        "11000000.10101000.00000000.00100001",
+        "11000000.10101000.00000000.11111111"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285772,
+      "question": "Python-да шартты тексерулерді орындау үшін қандай оператор қолданылады?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "while",
+        "for",
+        "if",
+        "switch"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285773,
+      "question": "Басқа веб - бетке сілтеме орнату үшін қандай HTML атрибуты қолданылады?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "src",
+        "href",
+        "link",
+        "url"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285774,
+      "question": "Комбинациялық блок сызбаға сәйкес келетін логикалық операция",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&not; (( (A+B)+A)*( &not;(A+B)*B))",
+        "&not; ((&not; (A+B)+A)*( (A+B)*B))",
+        "&not; ((&not; (A+B)*A)*( &not;(A+B)*B))",
+        "&not; ((&not; (A+B)+A)*( &not;(A+B)*B))"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/WpQimtRCzacI3ltpDRktZZGr2fVSrTRVU37a4HsK.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285777,
+      "question": "C1 ұяшығында келесі формула =A1+$B$1. Егер сіз формуланы С2 ұяшығына, содан кейін С3 ұяшығына көшірсеңіз, С2 және С3 деректері қалай өңделеді?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "С2: 15, С3: 18",
+        "С2: 16, С3: 21",
+        "C2: 18, C3: 13",
+        "C2: 13, C3: 14"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/uWWvfBAX5DsR2xYYe6tiHP7Xu7dlvQcMPMaUNlFO.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285782,
+      "question": "Келесі өрнектің жауабы болмайтынын тап:&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285786,
+      "question": "Берілген граф бойынша көршілес матрицаны құрыңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/7Y8R5zpTjMMeFBTbbcwcj13XxVNMAG5balqA4mwl.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285789,
+      "question": "Байланыс арналарының ақпарат жеткізу жылдамдығының өлшем бірлігі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Бод",
+        "Синапс",
+        "&nbsp;\r\n\r\nБит",
+        "Шина"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285794,
+      "question": "PHP-де ДҚ-ның серверіне қосылу үшін ... функциясы қолданылады.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "&nbsp;\r\n\r\nlocalhost()",
+        "MySQL_connect()",
+        "MySQL_include()",
+        "MySQL_connection()"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285798,
+      "question": "Келесі шындық кестесіне сәйкес келетін логикалық операцияны анықтаңыз&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&nbsp;\r\n\r\nконъюнкция",
+        "&nbsp;\r\n\r\nдизъюнкция",
+        "инверсия",
+        "импликация"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285801,
+      "question": "АЛҚ F=&ldquo;001&rdquo; кезінде орындалатын функция",
+      "answers": [
+        2
+      ],
+      "options": [
+        "A AND B",
+        "A OR B",
+        "A-B",
+        "SLT"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285803,
+      "question": "Жеткізу жылдамдығы 10 Гбит/с дейінгі жылдамдық",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&nbsp;\r\n\r\nТөмен жылдамдық",
+        "Орташа жылдамдық",
+        "Жоғары жылдамдық",
+        "Өте жоғары жылдамдық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285805,
+      "question": "Компьютерде жұмыс істеуге жеткілікті аппараттық және бағдарламалық құралдардың минималды жиынтығын қамтитын конфигурация",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Теңгерілмеген",
+        "Оптимальды",
+        "Базалық",
+        "Теңгерілмеген"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285809,
+      "question": "Мәліметтер базасы бір объект туралы деректерді қамтитын кесте жолы",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Өріс",
+        "Кілт",
+        "Жазба",
+        "Индекс"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285811,
+      "question": "Желінің өткізу қабілеттілігі Q=20 Кбит/с. t=10 секунд ішінде жіберуге болатын Q ақпаратының Кбит мөлшерін анықтаңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "204800",
+        "3",
+        "200",
+        "25"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285813,
+      "question": "Менің үш ағам бар, олардың жастары, 1111, 1101, 1110. Олардың жастарының қосындысын есептеп, 8 санау жүйесін табыныз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "48",
+        "39",
+        "50",
+        "37"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285815,
+      "question": "Жазба элементтері реттеліп жазылады да, оның бір элементі негізгі, қалғандары бағыныңқы элементтер деп есептеледі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Иерархиялық ДҚ",
+        "Реляциялық ДҚ",
+        "Бөлінбейтін ДҚ",
+        "Ішкі ДҚ"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285817,
+      "question": "Қандай SQL сұрауы тауардың құны (&quot;price&quot;) 500-ден жоғары болатын барлық тапсырыстарды жояды?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "DELETE * FROM ORDERS WHERE PRICE &gt; 500;",
+        "DELETE FROM ORDERS WHERE PRICE &gt; 500;",
+        "REMOVE FROM ORDERS WHERE PRICE &gt; 500;",
+        "DROP FROM ORDERS WHERE PRICE &gt; 500;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285818,
+      "question": "Python - дағы қандай код &quot;my_list&quot; тізімінен 2 индексі бар элементті жояды?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "my_list.remove(2)",
+        "my_list.pop(2)",
+        "my_list.delete(2)",
+        "my_list.clear(2)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285820,
+      "question": "Электрондық кестенің үзіндісі берілген. B2 ұяшығынан A1:A4 диапазонындағы ұяшықтардың біріне формула көшірілді. Көшіру кезінде формуладағы ұяшықтардың мекенжайлары автоматты түрде өзгерді және Формула мәні 10-ға айналды. Формула қай ұяшыққа көшірілді?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "А4",
+        "А1",
+        "А2",
+        "А3"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/GAngv0VvX6cq8I4Bh4GlFXQ3Uy3FBndAKKbIH2XQ.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285825,
+      "question": "Деректер базасында&quot;страны&quot; кестесі құрылды. Келесі сұраныс нәтижесінде шығатын мемлекеттер:",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Кыргызская Республика",
+        "Республика Казахстан, Республика Узбекистан, Республика Таджикистан",
+        "Туркменистан",
+        "Республика Казахстан, Республика Узбекистан, Кыргызская Республика"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/XESvuNsSNV9GeyBXXIw3bzbl5azNhjWAWvKc3oP8.jpg",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285832,
+      "question": "Келесі өрнек үшін ақиқат кестесі&nbsp;&nbsp;&nbsp;&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285833,
+      "question": "Есептеңіз&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285834,
+      "question": "Html кодын орындағаннан кейін &#39; функция alert&#39; мәтіні шығады",
+      "answers": [
+        4
+      ],
+      "options": [
+        "веб-беттегі бірінші жолда",
+        "диалог терезесіндегі тақырып ретінде",
+        "веб-беттегі екінші жолда",
+        "диалогтық терезеде мәтін енгізу өрісінде"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/dd6jXuI8eSRRfl1ZssDwwXLWcGroLJz1OymHE1Og.jpg",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285836,
+      "question": "Python - дағы қандай код &quot;my_list&quot; тізімінің соңына 6 санын қосады?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "my_list.add(6)",
+        "my_list.append(6)",
+        "my_list.insert(6)",
+        "my_list.extend(6)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285837,
+      "question": "&quot;orders&quot; және &quot;customers&quot;кестелерінен клиенттердің әр қаласы үшін барлық тапсырыстардың сомасын қай SQL сұрауы табады?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "SELECT CUSTOMERS.CITY, SUM(ORDERS.TOTAL) AS TOTAL\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; FROM CUSTOMERS JOIN ORDERS\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; GROUP BY CUSTOMERS.CITY;",
+        "SELECT CITY, SUM(TOTAL)\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; FROM ORDERS GROUP BY CITY;",
+        "SELECT CUSTOMERS.CITY, SUM(ORDERS.TOTAL) AS TOTAL\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; FROM CUSTOMERS\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN ORDERS\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID\r\n\r\n&nbsp;&nbsp; GROUP BY CUSTOMERS.CITY;",
+        "SELECT CITY, SUM(TOTAL)\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp; FROM CUSTOMERS GROUP BY CITY;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285842,
+      "question": "Студент өз кодын түзетті делік. егер тас B2 позициясында болса, ал тағайындалған жер C6 болса, нәтиже анықталды",
+      "answers": [
+        4
+      ],
+      "options": [
+        "YES YES",
+        "NO YES",
+        "YES",
+        "NO"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Шахматшы Жансая\r\n\r\nЖансая-бүкіл әлем бойынша көптеген шахмат жарыстарының бірнеше дүркін жеңімпазы. Алайда ол бірден шахматшы бола алмады. Ол сондай-ақ ойынды ойнауды көп үйренді. Жансая қателесуден қорықпады, өйткені тәжірибе оны жақсартатынын білді. Енді біз оның тура(ладья, rook) ойнауды қалай үйренгенін білгіміз келеді. Өздеріңіз білетіндей, тура шахмат тақтасында көлденең немесе тігінен қозғалады. Тураның бастапқы орны (әріп, сан) суретте көрсетілген.\r\n\r\n\r\n\r\nКіріс: жол айнымалысы (әріп) және бастапқы позицияның Int (Сан) айнымалысы.\r\n\r\nжол айнымалысы (әріп) және тағайындалған позицияның Int (Сан) айнымалысы.\r\n\r\nҚорытынды: &quot;иә&quot;, егер тура межелі жерге жете алса, әйтпесе&quot; жоқ&quot;.\r\n\r\n\r\n\r\n\r\n\r\nОқушы мәселені шешу үшін келесі кодты жазды, бірақ ол бірнеше қателерді алады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285844,
+      "question": "Студент өз кодын түзетті делік. Егер тас D5 позициясында болса және тағайындалған жер F5 болса, шығуды анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "YES YES",
+        "NO",
+        "NO NO",
+        "YES"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Шахматшы Жансая\r\n\r\nЖансая-бүкіл әлем бойынша көптеген шахмат жарыстарының бірнеше дүркін жеңімпазы. Алайда ол бірден шахматшы бола алмады. Ол сондай-ақ ойынды ойнауды көп үйренді. Жансая қателесуден қорықпады, өйткені тәжірибе оны жақсартатынын білді. Енді біз оның тура(ладья, rook) ойнауды қалай үйренгенін білгіміз келеді. Өздеріңіз білетіндей, тура шахмат тақтасында көлденең немесе тігінен қозғалады. Тураның бастапқы орны (әріп, сан) суретте көрсетілген.\r\n\r\n\r\n\r\nКіріс: жол айнымалысы (әріп) және бастапқы позицияның Int (Сан) айнымалысы.\r\n\r\nжол айнымалысы (әріп) және тағайындалған позицияның Int (Сан) айнымалысы.\r\n\r\nҚорытынды: &quot;иә&quot;, егер тура межелі жерге жете алса, әйтпесе&quot; жоқ&quot;.\r\n\r\n\r\n\r\n\r\n\r\nОқушы мәселені шешу үшін келесі кодты жазды, бірақ ол бірнеше қателерді алады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285845,
+      "question": "Студент әрқашан дұрыс нәтиже алу үшін кодын түзеткісі келеді. Ол орындауы керек әрекетті анықтаңыз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&quot;else&quot; жойыңыз",
+        "&quot;Yes/No&quot; дегенді &quot;YES/NO&quot;деп ауыстырыңыз",
+        "екінші &quot;if&quot; мәлімдемесін жойыңыз",
+        "бір &quot;if&quot; операторында бүкіл айнымалыларды салыстырыңыз"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Шахматшы Жансая\r\n\r\nЖансая-бүкіл әлем бойынша көптеген шахмат жарыстарының бірнеше дүркін жеңімпазы. Алайда ол бірден шахматшы бола алмады. Ол сондай-ақ ойынды ойнауды көп үйренді. Жансая қателесуден қорықпады, өйткені тәжірибе оны жақсартатынын білді. Енді біз оның тура(ладья, rook) ойнауды қалай үйренгенін білгіміз келеді. Өздеріңіз білетіндей, тура шахмат тақтасында көлденең немесе тігінен қозғалады. Тураның бастапқы орны (әріп, сан) суретте көрсетілген.\r\n\r\n\r\n\r\nКіріс: жол айнымалысы (әріп) және бастапқы позицияның Int (Сан) айнымалысы.\r\n\r\nжол айнымалысы (әріп) және тағайындалған позицияның Int (Сан) айнымалысы.\r\n\r\nҚорытынды: &quot;иә&quot;, егер тура межелі жерге жете алса, әйтпесе&quot; жоқ&quot;.\r\n\r\n\r\n\r\n\r\n\r\nОқушы мәселені шешу үшін келесі кодты жазды, бірақ ол бірнеше қателерді алады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285846,
+      "question": "Бұл сұрақ қате оқушы кодымен байланысты. Егер тас E1 позициясында болса және тағайындалған жер B7 болса, rock[0] және destination[1] айнымалыларының мәндерін анықтаңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "rock[0] = &ldquo;E&rdquo;, destanation[1] = &ldquo;B&rdquo;",
+        "rock[0] = &ldquo;E&rdquo;, destanation[1] = &ldquo;7&rdquo;",
+        "rock[0] = &ldquo;E1&rdquo;, destanation[1] = &ldquo;B7&rdquo;",
+        "rock[0] = &ldquo;1&rdquo;, destanation[1] = &ldquo;2&rdquo;"
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Шахматшы Жансая\r\n\r\nЖансая-бүкіл әлем бойынша көптеген шахмат жарыстарының бірнеше дүркін жеңімпазы. Алайда ол бірден шахматшы бола алмады. Ол сондай-ақ ойынды ойнауды көп үйренді. Жансая қателесуден қорықпады, өйткені тәжірибе оны жақсартатынын білді. Енді біз оның тура(ладья, rook) ойнауды қалай үйренгенін білгіміз келеді. Өздеріңіз білетіндей, тура шахмат тақтасында көлденең немесе тігінен қозғалады. Тураның бастапқы орны (әріп, сан) суретте көрсетілген.\r\n\r\n\r\n\r\nКіріс: жол айнымалысы (әріп) және бастапқы позицияның Int (Сан) айнымалысы.\r\n\r\nжол айнымалысы (әріп) және тағайындалған позицияның Int (Сан) айнымалысы.\r\n\r\nҚорытынды: &quot;иә&quot;, егер тура межелі жерге жете алса, әйтпесе&quot; жоқ&quot;.\r\n\r\n\r\n\r\n\r\n\r\nОқушы мәселені шешу үшін келесі кодты жазды, бірақ ол бірнеше қателерді алады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285848,
+      "question": "Жоғарыда сипатталған мәселені шешу үшін дұрыс кодты анықтаңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "group_text": "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Шахматшы Жансая\r\n\r\nЖансая-бүкіл әлем бойынша көптеген шахмат жарыстарының бірнеше дүркін жеңімпазы. Алайда ол бірден шахматшы бола алмады. Ол сондай-ақ ойынды ойнауды көп үйренді. Жансая қателесуден қорықпады, өйткені тәжірибе оны жақсартатынын білді. Енді біз оның тура(ладья, rook) ойнауды қалай үйренгенін білгіміз келеді. Өздеріңіз білетіндей, тура шахмат тақтасында көлденең немесе тігінен қозғалады. Тураның бастапқы орны (әріп, сан) суретте көрсетілген.\r\n\r\n\r\n\r\nКіріс: жол айнымалысы (әріп) және бастапқы позицияның Int (Сан) айнымалысы.\r\n\r\nжол айнымалысы (әріп) және тағайындалған позицияның Int (Сан) айнымалысы.\r\n\r\nҚорытынды: &quot;иә&quot;, егер тура межелі жерге жете алса, әйтпесе&quot; жоқ&quot;.\r\n\r\n\r\n\r\n\r\n\r\nОқушы мәселені шешу үшін келесі кодты жазды, бірақ ол бірнеше қателерді алады.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285850,
+      "question": "Электрондық кестеде диаграмманың шаблондары",
+      "answers": [
+        1,
+        2,
+        6
+      ],
+      "options": [
+        "Дөңгелек",
+        "Гистограмма",
+        "Шеңбер",
+        "Үшбұрышты",
+        "Эллипс",
+        "Нүктелік"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285852,
+      "question": "Python-дағы қандай код 2-ден 10-ға дейінгі(қоса алғанда) барлық жұп сандарды шығарады?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "for i in range(2, 11):",
+        "for i in range(1, 11):",
+        "for i in range(2, 11, 2):",
+        "for i in range(1, 11, 2):",
+        "for i in range(1,10,2):",
+        "for i in range(2,10,2):"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285854,
+      "question": "C1 ұяшығында шығатын мән",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Excel 2023 2022",
+        "2022 Excel",
+        "Excel 74 2023",
+        "Excel 2023",
+        "Excel 2022 2023",
+        "Excel 2022"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/PHTB1JO5l9huuZY3eH2ZSgET7xdLDF04RGwjOHB0.png",
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285855,
+      "question": "Логикалық өрнек берілген: (A OR B) AND (C AND NOT D). A, B, C және D айнымалыларының қандай мәндер жиынтығында бұл өрнек ақиқат болып табылады?",
+      "answers": [
+        2,
+        3,
+        5
+      ],
+      "options": [
+        "A = 1, B = 1, C = 1, D = 1",
+        "A = 1, B = 0, C = 1, D = 0",
+        "A = 0, B = 1, C = 1, D = 0",
+        "A = 1, B = 1, C = 0, D = 1",
+        "A = 1, B = 0, C = 0, D = 1",
+        "A = 0, B = 0, C = 0, D = 0"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285857,
+      "question": "Python - дағы қандай код &quot;my_string&quot; жолының палиндром екенін тексереді (оңнан солға және солдан оңға бірдей оқылады)?",
+      "answers": [
+        3,
+        5
+      ],
+      "options": [
+        "is_palindrome = my_string.is_palindrome()",
+        "is_palindrome = my_string.reverse() == my_string",
+        "is_palindrome = my_string == my_string[::-1]",
+        "is_palindrome = my_string.check_palindrome()",
+        "is_palindrome = my_string == my_string.reverse()",
+        "is_palindrome = my_string.equals(my_string.reverse())"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285858,
+      "question": "АЛҚ орындайтын функциялар",
+      "answers": [],
+      "options": [
+        "F=101",
+        "F=111",
+        "A OR &not;B",
+        "SLT",
+        "A AND &not;B",
+        "A-B"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285859,
+      "question": "Қай жадқа байланысты ақпарат берілген",
+      "answers": [],
+      "options": [
+        "Процессор жұмысын басқару программасы жазылады",
+        "Электрлік жолмен жазылған мәліметтерді ұзақ уақыт есте сақтай алатын оқу және жазуға арналған микросұлба (чип) түрінде жасалған жад түрі",
+        "ROM(Тұрақты жад)",
+        "Флэш жады",
+        "RAM(Жедел жад)",
+        "HDD(Қатқыл жад)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285860,
+      "question": "Компьютердің сәйкес құрылғыларын көрсет",
+      "answers": [],
+      "options": [
+        "Сезім мүшелері",
+        "Сөйлеу және қозғалыс жүйесі",
+        "Енгізу құрылғылары",
+        "Шығару құрылғылары",
+        "Жад құрылғылары",
+        "Процессор"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285861,
+      "question": "A, B және C ның мәні төмендегідей болғанда 0 мәні қайтарылатын логикалық өрнекті көрсет",
+      "answers": [],
+      "options": [
+        "A=0&nbsp;&nbsp; B=0&nbsp;&nbsp;&nbsp; C=1",
+        "A= 1&nbsp;&nbsp;&nbsp; B= 0&nbsp;&nbsp;&nbsp; C=0",
+        "A˅⌐B&amp;⌐C",
+        "⌐A˅B˅C&amp;A",
+        "A˅⌐B˅C",
+        "A˅⌐B˅⌐C"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 285862,
+      "question": "Келесі код нәтижесін анықтаңыз",
+      "answers": [],
+      "options": [
+        "&ldquo;A&rdquo; мәнін енгізгенде",
+        "0 мәнін енгізгенде",
+        "ValueError",
+        "[]",
+        "TypeError",
+        "IndexError"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/5NV0mLkcfHs6jLeFss6m0P8C6iTXSltSznKrSMoi.png",
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 286857,
+      "question": "50 беттен тұратын кітаптың әрбір бетінде 50 жол, ал әрбір жолда 70 символ бар. Осы кітаптағы ақпарат көлемі неше Мбайт екенін көрсетіңіз.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "175000",
+        "170,8",
+        "0,167",
+        "0,208"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 286861,
+      "question": "1 йоттабайт (Йбайт) неше байтқа тең?",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\(2^{50}\\)",
+        "\\(2^{60}\\)",
+        "\\(2^{70}\\)",
+        "\\(2^{80}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 286863,
+      "question": "суретте көрсетілген жад түрін белгілеңіз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "RAM",
+        "ROM",
+        "кэш",
+        "қатқыл диск"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/IClTpjNUof2AO1ks3072nbAKw3HO3TXZQxr0rc8d.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 286997,
+      "question": "Логикалық қосуды таңдаңыз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "and",
+        "or",
+        "not",
+        "if"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287000,
+      "question": "Төменде қарапайым пікірлер берілген. Осы пікірлерге сүйеніп мына өрнектің шешімін тап&nbsp;&nbsp;&nbsp; F= ⌐ (A^B) v C\r\n\r\nА=Тұрақты жадтың маңызды микросхемасы-BIOS\r\n\r\nВ=Қатқыл диск жедел есте сақтау құрылғысы\r\n\r\nС= ROM тек оқуға арналған жад.",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "1",
+        "0",
+        "ақиқат",
+        "жалған",
+        "not",
+        "and"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287002,
+      "question": "Төменде берілген кестеде қандай шарт пайдаланылған?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Условное форматирование-Правила выделения ячеек-Больше 750000",
+        "Условное форматирование-Правила выделения ячеек- Меньше 700000",
+        "Условное форматирование-Правила выделения ячеек- Между 500000-750000",
+        "Условное форматирование-Правила выделения ячеек-Больше 500000"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/DmljGhGaDqADCpWHNwChWpuHlJpalyNmY2FPavmA.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287006,
+      "question": "Төменде берілген кестенің D3 ұяшығына енгізілген формула",
+      "answers": [
+        3
+      ],
+      "options": [
+        "=B3*5%",
+        "=C3*10%",
+        "=B3*10%",
+        "=C3*5%"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/a1Rwahe9pbKheM7jKmKE9Ne5GNsJ6k69JQbWqIBi.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287010,
+      "question": "n айнымалысына 6 санын енгізгенде нәтиже",
+      "answers": [
+        3
+      ],
+      "options": [
+        "216",
+        "36",
+        "18",
+        "9"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/KracJFHxZGBy1Ban6sWrL9dPu7TZWJeI2q4xyZ9c.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287011,
+      "question": "Программа фрагментіне n айнымалысынығ мәніне 15 санын енгізгендегі нәтиже",
+      "answers": [
+        3
+      ],
+      "options": [
+        "1\r\n\r\n4\r\n\r\n7\r\n\r\n10\r\n\r\n13",
+        "1\r\n\r\n4\r\n\r\n7\r\n\r\n10",
+        "2\r\n\r\n8\r\n\r\n14\r\n\r\n20\r\n\r\n26",
+        "2\r\n\r\n8\r\n\r\n14\r\n\r\n20"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/GkK1G4zXVnskR4H1MURsyYIe3kSrEAWHmZzraojd.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287015,
+      "question": "IP v4 хаттамасындағы адрестер саны",
+      "answers": [
+        2
+      ],
+      "options": [
+        "\\(2^{16}\\)",
+        "\\(2^{32}\\)",
+        "\\(2^{64}\\)",
+        "\\(2^{128}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287020,
+      "question": "Берілген желінің IP-адресі мен маскасы арқылы желі адресін анықта\r\n\r\nIP-адрес: 192.168.125.177\r\n\r\nМаска:255.255.255.240",
+      "answers": [
+        1
+      ],
+      "options": [
+        "192.168.125.176",
+        "192.168.125.177",
+        "255.255.255.240",
+        "255.255.255.176"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287022,
+      "question": ".net жалпы мақсаттағы жоғары деңгейлі доменнің қай түріне жатады?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "коммерциялық ұйымдар",
+        "ақпараттық ресурстар",
+        "интернеттің жұмыс істеуіне қатысты ұйымдар",
+        "коммерциялық емес ұйымдар"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287030,
+      "question": "Санау жүйесінің разряды",
+      "answers": [
+        2
+      ],
+      "options": [
+        "негізі 2 болатын позициялық санау жүйесі",
+        "цифрдың сандағы орны",
+        "арнайы белгілер жиынтығының көмегімен сандарды белгілеу тәсілі",
+        "сандар жиыны"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287033,
+      "question": "HTML кодта қолданылған CSS стильін қосу тәсілі &nbsp;&nbsp;және &laquo;1 байт = 8 бит&raquo; мәтінінде қолданылған түс",
+      "answers": [
+        4
+      ],
+      "options": [
+        "ішкі стиль, сары түс",
+        "құжат деңгейіндегі стильдер, қызыл түс",
+        "сыртқы стильдер, қызыл түс",
+        "құжат деңгейіндегі стильдер, сары түс"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/4AEwmOF7psb58zdvM24i3fNWWRoayvSP7Q3fcvs9.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287039,
+      "question": "HTML кодтағы &ldquo;Джон Маккарти&rdquo; мәтіні қандай түсте болады?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "көк",
+        "қызыл",
+        "сары",
+        "қара"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/1Aqe1vLZELuFPp1QeofZrZXL6IDDlBpAXIVa2eZU.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287081,
+      "question": "Берілген өрнектің ақиқат кестесін көрсетіңіз: (Av&not;B&nbsp;)^B",
+      "answers": [
+        2
+      ],
+      "options": [
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287082,
+      "question": "MySQL-дегі біріктіру командасының дұрыс синтаксистерін көрсет",
+      "answers": [
+        1,
+        3,
+        6
+      ],
+      "options": [
+        "SELECT column_name(s)\r\n\r\nFROM table1\r\n\r\nINNER JOIN table2\r\n\r\nON table1.column_name=table2.column_name;",
+        "SELECT column_name(s)\r\n\r\nWHERE table1\r\n\r\nINNER JOIN table2\r\n\r\nON table1.column_name=table2.column_name;",
+        "SELECT column_name(s)\r\n\r\nFROM table1\r\n\r\nLEFT JOIN table2\r\n\r\nON table1.column_name=table2.column_name;",
+        "WHERE column_name(s)\r\n\r\nFROM table1\r\n\r\nLEFT JOIN table2\r\n\r\nON table1.column_name=table2.column_name;",
+        "WHERE column_name(s)\r\n\r\nFROM table1\r\n\r\nRIGHT &nbsp;JOIN table2\r\n\r\nON table1.column_name=table2.column_name;",
+        "SELECT column_name(s)\r\n\r\nFROM table1\r\n\r\nRIGHT JOIN table2\r\n\r\nON table1.column_name=table2.column_name;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287083,
+      "question": "Негізгі кестедегі іздеуді тездету үшін көмектесетін көмекші кесте",
+      "answers": [
+        3
+      ],
+      "options": [
+        "адрес",
+        "өріс",
+        "индекс",
+        "жазба"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287084,
+      "question": "isdigit() әдісінің қызметі",
+      "answers": [
+        2
+      ],
+      "options": [
+        "жоластын іздеу үшін пайдаланады",
+        "жолда сандардың болуын&nbsp; анықтайды",
+        "жолдағы бір жоластын басқа жоластымен ауыстырады",
+        "берілген бір бөлгішке сәйкес жолды бөлу үшін пайдаланылады"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287086,
+      "question": "Логикалық терістеу операциясының орындалу басымдылығы",
+      "answers": [
+        1
+      ],
+      "options": [
+        "жоғары",
+        "биік",
+        "орта",
+        "төмен"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287087,
+      "question": "\\(1110111_2 \\) санын сегіздік, он алтылық санау жүйесіне аударғандағы мәні",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(165_8, 77_{16}\\)",
+        "\\(119_8, 75_{16}\\)",
+        "\\(167_8, 77_{16}\\)",
+        "\\(127_8, 76_{16}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287089,
+      "question": "Өрнектің мәнін анықтаңыз: \\(23_{10}+15_8=?\\)",
+      "answers": [
+        1,
+        4
+      ],
+      "options": [
+        "\\(36_{10}\\)",
+        "\\(30_{8}\\)",
+        "\\(30_{10}\\)",
+        "\\(44_{8}\\)",
+        "\\(38_{10}\\)",
+        "\\(42_{8}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287090,
+      "question": "Программалар құқықтық мәртебесі бойынша топқа бөлінуі",
+      "answers": [
+        2
+      ],
+      "options": [
+        "екі топқа",
+        "үш топқа",
+        "төрт топқа",
+        "бес топқа"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287091,
+      "question": "Мәліметтерді екілік кодтан адамға түсінікті формаға түрлендіру",
+      "answers": [
+        2
+      ],
+      "options": [
+        "кодтау",
+        "декодтау",
+        "шифрлау",
+        "разряд"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287101,
+      "question": "Берілген код үзіндісінің нәтижесін таңдаңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "1 2 3",
+        "1 2 3 4",
+        "1 2 3 5 6 7 9",
+        "1 4 8"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/FI5ygNaJ9BiKQoi47fEJHs3S0cKJIzTy56QFXeOg.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287106,
+      "question": "Берілген код үзіндісінің дұрыс шешімін таңдаңыз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "40",
+        "45",
+        "46",
+        "10"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/rHGVZPfAyWwX2hbbAuVJOTpekAkjCOJHEeKHuRIw.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287113,
+      "question": "Арнаның өткізу қабілеті",
+      "answers": [
+        4
+      ],
+      "options": [
+        "V=q*t",
+        "\\(N=2^i\\)",
+        "I=K*i",
+        "q=I/t"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287114,
+      "question": "Айнымалыны программаның барлық бөлімінде жұмыс істету үшін процедурада пайдаланылатын қызметші сөз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "def",
+        "global",
+        "summa",
+        "range"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287116,
+      "question": "Компьютерлік желілердің тиістілігіне қарай бөлінуі:",
+      "answers": [
+        1,
+        3
+      ],
+      "options": [
+        "Ведомстволық",
+        "Жергілікті",
+        "Мемлекеттік",
+        "Аймақтық",
+        "Ауқымды",
+        "Аумақтық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287117,
+      "question": "Абсолютті сілтемені көрсетіңіз",
+      "answers": [
+        1,
+        2,
+        6
+      ],
+      "options": [
+        "$R$8",
+        "$D$4",
+        "$F9",
+        "D$2",
+        "$B3",
+        "$E$21"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287122,
+      "question": "Программа нәтижесінің сәйкестігін анықтаңыз",
+      "answers": [],
+      "options": [
+        "d=&#39;Информатика сабағы&#39;\r\nk=&#39;өте қызықты&#39;\r\nprint(d[0:11],k[0:11])",
+        "d=&#39;Информатика сабағы&#39;\r\nk=&#39;өте қызықты&#39;\r\nprint(d[0:11],k[4:])",
+        "Информатика өте қызықты",
+        "Информатика қызықты",
+        "Информатика Информатика",
+        "Информатика сабағы қызықты"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287124,
+      "question": "Бұлттар және олардың анықтамалары арасындағы сәйкестікті анықтаңыз.",
+      "answers": [],
+      "options": [
+        "Ортақ мақсаттары бар қоғамдық тұтынушыларға арналған инфраструктура",
+        "Көпшілікке арналған, олардың интернетте еркін жұмыс істеуіне арналған инфраструктура",
+        "қоғамдық бұлттар",
+        "ортақ бұлттар",
+        "жеке бұлттар",
+        "аралас бұлттар"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287128,
+      "question": "Суретті туралау атрибуттары мен сипаттамасын сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "браузер терезесінің ішіндегі суреттің биіктігін (тігінен өлшемін) пиксельмен немесе терезе биіктігінің пайызымен береді",
+        "браузер терезесінің ішіндегі суреттің биіктігін (көлденең өлшемін) пиксельмен немесе терезе биіктігінің пайызымен береді",
+        "height",
+        "width",
+        "vspace",
+        "hspace"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287131,
+      "question": "Сұрыптау алгоритм түрлері мен жұмыс жасау негіздері арасындағы сәйкестікті анықтаңыз",
+      "answers": [],
+      "options": [
+        "Әр екі жұп элементті салыстырып шығады",
+        "Массивтегі ең кіші (ең үлкен) элементті тауып,&nbsp; оны сұрыпталмаған элементтердің бірінші тұрғанымен ауыстырады",
+        "Көбік",
+        "Таңдау",
+        "Кірістіру",
+        "жылдам"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287132,
+      "question": "Сұрыптау коды мен түсініктемесі арасындағы сәйкестікті анықтаңыз.",
+      "answers": [],
+      "options": [
+        "B=sorted(A)",
+        "B=sorted(A, reverse=True)",
+        "А массивін өсу реті бойынша сұрыптап, В массивіне жүктейді",
+        "А массивін кему реті бойынша сұрыптап, В массивіне жүктейді",
+        "А массивінің өзінде өсу реті бойынша реттейді",
+        "А массивінің өзінде кему реті бойынша реттейді"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287162,
+      "question": "Массив ұзындығы қай қатарда көрсетілген?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "k=int(input())",
+        "n=int(input())",
+        "for i in range (0,n):",
+        "a[i]=int(input())"
+      ],
+      "group_text": "B[n]&nbsp; бір өлшемді, екі бірдей элементі жоқ массив берілген. Осы массивтегі k-ші минимумды тап. Мысалы n=5 және k=2 болса, онда 5 элементі бар массивте (52,14,5,68,87) 2-ші минимум 14 ке тең.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287163,
+      "question": "Массив элементтерін қолмен енгізу қатарын көрсетіңіз.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "k=int(input())",
+        "n=int(input())",
+        "for i in range (0,n):",
+        "a[i]=int(input())"
+      ],
+      "group_text": "B[n]&nbsp; бір өлшемді, екі бірдей элементі жоқ массив берілген. Осы массивтегі k-ші минимумды тап. Мысалы n=5 және k=2 болса, онда 5 элементі бар массивте (52,14,5,68,87) 2-ші минимум 14 ке тең.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287164,
+      "question": "k=3 болғанда программа нәтижесі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "52",
+        "14",
+        "68",
+        "5"
+      ],
+      "group_text": "B[n]&nbsp; бір өлшемді, екі бірдей элементі жоқ массив берілген. Осы массивтегі k-ші минимумды тап. Мысалы n=5 және k=2 болса, онда 5 элементі бар массивте (52,14,5,68,87) 2-ші минимум 14 ке тең.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287165,
+      "question": "Программадағы k-ші максимумды табу үшін өзгертілген жол",
+      "answers": [
+        4
+      ],
+      "options": [
+        "print(k, &lsquo;max=&rsquo;, b[k+1])",
+        "b=sorted(k)",
+        "print(k, &lsquo;max=&rsquo;, b)",
+        "b=sorted(a,reverse=True)"
+      ],
+      "group_text": "B[n]&nbsp; бір өлшемді, екі бірдей элементі жоқ массив берілген. Осы массивтегі k-ші минимумды тап. Мысалы n=5 және k=2 болса, онда 5 элементі бар массивте (52,14,5,68,87) 2-ші минимум 14 ке тең.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287166,
+      "question": "b=sorted(a) жолы не үшін қолданылады?",
+      "answers": [
+        2
+      ],
+      "options": [
+        "А массивінің өзінде өсу реті бойынша реттейді",
+        "А массивін өсу реті бойынша сұрыптап, b массивіне жүктейді",
+        "А массивінің өзінде кему реті бойынша реттейді",
+        "А массивін кему реті бойынша сұрыптап, b массивіне жүктейді"
+      ],
+      "group_text": "B[n]&nbsp; бір өлшемді, екі бірдей элементі жоқ массив берілген. Осы массивтегі k-ші минимумды тап. Мысалы n=5 және k=2 болса, онда 5 элементі бар массивте (52,14,5,68,87) 2-ші минимум 14 ке тең.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287255,
+      "question": "Азаматтың 10010102 ақшасы бар, ол дүкенге келіп 0101102 ақшасын жаратты. Азаматтың ақшасы ондық санау жүйесімен болғанда, қанша ақшасы қалды?&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "43&nbsp;",
+        "65&nbsp;",
+        "52&nbsp;",
+        "48&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287257,
+      "question": "Негізгі логикалық элементті анықтаңыз: &quot;шығыстағы сигнал кемінде бір кірісіне сигналдар берілген кезде пайда болады&quot;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "дизъюнктор&nbsp;",
+        "сумматор&nbsp;",
+        "инвертор&nbsp;",
+        "конъюнктор&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287258,
+      "question": "Бағдарламалық жасақтаманы таңдағанда компьютердің техникалық сипаттамаларын ескеру қажет (қате жауапты таңдаңыз)&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "бағдарламалық жасақтама сіздің компьютеріңізді зақымдауы мүмкін&nbsp;",
+        "бағдарламалық жасақтама сіздің компьютеріңізді баяулатуы мүмкін&nbsp;",
+        "кейбір бағдарламалар сіздің компьютеріңізде жұмыс істемеуі мүмкін&nbsp;",
+        "компьютерлік жабдық таңдалған бағдарламалық жасақтаманы қолдамауы мүмкін"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287260,
+      "question": "HTML тіліндегі тегтер CSS кодының қай стилінде ұсынылған&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Кірістірілген стиль&nbsp;",
+        "Ішкі стиль&nbsp;",
+        "Cтандарты стиль&nbsp;",
+        "Сыртқы стиль&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287261,
+      "question": "Kомбинациялық сызбаға сәйкес логикалық функция",
+      "answers": [
+        1
+      ],
+      "options": [
+        "(A and B) or (B and C) or (C and D)&nbsp;",
+        "(A or B) and (B or C) and D",
+        "(A and B) and B or C and D&nbsp;",
+        "(A and B) and (B and C and D)&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287787,
+      "question": "Программа нәтижесі&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "2&nbsp;",
+        "3&nbsp;",
+        "-2&nbsp;",
+        "-1&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287788,
+      "question": "PHP-де ДҚ-ның серверіне қосылу үшін ... функциясы қолданылады.&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "localhost()&nbsp;",
+        "MySQL_connect()&nbsp;",
+        "MySQL_include()&nbsp;",
+        "MySQL_connection()&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287792,
+      "question": "Программа нәтижесі&nbsp;\r\n\t\r\n\r\n\r\nx = True&nbsp;\r\n\r\ny = False&nbsp;\r\n\r\nz = True&nbsp;\r\n\r\nif not x or y:&nbsp;\r\n\r\n&nbsp;&nbsp;&nbsp; print(&ldquo;Бір&rdquo;)&nbsp;\r\n\r\nelif not x or not y and z:&nbsp;\r\n\r\n&nbsp;&nbsp;&nbsp; print(&ldquo;Екі&rdquo;)&nbsp;\r\n\r\nelif not x or y or not y and x:&nbsp;\r\n\r\n&nbsp;&nbsp;&nbsp; print(&ldquo;Үш&rdquo;)&nbsp;\r\n\r\nelse:&nbsp;\r\n\r\n&nbsp;&nbsp;&nbsp; print(&ldquo;Төрт&rdquo;)&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Бір&nbsp;&nbsp;",
+        "Екі&nbsp;",
+        "Үш&nbsp;",
+        "Төрт&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287794,
+      "question": "&laquo;кол-во&raquo; бағаны үшін қолданылды&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Шартты форматтау&nbsp;&nbsp; гистограмма&nbsp;",
+        "қызыл шрифтпен таңдау және ұяшықтарды толтыру&nbsp;",
+        "шартты форматтау түс шкалалары&nbsp;",
+        "шартты форматтау ұяшықтарды таңдау ережелері"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287795,
+      "question": "Бағдарлама орындалғаннан кейін b айнымалысының мәні&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "100&nbsp;",
+        "360&nbsp;",
+        "90&nbsp;",
+        "110&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287798,
+      "question": "Бағдарламаның үзіндісі Python бағдарламалау тілінде берілген. Код үзіндісін табыңыз қатесіз жазылған.&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287799,
+      "question": "C1 ұяшығында келесі Формула =$A$1+B1. Егер сіз формуланы С2 ұяшығына, содан кейін С3 ұяшығына көшірсеңіз, С2 және С3 деректері қалай өңделеді?&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "С2: 16, С3: 21",
+        "С2: 15, С3: 18",
+        "C2: 11, C3: 17",
+        "C2: 13, C3: 14"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287800,
+      "question": "Берілген Zerdeli_oqu кестесінен Aidos-тың жасын 15-ке ауыстыру үшін жазылатын код:&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "SELECT Zerdeli_oqu SET Age = 15 WHERE OqushyID = 2;&nbsp;",
+        "UPDATE Zerdeli_oqu SET Age = 15;&nbsp;",
+        "UPDATE Zerdeli_oqu SET Age = 15 WHERE OqushyID = 2;&nbsp;",
+        "INSERT Zerdeli_oqu SET Age = 15 WHERE OqushyID = 2;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287801,
+      "question": "Егер шарттар бірнеше болса, if оператордан соң қайсы операторды жазамыз?&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "elif&nbsp;",
+        "else&nbsp;",
+        "if&nbsp;",
+        "while&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287802,
+      "question": "12 беттен тұратын кітап көлемі 3 Мбайт тасымалдаушы құралдың қанша бөлігін алады? Кітаптың бір бетінде 120 символдан тұратын 500 жол бар.&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "0,4 бөлігі&nbsp;",
+        "0,16 бөлігі&nbsp;",
+        "0,61 бөлігі&nbsp;",
+        "0,23 бөлігі&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287805,
+      "question": "Ақиқат кестесінің мәнін тап&nbsp;&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "1 1 1 1 1 0 0 0&nbsp;",
+        "0 0 0 0 0 1 0 1&nbsp;",
+        "1 1 1 0 0 1 0 0&nbsp;",
+        "1 1 0 0 0 0 1 1&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287806,
+      "question": "Элементті мән бойынша тізімнен жою үшін қандай әдіс қолданылады?&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "remove()",
+        "delete()&nbsp;",
+        "discard()&nbsp;",
+        "pop()&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287809,
+      "question": "Python-да қандай код шексіз цикл жасайды?&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "while True:",
+        "for i in range(10):&nbsp;",
+        "while False:&nbsp;",
+        "for i in range(0):&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287810,
+      "question": "Деректер пакетін тарату үшін екі не одан да көп желілерді байланыстыратын &quot;Ақылды құрылғы&quot;&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Модем&nbsp;",
+        "Коммутатор&nbsp;",
+        "Кабель&nbsp;",
+        "Маршрутизатор&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287811,
+      "question": "Программалар мен деректерді ұзақ уақыт сақтауға арналған компьютерлік жад түрі&nbsp;",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Тұрақты жад&nbsp;",
+        "Кэщ жад&nbsp;",
+        "Ішкі жад&nbsp;",
+        "Сыртқы жад&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287812,
+      "question": "30 беттік реферат, мәтіндік редакторында жазылған. Оның әр беті 50 жолдан, әр жолы 35 символдан тұрса, рефераттың ақпараттық көлемі&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "420000 бит&nbsp;",
+        "420000 байт&nbsp;",
+        "42000 бит&nbsp;",
+        "42000 байт&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287814,
+      "question": "Сұраныс нәтижесі&nbsp;\r\n\r\n&nbsp;\r\n\r\nSELECT Country FROM Freedom WHERE status = &ldquo;PF&rdquo;.&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "Azerbaijan, Bahrain, Belarus, China&nbsp;",
+        "Angola, Bangladesh, Brazil, Cambodia",
+        "All table&nbsp;",
+        "Argentina, Armenia, Australia, Canada&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287815,
+      "question": "Келесі суретке сәйкес логикалық өрнекті табыңыз&nbsp;\r\n\r\n&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "A or (not B or B and A)&nbsp;",
+        "(not A and B) and (not B and A)&nbsp;",
+        "(A and B) and ( not B and not A)&nbsp;",
+        "(not B and B) and (A or not A)&nbsp;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287816,
+      "question": "Асты сызылған мәтін жасау үшін қолданылатын HTML тегі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "&lt;b&gt;&lt;/b&gt;&nbsp;",
+        "&lt;s&gt;&lt;/s&gt;&nbsp;",
+        "&lt;u&gt;&lt;/u&gt;&nbsp;",
+        "&lt;i&gt;&lt;/i&gt;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287817,
+      "question": "Серверде енгізілген жеке деректерді тексеру және қабылдау&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "Тіркелу&nbsp;",
+        "Идентификация&nbsp;",
+        "Аутентификация&nbsp;",
+        "Авторизация&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287818,
+      "question": "Қате жазылған программаға 585 мәнін енгізгенде шығатын мән&nbsp;",
+      "answers": [
+        2
+      ],
+      "options": [
+        "200&nbsp;",
+        "5&nbsp;",
+        "125&nbsp;",
+        "40&nbsp;"
+      ],
+      "group_text": "Жандосқа санның цифрларының көбейтіндісін шығаратын бағдарлама жазу керек болды. Алайда программа дұрыс жасамай тұр.&nbsp;",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287819,
+      "question": "Қате жазылған программаға 153671 мәнін енгізгенде шығатын мән&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "30&nbsp;",
+        "15&nbsp;",
+        "25&nbsp;",
+        "10&nbsp;"
+      ],
+      "group_text": "Жандосқа санның цифрларының көбейтіндісін шығаратын бағдарлама жазу керек болды. Алайда программа дұрыс жасамай тұр.&nbsp;",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287820,
+      "question": "Қате жазылған программаға қандай мәнді енгізгенде бағдарлама дұрыс жауап қайтарады&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "312&nbsp;",
+        "155&nbsp;",
+        "15",
+        "33&nbsp;"
+      ],
+      "group_text": "Жандосқа санның цифрларының көбейтіндісін шығаратын бағдарлама жазу керек болды. Алайда программа дұрыс жасамай тұр.&nbsp;",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287821,
+      "question": "Қате түзетілген код үзіндісін көрсетіңіз&nbsp;",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      "group_text": "Жандосқа санның цифрларының көбейтіндісін шығаратын бағдарлама жазу керек болды. Алайда программа дұрыс жасамай тұр.&nbsp;",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287822,
+      "question": "Егерде бірінші жолда int сөзін өшіріп, 125 санын енгізсек программа жауабы&nbsp;",
+      "answers": [
+        3
+      ],
+      "options": [
+        "10&nbsp;",
+        "ValueError&nbsp;",
+        "TypeError&nbsp;",
+        "ZeroDivisionError&nbsp;"
+      ],
+      "group_text": "Жандосқа санның цифрларының көбейтіндісін шығаратын бағдарлама жазу керек болды. Алайда программа дұрыс жасамай тұр.&nbsp;",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287823,
+      "question": "Берілген параграф HTML тегтерінің қаріп өлшемдерін көрсетіңіздер\r\n\r\n&nbsp;",
+      "answers": [
+        1,
+        2
+      ],
+      "options": [
+        "18 px&nbsp;",
+        "48 px&nbsp;",
+        "36 px",
+        "88 px&nbsp;",
+        "28,8 px&nbsp;",
+        "57,6 px&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287825,
+      "question": "Логикалық өрнек берілген: (P AND Q) OR (R AND NOT S). P, Q, R және S айнымалыларының қандай мәндер жиынтығында бұл өрнек жалған болып табылады?&nbsp;",
+      "answers": [
+        3,
+        5,
+        6
+      ],
+      "options": [
+        "P = TRUE, Q = TRUE, R = TRUE, S = TRUE&nbsp;",
+        "P = TRUE, Q = FALSE, R = TRUE, S = FALSE",
+        "P = FALSE, Q = TRUE, R = TRUE, S = TRUE",
+        "P = TRUE, Q = TRUE, R = FALSE, S = TRUE&nbsp;",
+        "P = TRUE, Q = FALSE, R = FALSE, S = TRUE&nbsp;",
+        "P = FALSE, Q = FALSE, R = FALSE, S = FALSE&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287826,
+      "question": "Фон Нейман архитектурасы негізделген 4 қағидаға кіреді?&nbsp;",
+      "answers": [
+        2,
+        5
+      ],
+      "options": [
+        "Тұрақты сақтау қағидасы&nbsp;",
+        "Жадтың біркелкілік қағидасы&nbsp;",
+        "Уақытша сақтау қағидасы&nbsp;",
+        "Өзгермеушілік қағидасы&nbsp;",
+        "Екілік кодтау қағидасы&nbsp;",
+        "Python да код жазу қағидасы&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287827,
+      "question": "A1 мен A7 ұяшығында &quot;12;5;8;45;6;32;1&quot; сандары берілген. Егер, B1 ұяшығына =СРЗНАЧ(A1;A7) деп жазсақ, B1 ұяшығы қандай мәнге ие болады?&nbsp;",
+      "answers": [
+        5
+      ],
+      "options": [
+        "15,5&nbsp;",
+        "15&nbsp;",
+        "16&nbsp;",
+        "6&nbsp;",
+        "6,5&nbsp;",
+        "4,8&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287828,
+      "question": "Tармақталған алгоритмнің толық емес түрі программаланған код(-тар)",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287829,
+      "question": "Келесі өрнектің мәнін табыңыз:&nbsp;391x+756x +215x =?x&nbsp;",
+      "answers": [],
+      "options": [
+        "X=8&nbsp;",
+        "X=16&nbsp;",
+        "391x+756x +215x =1604x&nbsp;",
+        "391x+756x +215x =CFCx&nbsp;",
+        "391x+756x +215x =1264x&nbsp;",
+        "391x+756x +215x =56Dx&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287830,
+      "question": "X-тің мәні келесідей болғанда программа нәтижесі\r\n\r\n&nbsp;",
+      "answers": [],
+      "options": [
+        "X=3&nbsp;",
+        "X=13&nbsp;",
+        "39.0&nbsp;",
+        "41.0",
+        "39&nbsp;",
+        "41&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287831,
+      "question": "IP адрес пен масканы қолданып, ішкі желі номері мен масканың мәнін табыңыз.&nbsp;&nbsp;\r\n\r\nIP адрес: 127.168.15.124&nbsp;\r\n\r\nМаска: /20&nbsp;",
+      "answers": [],
+      "options": [
+        "Ішкі желі номері:&nbsp;",
+        "Маска:&nbsp;",
+        "127.168.0.0&nbsp;",
+        "255.255.240.0&nbsp;",
+        "127.168.15.0&nbsp;",
+        "255.255.255.0&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287832,
+      "question": "Процессордың сәйкес келетін негізгі функциясын таңдаңыз&nbsp;",
+      "answers": [],
+      "options": [
+        "Әрбір команда жадта сақталады және өзінің жеке адресі болады",
+        "Барлық орындалуға тиіс команда Ассемблер тіліне аударылады&nbsp;",
+        "Таңдау&nbsp;",
+        "Декодтау&nbsp;",
+        "Орындау&nbsp;",
+        "Атқару&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287833,
+      "question": "Сәйкес келетін HTML тегін көрсетіңіз&nbsp;",
+      "answers": [],
+      "options": [
+        "Cырғымалы жол жасауға арналған тег(бегущая строка)&nbsp;",
+        "Маркерленген тізім жасауға арналған тег&nbsp;",
+        "&lt;MARQUEE&gt;&lt;/MARQUEE&gt;&nbsp;",
+        "&lt;UL&gt;&lt;/UL&gt;&nbsp;",
+        "&lt;OL&gt;&lt;/OL&gt;&nbsp;",
+        "&lt;LI&gt;&lt;/LI&gt;&nbsp;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287889,
+      "question": "50 беттен тұратын кітаптың әрбір бетінде 50 жол, ал әрбір жолда 70 символ бар. Осы кітаптағы ақпарат көлемі неше Кбайт екенін көрсетіңіз.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "175000",
+        "170,9",
+        "0,167",
+        "0,208"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287890,
+      "question": "Компьютерде кітаптың 64 беті терілді, әр бетте 32 қатар, әр қатарда 32 символ бар. Компьютерде&nbsp;256 символдық алфавит қолданылады. Осы кітаптағы ақпарат көлемін 2 минут 8 секундта тасымалдаған тасымалдаушы құрылғының жылдамдығын анықта",
+      "answers": [
+        2
+      ],
+      "options": [
+        "4096 байт/с",
+        "4 Кбит/с",
+        "512 байт/с",
+        "65&nbsp;536 бит/с"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287891,
+      "question": "суретте көрсетілген жад түрін белгілеңіз.",
+      "answers": [
+        4
+      ],
+      "options": [
+        "RAM",
+        "ROM",
+        "кэш",
+        "қатқыл диск"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/f3HLsAfeNH1OUE9XHjNsGu0T0OWXTEXOmsJTyQ9E.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287892,
+      "question": "Логикалық көбейту жалғаулығы",
+      "answers": [
+        1
+      ],
+      "options": [
+        "and",
+        "or",
+        "not",
+        "if"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287893,
+      "question": "Төменде қарапайым пікірлер берілген. Осы пікірлерге сүйеніп мына өрнектің шешімін тап&nbsp;&nbsp;&nbsp; F= ⌐ (AvB) v C\r\n\r\nА=Логикалық қосу-дизъюнкция деп аталады\r\n\r\nВ=Логикалық терістеу және көмекші сөзі арқылы жасалады\r\n\r\nС= Конъюнкция and көмекші сөзімен байланысады.",
+      "answers": [
+        1,
+        3,
+        5
+      ],
+      "options": [
+        "1",
+        "0",
+        "ақиқат",
+        "жалған",
+        "true",
+        "false"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287894,
+      "question": "Суретте диаграманың қай түрі берілген",
+      "answers": [
+        4
+      ],
+      "options": [
+        "Гистограмма",
+        "Аймақтық",
+        "Сызықтық",
+        "Нүктелік"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/DIN3TqswfpwGZFJG6d4Yw8Y4SYaXXVCUaGUM4DR4.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287896,
+      "question": "Төменде берілген кестенің С3 ұяшығында қандай формула қолданылған?",
+      "answers": [
+        1
+      ],
+      "options": [
+        "=B3*5%",
+        "=C3*10%",
+        "=B3*10%",
+        "=C3*5%"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/9WcAsTcngQgFVkrAvAjiurczStwk2FQhXPwWZI2R.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287898,
+      "question": "Программа нәтижесін анықтаңыз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "30",
+        "60",
+        "90",
+        "50"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/GpeATchoYrnILtkgjF17UCFzARukGZZTVkqA1q0P.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287899,
+      "question": "Программа нәтижесінде &laquo;140 ball&raquo; сөзі экранда неше рет шығады",
+      "answers": [
+        3
+      ],
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/ASVbBVsRBBI1oQuKKcZx80lwANqjRPXijw7Zth7G.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287900,
+      "question": "IP v6 хаттамасындағы адрестер саны",
+      "answers": [
+        4
+      ],
+      "options": [
+        "\\(2^{16}\\)",
+        "\\(2^{32}\\)",
+        "\\(2^{64}\\)",
+        "\\(2^{128}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287951,
+      "question": "Реляциялық деректер қорындағы кестенің негізгі қасиеттерінің бірі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "әр кесте объектінің бірнеше класын сипаттайды",
+        "бір атпен бірнеше баған кездеседі",
+        "кестеде бағандардың орналасу реті маңызды емес",
+        "бір бағанның барлық мәндері әртүрлі деректер типіне жатады"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287952,
+      "question": "Санау жүйесі-",
+      "answers": [
+        3
+      ],
+      "options": [
+        "негізі 2 болатын позициялық санау жүйесі",
+        "цифрдың сандағы орны",
+        "арнайы белгілер жиынтығының көмегімен сандарды белгілеу тәсілі",
+        "сандар жиыны"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287953,
+      "question": "Берілген өрнектің ақиқат кестесін көрсетіңіз: (Av&not;B&nbsp;)^ &not;&nbsp;B",
+      "answers": [
+        2
+      ],
+      "options": [
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ &not;&nbsp;B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ &not;&nbsp;B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ &not;B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ &not;&nbsp;B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287954,
+      "question": "HTML-дегі көпсатылы тізім құратын дескриптор",
+      "answers": [
+        2
+      ],
+      "options": [
+        "&lt;dl&gt;, &lt;/dl&gt;",
+        "&lt;ul&gt;, &lt;/ul&gt;",
+        "&lt;hr&gt;",
+        "&lt;sub&gt;, &lt;/sub&gt;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287955,
+      "question": "Кесте бағандары",
+      "answers": [
+        2
+      ],
+      "options": [
+        "адрес",
+        "өріс",
+        "индекс",
+        "жазба"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287956,
+      "question": "find() әдісінің қызметі",
+      "answers": [
+        1
+      ],
+      "options": [
+        "жоластын іздеу үшін пайдаланады",
+        "жолда сандардың болуын&nbsp; анықтайды",
+        "жолдағы бір жоластын басқа жоластымен ауыстырады",
+        "берілген бір бөлгішке сәйкес жолды бөлу үшін пайдаланылады"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287957,
+      "question": "Логикалық қосу операциясының орындалу басымдылығы",
+      "answers": [
+        3
+      ],
+      "options": [
+        "жоғары",
+        "биік",
+        "орта",
+        "төмен"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287958,
+      "question": "\\(1011011_2\\)&nbsp; санын сегіздік, он алтылық санау жүйесіне аударғандағы мәні",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(91_8, 5B_{16} \\)",
+        "\\(119_8, 75_{16}\\)",
+        "\\(133_8, 5B_{16}\\)",
+        "\\(137_8, 76_{16}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287959,
+      "question": "Өрнектің мәнін анықтаңыз: \\(46_{10}+15_8=?\\)",
+      "answers": [
+        1,
+        6
+      ],
+      "options": [
+        "\\(59_{10}\\)",
+        "\\(56_8\\)",
+        "\\(13_{10}\\)",
+        "\\(59_8\\)",
+        "\\(38_{10}\\)",
+        "\\(71_8\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287960,
+      "question": "Borland C++ Builder жататын программалық жасақтама",
+      "answers": [
+        3
+      ],
+      "options": [
+        "жүйелік",
+        "қолданбалы",
+        "инструменталдық",
+        "аппараттық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287961,
+      "question": "Параметрлі циклді көрсетіңіз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "for i in range(10):",
+        "while a&lt;10:",
+        "if i%2==0:",
+        "n=int(input())"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287962,
+      "question": "Берілген код үзіндісінің нәтижесі",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0",
+        "72576",
+        "40",
+        "362880"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/CEF930CQo5X5W3i71xXk5jolmec14d5CgLPpZAce.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287963,
+      "question": "Массивтегі 4-ке бөлінетін сандарды анықтау үшін қойылатын шартты көрсетіңіз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "if a[i]%4==1:",
+        "if a[i]//4==1:",
+        "if a[i]//4==0:",
+        "if a[i]%4==0:"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/apPDKHRgczpbXpUiIf2jOT0GrHTuAzAU0YyCtjLP.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287964,
+      "question": "А массивінде Х-ке тең элементтердің санын анықтайды",
+      "answers": [
+        4
+      ],
+      "options": [
+        "A.append(X)",
+        "A.remove(X)",
+        "A.insert(i,X)",
+        "A.count(X)",
+        "A.pop(i)",
+        "A.remove(S)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287965,
+      "question": "ubtINFORM деректер базасын құру үшін орындалатын команда",
+      "answers": [
+        2
+      ],
+      "options": [
+        "CREATE ubtINFORM;",
+        "CREATE DATABASE ubtINFORM;",
+        "CREATE TABLE ubINFORM;",
+        "INSERT INTO ubtINFORM;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287996,
+      "question": "Сымды байланыс желілерін көрсетіңіз",
+      "answers": [
+        1,
+        3,
+        5
+      ],
+      "options": [
+        "Қосақталған кабель",
+        "Радиобайланыс",
+        "Коаксиалды кабель",
+        "Wi-Fi",
+        "Оптикалық кабель",
+        "WiMax"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287997,
+      "question": "Жүйелік программалық жабдықтамаларды көрсетіңіз",
+      "answers": [
+        4,
+        5
+      ],
+      "options": [
+        "мәтіндік редакторлар",
+        "трансляторлар",
+        "кестелік процессорлар",
+        "операциялық жүйелер",
+        "сыртқы құрылғылардың программалары",
+        "графикалық редакторлар"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287998,
+      "question": "Логикалық сызбаға сәйкес логикалық өрнекті және мәнін көрсетіңіз\r\n\r\nА=1 B=1 C=1",
+      "answers": [
+        4
+      ],
+      "options": [
+        "((AvB)^&not;C)^C=1",
+        "((AvB)^&not;C)vC=0",
+        "((A^B)^&not;C)vC=0",
+        "((AvB)^&not;C)vC=1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/In2vUDHu8Gkja6jdeonSwYXoIjY4N9jrcjBqGxpd.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 287999,
+      "question": "HTML кодтағы класс селекторына қандай түс қойылған?",
+      "answers": [
+        3
+      ],
+      "options": [
+        "көк",
+        "қызыл",
+        "сары",
+        "қара"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/13w5kHe3DLF9YbjR8AqASRA0aOxCq7IX5mKKSrvg.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288000,
+      "question": "Компьютердің IP-адресінің фрагменттері А-дан В-ға дейін көрсетілген. IP-адресті қалпына келтір. Жауапта үзінділерді білдіретін сандардың реттілігін IP-адреске сәйкес тәртіппен көрсет.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "АБӘВ",
+        "ВАБӘ",
+        "БӘВА",
+        "АӘВБ"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/oq5DuImgnCQCM7zdtI7reDUzPYHE2ygZukGDLb9H.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288176,
+      "question": "Логикалық операциялар және олардың түсініктемелерін сәйкестендір",
+      "answers": [],
+      "options": [
+        "Екі пікірге сәйкесінше жаңа пікір беретін, алғашқы екі пікір ақиқат болса ғана ақиқат болып табылатын логикалық операция",
+        "Екі пікірге сәйкесінше жаңа пікір беретін, бастапқы екі пікір жалған болып табылғанда ғана жалған болатын логикалық операция",
+        "конъюнкция",
+        "дизъюнкция",
+        "инверсия",
+        "терістеу"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288177,
+      "question": "Бағдарламалық жасақтаманың сапа критерийлері мен анықтамаларын сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "Берілген шарттарда пайдаланушыға бағдарламалық өнім ұсынатын қызметтер деңгейінің пайдаланатын ресурстар көлеміне қатынасы",
+        "Бағдарламалық жасақтаманың бір ортадан екіншісіне, яғни бір аппараттық платформадан басқасына ауыса алу қабілеті",
+        "тиімділік",
+        "мобильділік",
+        "сенімділік",
+        "эргономикалық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288178,
+      "question": "Фон Нейман архитектурасының қағидаларын түсініктемелерімен сәйкестендір",
+      "answers": [],
+      "options": [
+        "Компьютердегі барлық ақпарат екілік код түрінде сақталады",
+        "Компьютерде орындалатын есептер алгоритмдер көмегімен шешіледі",
+        "екілік кодтау қағидасы",
+        "бағдарламалық басқару қағидасы",
+        "жадтың біркелкілік қағидасы",
+        "адрестік қағидасы"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288179,
+      "question": "Әдістер мен олардың қызметтерін сәйкестендір",
+      "answers": [],
+      "options": [
+        "А массивіндегі Х ке тең элементті өшіреді",
+        "А массивіндегі Х ке тең элементтердің санын анықтайды",
+        "A.remove(X)",
+        "A.count(X)",
+        "A.pop(i)",
+        "A.insert(i,X)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288182,
+      "question": "Программа коды мен нәтижесін сәйкестендіріңіз.",
+      "answers": [],
+      "options": [
+        "for i in range (1,15):\r\n\r\n&nbsp; &nbsp; &nbsp;if i%3==0:\r\n\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print(i)",
+        "for i in range (1,15):\r\n\r\n&nbsp; &nbsp; &nbsp;if i%3==2:\r\n\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print(i)",
+        "1-ден 15-ке дейінгі 3-ке қалдықсыз бөлінетін сандарды экранға шығарады",
+        "1-ден 15-ке дейінгі 3-ке 2 қалдықпен бөлінетін сандарды экранға шығарады",
+        "1-ден 15-ке дейінгі 3-ке бөлінбейтін сандарды экранға шығарады",
+        "1-ден 15-ке дейінгі сандарды экранға шығарады"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288396,
+      "question": "70 беттен тұратын кітаптың әрбір бетінде 50 жол, ал әрбір жолда 65 символ бар. Осы кітаптағы ақпарат көлемі неше Кбайт екенін көрсетіңіз.",
+      "answers": [
+        2
+      ],
+      "options": [
+        "227500",
+        "222,2",
+        "28437",
+        "0,216"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288397,
+      "question": "Дұрыс теңдікті көрсетіңіз",
+      "answers": [
+        4
+      ],
+      "options": [
+        "2 Кб &lt; 2000 байт",
+        "3 Мб &lt; 3072 Кбайт",
+        "100 бит = 80 байт",
+        "6 Гб &gt; 6144 Кбайт"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288398,
+      "question": "суретте көрсетілген жад түрін белгілеңіз.",
+      "answers": [
+        3
+      ],
+      "options": [
+        "RAM",
+        "Кэш жады",
+        "оптикалық диск",
+        "қатқыл диск"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/cDrrOMLLN03YM4sSvUTzBY2Eo61tC95q4raarTHq.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288399,
+      "question": "Логикалық терістеуді көрсетіңіз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "and",
+        "or",
+        "not",
+        "if"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288400,
+      "question": "Логикалық схемаға сай логикалық өрнекті және мәнін анықтаңыз\r\n\r\n&nbsp;А=0 және В=1",
+      "answers": [
+        3
+      ],
+      "options": [
+        "F=(&not;AvB)v(&not;BvA)=1",
+        "F=(&not;AvB)v(&not;BvA)=0",
+        "F=(&not;A^B)v(&not;B^A)=1",
+        "F=(A^B)v(B^A)=0",
+        "F=(A^B)v(&not;B^A)=1 &nbsp;",
+        "F=(&not;A^B)v(&not;B^A)=0"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/BWFmNo7Z7KiUvl3NtxoXzEvkxotpTvNAsB2bqnm7.png",
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288401,
+      "question": "Суреттегі диаграмма түрін көрсетіңіз",
+      "answers": [
+        1
+      ],
+      "options": [
+        "Гистограмма",
+        "Аймақтық",
+        "Сызықтық",
+        "Нүктелік"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/hHRFUlboiYhxZac9ue9DFlXoGR8zWZffCbsit9uC.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288402,
+      "question": "Төменде берілген кестенің В10 ұяшығында қолданылған формула",
+      "answers": [
+        3
+      ],
+      "options": [
+        "=МАКС(В3:В9)",
+        "=МИН(В3:В9)",
+        "=СРЗНАЧ(В3:В9)",
+        "=СЧЕТ(В3:В9)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/sdGuS3JgZIER8rJeq4LCHYdJo9b6dCbDgKXA90k2.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288403,
+      "question": "Код үзіндісінің нәтижесі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "13",
+        "18",
+        "21",
+        "20"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/Xl8rM1xFZ8TSK6h5GuIOMJ4nqEtGQ3ZHtiQOw9i8.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288404,
+      "question": "Программа нәтижесінде &laquo;informatica&raquo; сөзінің экранда қайталану саны",
+      "answers": [
+        3
+      ],
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/hgXAGWpuRfyA6FzBSLU11HeVROcjaPo3V8KkM5jI.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288405,
+      "question": "HTML дегі қою қаріпті мәтін",
+      "answers": [
+        4
+      ],
+      "options": [
+        "&lt;hr&gt;",
+        "&lt;s&gt;&lt;/s&gt;",
+        "&lt;i&gt;&lt;/i&gt;",
+        "&lt;b&gt;&lt;/b&gt;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288406,
+      "question": "Кестелер жиынтығы ретінде ұсынуға болатын деректер қоры",
+      "answers": [
+        3
+      ],
+      "options": [
+        "деректер қоры",
+        "санау жүйесі",
+        "реляциялық деректер қоры",
+        "ақиқат кестесі"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288407,
+      "question": "Сегіздік санау жүйесіндегі ең үлкен цифр",
+      "answers": [
+        2
+      ],
+      "options": [
+        "8",
+        "7",
+        "0",
+        "1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288408,
+      "question": "Берілген өрнектің ақиқат кестесін көрсетіңіз: (Av&not;B&nbsp;)^&nbsp;B",
+      "answers": [
+        2
+      ],
+      "options": [
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0",
+        "A\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tB\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tAv&not;B\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t(Av&not;B&nbsp;)^ B\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t1\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t0"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288409,
+      "question": "Кестедегі өрістер саны",
+      "answers": [
+        2
+      ],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/KL8xcmwmkYqT9iXAslYXkr4flNZsyTZXgTE2REIx.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288410,
+      "question": "Логикалық көбейту операциясының орындалу басымдылығы",
+      "answers": [
+        2
+      ],
+      "options": [
+        "жоғары",
+        "биік",
+        "орта",
+        "төмен"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288495,
+      "question": "Логикалық сызбаға сәйкес логикалық өрнекті және мәнін көрсетіңіз\r\n\r\nА=0 B=1 C=0",
+      "answers": [
+        4
+      ],
+      "options": [
+        "((AvB)^&not;C)^C=1",
+        "((AvB)^&not;C)vC=0",
+        "((A^B)^&not;C)vC=0",
+        "((AvB)^&not;C)vC=1"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/5Ji8lxT6ZGJ7FoqfKN36XeUXtBMqq40gRHXzL7et.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288506,
+      "question": "Microsoft Visual Basic жататын программалық жасақтама түрі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "жүйелік",
+        "қолданбалы",
+        "инструменталдық",
+        "аппараттық"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288507,
+      "question": "Ақпараттың ұсынылуын қалыптастыратын процесс",
+      "answers": [
+        1
+      ],
+      "options": [
+        "кодтау",
+        "декодтау",
+        "шифрлау",
+        "разряд"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288508,
+      "question": "Шартты алдын ала тексеру циклін көрсетіңіз",
+      "answers": [
+        2
+      ],
+      "options": [
+        "for i in range(10):",
+        "while a&lt;10:",
+        "if i%2==0:",
+        "n=int(input)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288509,
+      "question": "Программа нәтижесін анықта",
+      "answers": [
+        4
+      ],
+      "options": [
+        "95",
+        "96",
+        "80",
+        "81"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/YlnaQIiaATClMoOjycaI1NczPojVemst5wNOjJlt.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288511,
+      "question": "Сымсыз байланыс желілерін көрсетіңіз",
+      "answers": [
+        2,
+        4,
+        6
+      ],
+      "options": [
+        "Қосақталған кабель",
+        "Радиобайланыс",
+        "Коаксиалды кабель",
+        "Wi-Fi",
+        "Оптикалық кабель",
+        "WiMax"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288512,
+      "question": "Абсолютті сілтемені көрсетіңіз",
+      "answers": [
+        1,
+        3,
+        6
+      ],
+      "options": [
+        "$R$5",
+        "$F9",
+        "$D$14",
+        "D$9",
+        "$B42",
+        "$E$4"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288513,
+      "question": "\\(1111101_2\\) санын позициялық түрге келтіріңіз",
+      "answers": [
+        2,
+        3,
+        6
+      ],
+      "options": [
+        "\\(104_{10}\\)",
+        "\\(125_{10}\\)",
+        "\\(175_8\\)",
+        "\\(145_8\\)",
+        "\\(6В_{16}\\)",
+        "\\(7D_{16}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288514,
+      "question": "Компьютердің IP-адресінің фрагменттері А-дан В-ға дейін көрсетілген. IP-адресті қалпына келтір. Жауапта үзінділерді білдіретін сандардың реттілігін IP-адреске сәйкес тәртіппен көрсет.\r\n\r\n\r\n\t\r\n\t\t\r\n\t\t\t\r\n\t\t\t5.13&nbsp;&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t.37&nbsp;&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t7.119&nbsp;\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t15&nbsp;&nbsp;\r\n\t\t\t\r\n\t\t\r\n\t\t\r\n\t\t\t\r\n\t\t\tА\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tӘ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tБ\r\n\t\t\t\r\n\t\t\t\r\n\t\t\tВ",
+      "answers": [
+        2
+      ],
+      "options": [
+        "АБӘВ",
+        "ВАБӘ",
+        "БӘВА",
+        "АӘВБ"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 288517,
+      "question": "HTML кодтағы &laquo;1 Кбайт = 1024 байт&raquo; қатары қандай түске көрсетілетінін анықта",
+      "answers": [
+        2
+      ],
+      "options": [
+        "көк",
+        "қызыл",
+        "сары",
+        "қара"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/2Xh0Su3G3MNAFZCDbbdJs9DSsveGoiFuRDAunuTk.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289249,
+      "question": "\\(1111011_2 \\) санын сегіздік, он алтылық санау жүйесіне аударғандағы мәні",
+      "answers": [
+        3
+      ],
+      "options": [
+        "\\(91_8, 7B_{16}\\)",
+        "\\(119_8, 75_{16}\\)",
+        "\\(173_8, 7B_{16}\\)",
+        "\\(137_8, 76_{16}\\)"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289250,
+      "question": "HTML бетіне сценарий қосу дескрипторы",
+      "answers": [
+        1
+      ],
+      "options": [
+        "&lt;script type=&rdquo;text/javascript&rdquo;&gt;&lt;/script&gt;",
+        "&lt;AUDIO SRC=&rdquo;sound.wav&rdquo;&gt;&lt;/AUDIO&gt;",
+        "&lt;div id=&rdquo;home&rdquo;&gt;",
+        "&lt;link rel=&rdquo;stylesheet&rdquo; type=&rdquo;text/css&rdquo; href=&rdquo;стиль адресі&rdquo;&gt;",
+        "&lt;p style=&rdquo;font-size:120%;font-family:monospace;&rdquo;&gt;",
+        "&lt;s&gt;&lt;/s&gt;"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 5,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289251,
+      "question": "Массивтегі тақ сандарды анықтау үшін қойылатын шарт",
+      "answers": [
+        1
+      ],
+      "options": [
+        "if a[i]%2==1:",
+        "if a[i]//2==1:",
+        "if a[i]//2==0:",
+        "if a[i]%2==0:"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/rjgEEMpgPxNtDl2GdlocFWkOOPwlDQhUJ4LFiitt.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289252,
+      "question": "Берілген желінің IP-адресі мен маскасы арқылы желі адресін анықта\r\n\r\nIP-адрес: 192.168.125.157\r\n\r\nМаска:255.255.255.240",
+      "answers": [
+        1
+      ],
+      "options": [
+        "192.168.125.144",
+        "192.168.125.177",
+        "255.255.255.240",
+        "255.255.255.176"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289256,
+      "question": "HTML кодта қолданылған CSS стильін қосу тәсілі &nbsp;&nbsp;және &laquo;1 Кбайт = 1024 байт&raquo; мәтінінде қолданылған түс",
+      "answers": [
+        2
+      ],
+      "options": [
+        "ішкі стиль, сары түс",
+        "құжат деңгейіндегі стильдер, қызыл түс",
+        "сыртқы стильдер, қызыл түс",
+        "құжат деңгейіндегі стильдер, сары түс"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": "public/images/Qxe6CC962zqCYdDBZy4vrxgA1YM4TLzlynwZlhk2.png",
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289439,
+      "question": "Excel-дегі математикалық функциялар&nbsp; мен олардың қызметтерін сәйкестендір",
+      "answers": [],
+      "options": [
+        "санның таңбасын анықтайды",
+        "санның модулі",
+        "ЗНАК()",
+        "ABS()",
+        "TAN()",
+        "ЧИСЛО()"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289445,
+      "question": "Python-да файлдармен жұмыс жасау әдістері мен сипаттамасын сәйкестендір",
+      "answers": [],
+      "options": [
+        "Файлдың келесі жолын қайтарады",
+        "Файлдың алғашқы n символын оқиды",
+        "File.next()",
+        "File.read(n)",
+        "File.close()",
+        "File fileno()"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289448,
+      "question": "HTML тілінде кестені өзгертетін атрибуттар мен мағыналарын сәйкестендір",
+      "answers": [],
+      "options": [
+        "cellspacing",
+        "cellpadding",
+        "Пиксель бойынша ұяшықтар арақашықтығы",
+        "Ұяшықтағы мән мен шекара арасындағы арақашықтық",
+        "Кесте фонының түсін білдіреді",
+        "Пиксель бойынша кесте шекарасы"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289452,
+      "question": "Желілерде қолданылатын түрлі желілік компоненттер атауы мен сипаттамасын сәйкестендіріңіз",
+      "answers": [],
+      "options": [
+        "Желілік топология негізінде және белгілі бір ережелерді басшылыққа ала отырып, желінің құрамдас бөліктеріне желілік дегейдегі пакеттерді жіберу туралы шешім қабылдайтын желілік құрылғы",
+        "Қашықтағы компьютерлермен байланыс үшін немесе компьютерді телефон желісіне жалғау үшін қолданылады.",
+        "Бағдарлауыш",
+        "Модем",
+        "Желілік түйіндер",
+        "Коммутатор"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289456,
+      "question": "CSS синтаксисі мен сипаттамасымен сәйкестендір",
+      "answers": [],
+      "options": [
+        ".bor2{border-style:solid;border-width:2px}",
+        ".bor1{border-style:solid;border-color:red}",
+        "Шекараның қалыңдығын орнатады",
+        "Шекараның түсін орнатады",
+        "Элементтің фон түсін орнатады",
+        "Суретті фон ретінде пайдалануға мүмкіндік береді"
+      ],
+      "group_text": "",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 14,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289462,
+      "question": "Массив ұзындығы көрсетілген қатар",
+      "answers": [
+        2
+      ],
+      "options": [
+        "for j in range (0,n):",
+        "n=int(input())",
+        "for i in range (0,n):",
+        "a[i][j]= randint(1,9)"
+      ],
+      "group_text": "A[n][n] екі өлшемді массиві берілген(1&lt;n&lt;20) . Осы массивтің бас диагоналінде орналасқан элементтерді экранға шығарыңыз. Массив кездейсоқ сандармен толтырылған.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289464,
+      "question": "Параметрлі циклді көрсетіңіз",
+      "answers": [
+        3
+      ],
+      "options": [
+        "while",
+        "array",
+        "for",
+        "if"
+      ],
+      "group_text": "A[n][n] екі өлшемді массиві берілген(1&lt;n&lt;20) . Осы массивтің бас диагоналінде орналасқан элементтерді экранға шығарыңыз. Массив кездейсоқ сандармен толтырылған.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289658,
+      "question": "Бас диагоналінде орналасқан элементтерді экранға шығару үшін 13-қатарға қойылатын шарт",
+      "answers": [
+        2
+      ],
+      "options": [
+        "A[i]%2==0",
+        "i==j&nbsp;",
+        "A[i][j]%2==0",
+        "A[i]%2==1"
+      ],
+      "group_text": "A[n][n] екі өлшемді массиві берілген(1&lt;n&lt;20) . Осы массивтің бас диагоналінде орналасқан элементтерді экранға шығарыңыз. Массив кездейсоқ сандармен толтырылған.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289659,
+      "question": "Массив элементтері толтырылған кездейсоқ сандар",
+      "answers": [
+        2
+      ],
+      "options": [
+        "0 мен 9 аралығындағы сандармен",
+        "1 мен 9 аралығындағы сандармен",
+        "Кез келген кездейсоқ сандармен",
+        "Өзіміз енгізген сандармен"
+      ],
+      "group_text": "A[n][n] екі өлшемді массиві берілген(1&lt;n&lt;20) . Осы массивтің бас диагоналінде орналасқан элементтерді экранға шығарыңыз. Массив кездейсоқ сандармен толтырылған.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289660,
+      "question": "Бас диагональда орналасқан элементтердің қосындысын табу үшін орындалатын программадағы өзгеріс",
+      "answers": [
+        4
+      ],
+      "options": [
+        "if a[i]%2==0:\r\n\r\n&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;s=s+a[i][j]\r\n\r\nprint(s)",
+        "if&nbsp; a[i]==a[j]:\r\n\r\n&nbsp;&nbsp; &nbsp;&nbsp;s+=a[i][j]\r\n\r\nprint(s)",
+        "if a[i][j]%2==1:\r\n\r\n&nbsp;&nbsp; &nbsp;s=s=+[i][j]\r\n\r\nprint(s)",
+        "if i==j:\r\n\r\n&nbsp; &nbsp;&nbsp;s+=a[i][j]\r\n\r\nprint(s)"
+      ],
+      "group_text": "A[n][n] екі өлшемді массиві берілген(1&lt;n&lt;20) . Осы массивтің бас диагоналінде орналасқан элементтерді экранға шығарыңыз. Массив кездейсоқ сандармен толтырылған.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289762,
+      "question": "if b&gt;c: операторының қызметі",
+      "answers": [
+        3
+      ],
+      "options": [
+        "итерация",
+        "цикл қадамы",
+        "шартты тексеру",
+        "циклды аяқтау"
+      ],
+      "group_text": "Төрт таңбалы сан берілген. Егер төрт таңбалы санның бірінші цифры екінші цирынан үлкен болса, үшінші және төртінші цифрларын қосатын, ал кіші болса үшінші және төртінші цифрларын көбейтетін программа құрыңыз.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289763,
+      "question": "Программадағы алгоритм түрі",
+      "answers": [
+        2
+      ],
+      "options": [
+        "сызықтық алгоритм",
+        "тармақталған алгоритм",
+        "циклдік алгоритм",
+        "функция"
+      ],
+      "group_text": "Төрт таңбалы сан берілген. Егер төрт таңбалы санның бірінші цифры екінші цирынан үлкен болса, үшінші және төртінші цифрларын қосатын, ал кіші болса үшінші және төртінші цифрларын көбейтетін программа құрыңыз.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289764,
+      "question": "c=a//100%10 қатары анықтайды",
+      "answers": [
+        2
+      ],
+      "options": [
+        "санның бірінші цифрын",
+        "санның екінші цифрын",
+        "санның үшінші цифрын",
+        "санның төртінші цифрын"
+      ],
+      "group_text": "Төрт таңбалы сан берілген. Егер төрт таңбалы санның бірінші цифры екінші цирынан үлкен болса, үшінші және төртінші цифрларын қосатын, ал кіші болса үшінші және төртінші цифрларын көбейтетін программа құрыңыз.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289765,
+      "question": "а санына 8979 санын енгізгендегі нәтиже",
+      "answers": [
+        1
+      ],
+      "options": [
+        "8 9 7 9&nbsp;&nbsp;&nbsp;&nbsp; 63",
+        "8 9 7 9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16",
+        "9 7 9 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17",
+        "9 7 9 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 72"
+      ],
+      "group_text": "Төрт таңбалы сан берілген. Егер төрт таңбалы санның бірінші цифры екінші цирынан үлкен болса, үшінші және төртінші цифрларын қосатын, ал кіші болса үшінші және төртінші цифрларын көбейтетін программа құрыңыз.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    },
+    {
+      "id": 289766,
+      "question": "Шартты if b&lt;c and b=!e: деп өзгертіп 3683 санын енгізгендегі нәтиже",
+      "answers": [
+        2
+      ],
+      "options": [
+        "3 6 8 3&nbsp; &nbsp; &nbsp;11",
+        "3 6 8 3&nbsp; &nbsp; &nbsp;24",
+        "3 8 6 3&nbsp; &nbsp; &nbsp; 9",
+        "3 8 6 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18"
+      ],
+      "group_text": "Төрт таңбалы сан берілген. Егер төрт таңбалы санның бірінші цифры екінші цирынан үлкен болса, үшінші және төртінші цифрларын қосатын, ал кіші болса үшінші және төртінші цифрларын көбейтетін программа құрыңыз.",
+      "language": "казахский",
+      "image_path": null,
+      "task_type": 2,
+      "subject_title": "Информатика (каз)"
+    }
+  ]
+}
