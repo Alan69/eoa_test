@@ -1,8 +1,26 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
+from import_export import resources, fields
 from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest, CompletedQuestion, Source
 from accounts.models import User
 from django.contrib import messages
+
+class QuestionResource(resources.ModelResource):
+    options = fields.Field(column_name='options')
+
+    class Meta:
+        model = Question
+        fields = ('id', 'text', 'test', 'task_type', 'options', 'text2', 'text3', 'img', 'level', 'status', 'category', 'subcategory', 'theme', 'subtheme', 'target', 'source', 'source_text', 'detail_id', 'lng_id', 'lng_title', 'subject_id', 'subject_title', 'class_number')
+        export_order = fields
+
+    def dehydrate_options(self, question):
+        option_texts = []
+        for option in question.options.all():
+            text = str(option.text)
+            if option.is_correct:
+                text += " (correct)"
+            option_texts.append(text)
+        return " | ".join(option_texts)
 
 class OptionInline(admin.TabularInline):
     model = Option
@@ -34,6 +52,7 @@ class TestFilter(admin.SimpleListFilter):
 
 
 class QuestionAdmin(ImportExportModelAdmin):
+    resource_class = QuestionResource
     list_display = ('id', 'text', 'test', 'task_type', 'get_product')
     search_fields = ('text', 'test__title', 'test__product__title')
     list_filter = ('test__product', TestFilter)  # Add TestFilter while keeping Product filter
