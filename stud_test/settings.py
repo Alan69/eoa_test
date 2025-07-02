@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     # 'rest_framework.authtoken',
     'drf_yasg',
+    'import_export',
     'corsheaders',
 
     'accounts',

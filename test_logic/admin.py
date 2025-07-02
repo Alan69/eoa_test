@@ -1,4 +1,5 @@
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 from .models import Test, Question, Option, Result, BookSuggestion, Product, CompletedTest, CompletedQuestion, Source
 from accounts.models import User
 from django.contrib import messages
@@ -32,7 +33,7 @@ class TestFilter(admin.SimpleListFilter):
         return queryset
 
 
-class QuestionAdmin(admin.ModelAdmin):
+class QuestionAdmin(ImportExportModelAdmin):
     list_display = ('id', 'text', 'test', 'task_type', 'get_product')
     search_fields = ('text', 'test__title', 'test__product__title')
     list_filter = ('test__product', TestFilter)  # Add TestFilter while keeping Product filter
