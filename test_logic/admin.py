@@ -82,6 +82,9 @@ class QuestionAdmin(ImportExportModelAdmin):
 
     get_product.short_description = 'Product'
 
+    def get_export_resource_classes(self):
+        return [QuestionResource]
+
 
 class QuestionInline(admin.TabularInline):
     model = Question
