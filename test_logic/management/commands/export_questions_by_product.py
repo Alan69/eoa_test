@@ -9,10 +9,12 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('product_id', type=str, help='UUID of the product to export questions from')
         parser.add_argument('--output', type=str, default='questions_export.json', help='Output file name')
+        parser.add_argument('--test_id', type=str, default=None, help='UUID of the test to export questions from (optional)')
 
     def handle(self, *args, **options):
         product_id = options['product_id']
         output_file = options['output']
+        test_id = options['test_id']
         
         try:
             # Validate UUID format
@@ -24,8 +26,15 @@ class Command(BaseCommand):
             except Product.DoesNotExist:
                 raise CommandError(f"Product with ID {product_id} does not exist")
             
-            # Get all tests for this product
-            tests = Test.objects.filter(product=product)
+            # Get tests for this product (all or by test_id)
+            if test_id:
+                try:
+                    test_uuid = uuid.UUID(test_id)
+                    tests = Test.objects.filter(id=test_uuid, product=product)
+                except ValueError:
+                    raise CommandError(f"Invalid UUID format: {test_id}")
+            else:
+                tests = Test.objects.filter(product=product)
             
             if not tests.exists():
                 self.stdout.write(self.style.WARNING(f"No tests found for product '{product.title}' (ID: {product_id})"))
@@ -87,7 +96,7 @@ class Command(BaseCommand):
             
             self.stdout.write(
                 self.style.SUCCESS(
-                    f'Successfully exported {question_count} questions from product "{product.title}" (ID: {product_id}) to {output_file}'
+                    f'Successfully exported {question_count} questions from product "{product.title}" (ID: {product_id})' + (f' and test (ID: {test_id})' if test_id else '') + f' to {output_file}'
                 )
             )
             
