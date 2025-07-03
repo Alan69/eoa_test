@@ -31,11 +31,6 @@ class QuestionResource(resources.ModelResource):
         return " | ".join(option_texts)
 
 class QuestionWithSeparateOptionsResource(resources.ModelResource):
-    test = fields.Field(
-        column_name='Test',
-        attribute='test',
-        widget=ForeignKeyWidget(Test, 'name')
-    )
     
     option_1 = fields.Field(column_name='Option 1')
     option_2 = fields.Field(column_name='Option 2')
@@ -74,7 +69,7 @@ class QuestionWithSeparateOptionsResource(resources.ModelResource):
         return correct_option.text if correct_option else ""
     
     def get_queryset(self):
-        return Question.objects.select_related('test', 'source_text').prefetch_related('options')
+        return Question.objects.prefetch_related('options')
 
 class OptionInline(admin.TabularInline):
     model = Option
