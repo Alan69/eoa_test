@@ -82,7 +82,7 @@ class QuestionAdmin(ImportExportModelAdmin):
 
     get_product.short_description = 'Product'
 
-    def get_export_resource_classes(self):
+    def get_export_resource_classes(self, request):
         return [QuestionResource]
 
 
