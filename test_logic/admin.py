@@ -6,7 +6,7 @@ from accounts.models import User
 from django.contrib import messages
 
 class QuestionResource(resources.ModelResource):
-    options = fields.Field(column_name='options')
+    options = fields.Field(attribute=None, column_name='options')
 
     class Meta:
         model = Question
