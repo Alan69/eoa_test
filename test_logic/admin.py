@@ -6,7 +6,7 @@ from accounts.models import User
 from django.contrib import messages
 
 class QuestionResource(resources.ModelResource):
-    options = fields.Field(attribute=None, column_name='options')
+    options = fields.Field(attribute='options', column_name='options')
 
     class Meta:
         model = Question
@@ -29,6 +29,52 @@ class QuestionResource(resources.ModelResource):
                 text += " (correct)"
             option_texts.append(text)
         return " | ".join(option_texts)
+
+class QuestionWithSeparateOptionsResource(resources.ModelResource):
+    test = fields.Field(
+        column_name='Test',
+        attribute='test',
+        widget=ForeignKeyWidget(Test, 'name')
+    )
+    
+    option_1 = fields.Field(column_name='Option 1')
+    option_2 = fields.Field(column_name='Option 2')
+    option_3 = fields.Field(column_name='Option 3')
+    option_4 = fields.Field(column_name='Option 4')
+    correct_option = fields.Field(column_name='Correct Option')
+    
+    class Meta:
+        model = Question
+        fields = (
+            'id', 'text', 'test', 'task_type', 'option_1', 'option_2', 
+            'option_3', 'option_4', 'correct_option', 'text2', 'text3', 
+            'img', 'level', 'status', 'category', 'subcategory', 'theme', 
+            'subtheme', 'target', 'source', 'detail_id', 'lng_id', 
+            'lng_title', 'subject_id', 'subject_title', 'class_number'
+        )
+    
+    def dehydrate_option_1(self, question):
+        options = list(question.options.all())
+        return options[0].text if len(options) > 0 else ""
+    
+    def dehydrate_option_2(self, question):
+        options = list(question.options.all())
+        return options[1].text if len(options) > 1 else ""
+    
+    def dehydrate_option_3(self, question):
+        options = list(question.options.all())
+        return options[2].text if len(options) > 2 else ""
+    
+    def dehydrate_option_4(self, question):
+        options = list(question.options.all())
+        return options[3].text if len(options) > 3 else ""
+    
+    def dehydrate_correct_option(self, question):
+        correct_option = question.options.filter(is_correct=True).first()
+        return correct_option.text if correct_option else ""
+    
+    def get_queryset(self):
+        return Question.objects.select_related('test', 'source_text').prefetch_related('options')
 
 class OptionInline(admin.TabularInline):
     model = Option
@@ -60,7 +106,7 @@ class TestFilter(admin.SimpleListFilter):
 
 
 class QuestionAdmin(ImportExportModelAdmin):
-    resource_class = QuestionResource
+    resource_class = QuestionWithSeparateOptionsResource
     list_display = ('id', 'text', 'test', 'task_type', 'get_product')
     search_fields = ('text', 'test__title', 'test__product__title')
     list_filter = ('test__product', TestFilter)  # Add TestFilter while keeping Product filter
