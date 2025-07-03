@@ -30,6 +30,14 @@ class QuestionResource(resources.ModelResource):
             option_texts.append(text)
         return " | ".join(option_texts)
 
+    def get_export_fields(self):
+        fields = super().get_export_fields()
+        # Ensure 'options' is included
+        if not any(f.attribute == 'options' for f in fields):
+            from import_export.fields import Field
+            fields.append(Field(attribute='options', column_name='options'))
+        return fields
+
 class OptionInline(admin.TabularInline):
     model = Option
     extra = 1
