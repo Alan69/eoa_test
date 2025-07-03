@@ -30,14 +30,6 @@ class QuestionResource(resources.ModelResource):
             option_texts.append(text)
         return " | ".join(option_texts)
 
-    def get_export_fields(self):
-        fields = super().get_export_fields()
-        # Ensure 'options' is included
-        if not any(f.attribute == 'options' for f in fields):
-            from import_export.fields import Field
-            fields.append(Field(attribute='options', column_name='options'))
-        return fields
-
 class OptionInline(admin.TabularInline):
     model = Option
     extra = 1
@@ -81,9 +73,6 @@ class QuestionAdmin(ImportExportModelAdmin):
         return obj.test.product.title if obj.test and obj.test.product else 'N/A'
 
     get_product.short_description = 'Product'
-
-    def get_export_resource_classes(self, request):
-        return [QuestionResource]
 
 
 class QuestionInline(admin.TabularInline):
