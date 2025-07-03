@@ -10,8 +10,16 @@ class QuestionResource(resources.ModelResource):
 
     class Meta:
         model = Question
-        fields = ('id', 'text', 'test', 'task_type', 'options', 'text2', 'text3', 'img', 'level', 'status', 'category', 'subcategory', 'theme', 'subtheme', 'target', 'source', 'source_text', 'detail_id', 'lng_id', 'lng_title', 'subject_id', 'subject_title', 'class_number')
-        export_order = fields
+        fields = (
+            'id', 'text', 'test', 'task_type', 'options', 'text2', 'text3', 'img', 'level', 'status',
+            'category', 'subcategory', 'theme', 'subtheme', 'target', 'source', 'source_text',
+            'detail_id', 'lng_id', 'lng_title', 'subject_id', 'subject_title', 'class_number'
+        )
+        export_order = (
+            'id', 'text', 'test', 'task_type', 'options', 'text2', 'text3', 'img', 'level', 'status',
+            'category', 'subcategory', 'theme', 'subtheme', 'target', 'source', 'source_text',
+            'detail_id', 'lng_id', 'lng_title', 'subject_id', 'subject_title', 'class_number'
+        )
 
     def dehydrate_options(self, question):
         option_texts = []
