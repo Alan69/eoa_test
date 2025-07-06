@@ -136,31 +136,31 @@ class Command(BaseCommand):
                 
                 # Format options as a single string
                 options_text = " | ".join([
-                    f"{option.text}{' (correct)' if option.is_correct else ''}"
+                    f"{self._clean_text_for_excel(option.text)}{' (correct)' if option.is_correct else ''}"
                     for option in options
                 ])
                 
                 excel_data.append({
                     'Question ID': str(question.id),
                     'Test ID': str(test.id),
-                    'Test Title': test.title,
-                    'Question Text': question.text,
-                    'Question Text 2': question.text2,
-                    'Question Text 3': question.text3,
+                    'Test Title': self._clean_text_for_excel(test.title),
+                    'Question Text': self._clean_text_for_excel(question.text),
+                    'Question Text 2': self._clean_text_for_excel(question.text2),
+                    'Question Text 3': self._clean_text_for_excel(question.text3),
                     'Task Type': question.task_type,
                     'Level': question.level,
                     'Status': question.status,
-                    'Category': question.category,
-                    'Subcategory': question.subcategory,
-                    'Theme': question.theme,
-                    'Subtheme': question.subtheme,
-                    'Target': question.target,
-                    'Source': question.source,
+                    'Category': self._clean_text_for_excel(question.category),
+                    'Subcategory': self._clean_text_for_excel(question.subcategory),
+                    'Theme': self._clean_text_for_excel(question.theme),
+                    'Subtheme': self._clean_text_for_excel(question.subtheme),
+                    'Target': self._clean_text_for_excel(question.target),
+                    'Source': self._clean_text_for_excel(question.source),
                     'Detail ID': question.detail_id,
                     'Language ID': question.lng_id,
-                    'Language Title': question.lng_title,
+                    'Language Title': self._clean_text_for_excel(question.lng_title),
                     'Subject ID': question.subject_id,
-                    'Subject Title': question.subject_title,
+                    'Subject Title': self._clean_text_for_excel(question.subject_title),
                     'Class Number': question.class_number,
                     'Options': options_text,
                     'Image': question.img.url if question.img and question.img.name else None
@@ -191,6 +191,31 @@ class Command(BaseCommand):
                 f'Successfully exported {total_questions} questions from {files_created} tests of product "{product.title}"'
             )
         )
+
+    def _clean_text_for_excel(self, text):
+        """Clean text to remove characters that are illegal in Excel worksheets"""
+        if not text:
+            return text
+        
+        # Convert to string if not already
+        text = str(text)
+        
+        # Remove or replace illegal characters for Excel
+        # Excel doesn't allow these control characters: 0x00-0x08, 0x0B, 0x0C, 0x0E-0x1F, 0x7F-0x9F
+        import re
+        
+        # Remove control characters that cause issues in Excel
+        text = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F-\x9F]', '', text)
+        
+        # Replace some problematic characters
+        text = text.replace('\x0A', ' ')  # Replace newlines with spaces
+        text = text.replace('\x0D', ' ')  # Replace carriage returns with spaces
+        
+        # Limit length to avoid Excel cell limit issues (32767 characters)
+        if len(text) > 32000:
+            text = text[:32000] + "..."
+        
+        return text
 
     def _make_safe_filename(self, text):
         """Convert text to safe filename by removing/replacing invalid characters"""
